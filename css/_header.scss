@@ -1,0 +1,24 @@
+.hero-banner {
+  background-color: #000;
+  padding: 1rem;
+    .text h1 {
+        color: #fff;
+        @extend %h1;
+       span {
+        display: block;
+        margin-top: 3rem;
+        color: $yellow;
+      }
+  }
+   
+  .stencil {
+    img:last-child {
+      margin-left: 7rem;
+    }
+  }
+  .msg{
+      color:#fff;
+      font-family: $font-worldly-light;
+      font-size: 1.8rem;
+  }
+}

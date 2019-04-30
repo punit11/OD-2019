@@ -1,0 +1,7 @@
+.explore {
+    background: #ffffff url("../images/campus-video-v-1-mobile.jpg") no-repeat center;
+    min-height: 250px;
+    p {
+        @extend %h1;
+    }
+}

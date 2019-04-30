@@ -1,0 +1,43 @@
+.quote {
+  background-color: #c74298;
+  .student-pic {
+    background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
+    background-size: cover;
+    margin: 0 4rem;
+    width: auto;
+    img {
+      margin: 30% -5%;
+    }
+  }
+  h4 {
+    @extend %h4;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: #fff;
+    margin: 2rem 2rem -1rem 2rem;
+    &:before {
+        content: "\201C";
+        margin-left: -1rem;
+      }
+     &:after {
+        content: "\201D";
+      }
+  }
+  
+  .student-name, .student-course { 
+      font-family: $font-stack-xl;
+      font-size: 1.4rem;
+      color: #fff;
+      text-transform: uppercase;
+      text-align:right; 
+      margin:0;
+      padding: 0 1rem;
+  }
+  .student-name {
+    padding-top: 1rem;
+  }
+   .student-course { 
+    font-size: 1.2rem;
+    margin-top: -1rem;
+  }
+}

@@ -1,0 +1,13 @@
+.manifesto {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  h1 {
+    @extend %h1;
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  span {
+    display: inline-block;
+  }
+}

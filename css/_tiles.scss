@@ -1,0 +1,48 @@
+.magenta {background-color: $magenta}
+.blue {background-color: $blue}
+.yellow {background-color: $yellow}
+.teal {background-color: $teal}
+.orange {background-color: $orange}
+.btn {padding-left:0}
+
+.tiles-wrapper {
+    background-color: #000;
+    color:#fff;
+    overflow-y: auto;
+    p {
+        margin:0;
+    }
+    .tiles-heading{
+        color: $yellow;
+        font-family: $font-worldly-regular;
+        font-size:1.6rem;
+        text-transform: uppercase;
+        padding: 0 1rem;
+    }
+    .tile {
+        background-color: #363635;
+        margin: 1rem;
+        padding: 1rem 0; 
+        .date p {
+            font-family: $font-stack-xl;
+            text-transform: uppercase;
+            font-weight: bold;
+            &:last-child{
+                font-size: 3rem;
+                font-weight: 700;
+            }   
+        }
+        .place {
+            padding-left:0;
+        
+            p {
+            font-family: $font-worldly-regular;
+            font-size: 1.4rem;
+            &:first-child{
+                font-size: 1.75rem;
+                line-height: 2.6rem;
+            } 
+        }
+    }
+    }
+}

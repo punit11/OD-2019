@@ -1,0 +1,9 @@
+.comps {
+    padding: 1rem;
+    h2 {
+        @extend %h2;
+    }
+    img {
+        width: 100%;
+    }
+}
