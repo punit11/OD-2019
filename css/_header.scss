@@ -4,16 +4,30 @@
     .text h1 {
         color: #fff;
         @extend %h1;
+        @include md {
+        font-size: 6.2rem;
+        line-height: 6.2rem;
+        }
        span {
         display: block;
         margin-top: 3rem;
         color: $yellow;
       }
   }
-   
-  .stencil {
-    img:last-child {
+  .hero-pic {
+    @include md {
+      position: relative;
+      .d-stencil {
+        width: 100%;
+        }
+  }
+    .solid-triangle {
       margin-left: 7rem;
+      @include md {
+        position: absolute;
+        top: 3%;
+        left: 25%;
+          }
     }
   }
   .msg{
@@ -22,3 +36,4 @@
       font-size: 1.8rem;
   }
 }
+

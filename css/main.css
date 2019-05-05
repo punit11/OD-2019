@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "OpenSansBold";
+  font-family: "Open Sans Bold";
   src: url(../fonts/OpenSans-Bold.eot?v=0.1.1);
   src: url(../fonts/OpenSans-Bold.eot?v=0.1.1?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Bold.woff?v=0.1.1) format("woff"), url(../fonts/OpenSans-Bold.ttf?v=0.1.1) format("truetype"), url(../fonts/OpenSans-Bold.svg?v=0.1.1#OpenSansBold) format("svg");
   font-weight: 700;
@@ -399,8 +399,6 @@ template {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
 }
 
 .row.reverse {
@@ -626,7 +624,7 @@ template {
   order: 1;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   .container {
     width: 46rem;
   }
@@ -806,7 +804,7 @@ template {
   }
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 992px) {
   .container {
     width: 61rem;
   }
@@ -986,7 +984,7 @@ template {
   }
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 1200px) {
   .container {
     width: 71rem;
   }
@@ -1175,6 +1173,7 @@ body p {
   font-family: "Worldly Light";
   font-size: 1.6rem;
   line-height: 2.6rem;
+  overflow-x: hidden;
 }
 
 a.button {
@@ -1183,29 +1182,36 @@ a.button {
   border: 0;
   font-size: 1.3rem;
   text-transform: uppercase;
-  font-family: "OpenSansBold", Arial, sans-serif;
+  font-family: "Open Sans Bold", Arial, sans-serif;
   color: #fff;
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
 }
 
-.hero-banner .text h1, .manifesto h1, .explore p, .testimonial-heading h2, .comps h2, .quote h4 {
+.hero-banner .text h1, .manifesto h1, .explore-campus p, .testimonial-heading h2, .comps h2, .faqs-wrapper h2, .quote-wrapper h4 {
   font-family: "UniversLTStd-BoldCn", sans-serif;
-  font-size: 3.4rem;
   text-transform: uppercase;
+  font-size: 3.4rem;
   line-height: 3.4rem;
 }
 
-.comps h2 {
+.comps h2, .faqs-wrapper h2 {
   font-size: 3.2rem;
   line-height: 3.2rem;
 }
 
-.testimonials h3 {
+.testimonial-wrapper h3, .accordion span {
   font-family: "Worldly Bold";
   font-size: 1.6rem;
   line-height: 2.2rem;
+  margin: 0;
+}
+
+.footer h5 {
+  font-family: "Worldly Regular";
+  font-size: 2rem;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -1234,6 +1240,7 @@ body {
 .Navbar__Link a {
   color: white;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .Navbar__Link a img {
@@ -1305,14 +1312,38 @@ body {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .hero-banner .text h1 {
+    font-size: 6.2rem;
+    line-height: 6.2rem;
+  }
+}
+
 .hero-banner .text h1 span {
   display: block;
   margin-top: 3rem;
   color: #ffd923;
 }
 
-.hero-banner .stencil img:last-child {
+@media (min-width: 768px) {
+  .hero-banner .hero-pic {
+    position: relative;
+  }
+  .hero-banner .hero-pic .d-stencil {
+    width: 100%;
+  }
+}
+
+.hero-banner .hero-pic .solid-triangle {
   margin-left: 7rem;
+}
+
+@media (min-width: 768px) {
+  .hero-banner .hero-pic .solid-triangle {
+    position: absolute;
+    top: 3%;
+    left: 25%;
+  }
 }
 
 .hero-banner .msg {
@@ -1345,17 +1376,8 @@ body {
   padding-left: 0;
 }
 
-.tiles-wrapper {
+.tiles-heading {
   background-color: #000;
-  color: #fff;
-  overflow-y: auto;
-}
-
-.tiles-wrapper p {
-  margin: 0;
-}
-
-.tiles-wrapper .tiles-heading {
   color: #ffd923;
   font-family: "Worldly Regular";
   font-size: 1.6rem;
@@ -1363,10 +1385,94 @@ body {
   padding: 0 1rem;
 }
 
+.tiles-wrapper {
+  background-color: #000;
+  color: #fff;
+  overflow-y: auto;
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper {
+    padding-bottom: 25rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.tiles-wrapper .yellow-triangle {
+  margin: 3rem 0 0 3rem;
+  z-index: 10;
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .yellow-triangle {
+    width: 8%;
+  }
+}
+
+.tiles-wrapper p {
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .wbl {
+    border-left: 3px solid #c74298;
+  }
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .tile.gwp {
+    background-color: #007d9b;
+  }
+}
+
+.tiles-wrapper .gwf .button span {
+  color: #000;
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .gwf {
+    border-left: 3px solid #ffd923;
+  }
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .bur {
+    border-left: 3px solid #0c8573;
+  }
+}
+
 .tiles-wrapper .tile {
   background-color: #363635;
   margin: 1rem;
   padding: 1rem 0;
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .tile {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .tile .date {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
 }
 
 .tiles-wrapper .tile .date p {
@@ -1380,22 +1486,41 @@ body {
   font-weight: 700;
 }
 
-.tiles-wrapper .tile .place {
+.tiles-wrapper .tile .date .place {
   padding-left: 0;
 }
 
-.tiles-wrapper .tile .place p {
+.tiles-wrapper .tile .date .place p {
   font-family: "Worldly Regular";
   font-size: 1.4rem;
 }
 
-.tiles-wrapper .tile .place p:first-child {
+.tiles-wrapper .tile .date .place p:first-child {
   font-size: 1.75rem;
   line-height: 2.6rem;
 }
 
 .comps {
   padding: 1rem;
+}
+
+@media (min-width: 576px) {
+  .comps {
+    margin-top: -12rem;
+  }
+}
+
+.comps div:first-child {
+  margin-top: -4rem;
+}
+
+@media (min-width: 576px) {
+  .comps h2 {
+    color: #fff;
+    font-size: 4.8rem;
+    line-height: 5rem;
+    margin-top: 0;
+  }
 }
 
 .comps img {
@@ -1405,7 +1530,19 @@ body {
 .manifesto {
   background-color: #000;
   color: #fff;
-  padding: 1rem;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 576px) {
+  .manifesto {
+    background: #000 url("../images/deakin-twin-stencil.png") no-repeat left center;
+  }
+}
+
+@media (min-width: 576px) {
+  .manifesto .tri-outline {
+    width: 12%;
+  }
 }
 
 .manifesto h1 {
@@ -1413,20 +1550,49 @@ body {
   line-height: 3.2rem;
 }
 
+@media (min-width: 576px) {
+  .manifesto h1 {
+    font-size: 4.8rem;
+    line-height: 5rem;
+  }
+}
+
 .manifesto span {
   display: inline-block;
 }
 
-.explore {
+.explore-campus {
   background: #ffffff url("../images/campus-video-v-1-mobile.jpg") no-repeat center;
   min-height: 250px;
 }
 
+@media (min-width: 992px) {
+  .explore-campus {
+    background: #ffffff url("../images/campus-video-v-1@2x.jpg") no-repeat center;
+    width: 100%;
+    min-height: 800px;
+    background-size: cover;
+  }
+}
+
 .testimonial-heading h2 {
-  font-size: 6.5rem;
+  font-size: 5.75rem;
   margin-bottom: 0;
   overflow-y: auto;
   background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  .testimonial-heading h2 {
+    font-size: 10.75rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonial-heading h2 {
+    font-size: 17rem;
+  }
 }
 
 .testimonial-heading h2:nth-child(1) {
@@ -1435,10 +1601,22 @@ body {
   line-height: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  .testimonial-heading h2:nth-child(1) {
+    line-height: 4.5rem;
+  }
+}
+
 .testimonial-heading h2:nth-child(2) {
   margin-top: -10px;
   padding-top: 20px;
   line-height: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .testimonial-heading h2:nth-child(2) {
+    line-height: 5.75rem;
+  }
 }
 
 .testimonial-heading h2:nth-child(3) {
@@ -1447,56 +1625,114 @@ body {
   line-height: 5.5rem;
 }
 
-.testimonials {
+@media (min-width: 768px) {
+  .testimonial-heading h2:nth-child(3) {
+    line-height: 10.75rem;
+  }
+}
+
+.testimonial-wrapper {
   margin: 4rem 0;
 }
 
-.testimonials .testimonial-icons {
+.testimonial-wrapper .testimonial-icons {
   background-color: #000;
   padding: 1rem;
   min-width: 29px;
 }
 
-.testimonials p {
+@media (min-width: 768px) {
+  .testimonial-wrapper .testimonial-icons {
+    min-width: 5rem;
+  }
+}
+
+.testimonial-wrapper p {
   margin-top: 0;
 }
 
-.testimonials .testml-msg {
+.testimonial-wrapper .testml-msg {
   margin-bottom: 1.5rem;
 }
 
-.quote {
+.testimonial-wrapper .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quote-wrapper {
   background-color: #c74298;
 }
 
-.quote .student-pic {
+.quote-wrapper .student-pic {
   background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
   background-size: cover;
   margin: 0 4rem;
   width: auto;
 }
 
-.quote .student-pic img {
+@media (min-width: 576px) {
+  .quote-wrapper .student-pic {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 10rem 0;
+    width: 50%;
+    min-height: 500px;
+  }
+}
+
+.quote-wrapper .student-pic img {
   margin: 30% -5%;
 }
 
-.quote h4 {
+@media (min-width: 576px) {
+  .quote-wrapper .student-pic img {
+    margin: 10% -10%;
+    width: 40%;
+  }
+}
+
+@media (min-width: 576px) {
+  .quote-wrapper .quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+}
+
+.quote-wrapper h4 {
   font-size: 2.4rem;
   line-height: 2.6rem;
   color: #fff;
   margin: 2rem 2rem -1rem 2rem;
 }
 
-.quote h4:before {
+@media (min-width: 576px) {
+  .quote-wrapper h4 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 30%;
+    font-size: 3.75rem;
+    line-height: 4.2rem;
+    margin: 13rem 2rem 0 -4rem;
+  }
+}
+
+.quote-wrapper h4:before {
   content: "\201C";
   margin-left: -1rem;
 }
 
-.quote h4:after {
+.quote-wrapper h4:after {
   content: "\201D";
 }
 
-.quote .student-name, .quote .student-course {
+.quote-wrapper .student-name,
+.quote-wrapper .student-course {
   font-family: "UniversLTStd-BoldCn", sans-serif;
   font-size: 1.4rem;
   color: #fff;
@@ -1506,12 +1742,173 @@ body {
   padding: 0 1rem;
 }
 
-.quote .student-name {
+.quote-wrapper .student-name {
   padding-top: 1rem;
 }
 
-.quote .student-course {
+.quote-wrapper .student-course {
   font-size: 1.2rem;
   margin-top: -1rem;
+}
+
+@media (min-width: 576px) {
+  .quote-wrapper .student-info {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: absolute;
+    right: 20%;
+    bottom: 15%;
+  }
+}
+
+.faqs-wrapper {
+  margin: 1rem;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-top: 1px solid #eee;
+}
+
+.accordion:after {
+  content: "\2795";
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+  border-radius: 20px;
+  background-color: #0c8573;
+  padding: .65rem;
+  text-transform: uppercase;
+  color: transparent;
+  text-shadow: 0 0 0 #fff;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.accordion.active + .panel {
+  max-height: 250px;
+}
+
+.accordion.active:after {
+  content: "\2796";
+  background-color: #000;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .2s ease-out;
+  transition: max-height .2s ease-out;
+}
+
+.bottom-nav {
+  background-color: #e1e1e1;
+  padding: 1rem;
+}
+
+.bottom-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #363635;
+  min-height: 200px;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer img {
+  position: absolute;
+  right: 0;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  line-height: 1.75em;
+}
+
+.footer h5 {
+  margin-bottom: 1rem;
+}
+
+.footer .acknowledgement {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: italic;
+  color: #e1e1e1;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.social-media-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  padding: 0 1em 1em 0;
+}
+
+.social-media-icons a {
+  background-image: url(//www.deakin.edu.au/__data/assets/image/0016/1203109/social-icons.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 36px;
+  transition: all 350ms ease-out;
+  -webkit-transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  width: 50px;
+}
+
+.social-media-icons a:hover {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.social-media-icons .facebook {
+  background-position: 0 0;
+}
+
+.social-media-icons .twitter {
+  background-position: -57px 0;
+}
+
+.social-media-icons .instagram {
+  background-position: -114px 0;
+}
+
+.social-media-icons .linkedin {
+  background-position: -171px 0;
+}
+
+.social-media-icons .explore {
+  background-position: 0 -38px;
+}
+
+.social-media-icons .this {
+  background-position: -57px -38px;
+}
+
+.social-media-icons .google {
+  background-position: -114px -38px;
+}
+
+.social-media-icons .youtube {
+  background-position: -171px -38px;
 }
 /*# sourceMappingURL=main.css.map */

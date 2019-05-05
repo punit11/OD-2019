@@ -21,8 +21,8 @@
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -1rem;
-    margin-left: -1rem;
+    // margin-right: -1rem;
+    // margin-left: -1rem;
   }
   
   .row.reverse {
@@ -248,7 +248,7 @@
     order: 1;
   }
   
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 768px) {
     .container {
       width: 46rem;
     }
@@ -463,7 +463,7 @@
     }
   }
   
-  @media only screen and (min-width: 62em) {
+  @media only screen and (min-width: 992px) {
     .container {
       width: 61rem;
     }
@@ -678,7 +678,7 @@
     }
   }
   
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 1200px) {
     .container {
       width: 71rem;
     }

@@ -4,4 +4,9 @@
       const navs = document.querySelectorAll(".Navbar__Items");
       navs.forEach(nav => nav.classList.toggle("Navbar__ToggleShow"));
     });
+
+    $("button.accordion").click(function(){
+      $(this).toggleClass("active");
+    });
+
   }); // on-ready end

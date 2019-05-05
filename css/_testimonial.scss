@@ -1,34 +1,53 @@
 .testimonial-heading {
   h2 {
     @extend %h1;
-    font-size: 6.5rem;
+    font-size: 5.75rem;
     margin-bottom: 0;
     overflow-y: auto;
     background-color: #fff;
+    @include sm {
+      font-size: 10.75rem;
+      margin-bottom: 3rem;
+    }
+    @include md {
+      font-size: 17rem;
+    }
   }
   h2:nth-child(1) {
     margin-top: 0;
     padding-top: 0;
     line-height: 2.5rem;
+    @include md {
+      line-height: 4.5rem;
+    }
   }
   h2:nth-child(2) {
     margin-top: -10px;
     padding-top: 20px;
     line-height: 3.5rem;
+    @include md {
+      line-height: 5.75rem;
+    }
   }
   h2:nth-child(3) {
     margin-top: -10px;
     padding-top: 10px;
     line-height: 5.5rem;
+    @include md {
+      line-height: 10.75rem;
+    }
   }
 }
 
-.testimonials {
+.testimonial-wrapper {
   margin: 4rem 0;
   .testimonial-icons {
     background-color: #000;
     padding: 1rem;
     min-width: 29px;
+    @include md {
+      min-width: 5rem;
+    }
   }
   h3 {
     @extend %h3;
@@ -38,5 +57,8 @@
   }
   .testml-msg {
     margin-bottom: 1.5rem;
+  }
+  .testimonial {
+    display: flex;
   }
 }

@@ -1,7 +1,14 @@
-.explore {
+.explore-campus {
     background: #ffffff url("../images/campus-video-v-1-mobile.jpg") no-repeat center;
     min-height: 250px;
     p {
         @extend %h1;
     }
+
+      @include lg {
+        background: #ffffff url("../images/campus-video-v-1@2x.jpg") no-repeat center;
+        width: 100%;
+        min-height: 800px;
+        background-size: cover;
+      }
 }

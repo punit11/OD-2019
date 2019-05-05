@@ -1,12 +1,29 @@
-.quote {
+.quote-wrapper {
   background-color: #c74298;
   .student-pic {
     background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
     background-size: cover;
     margin: 0 4rem;
     width: auto;
+    @include sm {
+      order: 1;
+      margin: 10rem 0;
+      width: 50%;
+      min-height: 500px;
+}
+    
     img {
       margin: 30% -5%;
+      @include sm {
+        margin: 10% -10%;
+        width: 40%;
+      }
+    }
+  }
+  .quote {
+    @include sm {
+      display: flex;
+      position: relative;
     }
   }
   h4 {
@@ -15,29 +32,45 @@
     line-height: 2.6rem;
     color: #fff;
     margin: 2rem 2rem -1rem 2rem;
+    @include sm {
+      order: 2;
+      width: 30%;
+      font-size: 3.75rem;
+      line-height: 4.2rem;
+      margin: 13rem 2rem 0 -4rem;;
+    }
     &:before {
-        content: "\201C";
-        margin-left: -1rem;
-      }
-     &:after {
-        content: "\201D";
-      }
+      content: "\201C";
+      margin-left: -1rem;
+    }
+    &:after {
+      content: "\201D";
+    }
   }
-  
-  .student-name, .student-course { 
-      font-family: $font-stack-xl;
-      font-size: 1.4rem;
-      color: #fff;
-      text-transform: uppercase;
-      text-align:right; 
-      margin:0;
-      padding: 0 1rem;
+
+  .student-name,
+  .student-course {
+    font-family: $font-stack-xl;
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0;
+    padding: 0 1rem;
   }
   .student-name {
     padding-top: 1rem;
   }
-   .student-course { 
+  .student-course {
     font-size: 1.2rem;
     margin-top: -1rem;
+  }
+  .student-info {
+    @include sm {
+      order:3;
+      position: absolute;
+      right:20%;
+      bottom: 15%;
+    }
   }
 }

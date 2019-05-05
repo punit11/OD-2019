@@ -1,8 +1,28 @@
+// Breakpoints
+
+// Small tablets and large smartphones (landscape view)
+$screen-xs-min: 576px; // Not in use currently
+
+// Small tablets (portrait view)
+$screen-sm-min: 768px;
+
+// Tablets and small desktops
+$screen-md-min: 992px;
+
+// Large tablets and desktops
+$screen-lg-min: 1200px;
+
+// Fonts
+
 $font-stack-xl: "UniversLTStd-BoldCn", sans-serif;
 $font-worldly-light: "Worldly Light";
 $font-worldly-regular: "Worldly Regular";
 $font-worldly-bold: "Worldly Bold";
-$font-stack-os-bold: "OpenSansBold", Arial, sans-serif;
+$font-stack-os-bold: "Open Sans Bold", Arial, sans-serif;
+$font-stack-os-regular: "Open Sans", Arial, sans-serif;
+
+// Colors
+
 $yellow: #ffd923;
 $magenta: #c74298;
 $blue: #007d9b;
