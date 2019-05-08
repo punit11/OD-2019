@@ -3,6 +3,9 @@
 }
 .blue {
   background-color: $blue;
+  @include sm {
+    background-color: #fff;
+  }
 }
 .yellow {
   background-color: $yellow;
@@ -37,12 +40,30 @@
     @include sm {
       display: flex;
     }
+    .place {
+      p:first-child {
+        @include sm {
+          font-family: $font-worldly-bold;
+          font-size: 2rem;
+        }
+      }
+    }
+    .date {
+      p:first-child {
+        @include sm {
+          font-family: $font-worldly-light;
+          font-size: 1.6rem;
+          font-weight: normal;
+          margin-left: 0.75rem;
+        }
+      }
+    }
   }
-  .yellow-triangle{
+  .yellow-triangle {
     margin: 3rem 0 0 3rem;
     @include sm {
-        width: 8%;
-      }
+      width: 8%;
+    }
     z-index: 10;
     position: relative;
   }
@@ -51,27 +72,32 @@
   }
   .wbl {
     @include sm {
-      border-left: 3px solid $magenta;
+      border-left: 4px solid $magenta;
     }
   }
   .tile.gwp {
     @include sm {
       background-color: $blue;
+    }    
+    a span{
+    @include sm {
+      color: #007d9b;
     }
   }
+}
   .gwf {
-      .button {
-          span {
-              color:#000;
-          }
+    .button {
+      span {
+        color: #000;
       }
+    }
     @include sm {
-      border-left: 3px solid $yellow;
+      border-left: 4px solid $yellow;
     }
   }
   .bur {
     @include sm {
-      border-left: 3px solid $teal;
+      border-left: 4px solid $teal;
     }
   }
 
@@ -79,14 +105,16 @@
     background-color: #363635;
     margin: 1rem;
     padding: 1rem 0;
+    flex: 1 1 0;
     @include sm {
-      padding: 2rem;
+      padding: 2rem 2rem 3rem 2rem;
     }
     .date {
       @include sm {
         flex-direction: row-reverse;
         display: flex;
         flex-basis: 0;
+        margin: 3rem 0;
       }
       p {
         font-family: $font-stack-xl;
@@ -95,6 +123,7 @@
         &:last-child {
           font-size: 3rem;
           font-weight: 700;
+          overflow: unset;
         }
       }
       .place {
@@ -111,5 +140,4 @@
       }
     }
   }
- 
 }

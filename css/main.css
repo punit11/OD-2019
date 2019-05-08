@@ -1178,7 +1178,7 @@ body p {
 
 a.button {
   border-radius: 2rem;
-  padding: 1.15rem 2rem;
+  padding: 1rem 2rem;
   border: 0;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -1342,7 +1342,7 @@ body {
   .hero-banner .hero-pic .solid-triangle {
     position: absolute;
     top: 3%;
-    left: 25%;
+    left: 15%;
   }
 }
 
@@ -1358,6 +1358,12 @@ body {
 
 .blue {
   background-color: #007d9b;
+}
+
+@media (min-width: 576px) {
+  .blue {
+    background-color: #fff;
+  }
 }
 
 .yellow {
@@ -1405,6 +1411,22 @@ body {
   }
 }
 
+@media (min-width: 576px) {
+  .tiles-wrapper .tiles .place p:first-child {
+    font-family: "Worldly Bold";
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .tiles-wrapper .tiles .date p:first-child {
+    font-family: "Worldly Light";
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-left: 0.75rem;
+  }
+}
+
 .tiles-wrapper .yellow-triangle {
   margin: 3rem 0 0 3rem;
   z-index: 10;
@@ -1423,7 +1445,7 @@ body {
 
 @media (min-width: 576px) {
   .tiles-wrapper .wbl {
-    border-left: 3px solid #c74298;
+    border-left: 4px solid #c74298;
   }
 }
 
@@ -1433,19 +1455,25 @@ body {
   }
 }
 
+@media (min-width: 576px) {
+  .tiles-wrapper .tile.gwp a span {
+    color: #007d9b;
+  }
+}
+
 .tiles-wrapper .gwf .button span {
   color: #000;
 }
 
 @media (min-width: 576px) {
   .tiles-wrapper .gwf {
-    border-left: 3px solid #ffd923;
+    border-left: 4px solid #ffd923;
   }
 }
 
 @media (min-width: 576px) {
   .tiles-wrapper .bur {
-    border-left: 3px solid #0c8573;
+    border-left: 4px solid #0c8573;
   }
 }
 
@@ -1453,11 +1481,14 @@ body {
   background-color: #363635;
   margin: 1rem;
   padding: 1rem 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 @media (min-width: 576px) {
   .tiles-wrapper .tile {
-    padding: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
   }
 }
 
@@ -1472,6 +1503,7 @@ body {
     display: flex;
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
+    margin: 3rem 0;
   }
 }
 
@@ -1484,6 +1516,7 @@ body {
 .tiles-wrapper .tile .date p:last-child {
   font-size: 3rem;
   font-weight: 700;
+  overflow: unset;
 }
 
 .tiles-wrapper .tile .date .place {
@@ -1580,6 +1613,7 @@ body {
   margin-bottom: 0;
   overflow-y: auto;
   background-color: #fff;
+  overflow: hidden;
 }
 
 @media (min-width: 576px) {
@@ -1591,7 +1625,7 @@ body {
 
 @media (min-width: 768px) {
   .testimonial-heading h2 {
-    font-size: 17rem;
+    font-size: 10vw;
   }
 }
 
