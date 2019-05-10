@@ -12,6 +12,7 @@ body {
     display: flex;
     font-family: sans-serif;
     color: white;
+    padding: 1.5rem 2.6rem;
 }
 
 .Navbar__Link {
@@ -22,8 +23,16 @@ body {
         font-size: 1.5rem;
     }
     a img {
-        padding-right: 1rem;
-        vertical-align: middle;
+        // padding-right: 1rem;
+        // vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &-brand {
+        a {
+            display: block;
+        }
     }
 }
 
@@ -44,6 +53,11 @@ body {
     .Navbar__Items,
     .Navbar {
         flex-direction: column;
+        flex: 1;
+        justify-content: center;
+    }
+    .Navbar {
+        padding: 1rem 0.9rem;
     }
     .Navbar__Items {
         display: none;
@@ -53,16 +67,37 @@ body {
     }
     .Navbar__ToggleShow {
         display: flex;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 8.5rem;
+        background: $white;
     }
     .Navbar__Link {
         padding: .5rem 1.5rem;
+
+        a {
+            color: $charcoal;
+        }
+
+        &-brand {
+            padding: 0;
+            a {
+                max-width: 9rem;
+                max-height: 3rem;
+            }
+        }
     }
+
     .Navbar__Link-toggle {
         align-self: flex-end;
         display: initial;
         position: absolute;
         cursor: pointer;
-        padding: 1.5rem 2.5rem;
+        // padding: 1.5rem 2.5rem;
+        padding: 0;
+        width: 1.6rem;
+        height: 1.2rem;
     }
     .Navbar__Link-toggle span {
         font-size: 2.25rem;

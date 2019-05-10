@@ -3,14 +3,18 @@
   .student-pic {
     background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
     background-size: cover;
-    margin: 0 4rem;
-    width: auto;
+    
+    width: 92%;
+    height: 50vw;
+    max-height: 529px;
+    min-height: 288px;
+    max-width: 528px;
     @include sm {
       order: 1;
       margin: 10rem 0;
-      width: 50%;
-      min-height: 500px;
-}
+      width: 50vw;
+      
+    }
     
     img {
       margin: 30% -5%;
@@ -22,30 +26,63 @@
   }
   .quote {
     @include sm {
+      align-items: center;
       display: flex;
       position: relative;
     }
   }
+
   h4 {
     @extend %h4;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
     color: #fff;
-    margin: 2rem 2rem -1rem 2rem;
+    margin: 2rem 0rem -1.5rem -2rem;
+    letter-spacing: -0.6px;
+    
     @include sm {
+      position: absolute;
       order: 2;
-      width: 30%;
-      font-size: 3.75rem;
-      line-height: 4.2rem;
-      margin: 13rem 2rem 0 -4rem;;
+      width: 50vw;
+      max-width: 238px;
+      margin: 0rem 2rem 0 -4rem;
+      min-width: 210px;
+      right: 11%;
     }
+
+    @include md {
+      max-width: 314px;
+      right: 15%;
+    }
+
+    // @include lg {
+    //   right: 24%;
+    // }
+
+    @include xxl {
+      right: 24%;
+    }
+    
     &:before {
       content: "\201C";
-      margin-left: -1rem;
+      margin-left: -1.9rem;
+      position: relative;
+      margin-right: 0.5rem;
+      @include sm {
+        position: absolute;
+        left: -2.4rem;
+        margin-left: 0;
+      }
     }
     &:after {
       content: "\201D";
     }
+
+    $min_width: 768px;
+    $max_width: 1200px;
+    $min_font: 24px;
+    $max_font: 38px;
+
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    line-height: 1.05em;
   }
 
   .student-name,
@@ -67,9 +104,9 @@
   }
   .student-info {
     @include sm {
-      order:3;
+      order: 3;
       position: absolute;
-      right:20%;
+      right: 24%;
       bottom: 15%;
     }
   }

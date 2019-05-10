@@ -3,9 +3,10 @@
 }
 .blue {
   background-color: $blue;
-  @include sm {
-    background-color: #fff;
-  }
+  color: $white;
+  // @include sm {
+  //   background-color: #fff;
+  // }
 }
 .yellow {
   background-color: $yellow;
@@ -77,14 +78,15 @@
   }
   .tile.gwp {
     @include sm {
-      background-color: $blue;
+      // background-color: $blue;
+      border-left: 4px solid $blue;
     }    
     a span{
     @include sm {
-      color: #007d9b;
+      // color: #007d9b;
+      }
     }
   }
-}
   .gwf {
     .button {
       span {
@@ -106,9 +108,60 @@
     margin: 1rem;
     padding: 1rem 0;
     flex: 1 1 0;
+    transition: all 0.3s ease;
     @include sm {
       padding: 2rem 2rem 3rem 2rem;
     }
+
+    &:hover {
+      transition: all 0.3s ease;
+
+      .magenta,
+      .blue,
+      .yellow,
+      .teal {
+        background: $white;
+        transition: all 0.3s ease;
+      }
+
+      .magenta {
+        color: $magenta;
+      }
+
+      .blue {
+        color: $blue;
+      }
+
+      .yellow {
+        color: $yellow;
+      }
+
+      .teal {
+        color: $teal;
+      }
+    }
+
+    &.wbl:hover {
+      background-color: $magenta;
+    }
+
+    &.gwp:hover {
+      background-color: $blue;
+    }
+
+    &.gwf:hover {
+      background-color: $yellow;
+
+      p {
+        color: #000;
+      }
+    }
+
+    &.bur:hover {
+      background-color: $teal;
+    }
+
+
     .date {
       @include sm {
         flex-direction: row-reverse;

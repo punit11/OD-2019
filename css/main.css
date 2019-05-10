@@ -73,6 +73,8 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .icon-Australia:before {
@@ -1201,7 +1203,7 @@ a.button {
   line-height: 3.2rem;
 }
 
-.testimonial-wrapper h3, .accordion span {
+.testimonial h3, .accordion span {
   font-family: "Worldly Bold";
   font-size: 1.6rem;
   line-height: 2.2rem;
@@ -1231,6 +1233,7 @@ body {
   display: flex;
   font-family: sans-serif;
   color: white;
+  padding: 1.5rem 2.6rem;
 }
 
 .Navbar__Link {
@@ -1244,8 +1247,12 @@ body {
 }
 
 .Navbar__Link a img {
-  padding-right: 1rem;
-  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.Navbar__Link-brand a {
+  display: block;
 }
 
 .Navbar__Items {
@@ -1270,6 +1277,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Navbar {
+    padding: 1rem 0.9rem;
   }
   .Navbar__Items {
     display: none;
@@ -1281,9 +1297,24 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 8.5rem;
+    background: #ffffff;
   }
   .Navbar__Link {
     padding: .5rem 1.5rem;
+  }
+  .Navbar__Link a {
+    color: #363635;
+  }
+  .Navbar__Link-brand {
+    padding: 0;
+  }
+  .Navbar__Link-brand a {
+    max-width: 9rem;
+    max-height: 3rem;
   }
   .Navbar__Link-toggle {
     -ms-flex-item-align: end;
@@ -1291,7 +1322,9 @@ body {
     display: initial;
     position: absolute;
     cursor: pointer;
-    padding: 1.5rem 2.5rem;
+    padding: 0;
+    width: 1.6rem;
+    height: 1.2rem;
   }
   .Navbar__Link-toggle span {
     font-size: 2.25rem;
@@ -1358,12 +1391,7 @@ body {
 
 .blue {
   background-color: #007d9b;
-}
-
-@media (min-width: 576px) {
-  .blue {
-    background-color: #fff;
-  }
+  color: #ffffff;
 }
 
 .yellow {
@@ -1451,13 +1479,7 @@ body {
 
 @media (min-width: 576px) {
   .tiles-wrapper .tile.gwp {
-    background-color: #007d9b;
-  }
-}
-
-@media (min-width: 576px) {
-  .tiles-wrapper .tile.gwp a span {
-    color: #007d9b;
+    border-left: 4px solid #007d9b;
   }
 }
 
@@ -1484,12 +1506,64 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 576px) {
   .tiles-wrapper .tile {
     padding: 2rem 2rem 3rem 2rem;
   }
+}
+
+.tiles-wrapper .tile:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tiles-wrapper .tile:hover .magenta,
+.tiles-wrapper .tile:hover .blue,
+.tiles-wrapper .tile:hover .yellow,
+.tiles-wrapper .tile:hover .teal {
+  background: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tiles-wrapper .tile:hover .magenta {
+  color: #c74298;
+}
+
+.tiles-wrapper .tile:hover .blue {
+  color: #007d9b;
+}
+
+.tiles-wrapper .tile:hover .yellow {
+  color: #ffd923;
+}
+
+.tiles-wrapper .tile:hover .teal {
+  color: #0c8573;
+}
+
+.tiles-wrapper .tile.wbl:hover {
+  background-color: #c74298;
+}
+
+.tiles-wrapper .tile.gwp:hover {
+  background-color: #007d9b;
+}
+
+.tiles-wrapper .tile.gwf:hover {
+  background-color: #ffd923;
+}
+
+.tiles-wrapper .tile.gwf:hover p {
+  color: #000;
+}
+
+.tiles-wrapper .tile.bur:hover {
+  background-color: #0c8573;
 }
 
 @media (min-width: 576px) {
@@ -1545,6 +1619,7 @@ body {
 
 .comps div:first-child {
   margin-top: -4rem;
+  z-index: 1;
 }
 
 @media (min-width: 576px) {
@@ -1558,6 +1633,363 @@ body {
 
 .comps img {
   width: 100%;
+}
+
+.comps-form {
+  margin-bottom: 25.0rem;
+  margin-top: 4.0rem;
+}
+
+.comps-form form.registration-form fieldset {
+  background: #f5f5f5;
+  display: none;
+  border: none;
+  padding: 6% 10%;
+  position: relative;
+}
+
+.comps-form form.registration-form fieldset:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #f5f5f5;
+  position: absolute;
+  top: -1.5rem;
+  right: 30%;
+}
+
+.comps-form form.registration-form fieldset.yr-details label {
+  display: none;
+}
+
+.comps-form form.registration-form fieldset.yr-details input {
+  background: #f5f5f5;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  min-width: 210px;
+  height: 2.7rem;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .comps-form form.registration-form fieldset.yr-details input {
+    width: auto;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .comps-form form.registration-form fieldset.yr-details .form-group {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+}
+
+.comps-form form.registration-form h3,
+.comps-form form.registration-form p {
+  font-family: 'UniversLTStd-BoldCn';
+}
+
+.comps-form form.registration-form p {
+  line-height: 1.7em;
+  margin: 0;
+}
+
+.comps-form form.registration-form p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 568px) {
+  .comps-form form.registration-form p {
+    font-size: calc(16px + 4 * ((100vw - 568px) / 632));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comps-form form.registration-form p {
+    font-size: 20px;
+  }
+}
+
+.comps-form form.registration-form h3 {
+  font-size: 3.2rem;
+  line-height: 3.4rem;
+  margin: 0 0 3rem 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.comps-form form.registration-form label,
+.comps-form form.registration-form input {
+  font-family: "Worldly Regular";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.comps-form form.registration-form .form-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.comps-form form.registration-form .form-bottom.direction-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comps-form form.registration-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 4rem;
+}
+
+.comps-form form.registration-form .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.comps-form form.registration-form .radio-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin-right: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .comps-form form.registration-form .radio-option {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 43%;
+            flex: 1 0 43%;
+  }
+}
+
+@media (min-width: 768px) {
+  .comps-form form.registration-form .radio-option {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 27%;
+            flex: 1 0 27%;
+  }
+  .comps-form form.registration-form .radio-option:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.comps-form form.registration-form .radio-option label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comps-form form.registration-form .radio-option label:hover {
+  cursor: pointer;
+}
+
+.comps-form form.registration-form .radio-option label:before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #0C8573;
+  margin-right: 1rem;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+.comps-form form.registration-form .radio-option input {
+  position: absolute;
+  left: -9999px;
+}
+
+.comps-form form.registration-form .radio-option input:checked + label:before {
+  border: 5px solid #0C8573;
+  width: 1.4rem;
+  height: 1.4rem;
+  line-height: 0;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+.comps-form form.registration-form .checkbox-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 3.4rem;
+}
+
+.comps-form form.registration-form .checkbox-button:nth-child(3n) {
+  margin-right: 0;
+}
+
+.comps-form form.registration-form .checkbox-button label {
+  position: relative;
+}
+
+.comps-form form.registration-form .checkbox-button label:hover {
+  cursor: pointer;
+}
+
+.comps-form form.registration-form .checkbox-button label:before {
+  content: "";
+  background: #fff;
+  border-radius: 3px;
+  border: 2px solid #0C8573;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  margin-left: -3.4rem;
+  margin-right: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  top: 0.5rem;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+.comps-form form.registration-form .checkbox-button input {
+  position: absolute;
+  left: -9999px;
+}
+
+.comps-form form.registration-form .checkbox-button input:checked + label:before {
+  background: #0C8573;
+  position: relative;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+.comps-form form.registration-form .checkbox-button input:checked + label:after {
+  content: "\e912";
+  display: inline-block;
+  font-family: icomoon !important;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  position: absolute;
+  speak: none;
+  text-transform: none;
+  top: 0.5rem;
+  left: -2.8rem;
+  color: #fff;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+@media (min-width: 576px) {
+  .comps-form form.registration-form .checkbox-button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 32%;
+            flex: 1 0 32%;
+  }
+}
+
+@media (min-width: 768px) {
+  .comps-form form.registration-form .checkbox-button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 21%;
+            flex: 1 0 21%;
+    margin-right: 2.5rem;
+  }
+}
+
+.comps-form .btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 16px 30px 18px;
+  min-width: 15.2rem;
+  text-align: center;
+  will-change: background-color,color;
+  -webkit-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  max-height: 55px;
+  text-decoration: none !important;
+  font-style: normal;
+  font-family: Open Sans,Arial,sans-serif;
+  cursor: pointer;
+}
+
+.comps-form .btn-next, .comps-form .btn-submit {
+  color: #fff !important;
+  background-color: #0c8573;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  border-radius: 30px;
+}
+
+.comps-form .btn-next:hover, .comps-form .btn-submit:hover {
+  background-color: #095c4f;
+}
+
+.comps-form .btn-previous {
+  color: #4d4d4b !important;
+  background-color: #fff;
+  border: 1px solid #adadad;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  border-radius: 30px;
+  margin-right: 2.5rem;
+}
+
+.comps-form .btn-previous:hover {
+  background-color: #adadad;
+  color: #fff !important;
+}
+
+.comps-form .btn-container {
+  position: absolute;
+  bottom: -70px;
+  right: 0px;
 }
 
 .manifesto {
@@ -1579,14 +2011,30 @@ body {
 }
 
 .manifesto h1 {
-  font-size: 3rem;
-  line-height: 3.2rem;
+  letter-spacing: -0.53px;
+  line-height: 1.0625em;
+}
+
+.manifesto h1 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 568px) {
+  .manifesto h1 {
+    font-size: calc(32px + 10 * ((100vw - 568px) / 632));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .manifesto h1 {
+    font-size: 42px;
+  }
 }
 
 @media (min-width: 576px) {
   .manifesto h1 {
-    font-size: 4.8rem;
-    line-height: 5rem;
+    letter-spacing: -0.8px;
+    line-height: 1.083333em;
   }
 }
 
@@ -1609,59 +2057,99 @@ body {
 }
 
 .testimonial-heading h2 {
-  font-size: 5.75rem;
-  margin-bottom: 0;
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: #fff;
-  overflow: hidden;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+
+.testimonial-heading h2 {
+  font-size: 57px;
+}
+
+@media screen and (min-width: 568px) {
+  .testimonial-heading h2 {
+    font-size: calc(57px + 113 * ((100vw - 568px) / 1032));
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .testimonial-heading h2 {
+    font-size: 170px;
+  }
 }
 
 @media (min-width: 576px) {
   .testimonial-heading h2 {
-    font-size: 10.75rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .testimonial-heading h2 {
-    font-size: 10vw;
+    margin: 0 0 1vw 0;
+    padding: 0;
   }
 }
 
 .testimonial-heading h2:nth-child(1) {
-  margin-top: 0;
-  padding-top: 0;
-  line-height: 2.5rem;
+  line-height: 0.75em;
+  height: 0.2em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .testimonial-heading h2:nth-child(1) {
-    line-height: 4.5rem;
+    height: 0.27em;
   }
 }
 
 .testimonial-heading h2:nth-child(2) {
-  margin-top: -10px;
-  padding-top: 20px;
-  line-height: 3.5rem;
+  line-height: 1em;
+  height: 0.45em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .testimonial-heading h2:nth-child(2) {
-    line-height: 5.75rem;
+    height: 0.45em;
   }
 }
 
 .testimonial-heading h2:nth-child(3) {
-  margin-top: -10px;
-  padding-top: 10px;
-  line-height: 5.5rem;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .testimonial-heading h2:nth-child(3) {
+    height: 0.77em;
+  }
+}
+
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 3.2rem;
+}
+
+@media (min-width: 576px) {
+  .testimonial {
+    margin-bottom: 3.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
-  .testimonial-heading h2:nth-child(3) {
-    line-height: 10.75rem;
+  .testimonial {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial {
+    margin-bottom: 9.1rem;
   }
 }
 
@@ -1669,30 +2157,55 @@ body {
   margin: 4rem 0;
 }
 
-.testimonial-wrapper .testimonial-icons {
-  background-color: #000;
-  padding: 1rem;
-  min-width: 29px;
-}
-
-@media (min-width: 768px) {
-  .testimonial-wrapper .testimonial-icons {
-    min-width: 5rem;
+@media (min-width: 576px) {
+  .testimonial-wrapper {
+    margin: 6.7rem 0 14rem;
   }
 }
 
-.testimonial-wrapper p {
-  margin-top: 0;
+.testimonial-icons {
+  background-color: #000;
+  padding: 1rem;
+  width: 100%;
 }
 
-.testimonial-wrapper .testml-msg {
-  margin-bottom: 1.5rem;
+@media (min-width: 576px) {
+  .testimonial-icons {
+    padding: 2rem;
+  }
 }
 
-.testimonial-wrapper .testimonial {
+.testimonial-icons__container {
+  width: 100%;
+  height: 100%;
+  max-width: 4.8rem;
+  max-height: 4.8rem;
+  background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.4rem;
+}
+
+@media (min-width: 576px) {
+  .testimonial-icons__container {
+    max-width: 9.8rem;
+    max-height: 9.8rem;
+    margin-right: 2.5rem;
+  }
+}
+
+.testimonial p {
+  margin: 0;
 }
 
 .quote-wrapper {
@@ -1702,8 +2215,11 @@ body {
 .quote-wrapper .student-pic {
   background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
   background-size: cover;
-  margin: 0 4rem;
-  width: auto;
+  width: 92%;
+  height: 50vw;
+  max-height: 529px;
+  min-height: 288px;
+  max-width: 528px;
 }
 
 @media (min-width: 576px) {
@@ -1712,8 +2228,7 @@ body {
         -ms-flex-order: 1;
             order: 1;
     margin: 10rem 0;
-    width: 50%;
-    min-height: 500px;
+    width: 50vw;
   }
 }
 
@@ -1730,6 +2245,9 @@ body {
 
 @media (min-width: 576px) {
   .quote-wrapper .quote {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1738,31 +2256,72 @@ body {
 }
 
 .quote-wrapper h4 {
-  font-size: 2.4rem;
-  line-height: 2.6rem;
   color: #fff;
-  margin: 2rem 2rem -1rem 2rem;
+  margin: 2rem 0rem -1.5rem -2rem;
+  letter-spacing: -0.6px;
+  line-height: 1.05em;
 }
 
 @media (min-width: 576px) {
   .quote-wrapper h4 {
+    position: absolute;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 30%;
-    font-size: 3.75rem;
-    line-height: 4.2rem;
-    margin: 13rem 2rem 0 -4rem;
+    width: 50vw;
+    max-width: 238px;
+    margin: 0rem 2rem 0 -4rem;
+    min-width: 210px;
+    right: 11%;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote-wrapper h4 {
+    max-width: 314px;
+    right: 15%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .quote-wrapper h4 {
+    right: 24%;
   }
 }
 
 .quote-wrapper h4:before {
   content: "\201C";
-  margin-left: -1rem;
+  margin-left: -1.9rem;
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .quote-wrapper h4:before {
+    position: absolute;
+    left: -2.4rem;
+    margin-left: 0;
+  }
 }
 
 .quote-wrapper h4:after {
   content: "\201D";
+}
+
+.quote-wrapper h4 {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .quote-wrapper h4 {
+    font-size: calc(24px + 14 * ((100vw - 768px) / 432));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .quote-wrapper h4 {
+    font-size: 38px;
+  }
 }
 
 .quote-wrapper .student-name,
@@ -1791,7 +2350,7 @@ body {
         -ms-flex-order: 3;
             order: 3;
     position: absolute;
-    right: 20%;
+    right: 24%;
     bottom: 15%;
   }
 }
@@ -1845,6 +2404,11 @@ body {
   overflow: hidden;
   -webkit-transition: max-height .2s ease-out;
   transition: max-height .2s ease-out;
+}
+
+.verticle-text {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .bottom-nav {

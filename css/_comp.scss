@@ -5,6 +5,7 @@
   }
   div:first-child {
     margin-top: -4rem;
+    z-index: 1;
   }
   h2 {
     @extend %h2;

@@ -15,8 +15,20 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/compsForm.js"></script>
   </head>
   <body>
+    <!-- SVG Symbols -->
+    <div class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-burger" viewBox="0 0 16 12">
+                <svg viewBox="0 0 16 12">
+                    <path d="M8 12h7a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2zM1 2h14a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2zm0 5h14a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2z" fill="#FFF"/>
+                </svg>
+            </symbol>
+        </svg>
+    </div>
+    <!-- End SVG Symbols -->
     <!-- navigation start -->
     <div class="row nav">
       <div class="col-xs-12 navbar-wrapper">
@@ -29,10 +41,18 @@
             </a>
           </div>
           <div class="Navbar__Link Navbar__Link-toggle">
-            <span href="#">&#9776;</span>
+            <!-- <span href="#">&#9776;</span> -->
+            <svg class="icon-burger">
+              <use href="#icon-burger" xlink:href="#icon-burger"></use>
+            </svg>
           </div>
           <nav class="Navbar__Items">
             <div class="Navbar__Link">
+              <a data-analytics="cop_courses" href="#faq">
+                FAQs
+              </a>
+            </div>
+            <!-- <div class="Navbar__Link">
               <a data-analytics="cop_courses" href="#courses">
                 Courses
               </a>
@@ -56,9 +76,9 @@
               <a data-analytics="cop_info" href="#info">
                 Change preference
               </a>
-            </div>
+            </div> -->
           </nav>
-          <nav class="Navbar__Items Navbar__Items--right">
+          <!-- <nav class="Navbar__Items Navbar__Items--right">
             <div class="Navbar__Link">
               <a data-analytics="cop_call_us" href="tel:1800693888">
                 <img
@@ -67,7 +87,7 @@
                 Call us on <span>1800 693 888</span>
               </a>
             </div>
-          </nav>
+          </nav> -->
         </div>
       </div>
     </div>
@@ -93,7 +113,7 @@
           <img class="d-stencil" src="images/deakin-lockup.svg" alt="PP" />
         </picture>
 
-        <picture>
+        <!-- <picture>
           <source
             srcset="images/shield-side-copy.svg"
             media="(min-width: 568px)"
@@ -103,7 +123,7 @@
             src="images/shape-triangle-solid.svg"
             alt="PP"
           />
-        </picture>
+        </picture> -->
       </div>
       <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-8 col-lg-8 col-lg-offset-2 msg">
         <p>Explore innovative, hands-on learning at Deakin.</p>
@@ -212,6 +232,246 @@
     </div>
     <!-- competition end -->
 
+    <div class="comps-form">
+        <form role="form" action="" method="post" class="registration-form col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-8 col-lg-offset-2">
+            <!-- FeildSet 1 -->
+            <fieldset class="yr-details">
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <p>1/4</p>
+                        <h3>Enter you details:</h3>
+                    </div>
+                    <div class="form-top-right"> <i class="fa fa-user"></i> </div>
+                </div>
+                <div class="form-bottom">
+                    <div class="form-group"> <label class="sr-only" for="form-name">Name</label> <input type="text" name="form-name" placeholder="Name" class="form-name form-control" id="form-name" /> </div>
+                    <div class="form-group"> <label class="sr-only" for="form-mobile">Mobile</label> <input type="text" name="form-mobile" placeholder="Mobile" class="form-mobile form-control" id="form-mobile" /> </div>
+                    <div class="form-group"> <label class="sr-only" for="form-email">Email</label> <input name="form-email" placeholder="Email" class="form-email form-control" id="form-email" type="email"></input> </div>
+                </div>
+                <div class="btn-container">
+                  <button type="button" class="btn btn-next button">Next</button>
+                </div>
+            </fieldset>
+            <!-- FeildSet 2 -->
+            <fieldset>
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <p>2 / 4</p>
+                        <h3>Which best describes you?</h3>
+                    </div>
+                </div>
+                <div class="form-bottom direction-col">
+                    <div class="form-group"> 
+
+                      <div class="radio-option">
+                        <input type="radio" id="form-school-student" name="form-lead-type" value="School Leaver" class="form-email form-control" /> 
+                        <label class="sr-only" for="form-school-student">School student</label>
+                      </div>
+
+                      <div class="radio-option">
+                        <input type="radio" id="form-employed" name="form-lead-type" value="Employed" class="form-email form-control" />
+                        <label class="sr-only" for="form-employed">In the workforce</label>
+                      </div>
+                      <div class="radio-option">
+                        <input type="radio" id="form-TAFE-student" name="form-lead-type" value="TAFE Student" class="form-email form-control" />
+                        <label class="sr-only" for="form-TAFE-student">TAFE student</label> 
+                      </div>
+                      <div class="radio-option">  
+                        <input type="radio" id="form-university-student" name="form-lead-type" value="University Student" class="form-email form-control" />
+                        <label class="sr-only" for="form-university-student">University student</label> 
+                      </div>
+                      <div class="radio-option">
+                        <input type="radio" id="form-parent" name="form-lead-type" value="Parent" class="form-email form-control" />
+                        <label class="sr-only" for="form-parent">Parent or guardian</label>
+                      </div>
+                      <div class="radio-option">
+                        <input type="radio" id="form-career-practitioner" name="form-lead-type" value="Career Practitioner" class="form-email form-control" /> 
+                        <label class="sr-only" for="form-career-practitioner">Careers Practitioner</label> 
+                      </div>
+                   
+                    </div>
+
+                    <div class="form-group iYL">
+                        <h3>Year level</h3>
+                        <div class="radio-option">
+                          <input type="radio" id="yearlessthan7" name="form-year-level" value="&#60;7>">
+                          <label for="yearlessthan7">Less than 7</label> 
+                        </div>
+                        
+                        <div class="radio-option">
+                        <input type="radio" id="year7" name="form-year-level" value="7">
+                         <label for="year7">Year 7</label> 
+                        </div>
+                        <div class="radio-option">
+                          <input type="radio" id="year8" name="form-year-level" value="8">
+                          <label for="year8">Year 8</label> 
+                        </div>
+                        
+                        <div class="radio-option">
+                          <input type="radio" id="year9" name="form-year-level" value="9">
+                          <label for="year9">Year 9</label> 
+                        </div>
+
+                        <div class="radio-option">
+                          <input type="radio" id="year10" name="form-year-level" value="10">
+                          <label for="year10">Year 10</label> 
+                        </div>
+
+                        <div class="radio-option">
+                          <input type="radio" id="year11" name="form-year-level" value="11">
+                          <label for="year11">Year 11</label> 
+                        </div>
+
+                        <div class="radio-option">
+                          <input type="radio" id="year12" name="form-year-level" value="12">
+                          <label for="year12">Year 12</label>
+                        </div>
+                    </div>
+                    <div class="form-group study-level">
+                        <h3>Study level<span class="asterix">*</span></h3>
+
+                        <div class="radio-option">
+                          <input type="radio" id="inputStudyLevel1" name="inputStudyLevel" value="Undergraduate" />
+                          <label for="inputStudyLevel1">Undergraduate (your first degree)</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                          <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
+                          <label for="inputStudyLevel2">Postgraduate</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                          <input type="radio" id="inputStudyLevel3" name="inputStudyLevel" value="Higher Degree Research" />
+                          <label for="inputStudyLevel3">Higher Degree Research</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                  <button type="button" class="btn btn-previous"> Previous </button>
+                  <button type="button" class="btn btn-next">Next</button>
+                </div>
+            </fieldset>
+            <!-- FeildSet 3 -->
+            <fieldset>
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <p>Step 3 / 4</p>
+                        <h3>Which study are interests you?</h3>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-ancm" name="ancm" value="Architecture and construction management">
+                        <label for="form-ancm">Architecture and construction management</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-business" name="form-business" value="Business">
+                        <label for="form-business">Business</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-design" name="form-design" value="Design">
+                        <label for="form-design">Design</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-ent" name="form-ent" value="Education and teaching">
+                        <label for="form-ent">Education and teaching </label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-engineering" name="form-engineering" value="Engineering">
+                        <label for="form-engineering">Engineering</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-elc" name="form-elc" value="English languages courses">
+                        <label for="form-elc">English languages courses</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-environment" name="form-environment" value="Environment">
+                        <label for="form-environment">Environment</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-fnd" name="form-fnd" value="Food, nutrition and dietetics ">
+                        <label for="form-fnd">Food, nutrition and dietetics</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-hsah" name="form-hsah" value="Health sciences and allied health">
+                        <label for="form-hsah">Health sciences and allied health </label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-hssl" name="form-hssl" value="Humanities, social sciences and languages">
+                        <label for="form-hssl">Humanities, social sciences and languages </label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-it" name="form-it" value="Information technology">
+                        <label for="form-it">Information technology</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-law" name="form-law" value="Law">
+                        <label for="form-law">Law</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-mcca" name="form-mcca" value="Media, communication and creative arts">
+                        <label for="form-mcca">Media, communication and creative arts </label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-medicine" name="form-medicine" value="Medicine">
+                        <label for="form-medicine">Medicine</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-nm" name="form-nm" value="Nursing and midwifery">
+                        <label for="form-nm">Nursing and midwifery</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-psychology" name="form-psychology" value="Psychology">
+                        <label for="form-psychology">Psychology</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="fm-sciences" name="fm-sciences" value="Sciences ">
+                        <label for="fm-sciences">Sciences </label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-sport" name="form-sport" value="Sport">
+                        <label for="form-sport">Sport</label>
+                    </div>
+                </div>
+                <div class="btn-container">
+                  <button type="button" class="btn btn-previous"> Previous </button>
+                  <button type="button" class="btn btn-next">Next</button>
+                </div>
+            </fieldset>
+            <!-- FeildSet 4 -->
+            <fieldset>
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <p>Step 4 / 4</p>
+                        <h3>Which open day campus you will attend:</h3>
+                    </div>
+                </div>
+                <div class="form-bottom">
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-bwd" name="form-bwd" value="Melbourne Burwood">
+                        <label for="form-bwd">Melbourne Burwood</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-gwp" name="form-gwp" value="Geelong Waurn Ponds">
+                        <label for="form-gwp">Geelong Waurn Ponds</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-gwf" name="form-gwf" value="Geelong Waterfront">
+                        <label for="form-gwf">Geelong Waterfront</label>
+                    </div>
+                    <div class="checkbox-button">
+                        <input type="checkbox" id="form-wbl" name="form-wbl" value="Warnambool">
+                        <label for="form-wbl">Warnambool</label>
+                    </div>
+                </div>
+                <div class="btn-container">
+                  <button type="button" class="btn btn-previous"> Previous </button>
+                  <button type="submit" class="btn btn-submit">Submit my entry</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
     <!-- manifesto start -->
     <div class="row manifesto">
       <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-11 col-lg-6 col-lg-offset-2 end-xs">
@@ -256,7 +516,7 @@
     <div class="row testimonial-wrapper">
       <!-- Testimonial 1 -->
       <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 testimonial">
-      <div class="col-xs-2">
+      <div class="testimonial-icons__container">
         <img
           class="testimonial-icons"
           src="images/trophy.svg"
@@ -264,7 +524,7 @@
         />
       </div>
 
-      <div class="col-xs-8 testml-msg">
+      <div class="testml-msg">
         <h3>Ranked #1 for student satisfaction in Victoria</h3>
         <p>
           Our students say we consistently go above and beyond to deliver an
@@ -274,7 +534,7 @@
     </div>
       <!-- Testimonial 2 -->
       <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 testimonial">
-      <div class="col-xs-2">
+      <div class="testimonial-icons__container">
         <img
           class="testimonial-icons"
           src="images/connect.svg"
@@ -282,7 +542,7 @@
         />
       </div>
 
-      <div class="col-xs-10 testml-msg">
+      <div class="testml-msg">
         <h3>Our real-world hands-on approach to learning</h3>
         <p>
           Study with academics who work in their fields, and connect with
@@ -292,7 +552,7 @@
     </div>
       <!-- Testimonial 3 -->
       <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2 testimonial">
-      <div class="col-xs-2">
+      <div class="testimonial-icons__container">
         <img
           class="testimonial-icons"
           src="images/checkbox.svg"
@@ -300,7 +560,7 @@
         />
       </div>
 
-      <div class="col-xs-10 testml-msg">
+      <div class="testml-msg">
         <h3>Deakin study makes you career-ready</h3>
         <p>
           We’re ranked #1 university for skills development in Victoria because
@@ -310,7 +570,7 @@
     </div>
       <!-- Testimonial 4 -->
       <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 testimonial">
-      <div class="col-xs-2">
+      <div class="testimonial-icons__container">
         <img
           class="testimonial-icons"
           src="images/ideas.svg"
@@ -318,7 +578,7 @@
         />
       </div>
 
-      <div class="col-xs-10 testml-msg">
+      <div class="testml-msg">
         <h3>An innovative cutting-edge learning experience</h3>
         <p>
           Access technology-rich classrooms and the latest professional tools.
@@ -331,7 +591,7 @@
 
     <!-- quote start -->
     <div class="row quote-wrapper">
-      <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-8 col-lg-offset-3 quote">
+      <div class="col-xs-11 col-xs-offset-1 col-md-offset-2 col-md-10 col-lg-8 col-lg-offset-3 quote">
           <h4>
               Deakin offers very flexible study options to meet everyone's needs. I
               also found the transition from high school to Deakin a positive one.
@@ -351,8 +611,14 @@
 
     <!-- FAQs start -->
     <div class="faqs-wrapper row">
+      <div class="verticle-text">
+          <h2>FAQs</h2>
+          <h2>FAQs</h2>
+          <h2>FAQs</h2>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-8 col-lg-offset-2 faqs">
-          <h2>Frequently asked questions</h2>
+          
+            
       <!-- accordion start -->
           <!-- Panel 1 -->
           <button class="accordion"><span>Not in Year 12?</span></button>

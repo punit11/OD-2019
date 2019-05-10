@@ -1,65 +1,120 @@
 .testimonial-heading {
   h2 {
     @extend %h1;
-    font-size: 5.75rem;
-    margin-bottom: 0;
-    overflow-y: auto;
+    // font-size: 5.75rem;
+    overflow-y: hidden;
     background-color: #fff;
-    overflow: hidden;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+
+    $min_width: 568px;
+    $max_width: 1600px;
+    $min_font: 57px;
+    $max_font: 170px;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
     @include sm {
-      font-size: 10.75rem;
-      margin-bottom: 3rem;
+      // font-size: 10.75rem;
+      // margin-bottom: 3rem;
+      // font-size: 170px;
+      margin: 0 0 1vw 0;
+      padding: 0;
     }
     @include md {
-      font-size: 10vw;
+      // font-size: 10vw;
     }
   }
   h2:nth-child(1) {
-    margin-top: 0;
-    padding-top: 0;
-    line-height: 2.5rem;
-    @include md {
-      line-height: 4.5rem;
+    line-height: 0.75em;
+    height: 0.2em;
+    
+    // background: aliceblue;
+    @include sm {
+      height: 0.27em;
     }
   }
   h2:nth-child(2) {
-    margin-top: -10px;
-    padding-top: 20px;
-    line-height: 3.5rem;
-    @include md {
-      line-height: 5.75rem;
+    line-height: 1em;
+    height: 0.45em;
+    // background: yellow;
+
+    @include sm {
+      height: 0.45em;
     }
   }
   h2:nth-child(3) {
-    margin-top: -10px;
-    padding-top: 10px;
-    line-height: 5.5rem;
-    @include md {
-      line-height: 10.75rem;
+    line-height: 1em;
+    margin-bottom: 0;
+    // height: 1em;
+    // background: pink;
+    // padding-top: 10px;
+    // line-height: 5.5rem;
+    @include sm {
+      height: 0.77em;
+      // height: 1.1em;
     }
   }
 }
+.testimonial {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: flex-start;
+  margin-bottom: 3.2rem;
+  
 
-.testimonial-wrapper {
-  margin: 4rem 0;
-  .testimonial-icons {
+  @include sm {
+    margin-bottom: 3.5rem;
+    align-items: center;
+  }
+
+  @include md {
+    margin-bottom: 5rem;
+  }
+
+  @include lg {
+    margin-bottom: 9.1rem;
+  }
+
+  &-wrapper {
+    margin: 4rem 0;
+    @include sm {
+      margin: 6.7rem 0 14rem;
+    }
+  }
+
+  &-icons {
     background-color: #000;
     padding: 1rem;
-    min-width: 29px;
-    @include md {
-      min-width: 5rem;
+    width: 100%;
+
+
+    @include sm {
+      padding: 2rem;
+    }
+
+    &__container {
+      width: 100%;
+      height: 100%;
+      max-width: 4.8rem;
+      max-height: 4.8rem;
+      background: #000;
+      display: flex;
+      flex: 1 1 100%;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1.4rem;
+
+      @include sm {
+        max-width: 9.8rem;
+        max-height: 9.8rem;
+        margin-right: 2.5rem;
+      }
     }
   }
   h3 {
     @extend %h3;
   }
   p {
-    margin-top: 0;
-  }
-  .testml-msg {
-    margin-bottom: 1.5rem;
-  }
-  .testimonial {
-    display: flex;
+    margin: 0;
   }
 }
