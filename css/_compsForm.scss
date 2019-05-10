@@ -1,0 +1,301 @@
+.comps-form {
+    margin-bottom: 25.0rem;
+    margin-top: 4.0rem;
+
+    form.registration-form {
+        fieldset {
+            background: $light-grey;
+            display: none;
+            border: none;
+            padding: 6% 10%;
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid $light-grey;
+                position: absolute;
+                top: -1.5rem;
+                right: 30%;
+            }
+
+            &.yr-details {
+                label {
+                    display: none;
+                }
+                
+                input {
+                    background: $light-grey;
+                    border: none;
+                    border-bottom: 1px solid #ccc;
+                    min-width: 210px;
+                    height: 2.7rem;
+                    width: 100%;
+
+                    @include xl {
+                        // flex: 1 0 43%;
+                        width: auto;
+                        margin-right: 50px;
+                    }
+        
+                    // @include md {
+                    //     flex: 1 0 27%;
+                    // }
+                }
+
+                .form-group {
+                    @include xl {
+                        flex: 1 1 auto;    
+                    }
+                    
+                }
+            }
+        }
+
+        h3,
+        p {
+            font-family: 'UniversLTStd-BoldCn';
+        }
+
+        p {
+            $min_width: 568px;
+            $max_width: 1200px;
+            $min_font: 16px;
+            $max_font: 20px;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
+            line-height: 1.7em;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 3.2rem;
+            line-height: 3.4rem;
+            margin: 0 0 3rem 0;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        label,
+        input {
+            font-family: "Worldly Regular";
+            font-size: 1.6rem;
+            line-height:2.4rem;
+        }
+
+        .form-bottom {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            
+
+            &.direction-col {
+                flex-direction: column;
+            }
+        }
+
+        .form-group {
+            display: flex;
+            flex: 1 1 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-bottom: 4rem;
+
+            &:last-child() {
+                margin-bottom: 0;
+            }
+        }
+
+        .radio-option {
+            display: flex;
+            flex: 1 1 100%;
+            margin-right: 2.5rem;
+            margin-bottom: 2rem;
+
+            @include sm {
+                flex: 1 0 43%;
+            }
+
+            @include md {
+                flex: 1 0 27%;
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+            
+            label {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:before {
+                    content: "";
+                    width: 2rem;
+                    height: 2rem;
+                    display: inline-block;
+                    background: #fff;
+                    border-radius: 50%;
+                    border: 2px solid #0C8573;
+                    margin-right: 1rem;
+                    transition: all .15s ease-out;
+                }
+            }
+            
+            input {
+                position: absolute;
+                left: -9999px;
+
+                &:checked {
+                    & + label {
+                        &:before {
+                            border: 5px solid #0C8573;
+                            width: 1.4rem;
+                            height: 1.4rem;
+                            line-height: 0;
+                            transition: all .15s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkbox-button {
+            display: flex;
+            flex: 1 1 100%;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            padding-right: 2rem;
+            padding-left: 3.4rem;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            label {
+                position: relative;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:before {
+                    content: "";
+                    background: #fff;
+                    border-radius: 3px;
+                    border: 2px solid #0C8573;;
+                    display: inline-flex;
+                    flex: 0;
+                    height: 2rem;
+                    width: 2rem;
+                    position: relative;
+                    margin-left: -3.4rem;
+                    margin-right: 1rem;
+                    justify-content: center;
+                    align-content: center;
+                    top: 0.5rem;
+                    transition: all .15s ease-out;
+                }
+            }
+
+            input {
+                position: absolute;
+                left: -9999px;
+
+                &:checked {
+                    & + label {
+                        &:before {
+                            background: #0C8573;
+                            position: relative;
+                            transition: all .15s ease-out;
+                        }
+                        &:after {
+                            content: "\e912";
+                            display: inline-block;
+                            font-family: icomoon !important;
+                            -webkit-font-smoothing: antialiased;
+                            font-style: normal;
+                            font-variant: normal;
+                            font-weight: 400;
+                            position: absolute;
+                            speak: none;
+                            text-transform: none;
+                            top: 0.5rem;
+                            left: -2.8rem;
+                            color: #fff;
+                            transition: all .15s ease-out;
+                        }
+                    }
+                }
+            }
+
+            @include sm {
+                flex: 1 0 32%;
+            }
+
+            @include md {
+                flex: 1 0 21%;
+                margin-right: 2.5rem;
+            }
+        }
+    }
+
+    .btn {
+        display: inline-block;
+        vertical-align: top;
+        padding: 16px 30px 18px;
+        min-width: 15.2rem;
+        text-align: center;
+        will-change: background-color,color;
+        transition: all .15s ease-out;
+        font-weight: 600;
+        position: relative;
+        text-transform: uppercase;
+        max-height: 55px;
+        text-decoration: none!important;
+        font-style: normal;
+        font-family: Open Sans,Arial,sans-serif;
+        cursor: pointer;
+        
+        &-next,
+        &-submit {
+            color: #fff!important;
+            background-color: #0c8573;
+            border: none;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            border-radius: 30px;
+
+            &:hover {
+                background-color: #095c4f;
+            }
+        }
+
+        &-previous {
+            color: #4d4d4b!important;
+            background-color: #fff;
+            border: 1px solid #adadad;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            border-radius: 30px;
+            margin-right: 2.5rem;
+
+            &:hover {
+                background-color: #adadad;
+                color: #fff!important;
+            }
+        }
+
+        &-container {
+            position: absolute;
+            bottom: -70px;
+            right: 0px;
+        }
+    }
+}
