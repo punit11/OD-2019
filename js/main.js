@@ -29,7 +29,7 @@
     })
 
     // Make site scroll again once video is closed.
-    $(document).on('click','.js-modal-video-dismiss-btn', function(){
+    $(document).on('click','.js-modal-video-dismiss-btn, .modal-video', function(){
       if($('html').hasClass('modal-noscroll')) {
         $('html').removeClass('modal-noscroll');
       }
