@@ -1,5 +1,9 @@
 .comps {
   padding: 1rem;
+  #comps-button{
+    margin-top: 2rem;
+    display: inline-block;
+};
   @include sm {
     margin-top: -12rem;
   }

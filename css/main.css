@@ -1611,6 +1611,11 @@ body {
   padding: 1rem;
 }
 
+.comps #comps-button {
+  margin-top: 2rem;
+  display: inline-block;
+}
+
 @media (min-width: 576px) {
   .comps {
     margin-top: -12rem;
@@ -1688,6 +1693,11 @@ body {
   }
 }
 
+.comps-form form.registration-form fieldset label.error {
+  color: #ff0000;
+  font-size: 1.45rem;
+}
+
 .comps-form form.registration-form h3,
 .comps-form form.registration-form p {
   font-family: 'UniversLTStd-BoldCn';
@@ -1738,6 +1748,7 @@ body {
           flex: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .comps-form form.registration-form .form-bottom.direction-col {
@@ -1756,15 +1767,19 @@ body {
           flex: 1 1 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 4rem;
 }
 
 .comps-form form.registration-form .form-group:last-child {
   margin-bottom: 0;
+}
+
+.comps-form form.registration-form .form-group.iYL, .comps-form form.registration-form .form-group.study-level {
+  display: none;
 }
 
 .comps-form form.registration-form .radio-option {
