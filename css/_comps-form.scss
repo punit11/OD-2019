@@ -53,6 +53,10 @@
                     
                 }
             }
+            label.error {
+                color: $red;
+                font-size: 1.45rem;
+            }
         }
 
         h3,
@@ -80,7 +84,7 @@
 
         label,
         input {
-            font-family: "Worldly Regular";
+            font-family:$font-worldly-regular;
             font-size: 1.6rem;
             line-height:2.4rem;
         }
@@ -89,6 +93,7 @@
             display: flex;
             flex: 1;
             flex-wrap: wrap;
+            margin-top: 1rem;
             
 
             &.direction-col {
@@ -100,12 +105,14 @@
             display: flex;
             flex: 1 1 100%;
             flex-wrap: wrap;
-            flex-direction: row;
+            flex-direction: column;
             margin-bottom: 4rem;
 
             &:last-child() {
                 margin-bottom: 0;
             }
+          
+            &.iYL, &.study-level {display: none;}
         }
 
         .radio-option {
