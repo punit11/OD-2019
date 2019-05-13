@@ -50,4 +50,20 @@ a.button {
   margin:0;
 }
 
+.mobile-version {
+  display: block;
+  @include lg {
+    display: none;
+  }
+}
 
+.desktop-version {
+  display: none;
+  @include lg {
+    display: block;
+  }
+}
+
+.modal-noscroll {
+  overflow: hidden;
+}

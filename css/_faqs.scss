@@ -1,46 +1,64 @@
 .faqs-wrapper {
     margin: 1rem;
+    position: relative;
+
+    @include lg {   
+        min-height: 500px;
+    }
+    
     h2 {
         @extend %h2;
+
+        &.mobile-version {
+            line-height: 1.06em;
+            letter-spacing: -0.5px;
+        }
+    }
+    
+    .verticle-text {
+        h2 {
+            $min_width: 768px;
+            $max_width: 1600px;
+            $min_font: 101px;
+            $max_font: 202px;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+            margin: 0;
+            line-height: 0.85em;
+            text-transform: none;
+            font-weight: normal;
+            letter-spacing: 3.4px;
+            color: $white;
+            -webkit-text-stroke: 3px $light-grey;
+            text-stroke: 3px $light-grey;
+
+            
+
+            &:last-child {
+                -webkit-text-stroke: 3px $black;
+                text-stroke: 3px $black;
+                color: #000;
+            }
+        }
+
+        &.desktop-version {
+            position: absolute;
+            left: -2rem;
+            top: 0;
+            z-index: -1;
+        }
+    }
+
+    .faqs {
+
+        @include md {
+            margin-top: 4rem;
+            padding-left: 4rem;
+        }
+        
     }
 }
-.accordion {
-    background-color: #fff;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.5rem;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    border-top: 1px solid #eee;
-    span {
-        @extend %h3;
-    }
-    &:after {
-        content: "\2795";
-        color: #fff;
-        float: right;
-        margin-left: 5px;
-        border-radius: 20px;
-        background-color: #0c8573;
-        padding: .65rem;
-        text-transform: uppercase;
-        color: transparent;
-        text-shadow: 0 0 0 #fff;
-        font-family: $font-stack-os-regular;
-    }
-    &.active+.panel {
-        max-height: 250px;
-    }
-    &.active:after {
-        content: "\2796";
-        background-color: #000;
-    }
-  }
+
   .panel {
     padding: 0 18px;
     background-color: #fff;

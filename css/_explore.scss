@@ -3,12 +3,24 @@
     min-height: 250px;
     p {
         @extend %h1;
+        font-size: 4.8rem;
+        line-height: 5.2rem;
+        letter-spacing: -0.8px;
+        width: 259px;
+        text-align: right;
+        margin-right: 2.4rem;
     }
 
-      @include lg {
-        background: #ffffff url("../images/campus-video-v-1@2x.jpg") no-repeat center;
-        width: 100%;
-        min-height: 800px;
-        background-size: cover;
-      }
+    @include lg {
+      background: #ffffff url("../images/campus-video-v-1@2x.jpg") no-repeat center;
+      width: 100%;
+      min-height: 800px;
+      background-size: cover;
+    }
+
+    .video-cta {
+      display: flex;
+      flex: 1;
+      cursor: pointer;
+    }
 }
