@@ -226,7 +226,7 @@
       <div class="comps-form">
          <form id="comps-form" role="form" class="registration-form col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-8 col-lg-offset-2">
             <!-- FeildSet 1 -->
-            <fieldset class="yr-details">
+            <fieldset id="feildset1" class="yr-details">
                <div class="form-top">
                   <div class="form-top-left">
                      <p>1/4</p>
@@ -240,11 +240,11 @@
                   <div class="form-group"> <label class="sr-only" for="form-email">Email</label> <input name="form-email" placeholder="Email" class="form-email form-control" id="form-email" type="email"></input> </div>
                </div>
                <div class="btn-container">
-                  <button type="button" class="btn btn-next button">Next</button>
+                  <button data-id="#feildset2" type="button" class="btn btn-next button">Next</button>
                </div>
             </fieldset>
             <!-- FeildSet 2 -->
-            <fieldset>
+            <fieldset id="feildset2">
                <div class="form-top">
                   <div class="form-top-left form-stutype">
                      <p>2 / 4</p>
@@ -331,11 +331,11 @@
                </div>
                <div class="btn-container">
                   <button type="button" class="btn btn-previous"> Previous </button>
-                  <button type="button" class="btn btn-next">Next</button>
+                  <button data-id="#feildset3" type="button" class="btn btn-next">Next</button>
                </div>
             </fieldset>
             <!-- FeildSet 3 -->
-            <fieldset>
+            <fieldset id="feildset3">
                <div class="form-top">
                   <div class="form-top-left form-title-ia">
                      <p>Step 3 / 4</p>
@@ -418,11 +418,11 @@
                </div>
                <div class="btn-container">
                   <button type="button" class="btn btn-previous"> Previous </button>
-                  <button type="button" class="btn btn-next">Next</button>
+                  <button data-id="#feildset4" type="button" class="btn btn-next">Next</button>
                </div>
             </fieldset>
             <!-- FeildSet 4 -->
-            <fieldset>
+            <fieldset id="feildset4">
                <div class="form-top">
                   <div class="form-top-left form-title-location">
                      <p>Step 4 / 4</p>
@@ -804,8 +804,6 @@
       <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
       <script src="js/comps-form.js"></script>
       <script src="js/form-validation.js"></script>
-      
-      <script src="js/compsForm.js"></script>
       <script src="js/jquery-modal-video.min.js"></script>
 
              <!-- form-validation.js -->
