@@ -1665,6 +1665,7 @@ body {
 }
 
 .comps-form {
+  display: none;
   margin-bottom: 25.0rem;
   margin-top: 4.0rem;
 }

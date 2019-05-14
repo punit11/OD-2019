@@ -1,5 +1,6 @@
 $(function() {
   $("#comps-button").on("click", function() {
+    $('.comps-form').fadeIn();
     $(".registration-form fieldset:first-child").fadeIn("slow");
     return false;
   });
