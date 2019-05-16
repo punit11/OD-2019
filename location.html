@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
     <script src="js/jquery-3.4.0.min.js"></script>
     <script src="js/main.js"></script>
   </head>
@@ -232,9 +233,9 @@
           <div class="step-container flexContainer flexContainer-mobile-wrap ">
              <div class="option-container flexContainer flexContainer--half flexContainer--column">
                   <h5>Create your own Day Plan</h5>
-                  <p>Select a course area you’re interested in to view related sessions.</p>
+                  <p style="padding-right: 2rem;">Select a course area you’re interested in to view related sessions.</p>
                   
-                  <select name="course-area" id="course-area">
+                  <select name="course-area" id="course-area" class="od-select">
                      <option value="architecture">Architecture & Built Environment</option>
                      <option value="health">Allied Health and Health Sciences</option>
                      <option value="business">Business</option>
@@ -256,7 +257,7 @@
                   <h5 class="orange">Choose a ready-made Day Plan</h5>
                   <p><span class="orange">New for 2019!</span> Quickly and easily plan your day from ready-made itineries  based on popular courses.</p>
                   
-                  <select name="course-area" id="course-area">
+                  <select name="popular-courses" id="popular-courses" class="od-select">
                      <option value="architecture">Architecture & Built Environment</option>
                      <option value="health">Allied Health and Health Sciences</option>
                      <option value="business">Business</option>
@@ -1453,7 +1454,7 @@
       
       <script src="js/compsForm.js"></script>
       <script src="js/jquery-modal-video.min.js"></script>
-      <!-- <script src="js/vendors/nanoScrollbar.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
       <script src="js/vendors/jquery.scrollbar.min.js"></script>
       <script src="js/vendors/owl.carousel.min.js"></script>
 

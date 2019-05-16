@@ -66,5 +66,31 @@
 
     }
 
+    // Custom Select using select2 plugin
+    var modifySelect = function(){
+      $('.od-select').select2({
+        minimumResultsForSearch: Infinity
+      });
+      console.log('Select2 implemented and finished');
+    }
+    
+    // var modifyOptions = function(){
+    //   $('.select2-results__options').scrollbar();
+    //   console.log('Scrollbars implemented and finished');
+    // }
+
+
+
+    modifySelect();
+    $.when(modifySelect).done(function(){
+      $('.od-select').fadeIn();
+    });
+
+    $('select').on('select2:open', function(e){
+      $('.select2-results__options').scrollbar().parent().addClass('scrollbar-outer');
+    });
+
+    
+
 
   }); // on-ready end
