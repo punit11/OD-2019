@@ -1,0 +1,189 @@
+.eventcard {
+    background: $white;
+    color: $charcoal;
+    padding: 2.4rem 2.8rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: left;
+
+    &__header {
+        display: flex;
+        flex: 0 0 100%;
+        flex-wrap: nowrap;
+
+        .add {
+            @include flex-center;
+            border: 2px solid #c9c9c9;
+            border-radius: 50%;
+            display: flex;
+            flex: 0 0 auto;
+            font-size: 1.5rem;
+            height: 4rem;
+            width: 4rem;
+            margin-left: 1.9rem;
+            margin-right: -0.8rem;
+        }
+    }
+
+    h3 {
+        font-family: $font-worldly-bold;
+        font-size: 1.8rem;
+        line-height: 1.44em;
+    }
+
+    span {
+        font-family: $font-worldly-light;
+        font-size: 1.4rem;
+        line-height: 1.79em;
+        display: flex;
+        margin-bottom: 0.5rem;
+        flex: 1;
+        align-items: center;
+    }
+
+    .icon-pin,
+    .icon-clock {
+        width: 1.5rem;
+        height: 1.7rem;
+        margin-right: 1rem;
+
+        use {
+            fill: $magenta;
+        }
+    }
+}
+
+.module-with-carousel {
+    text-align: center;
+
+    .owl {
+        &-item {
+            opacity: 0.2;
+            transition: opacity 0.3s ease;
+            z-index: 100;
+
+            &.active.center {
+                opacity: 1;
+
+                & + .active {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-nav {
+            position: absolute;
+            top: calc(50% - 25px);
+            display: none;
+            flex: 0 0 100%;
+            justify-content: space-between;
+            width: 100%;
+            z-index: 0;
+
+            @include lg {
+                display: flex;
+            }
+
+        
+            button {
+                height: 50px;
+                width: 50px;
+                background: url("../images/white-downarrow.svg") no-repeat center !important;
+                background-color: $black!important;
+                display: block;
+                position: relative;
+
+                &.owl-prev {
+                    transform: rotate(90deg);
+                    left: -3.1rem;
+                }
+
+                &.owl-next {
+                    transform: rotate(-90deg);
+                    right: -3.1rem;
+                }
+            }
+
+            .owl-dots {
+                display: flex;
+                background: pink;
+                flex: 0 0 100%;
+                flex-direction: row;
+                text-align: center;
+
+                
+            }            
+        }
+
+        &-carousel {
+            .owl-stage {
+                display: flex;
+                left: -22px;
+
+                @include sm {
+                    left: -140px;
+                }
+
+                @include md {
+                    left: -190px;
+                }
+                
+            }
+            .owl-dots {
+                text-align: center;
+                margin: 2.5rem 0 4rem;
+            }
+            button {
+                &.owl-dot {
+                    height: 0.7rem;
+                    width: 0.7rem;
+                    background: #ffffff;
+                    border-radius: 50%;
+                    margin: 5px;
+                    padding: 0;
+                    opacity: 0.2;
+                    pointer: cursor;
+
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .accordion {
+        padding: 0;
+        margin-top: 1rem;
+        position: relative;
+        border-top: none;
+
+        span {
+            display:inline-block;
+            color: $teal;
+            font-family: $font-stack-os-bold;
+            font-size: 1.4rem;
+            line-height: 1em;
+        }
+
+        svg {
+            width: 1.2rem;
+            height: 14px;
+            position: absolute;
+            left: 89px;
+            transform: 0.2s all ease;
+        }
+
+        &.active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    
+    .panel {
+        padding: 0;
+    }
+}
+

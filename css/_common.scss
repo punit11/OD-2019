@@ -67,3 +67,32 @@ a.button {
 .modal-noscroll {
   overflow: hidden;
 }
+
+.flexContainer {
+  display: flex;
+  flex: 1;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--half {
+    flex: 1 1 100%;
+
+    @include md {
+      flex: 1 1 50%;
+    }
+  }
+
+  &-mobile-wrap {
+    flex-wrap: wrap;
+
+    @include md {
+      flex-wrap: nowrap;
+    }
+  }
+}

@@ -22,10 +22,22 @@
       <div class="hidden">
          <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="icon-burger" viewBox="0 0 16 12">
-               <svg viewBox="0 0 16 12">
                   <path d="M8 12h7a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2zM1 2h14a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2zm0 5h14a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2z" fill="#FFF"/>
-               </svg>
             </symbol>
+
+            <symbol id="icon-pin" viewBox="0 0 15 17">
+                  <ellipse cx="7.5" cy="7.412" rx="2.143" ry="2.118"/>
+                  <path d="M6.75 16.624c-.107-.106-4.5-3.918-4.5-4.024C.75 11.33 0 9.424 0 7.412 0 3.282 3.321 0 7.5 0S15 3.282 15 7.412c0 2.012-.75 3.917-2.25 5.294-.107.106-4.393 3.918-4.5 4.023a1.158 1.158 0 0 1-1.5-.105zm-2.893-5.295L7.5 14.506l3.643-3.177c1.071-1.058 1.714-2.329 1.714-3.811 0-2.965-2.357-5.294-5.357-5.294S2.143 4.447 2.143 7.412c0 1.482.643 2.859 1.714 3.917 0-.105 0-.105 0 0z"/>
+            </symbol>
+
+            <symbol id="icon-clock" viewBox="0 0 16 16">
+               <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"/>
+               <path d="M9 4H7v5h5V7H9z"/>
+            </symbol>
+
+            <symbol id="icon-arrow" viewBox="0 0 13 8">
+               <path d="M6.5 7a.62.62 0 0 1-.426-.172L1 2.084 1.851 1 6.5 5.347 11.149 1 12 2.084 6.926 6.828A.62.62 0 0 1 6.5 7z"/>
+             </symbol>
          </svg>
       </div>
       <!-- End SVG Symbols -->
@@ -209,14 +221,740 @@
 
       <!-- Plan your day -->
       <div class="row planyrday-wrapper">
-        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
-          <h2>Plan your day</h2>
-          <p class="p18">Create a Day Plan to get the most out of your open day experience. Choose from information sessions, tours and experiences that match your course area and add them to your Day Planner.</p>
+        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-8 col-lg-offset-2">
+           <div class="col-xs-12 col-md-10 intro">
+               <h2>Plan your day</h2>
+               <p class="p18">Create a Day Plan to get the most out of your open day experience. Choose from information sessions, tours and experiences that match your course area and add them to your Day Planner.</p>
+           </div>
+          
+          
+          <h4>Step 1</h4>
+          <div class="step-container flexContainer flexContainer-mobile-wrap ">
+             <div class="option-container flexContainer flexContainer--half flexContainer--column">
+                  <h5>Create your own Day Plan</h5>
+                  <p>Select a course area you’re interested in to view related sessions.</p>
+                  
+                  <select name="course-area" id="course-area">
+                     <option value="architecture">Architecture & Built Environment</option>
+                     <option value="health">Allied Health and Health Sciences</option>
+                     <option value="business">Business</option>
+                     <option value="education">Education and Teaching</option>
+                     <option value="engineering">Engineering</option>
+                     <option value="environment">Environment</option>
+                     <option value="food">Food, Nutrition & Dietetics</option>
+                     <option value="science">Global Science and Technology Program</option>
+                     <option value="humanities">Humanities and Social Sciences<</option>
+                     <option value="infotech">Information Technology</option>
+                  </select>
+             </div>
+
+             <div class="seperator-or">
+                <span>or</span>
+             </div>
+
+             <div class="option-container flexContainer flexContainer--half flexContainer--column">
+                  <h5 class="orange">Choose a ready-made Day Plan</h5>
+                  <p><span class="orange">New for 2019!</span> Quickly and easily plan your day from ready-made itineries  based on popular courses.</p>
+                  
+                  <select name="course-area" id="course-area">
+                     <option value="architecture">Architecture & Built Environment</option>
+                     <option value="health">Allied Health and Health Sciences</option>
+                     <option value="business">Business</option>
+                     <option value="education">Education and Teaching</option>
+                     <option value="engineering">Engineering</option>
+                     <option value="environment">Environment</option>
+                     <option value="food">Food, Nutrition & Dietetics</option>
+                     <option value="science">Global Science and Technology Program</option>
+                     <option value="humanities">Humanities and Social Sciences<</option>
+                     <option value="infotech">Information Technology</option>
+                  </select>
+             </div>
+            </div><!-- /.step-container -->
+            
+            <h4>Step 2</h4>
+            <div class="step-container flexContainer flexContainer--column">
+               <div class="refine">
+                  Show sessions :
+                  <ul>
+                     <ol class="selected">All</ol>
+                     <ol>All day</ol>
+                     <ol>Morning</ol>
+                     <ol>Afternoon</ol>
+                  </ul>
+               </div>
+
+               <!-- Module with carousel -->
+               <div class="module-with-carousel">
+                  <h5>Course information sessions (nn)</h5>
+                  <p>Sessions designed to to give you everything you need to know about studying your course</p>
+   
+                  <div class="owl-carousel owl-theme">
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <button class="add">+</button>
+                        </div>
+                        
+                        <span class="where">
+                           <svg class="icon-pin">
+                              <use href="#icon-pin" xlink:href="#icon-pin"></use>
+                           </svg>
+                           Building A, foyer (Level 1)
+                        </span>
+                        <span class="when">
+                           <svg class="icon-clock">
+                              <use href="#icon-clock" xlink:href="#icon-clock"></use>
+                           </svg>
+                           Every 30 mins from 9:30am
+                        </span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                        
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+                        
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Module with carousel -->
+               <div class="module-with-carousel">
+                  <h5>Tours & experiences (nn)</h5>
+                  <p>These happen throughout the day, so check them out in between the course information sessions.</p>
+      
+                  <div class="owl-carousel owl-theme">
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <button class="add">+</button>
+                        </div>
+                        
+                        <span class="where">
+                           <svg class="icon-pin">
+                              <use href="#icon-pin" xlink:href="#icon-pin"></use>
+                           </svg>
+                           Building A, foyer (Level 1)
+                        </span>
+                        <span class="when">
+                           <svg class="icon-clock">
+                              <use href="#icon-clock" xlink:href="#icon-clock"></use>
+                           </svg>
+                           Every 30 mins from 9:30am
+                        </span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                        
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+                        
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="eventcard">
+                        <div class="eventcard__header">
+                           <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                           <span class="add">+</span>
+                        </div>
+                        
+                        <span class="where">Building A, foyer (Level 1)</span>
+                        <span class="when">Every 30 mins from 9:30am</span>
+
+                        <div>
+                           <button class="accordion">
+                              <span>Show more</span>
+                              <svg class="icon-arrow">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                           </button>
+                           
+                           <div class="panel">
+                              <p class="body">
+                              You can apply directly to Deakin for one course, provided you've
+                              not already submitted any applications through VTAC. But if you're
+                              applying for more than one course, you must apply through VTAC.
+                                 <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                    <u>Find out how to apply direct</u>
+                                 </a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- </div> -->
+
+                     
+               </div>
+
+                  <!-- Module with carousel -->
+               <div class="module-with-carousel">
+                     <h5>General information sessions (nn)</h5>
+                     <p>Want to learn more about studying abroad, managing finance or information for parents? You can find these sessions here.</p>
+         
+                        <div class="owl-carousel owl-theme">
+                           <div class="eventcard">
+                              <div class="eventcard__header">
+                                 <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                                 <button class="add">+</button>
+                              </div>
+                              
+                              <span class="where">
+                                 <svg class="icon-pin">
+                                    <use href="#icon-pin" xlink:href="#icon-pin"></use>
+                                 </svg>
+                                 Building A, foyer (Level 1)
+                              </span>
+                              <span class="when">
+                                 <svg class="icon-clock">
+                                    <use href="#icon-clock" xlink:href="#icon-clock"></use>
+                                 </svg>
+                                 Every 30 mins from 9:30am
+                              </span>
+      
+                              <div>
+                                 <button class="accordion">
+                                    <span>Show more</span>
+                                    <svg class=arrowburger">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                                 </button>
+                                 
+                                 <div class="panel">
+                                    <p class="body">
+                                    You can apply directly to Deakin for one course, provided you've
+                                    not already submitted any applications through VTAC. But if you're
+                                    applying for more than one course, you must apply through VTAC.
+                                       <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                          <u>Find out how to apply direct</u>
+                                       </a>
+                                    </p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           <div class="eventcard">
+                              <div class="eventcard__header">
+                                 <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                                 <span class="add">+</span>
+                              </div>
+                              <span class="where">Building A, foyer (Level 1)</span>
+                              <span class="when">Every 30 mins from 9:30am</span>
+                              
+                              <div>
+                                 <button class="accordion">
+                                    <span>Show more</span>
+                                    <svg class=arrowburger">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                                 </button>
+                                 
+                                 <div class="panel">
+                                    <p class="body">
+                                    You can apply directly to Deakin for one course, provided you've
+                                    not already submitted any applications through VTAC. But if you're
+                                    applying for more than one course, you must apply through VTAC.
+                                       <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                          <u>Find out how to apply direct</u>
+                                       </a>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="eventcard">
+                              <div class="eventcard__header">
+                                 <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                                 <span class="add">+</span>
+                              </div>
+                              <span class="where">Building A, foyer (Level 1)</span>
+                              <span class="when">Every 30 mins from 9:30am</span>
+      
+                              <div>
+                                 <button class="accordion">
+                                    <span>Show more</span>
+                                    <svg class=arrowburger">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                                 </button>
+                                 
+                                 <div class="panel">
+                                    <p class="body">
+                                    You can apply directly to Deakin for one course, provided you've
+                                    not already submitted any applications through VTAC. But if you're
+                                    applying for more than one course, you must apply through VTAC.
+                                       <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                          <u>Find out how to apply direct</u>
+                                       </a>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="eventcard">
+                              <div class="eventcard__header">
+                                 <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                                 <span class="add">+</span>
+                              </div>
+                              
+                              <span class="where">Building A, foyer (Level 1)</span>
+                              <span class="when">Every 30 mins from 9:30am</span>
+      
+                              <div>
+                                 <button class="accordion">
+                                    <span>Show more</span>
+                                    <svg class=arrowburger">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                                 </button>
+                                 
+                                 <div class="panel">
+                                    <p class="body">
+                                    You can apply directly to Deakin for one course, provided you've
+                                    not already submitted any applications through VTAC. But if you're
+                                    applying for more than one course, you must apply through VTAC.
+                                       <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                          <u>Find out how to apply direct</u>
+                                       </a>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="eventcard">
+                              <div class="eventcard__header">
+                                 <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                                 <span class="add">+</span>
+                              </div>
+                              
+                              <span class="where">Building A, foyer (Level 1)</span>
+                              <span class="when">Every 30 mins from 9:30am</span>
+      
+                              <div>
+                                 <button class="accordion">
+                                    <span>Show more</span>
+                                    <svg class=arrowburger">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                                 </button>
+                                 
+                                 <div class="panel">
+                                    <p class="body">
+                                    You can apply directly to Deakin for one course, provided you've
+                                    not already submitted any applications through VTAC. But if you're
+                                    applying for more than one course, you must apply through VTAC.
+                                       <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                          <u>Find out how to apply direct</u>
+                                       </a>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="eventcard">
+                              <div class="eventcard__header">
+                                 <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                                 <span class="add">+</span>
+                              </div>
+                              
+                              <span class="where">Building A, foyer (Level 1)</span>
+                              <span class="when">Every 30 mins from 9:30am</span>
+      
+                              <div>
+                                 <button class="accordion">
+                                    <span>Show more</span>
+                                    <svg class=arrowburger">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                                 </button>
+                                 
+                                 <div class="panel">
+                                    <p class="body">
+                                    You can apply directly to Deakin for one course, provided you've
+                                    not already submitted any applications through VTAC. But if you're
+                                    applying for more than one course, you must apply through VTAC.
+                                       <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                          <u>Find out how to apply direct</u>
+                                       </a>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="eventcard">
+                              <div class="eventcard__header">
+                                 <h3>Returning to study - mature-age students and non-Year 12 students</h3>
+                                 <span class="add">+</span>
+                              </div>
+                              
+                              <span class="where">Building A, foyer (Level 1)</span>
+                              <span class="when">Every 30 mins from 9:30am</span>
+      
+                              <div>
+                                 <button class="accordion">
+                                    <span>Show more</span>
+                                    <svg class=arrowburger">
+                                 <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                              </svg>
+                                 </button>
+                                 
+                                 <div class="panel">
+                                    <p class="body">
+                                    You can apply directly to Deakin for one course, provided you've
+                                    not already submitted any applications through VTAC. But if you're
+                                    applying for more than one course, you must apply through VTAC.
+                                       <a data-analytics="cop_find_how_to_apply_direct" href="//www.deakin.edu.au/courses/how-to-apply" target="_blank">
+                                          <u>Find out how to apply direct</u>
+                                       </a>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               
+            </div><!-- step-container -->
+            
+          </div><!-- planyrday-wrapper -->
+          
         </div>
-
-        <h4>Step 1</h4>
-
-
         
       </div><!-- /.planyrday-wrapper -->
       <!-- Plan your day end -->
@@ -553,7 +1291,7 @@
             </div>
          </div>
          <!-- wrapper end -->
-      </div>
+      {# </div> #}
       <!-- FAQs end -->
 
       <!-- bottom nav start -->
@@ -715,7 +1453,9 @@
       
       <script src="js/compsForm.js"></script>
       <script src="js/jquery-modal-video.min.js"></script>
-      <script src="js/nanoScrollbar.min.js"></script>
+      <!-- <script src="js/vendors/nanoScrollbar.min.js"></script> -->
+      <script src="js/vendors/jquery.scrollbar.min.js"></script>
+      <script src="js/vendors/owl.carousel.min.js"></script>
 
 
       <!-- form-validation.js -->
