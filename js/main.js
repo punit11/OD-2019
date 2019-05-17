@@ -19,7 +19,7 @@
     $(".js-modal-btn").modalVideo({
       youtube:{
         autoplay:1,
-				controls:0,
+				controls:1,
         nocookie: true,
 			}
     });
@@ -69,7 +69,8 @@
     // Custom Select using select2 plugin
     var modifySelect = function(){
       $('.od-select').select2({
-        minimumResultsForSearch: Infinity
+        minimumResultsForSearch: Infinity,
+        width: 'resolve'
       });
       console.log('Select2 implemented and finished');
     }

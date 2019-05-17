@@ -1,4 +1,4 @@
-.testimonial-heading {
+.custom-heading {
   h2 {
     @extend %h1;
     // font-size: 5.75rem;
@@ -14,10 +14,8 @@
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
     @include sm {
-      // font-size: 10.75rem;
-      // margin-bottom: 3rem;
-      // font-size: 170px;
-      margin: 0 0 1vw 0;
+      // margin: 0 0 1vw 0;
+      margin: 0 0 0.55vw 0;
       padding: 0;
     }
     @include md {

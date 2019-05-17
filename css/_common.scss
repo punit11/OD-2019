@@ -91,7 +91,7 @@ a.button {
   &-mobile-wrap {
     flex-wrap: wrap;
 
-    @include md {
+    @include lg {
       flex-wrap: nowrap;
     }
   }

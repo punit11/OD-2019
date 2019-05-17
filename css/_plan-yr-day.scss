@@ -1,8 +1,14 @@
 .planyrday-wrapper {
     background: $black;
     color: $white;
-    padding-top: 7.2rem;
-    padding-bottom: 17.8rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    position: relative;
+
+    @include md {
+        padding-top: 7.2rem;
+        padding-bottom: 14.8rem;
+    }
 
     .intro {
         padding-left: 0;
@@ -15,9 +21,18 @@
 
     h2 {
         @extend %h1;
+        $min_width: 768px;
+        $max_width: 1200px;
+        $min_font: 32px;
+        $max_font: 68px;
+
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
         color: $yellow;
-        font-size: 6.8rem;
-        line-height: 6.2rem;
+        // font-size: 6.8rem;
+        // line-height: 6.2rem;
+        letter-spacing: -0.5px;
+        margin: 0 0 3.7rem;
     }
 
     h4 {
@@ -88,24 +103,55 @@
         }
 
         .option-container {
-            padding: 3rem 0;
+            padding: 1.5rem 0 4.3rem;
 
             &:first-child {
-                border-right: 1px solid $black;
-                padding-right: 8.4rem;
+                border-bottom: 1px solid $black;
             }
 
             &:last-child {
-                border-left: 1px solid $black;
-                padding-left: 8.4rem;
+                border-top: 1px solid $black;
+                padding-top: 4.3rem;
             }
 
-            p > .orange {
-                text-transform: uppercase;
-                color: $orange;
-                font-family: $font-stack-xl;
-                line-height: 1.71em;
+            @include lg {
+                padding: 3rem 0;
+
+                &:first-child {
+                    border-right: 1px solid $black;
+                    padding-right: 5%;
+
+                    p {
+                        max-width: 40rem;
+                    }
+                }
+    
+                &:last-child {
+                    border-left: 1px solid $black;
+                    padding-left: 5%;
+                    padding-top: 3rem;
+                }
             }
+            
+            p {
+                margin: 0 0 1rem 0;
+
+                & > .orange {
+                    text-transform: uppercase;
+                    color: $orange;
+                    font-family: $font-stack-xl;
+                    line-height: 1.71em;
+                }
+            }
+
+            &.flexContainer--half {
+                flex: 1 1 100%;
+
+                @include lg {
+                    flex: 1 1 50%;
+                }
+            }
+            
         }
 
         .seperator {
@@ -119,8 +165,17 @@
                 position: absolute;
                 display: flex;
                 flex: 0 0 auto;
-                top: calc(50% - 23px);
+                top: calc(50% - 37px);
                 left: calc(50% - 23px);
+
+                @media only screen and (min-width: 694px) {
+                    top: calc(50% - 37px);
+                }
+
+                @include lg {
+                    top: calc(50% - 23px);
+                    left: calc(50% - 23px);
+                }
 
                 span {
                     font-family: $font-worldly-bold;
@@ -148,7 +203,7 @@
             margin-left: -1rem;
             width: calc(100% + 2rem);
             
-            @include md {
+            @include lg {
                 margin-left: -4rem;
                 width: calc(100% + 8rem);
             }
@@ -176,5 +231,30 @@
 
         }
     }
-    
+}
+
+.sessions-added {
+    align-items: center;
+    background: $teal;
+    bottom: 0;
+    display: flex;
+    flex: 0 0 100%;
+    font-family: $font-stack-os-regular;
+    font-size: 1.6rem;
+    height: 74px;
+    justify-content: center;
+    line-height: 1.5em;
+    margin-top: 10rem;
+    position: sticky;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+
+    @include md {
+        text-align: left;
+    }
+
+    .sessions {
+        margin-right: 1rem;
+    }
 }
