@@ -1504,6 +1504,37 @@ body {
   font-size: 1.8rem;
 }
 
+.hero-banner.location-page {
+  background: #007d9b;
+}
+
+.hero-banner.location-page .hero-pic {
+  position: relative;
+  z-index: 0;
+}
+
+.hero-banner.location-page .hero-pic:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 11.8rem;
+  height: 11.8rem;
+  background: #ffffff;
+  border-radius: 50%;
+  top: 4rem;
+  left: -4rem;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  .hero-banner.location-page h1 {
+    padding-right: 10rem;
+  }
+  .hero-banner.location-page h1 span {
+    margin-top: 0;
+  }
+}
+
 .magenta {
   background-color: #c74298;
 }

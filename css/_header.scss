@@ -35,5 +35,38 @@
       font-family: $font-worldly-light;
       font-size: 1.8rem;
   }
+
+  &.location-page {
+    background: $blue;
+
+    .hero-pic {
+      position: relative;
+      z-index: 0;
+      
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 11.8rem;
+        height: 11.8rem;
+        background: $white;
+        border-radius: 50%;
+        top: 4rem;
+        left: -4rem;
+        z-index: -1;
+      }
+    }
+    
+    @include lg {
+      h1 {
+        padding-right: 10rem;
+
+        span {
+          margin-top: 0;
+        }
+      }
+    }
+ 
+  }
 }
 
