@@ -47,7 +47,7 @@
       responsiveClass:true,
       responsive:{
         0: {
-          items: 1.15
+          items: 3
         },
         576: {
           items: 2
@@ -75,13 +75,6 @@
       console.log('Select2 implemented and finished');
     }
     
-    // var modifyOptions = function(){
-    //   $('.select2-results__options').scrollbar();
-    //   console.log('Scrollbars implemented and finished');
-    // }
-
-
-
     modifySelect();
     $.when(modifySelect).done(function(){
       $('.od-select').fadeIn();
@@ -91,7 +84,5 @@
       $('.select2-results__options').scrollbar().parent().addClass('scrollbar-outer');
     });
 
-    
-
-
+  
   }); // on-ready end

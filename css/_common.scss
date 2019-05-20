@@ -4,11 +4,14 @@ html {
   overflow-x: hidden;
   font-size: 62.5%;
 }
-body p {
-  font-family: $font-worldly-light;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  overflow-x: hidden;
+body {
+  // overflow-x: hidden; 
+  p {
+    font-family: $font-worldly-light;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    overflow-x: hidden;
+  }
 }
 
 a.button {
@@ -74,10 +77,50 @@ a.button {
 
   &--column {
     flex-direction: column;
+
+    &__mobile {
+      @media (max-width: $screen-sm-min) {
+        flex-direction: column;
+      }
+      @include md {
+        flex-direction: unset;
+      }
+    }
+
+    &__desktop {
+      @media (max-width: $screen-sm-min) {
+        flex-direction: unset;
+      }
+      @include md {
+        
+        flex-direction: column;
+      }
+    }
   }
 
   &--row {
     flex-direction: row;
+
+    &__desktop {
+      @media (max-width: $screen-sm-min) {
+        flex-direction: unset;
+      }
+      @include md {
+        flex-direction: row;
+        
+      }
+    }
+
+    &__mobile {
+      @media (max-width: $screen-sm-min) {
+        flex-direction: row;
+        
+      }
+      @include md {
+        flex-direction: unset;
+        
+      }
+    }
   }
 
   &--half {
@@ -94,5 +137,19 @@ a.button {
     @include lg {
       flex-wrap: nowrap;
     }
+  }
+}
+
+.p {
+  &48 {
+    $min_width: 768px;
+    $max_width: 1200px;
+    $min_font: 32px;
+    $max_font: 48px;
+
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    line-height: 1.08em;
+    letter-spacing: -0.8px;
+    font-family: $font-stack-xl;
   }
 }

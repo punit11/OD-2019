@@ -236,25 +236,33 @@
 .sessions-added {
     align-items: center;
     background: $teal;
-    bottom: 0;
     display: flex;
     flex: 0 0 100%;
+    // position: sticky;
+    // top: 0;
+    // margin-top: 0rem;
+    // bottom: 0;
+    
     font-family: $font-stack-os-regular;
     font-size: 1.6rem;
     height: 74px;
     justify-content: center;
     line-height: 1.5em;
-    margin-top: 10rem;
-    position: sticky;
     text-align: center;
     width: 100%;
     z-index: 100;
 
     @include md {
+        margin-top: 10rem;
         text-align: left;
     }
 
     .sessions {
         margin-right: 1rem;
     }
+}
+
+.sticky-bar {
+    position: sticky;
+    bottom: 0; /* required */
 }

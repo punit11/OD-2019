@@ -1257,11 +1257,83 @@ a.button {
           flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .flexContainer--column__mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .flexContainer--column__mobile {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexContainer--column__desktop {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .flexContainer--column__desktop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .flexContainer--row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .flexContainer--row__desktop {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  .flexContainer--row__desktop {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexContainer--row__mobile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .flexContainer--row__mobile {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
 }
 
 .flexContainer--half {
@@ -1287,6 +1359,28 @@ a.button {
   .flexContainer-mobile-wrap {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+.p48 {
+  line-height: 1.08em;
+  letter-spacing: -0.8px;
+  font-family: "UniversLTStd-BoldCn", sans-serif;
+}
+
+.p48 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .p48 {
+    font-size: calc(32px + 16 * ((100vw - 768px) / 432));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .p48 {
+    font-size: 48px;
   }
 }
 
@@ -1458,6 +1552,9 @@ body {
 .hero-banner {
   background-color: #000;
   padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-banner .text h1 {
@@ -1505,23 +1602,129 @@ body {
   font-size: 1.8rem;
 }
 
-.hero-banner .icon-white-triangle {
-  width: 4.3rem;
-  position: absolute;
-  left: -6.2rem;
-  height: 4.7rem;
-}
-
 .hero-banner.location-page {
   background: #007d9b;
   padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .hero-banner.location-page {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-banner.location-page {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+}
+
+.hero-banner.location-page .text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.hero-banner.location-page .text h1 {
+  line-height: 1.03em;
+}
+
+.hero-banner.location-page .text h1 {
+  font-size: 34px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-banner.location-page .text h1 {
+    font-size: calc(34px + 28 * ((100vw - 768px) / 432));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-banner.location-page .text h1 {
+    font-size: 62px;
+  }
+}
+
+.hero-banner.location-page .text h1 span {
+  margin-top: 0;
+}
+
+@media (min-width: 576px) {
+  .hero-banner.location-page .text {
+    padding: 0 12rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-banner.location-page .text {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-banner.location-page .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.hero-banner.location-page .icon-white-triangle {
+  width: 4.3rem;
+  position: absolute;
+  height: 4.7rem;
+  left: calc(100% - 40px);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: -6px;
+}
+
+@media (min-width: 768px) {
+  .hero-banner.location-page .icon-white-triangle {
+    left: -6.2rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: initial;
+  }
 }
 
 .hero-banner.location-page .hero-pic {
-  max-width: 61.4rem;
-  margin: -1rem 0 -1.3rem 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   position: relative;
   z-index: 0;
+  width: 100%;
+  padding-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-banner.location-page .hero-pic {
+    min-width: 46rem;
+    max-width: 61.4rem;
+    width: 37vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: -1rem 0 -1.3rem 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+  .hero-banner.location-page .hero-pic {
+    max-width: 50%;
+    width: 100%;
+  }
+}
+
+.hero-banner.location-page .hero-pic img {
+  width: 100%;
 }
 
 .hero-banner.location-page .hero-pic:before {
@@ -1532,30 +1735,69 @@ body {
   height: 11.8rem;
   background: #ffffff;
   border-radius: 50%;
-  top: 4rem;
-  left: -4rem;
+  top: 3rem;
+  left: -5rem;
   z-index: -1;
 }
 
-.hero-banner.location-page .hero-pic:after {
-  content: "Deakin";
-  display: block;
-  position: absolute;
-  font-size: 165px;
-  height: 100%;
-  text-transform: uppercase;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  top: -1px;
-  left: 93%;
-  font-family: "UniversLTStd-BoldCn", sans-serif;
-  z-index: -1;
-  color: #007d9b;
-  -webkit-text-fill-color: #007d9b;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff;
-  line-height: 1em;
-  opacity: 0.5;
+@media (min-width: 992px) {
+  .hero-banner.location-page .hero-pic:before {
+    top: 5rem;
+    left: -6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-banner.location-page .hero-pic:after {
+    content: "Deakin";
+    display: none;
+    position: absolute;
+    height: 100%;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: -1px;
+    left: 93%;
+    font-family: "UniversLTStd-BoldCn", sans-serif;
+    z-index: -1;
+    color: #007d9b;
+    -webkit-text-fill-color: #007d9b;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    line-height: 1em;
+    opacity: 0.5;
+  }
+  .hero-banner.location-page .hero-pic:after {
+    font-size: 145px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-banner.location-page .hero-pic:after {
+    font-size: calc(145px + 20 * ((100vw - 1200px) / 444));
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1644px) {
+  .hero-banner.location-page .hero-pic:after {
+    font-size: 165px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .hero-banner.location-page .hero-pic:after {
+    display: block;
+  }
+}
+
+.hero-banner.location-page .hero-pic .verticle-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero-banner.location-page .hero-pic .verticle-text {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1795,7 +2037,15 @@ body {
 
 .comps #comps-button {
   margin-top: 2rem;
-  display: inline-block;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .comps #comps-button {
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 @media (min-width: 576px) {
@@ -1825,24 +2075,49 @@ body {
 .comps-location-page {
   position: relative;
   margin-top: 0;
-  margin-bottom: 12.5rem;
+  margin-bottom: 5.5rem;
+}
+
+@media (min-width: 768px) {
+  .comps-location-page {
+    margin-bottom: 12.5rem;
+  }
+}
+
+.comps-location-page div:first-child {
+  margin-top: 5.2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .comps-location-page div:first-child {
+    margin-top: -4rem;
+  }
 }
 
 .comps-location-page .icon-triangle {
   position: absolute;
-  top: -10rem;
+  top: -1rem;
   width: 8.6rem;
   margin-left: 7rem;
+}
+
+@media (min-width: 768px) {
+  .comps-location-page .icon-triangle {
+    top: -10rem;
+  }
 }
 
 .comps-location-page h2 {
   color: #000000;
 }
 
-.comps-location-page .comp-info {
-  margin-left: 3.4rem;
-  padding-right: 2rem;
-  padding-top: 6.5rem;
+@media (min-width: 768px) {
+  .comps-location-page .comp-info {
+    margin-left: 3.4rem;
+    padding-right: 2rem;
+    padding-top: 6.5rem;
+  }
 }
 
 .comps-location-page .comp-info ul, .comps-location-page .comp-info ol, .comps-location-page .comp-info li {
@@ -2442,11 +2717,19 @@ body {
   background-color: #000;
   padding: 1rem;
   width: 100%;
+  max-width: 4.8rem;
+  max-height: 4.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (min-width: 576px) {
   .testimonial-icons {
     padding: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
@@ -2481,6 +2764,24 @@ body {
 
 .testimonial p {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .testimonial-wrapper.location-page {
+    margin: 12.7rem 0 11rem;
+  }
+}
+
+.testimonial-wrapper.location-page h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .testimonial-wrapper.location-page h2 {
+    margin-bottom: 6rem;
+  }
 }
 
 .quote-wrapper {
@@ -3331,7 +3632,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #0c8573;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3345,9 +3645,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1.5em;
-  margin-top: 10rem;
-  position: -webkit-sticky;
-  position: sticky;
   text-align: center;
   width: 100%;
   z-index: 100;
@@ -3355,12 +3652,20 @@ body {
 
 @media (min-width: 768px) {
   .sessions-added {
+    margin-top: 10rem;
     text-align: left;
   }
 }
 
 .sessions-added .sessions {
   margin-right: 1rem;
+}
+
+.sticky-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  /* required */
 }
 
 /**
@@ -4127,7 +4432,7 @@ body {
 }
 
 .getting-here__wrapper > div:after {
-  display: block;
+  display: none;
   content: "";
   position: absolute;
   width: 21.4rem;
@@ -4137,6 +4442,12 @@ body {
   bottom: -6rem;
   left: 34rem;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .getting-here__wrapper > div:after {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
@@ -4161,6 +4472,15 @@ body {
   font-size: 1.6rem;
   font-family: "Worldly Light";
   text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .getting-here__container {
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+  }
 }
 
 .getting-here__container a {
@@ -4180,31 +4500,56 @@ body {
 
 @media (min-width: 992px) {
   .getting-here__container {
-    padding: 14.5rem 5.5rem 5.5rem 5.5rem;
+    padding: 20.5rem 5.5rem 5.5rem 5.5rem;
   }
 }
 
 .getting-here__container .flexContainer.row.flexContainer--half {
-  margin-top: 6.2rem;
-  max-width: 50%;
+  max-width: 100%;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+  .getting-here__container .flexContainer.row.flexContainer--half {
+    margin-top: 6.2rem;
+    max-width: 50%;
+  }
 }
 
 .getting-here__container .campus-details {
-  max-width: 54% !important;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
-.getting-here__container .campus-details div {
-  width: 50%;
+@media (min-width: 992px) {
+  .getting-here__container .campus-details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 54% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-.getting-here__container .campus-details div:nth-child(odd) {
-  margin-right: 2rem;
-}
-
-.getting-here__container .campus-details div:nth-child(2n) {
-  width: calc(50% - 2rem);
+@media (min-width: 992px) {
+  .getting-here__container .campus-details div {
+    width: 50%;
+  }
+  .getting-here__container .campus-details div:nth-child(odd) {
+    margin-right: 2rem;
+  }
+  .getting-here__container .campus-details div:nth-child(2n) {
+    width: calc(50% - 2rem);
+  }
 }
 
 .getting-here__container .campus-details .icon-download {
@@ -4220,48 +4565,208 @@ body {
   fill: #ffffff;
 }
 
+.getting-here__container .campus-details .address {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.getting-here__container .campus-details .travel-reimbursment {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media (min-width: 992px) {
+  .getting-here__container .campus-details .travel-reimbursment {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.getting-here__container .campus-details .getting-around-campus {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 992px) {
+  .getting-here__container .campus-details .getting-around-campus {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
 .getting-here__container .campus-map {
-  right: 7rem;
-  max-height: 50.7rem;
-  max-width: 69rem !important;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+  width: calc(100% + 6.6rem);
+  max-width: calc(100% + 6.6rem);
+  left: -4.3rem;
+  top: -3.3rem;
+}
+
+@media (min-width: 992px) {
+  .getting-here__container .campus-map {
+    overflow: hidden;
+    max-height: 50.7rem;
+    max-width: 69rem !important;
+    position: absolute;
+    right: 7rem;
+    left: auto;
+    top: auto;
+  }
 }
 
 .practicle-learning {
   background: #000000;
   color: #ffffff;
-  padding: 7rem;
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .practicle-learning {
+    padding: 7rem 7rem 0 7rem;
+    z-index: -1;
+  }
+}
+
 .practicle-learning:before {
+  display: none;
   content: "Deakin";
-  display: block;
   position: absolute;
   font-size: 165px;
-  height: 100%;
+  height: 0;
   text-transform: uppercase;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  top: 7rem;
-  left: 0;
+  top: 42rem;
+  left: -16rem;
   font-family: "UniversLTStd-BoldCn", sans-serif;
   color: #000000;
   -webkit-text-fill-color: #000000;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff;
-  line-height: 1em;
+  line-height: 0;
   opacity: 0.5;
+}
+
+@media (min-width: 992px) {
+  .practicle-learning:before {
+    display: block;
+  }
+}
+
+.practicle-learning:after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 25.3rem;
+  height: 25.3rem;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  opacity: 0.5;
+  top: -10rem;
+  right: -10rem;
+}
+
+@media (min-width: 992px) {
+  .practicle-learning:after {
+    display: block;
+  }
 }
 
 .practicle-learning h2 {
   text-transform: uppercase;
   font-family: "UniversLTStd-BoldCn", sans-serif;
-  font-size: 4.8rem;
   line-height: 1.08em;
   max-width: 81rem;
   letter-spacing: -0.8px;
+}
+
+.practicle-learning .video-container {
+  margin: 0 -1rem -0.2rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  position: relative;
+  width: calc(100% + 2rem);
+  max-width: 60rem;
+}
+
+.practicle-learning .video-container:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-top: 70px solid #007d9b;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .practicle-learning .video-container:before {
+    left: 1rem;
+    right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .practicle-learning .video-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 0 -4.5rem 0;
+  }
+}
+
+.practicle-learning .video-text .video {
+  margin-top: 6rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .practicle-learning .video-text .video {
+    margin-right: 2.05vw;
+  }
+}
+
+.practicle-learning .video-text .p48 {
+  color: #007d9b;
+  font-family: "UniversLTStd-BoldCn", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 768px) {
+  .practicle-learning .video-text .p48 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 25.8rem;
+    margin-left: 3.4vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .practicle-learning .video-text .p48 {
+    max-width: 38.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .practicle-learning .video-text {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,7 +3,13 @@
 
   #comps-button {
     margin-top: 2rem;
-    display: inline-block;
+    display: block;
+    text-align: center;
+
+    @include md {
+      display: inline-block;
+      text-align: left;
+    }
   }
 
   @include sm {
@@ -34,13 +40,30 @@
   &-location-page {
     position: relative;
     margin-top: 0;
-    margin-bottom: 12.5rem;
+    margin-bottom: 5.5rem;
+    
+    @include md {
+      margin-bottom: 12.5rem;
+    }
+
+    div:first-child {
+      margin-top: 5.2rem;
+      margin-bottom: 1.5rem;      
+
+      @include md {
+        margin-top: -4rem;
+      }
+    }
 
     .icon-triangle {
       position: absolute;
-      top: -10rem;
+      top: -1rem;
       width: 8.6rem;
       margin-left: 7rem;
+
+      @include md {
+        top: -10rem;
+      }
     }
 
     h2 {
@@ -48,9 +71,12 @@
     }
 
     .comp-info {
-      margin-left: 3.4rem;
-      padding-right: 2rem;
-      padding-top: 6.5rem;
+      
+      @include md {
+        margin-left: 3.4rem;
+        padding-right: 2rem;
+        padding-top: 6.5rem;
+      }
 
       ul, ol, li {
         padding: 0;
