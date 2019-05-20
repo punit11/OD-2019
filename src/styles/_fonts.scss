@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'UniversLTStd-BoldCn';
+  src: url('../fonts/UniversLTStd-BoldCn.eot');
+  src: url('../fonts/UniversLTStd-BoldCn.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/UniversLTStd-BoldCn.svg#UniversLTStd-BoldCn') format('svg'),
+       url('../fonts/UniversLTStd-BoldCn.ttf') format('truetype'),
+       url('../fonts/UniversLTStd-BoldCn.woff') format('woff'),
+       url('../fonts/UniversLTStd-BoldCn.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.eot?v=0.1.1);
+  src: url(../fonts/OpenSans-Regular.eot?v=0.1.1?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/OpenSans-Regular.woff?v=0.1.1) format("woff"),
+    url(../fonts/OpenSans-Regular.ttf?v=0.1.1) format("truetype"),
+    url(../fonts/OpenSans-Regular.svg?v=0.1.1#OpenSansRegular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: url(../fonts/OpenSans-Semibold.eot?v=0.1.1);
+  src: url(../fonts/OpenSans-Semibold.eot?v=0.1.1?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/OpenSans-Semibold.woff?v=0.1.1) format("woff"),
+    url(../fonts/OpenSans-Semibold.ttf?v=0.1.1) format("truetype"),
+    url(../fonts/OpenSans-Semibold.svg?v=0.1.1#OpenSansSemibold) format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(../fonts/OpenSans-Bold.eot?v=0.1.1);
+  src: url(../fonts/OpenSans-Bold.eot?v=0.1.1?#iefix)
+      format("embedded-opentype"),
+    url(../fonts/OpenSans-Bold.woff?v=0.1.1) format("woff"),
+    url(../fonts/OpenSans-Bold.ttf?v=0.1.1) format("truetype"),
+    url(../fonts/OpenSans-Bold.svg?v=0.1.1#OpenSansBold) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Worldly Light";
+  src: url(../fonts/WorldlyLight.eot?v=0.1.1);
+  src: url(../fonts/WorldlyLight.eot?v=0.1.1?#iefix) format("embedded-opentype"),
+    url(../fonts/WorldlyLight.woff?v=0.1.1) format("woff"),
+    url(../fonts/WorldlyLight.ttf?v=0.1.1) format("truetype"),
+    url(../fonts/WorldlyLight.svg?v=0.1.1#WorldlyLight) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Worldly Regular";
+  src: url(../fonts/WorldlyRegular.eot);
+  src: url(../fonts/WorldlyRegular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/WorldlyRegular.woff?v=0.1.1) format("woff"),
+    url(../fonts/WorldlyRegular.ttf?v=0.1.1) format("truetype"),
+    url(../fonts/WorldlyRegular.svg?v=0.1.1#WorldlyRegular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Worldly Bold";
+  src: url(../fonts/WorldlyBold.eot?v=0.1.1);
+  src: url(../fonts/WorldlyBold.eot?v=0.1.1?#iefix) format("embedded-opentype"),
+    url(../fonts/WorldlyBold.woff?v=0.1.1) format("woff"),
+    url(../fonts/WorldlyBold.ttf?v=0.1.1) format("truetype"),
+    url(../fonts/WorldlyBold.svg?v=0.1.1#WorldlyBold) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: icomoon;
+//   src: url(../fonts/icomoon.eot?2bubo);
+//   src: url(../fonts/icomoon.eot?2bubo#iefix) format("embedded-opentype"),
+//     url(../fonts/icomoon.ttf?2bubo) format("truetype"),
+//     url(../fonts/icomoon.woff?2bubo) format("woff"),
+//     url(../fonts/icomoon.svg?2bubo#icomoon) format("svg");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+[class*=" icon-"],
+[class^="icon-"] {
+  // font-family: icomoon !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.icon-Australia:before {
+  content: "\e900";
+}
+
+.icon-Buildings:before {
+  content: "\e901";
+}
+
+.icon-Calendar:before {
+  content: "\e902";
+}
+
+.icon-CalendarClock:before {
+  content: "\e903";
+}
+
+.icon-Chat:before {
+  content: "\e904";
+}
+
+.icon-Cloud:before {
+  content: "\e905";
+}
+
+.icon-Diploma:before {
+  content: "\e906";
+}
+
+.icon-Envelope:before {
+  content: "\e907";
+}
+
+.icon-Globe:before {
+  content: "\e908";
+}
+
+.icon-Graduation:before {
+  content: "\e909";
+}
+
+.icon-Graphs:before {
+  content: "\e90a";
+}
+
+.icon-Help:before {
+  content: "\e90b";
+}
+
+.icon-Information:before {
+  content: "\e90c";
+}
+
+.icon-LeftArrow:before {
+  content: "\e90d";
+}
+
+.icon-Lightglobe:before {
+  content: "\e90e";
+}
+
+.icon-Locations:before {
+  content: "\e90f";
+}
+
+.icon-Pathways .path1:before {
+  content: "\e910";
+  color: #000;
+}
+
+.icon-Pathways .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: #010101;
+}
+
+.icon-Pathways .path3:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: #010101;
+}
+
+.icon-Pencil:before {
+  content: "\e913";
+}
+
+.icon-Phone:before {
+  content: "\e914";
+}
+
+.icon-Research:before {
+  content: "\e915";
+}
+
+.icon-Ribbon:before {
+  content: "\e916";
+}
+
+.icon-RightArrow:before {
+  content: "\e917";
+}
+
+.icon-Star:before {
+  content: "\e918";
+}
+
+.icon-Subscribe:before {
+  content: "\e919";
+}
+
+.icon-Thumb:before {
+  content: "\e91a";
+}
+
+.icon-Tick:before {
+  content: "\e91b";
+}
+
+.icon-TickShield:before {
+  content: "\e91c";
+}

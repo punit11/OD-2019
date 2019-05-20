@@ -12,7 +12,7 @@
          href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
          rel="stylesheet"
          />
-      <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+      <!-- <link rel="stylesheet" type="text/css" media="screen" href="../build/home.bundle.css" /> -->
    </head>
    <body>
       <!-- SVG Symbols -->
@@ -32,9 +32,7 @@
             <div class="Navbar">
                <div class="Navbar__Link Navbar__Link-brand">
                   <a class="navbar-brand" href="//deakin.edu.au">
-                  <img
-                     src="//www.deakin.edu.au/__data/assets/image/0009/1813095/deakin-logo.png"
-                     />
+                  <img src="//www.deakin.edu.au/__data/assets/image/0009/1813095/deakin-logo.png"/>
                   </a>
                </div>
                <div class="Navbar__Link Navbar__Link-toggle">
@@ -102,10 +100,10 @@
          <div class="col-xs-5 col-sm-6 col-md-5 col-lg-4 hero-pic">
             <picture>
                <source
-                  srcset="images/hero-banner@2x.jpg"
+                  srcset="src/images/hero-banner@2x.jpg"
                   media="(min-width: 767px)"
                   />
-               <img class="d-stencil" src="images/deakin-lockup.svg" alt="PP" />
+               <img class="d-stencil" src="src/images/deakin-lockup.svg" alt="PP" />
             </picture>
             <!-- <picture>
                <source
@@ -144,7 +142,7 @@
                </div>
                <div class="col-xs-6 col-sm-12 place first-md">
                   <p>Warnambool</p>
-                  <p>9am &ndash; 2pm</p>
+                  <p>9am-2pm</p>
                </div>
                <div class="col-xs-4 col-sm-12 btn">
                   <a href="#" class="button magenta"><span>Register</span></a>
@@ -158,7 +156,7 @@
                </div>
                <div class="col-xs-6 col-sm-12 place first-md">
                   <p>Geelong Waurn Ponds</p>
-                  <p>9am &ndash; 2pm</p>
+                  <p>9am-2pm</p>
                </div>
                <div class="col-xs-4 col-sm-12 btn">
                   <a href="#" class="button blue"><span>Register</span></a>
@@ -172,7 +170,7 @@
                </div>
                <div class="col-xs-6 col-sm-12 place first-md">
                   <p>Geelong Waterfront</p>
-                  <p>9am &ndash; 2pm</p>
+                  <p>9am-2pm</p>
                </div>
                <div class="col-xs-4 col-sm-12 btn">
                   <a href="#" class="button yellow"><span>Register</span></a>
@@ -186,7 +184,7 @@
                </div>
                <div class="col-xs-6 col-sm-12 place first-md">
                   <p>Melbourne Burwood</p>
-                  <p>9am &ndash; 2pm</p>
+                  <p>9am-2pm</p>
                </div>
                <div class="col-xs-4 col-sm-12 btn">
                   <a href="#" class="button teal"><span>Register</span></a>
@@ -198,7 +196,7 @@
             >
             <img
                class="yellow-triangle"
-               src="images/shape-triangle-outline-yellow.svg"
+               src="src/images/shape-triangle-outline-yellow.svg"
                alt="triangle icon"
                />
          </div>
@@ -209,7 +207,7 @@
          <div
             class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2"
             >
-            <img src="images/giftcards@2x.png" alt="Gift cards" />
+            <img src="src/images/giftcards@2x.png" alt="Gift cards" />
          </div>
          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <h2>RSVP to win 1 of 20 $100 gift cards!</h2>
@@ -247,7 +245,7 @@
             <fieldset id="feildset2">
                <div class="form-top">
                   <div class="form-top-left form-stutype">
-                     <p>2 / 4</p>
+                     <p>2/4</p>
                      <h3>Which best describes you?</h3>
                   </div>
                </div>
@@ -470,7 +468,7 @@
                Its time to shape <span class="orange">your future</span>, your way.
             </h1>
             <h1>Are you ready?</h1>
-            <img class="tri-outline" src="images/shape-triangle-outline.svg" alt="Downward facing triangle"/>
+            <img class="tri-outline" src="src/images/shape-triangle-outline.svg" alt="Downward facing triangle"/>
          </div>
       </div>
       <!-- manifesto end -->
@@ -478,12 +476,28 @@
       <div class="row explore-campus middle-xs center-xs">
         <div class="video-cta col-xs-12 col-sm-6 col-lg-4 start-xs">
           <p>Explore the campuses</p>
-          <img src="images/btn-play.svg" alt="play button" class="js-modal-btn" data-video-id="pdld32DYO7A" />
+          <!-- <img src="images/btn-play.svg" alt="play button" class="js-modal-btn" data-video-id="pdld32DYO7A" /> -->
+          <!-- <img src="images/btn-play.svg" alt="play button" class="js-modal-btn" href="https://www.youtube.com/watch?v=pdld32DYO7A" /> -->
+          <!-- <a href="#" id="video" class="js-modal-btn" data-video-id="0wCC3aLXdOw">Open Video
+             <img src="images/btn-play.svg" alt="play button" class="js-modal-btn"/> 
+        </a> -->
+       <!-- thumbnail wrapped in a link -->
+      <a href="#campus-video"><center> <img src="src/images/btn-play.svg" height="90"> </center></a>
+     
+     <!-- lightbox container hidden with CSS -->
+     <a href="#" class="lightbox" id="campus-video">
+     <div id="videoModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="false" style="display: block;">
+       <div class="modal-header">
+         <button type="button" class="close full-height" data-dismiss="modal" aria-hidden="true">X</button>
+       </div>
+       <div class="modal-body"><iframe width="870" height="489" src="https://www.youtube.com/embed/pdld32DYO7A" frameborder="0" allowfullscreen=""></iframe></div>
+     </div>
+
         </div>
       </div>
       <!-- explore campus end -->
       <!-- testimonial start -->
-      <div class="row testimonial-heading custom-heading">
+      <div class="row testimonial-heading">
          <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-11 col-lg-8 col-lg-offset-2 center-xs">
             <h2>Why Deakin?</h2>
             <h2>Why Deakin?</h2>
@@ -496,7 +510,7 @@
             <div class="testimonial-icons__container">
                <img
                   class="testimonial-icons"
-                  src="images/trophy.svg"
+                  src="src/images/trophy.svg"
                   alt="trophy icon"
                   />
             </div>
@@ -530,7 +544,7 @@
             <div class="testimonial-icons__container">
                <img
                   class="testimonial-icons"
-                  src="images/checkbox.svg"
+                  src="src/images/checkbox.svg"
                   alt="trophy icon"
                   />
             </div>
@@ -547,7 +561,7 @@
             <div class="testimonial-icons__container">
                <img
                   class="testimonial-icons"
-                  src="images/ideas.svg"
+                  src="src/images/ideas.svg"
                   alt="trophy icon"
                   />
             </div>
@@ -569,7 +583,7 @@
                also found the transition from high school to Deakin a positive one.
             </h4>
             <div class="student-pic">
-               <img src="images/shapre-dee-yellow.svg" alt="play button" />
+               <img src="src/images/shapre-dee-yellow.svg" alt="play button" />
             </div>
             <div class="student-info">
                <p class="student-name">Jess Starvou</p>
@@ -799,15 +813,17 @@
          </div>
       </div>
       <!-- footer end -->
-      <script src="js/jquery-3.4.0.min.js"></script>
-      <script src="js/main.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
-      <script src="js/comps-form.js"></script>
-      <script src="js/form-validation.js"></script>
-      <script src="js/jquery-modal-video.min.js"></script>
+      <!-- <script src="js/jquery-3.4.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script> -->
+      <!-- <script src="../build/js/2.chunk.js"></script>
+      <script src="../build/js/home.bundle.js"></script> -->
+      
+      <!-- <script src="scripts/comps-form.js"></script>
+      <script src="scripts/form-validation.js"></script>
+      <script src="scripts/jquery-modal-video.min.js"></script> -->
 
              <!-- form-validation.js -->
-             <form id="mktoForm_3598" ></form>
+      <form id="mktoForm_3598" style="display:none"></form>
              
        <script type="text/javascript">
        (function() {
