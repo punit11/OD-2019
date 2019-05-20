@@ -1,5 +1,18 @@
 .comps {
   padding: 1rem;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 15.6rem;
+    width: 15.6rem;
+    border-radius: 50%;
+    background: $yellow;
+    position: absolute;
+    bottom: -7.8rem;
+    right: 10%;
+  }
 
   #comps-button {
     margin-top: 2rem;

@@ -21,14 +21,15 @@
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
     letter-spacing: -0.53px;
-    line-height: 1.0625em;
+    line-height: 1em;
 
     @include sm {
       letter-spacing: -0.8px;
-      line-height: 1.083333em;
+      line-height: 1em;
     }
   }
   span {
     display: inline-block;
+    margin-bottom: 0.5rem;
   }
 }
