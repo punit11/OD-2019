@@ -1,0 +1,26 @@
+.comps {
+  padding: 1rem;
+  #comps-button{
+    margin-top: 2rem;
+    display: inline-block;
+};
+  @include sm {
+    margin-top: -12rem;
+  }
+  div:first-child {
+    margin-top: -4rem;
+    z-index: 1;
+  }
+  h2 {
+    @extend %h2;
+    @include sm {
+      color: #fff;
+      font-size: 4.8rem;
+      line-height: 5rem;
+      margin-top: 0;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
