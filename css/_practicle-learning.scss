@@ -1,0 +1,36 @@
+.practicle-learning {
+    background: $black;
+    color: $white;
+    padding: 7rem;
+    position: relative;
+
+    &:before {
+        content: "Deakin";
+        display: block;
+        position: absolute;
+        font-size: 165px;
+        height: 100%;
+        text-transform: uppercase;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        top: 7rem;
+        left: 0;
+        font-family: $font-stack-xl;
+        // z-index: -1;
+        color: $black;
+        -webkit-text-fill-color: $black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $white;
+        line-height: 1em;
+        opacity: 0.5;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-family: $font-stack-xl;
+        font-size: 4.8rem;
+        line-height: 1.08em;
+        max-width: 81rem;
+        letter-spacing: -0.8px;
+    }
+}

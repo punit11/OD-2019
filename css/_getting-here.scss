@@ -1,0 +1,121 @@
+.getting-here {
+    &__wrapper {
+        position: relative;
+
+        & > div {
+            &:after {
+                display: block;
+                content: "";
+                position: absolute;
+                width: 21.4rem;
+                height: 21.4rem;
+                background: #007d9b;
+                border-radius: 50%;
+                bottom: -6rem;
+                left: 34rem;
+                z-index: -1;
+            }
+        }
+        .custom-heading {
+
+            @include lg {
+                margin-bottom: -14.5rem;
+
+                h2 {
+                    &:nth-child(1) {
+                        height: 0.37em;
+                        line-height: 1.1em
+                    }
+                    &:nth-child(3) {
+                        color: $white;
+                        height: 0.8em;
+                        line-height: 1.1em;
+                    }
+                }
+            }
+        }
+        margin-bottom: 10rem;
+    }
+
+    &__container {
+        background: #2c2c2c;
+        color: $white;
+        padding: 3.3rem;
+        font-size: 1.6rem;
+        font-family: $font-worldly-light;
+        text-align: left;
+    
+        a {
+            color: $white;
+            font-size: 1.6rem;
+            line-height: 1.5em;
+            margin-bottom: 1.5em;
+            display: inline-block;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            font-family: $font-worldly-bold;
+            line-height: 1.44em;
+            margin: 0 0 1rem 0;
+        }
+    
+        @include lg {
+            padding: 14.5rem 5.5rem 5.5rem 5.5rem;
+        }
+
+        .flexContainer.row.flexContainer--half {
+            margin-top: 6.2rem;
+            max-width: 50%;
+            // flex: 1 1 100%;
+        }
+
+        .campus {
+            &-details {
+                max-width: 54%!important;
+                flex-wrap: wrap;
+
+                &  div {
+                    width: 50%;
+                    &:nth-child(odd) {
+                        margin-right: 2rem;
+                    }
+                    
+                    &:nth-child(2n) {
+                        width: calc(50% - 2rem);
+                    }
+
+                    @media lg {
+                        
+                    }
+                }
+
+                .icon-download {
+                    display: inline-block;
+                    width: 14px;
+                    height: 17px;
+                    position: relative;
+                    margin-left: 10px;
+                    top: 4px;
+
+                    use {
+                        fill: $white;
+                    }
+                }
+            }
+            &-map {
+                right: 7rem;
+                max-height: 50.7rem;
+                max-width: 69rem!important;
+                overflow: hidden;
+                position: absolute;
+                width: 100%;
+    
+                img {
+                    // height: auto;
+                    // width: 100%;
+                }
+            }
+        }
+    }
+}
