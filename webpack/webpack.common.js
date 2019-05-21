@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    home: Path.resolve(__dirname, '../src/scripts/home.js'),
-    location: Path.resolve(__dirname, '../src/scripts/location.js')
+    home: Path.resolve(__dirname, '../src/scripts/home-entry.js'),
+    location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
   },
   output: {
     path: Path.join(__dirname, '../build'),

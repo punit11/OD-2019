@@ -1,1 +1,0 @@
-console.log("I am on locations page only");
