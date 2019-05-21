@@ -52,6 +52,9 @@
     "core-js": "^3.0.1",
     "jquery": "^3.4.1",
     "jquery-validation": "^1.19.0",
-    "modal-video": "^2.4.2"
+    "jquery.scrollbar": "^0.2.11",
+    "modal-video": "^2.4.2",
+    "owl.carousel": "^2.3.4",
+    "select2": "^4.0.7"
   }
 }
