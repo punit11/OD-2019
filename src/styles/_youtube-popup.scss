@@ -3,6 +3,10 @@
 .lightbox {
   /** Default lightbox to hidden */
   display: none;
+  
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s linear;
 
   /** Position and style */
   position: fixed;
@@ -19,7 +23,17 @@
   outline: none;
 
   /** Unhide lightbox **/
-  display: block;
+  display: flex;
+  flex: 1;
+  // display: block;
+  
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.35s linear; 
+
+  #videoModal .modal-header, #videoModal .modal-body {
+    display: block;
+  }
 }
 
 /** videoModal **/
@@ -29,11 +43,12 @@
   margin: auto;
 }
 #videoModal .modal-header {
-  background: #000;
+  // background: #000;
   border: 0;
   color: #fff;
   position: relative;
-  height: 35px;
+  // height: 35px;
+  display: none;
 }
 #videoModal .modal-header h3 {
   font-size: 18px;
@@ -46,18 +61,44 @@
   padding: 0;
   max-height: none;
   overflow: hidden;
+  display: none;
 }
 #videoModal .modal-footer:empty {
   display: none !important;
 }
 #videoModal .close {
-  font-size: 24px;
+  font-size: 0;
   margin: 0;
   opacity: 1;
   position: absolute;
-  right: 0;
+  right: -5rem;
   text-shadow: none;
-  top: 0;
+  top: -3rem;
   width: 38px;
   cursor: pointer;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: -6px;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.noscroll {
+  overflow: hidden;
 }

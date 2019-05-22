@@ -28,12 +28,41 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   padding: 0 1rem;
+
+  .arrowed-title{
+    position: relative;
+    $min_width: 768px;
+      $max_width: 1200px;
+      $min_font: 16px;
+      $max_font: 22px;
+
+      @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+    &:before {
+
+      @include md{
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 17px solid $yellow;
+        position: relative;
+        top: 0.2rem;
+        margin-right: 1.6rem;
+      }
+      
+    }
+  }
 }
 
 .tiles-wrapper {
   background-color: #000;
   color: #fff;
   overflow-y: auto;
+  position: relative;
+
   @include sm {
     padding-bottom: 25rem;
   }
@@ -191,6 +220,21 @@
           }
         }
       }
+    }
+  }
+
+  .tri-outline.face-left {
+    display: none;
+    position: absolute;
+    top: calc(125px - 32px);
+    transform: rotate(90deg);
+    right: calc(16.667% - 92px);
+    max-width: 69px;
+    height: 76px;
+    width: 100%;
+
+    @include xl {
+      display: block;
     }
   }
 }

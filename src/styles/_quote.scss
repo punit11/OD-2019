@@ -1,27 +1,64 @@
 .quote-wrapper {
   background-color: #c74298;
   .student-pic {
-    background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
-    background-size: cover;
-    
+    // background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
+    // background-size: cover;
+    position: relative;
     width: 92%;
     height: 50vw;
     max-height: 529px;
     min-height: 288px;
     max-width: 528px;
+    z-index: 0;
     @include sm {
-      order: 1;
+      order: 0;
       margin: 10rem 0;
       width: 50vw;
-      
+    }
+
+    img {
+      width: 100%;
     }
     
-    img {
-      margin: 30% -5%;
-      @include sm {
-        margin: 10% -10%;
-        width: 40%;
-      }
+    // img {
+    //   margin: 30% -5%;
+    //   @include sm {
+    //     margin: 10% -10%;
+    //     width: 40%;
+    //   }
+    // }
+
+    // &:before {
+    //   display: block;
+    //   content: url('../src/images/shapre-dee-yellow.svg') no-repeat center center;
+    //   background-size: cover;
+    //   width: 40%;
+    // }
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 237px;
+      height: 206px;
+      background: url(http://localhost:8080/src/images/shapre-dee-yellow.svg) no-repeat center;
+      top: 6rem;
+      left: -9rem;
+      z-index: 2;
+      background-size: cover;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 11.8rem;
+      height: 11.8rem;
+      background: #ffffff;
+      border-radius: 50%;
+      bottom: 7rem;
+      left: -6rem;
+      z-index: -1;
     }
   }
   .quote {
@@ -37,6 +74,7 @@
     color: #fff;
     margin: 2rem 0rem -1.5rem -2rem;
     letter-spacing: -0.6px;
+    z-index: 1;
     
     @include sm {
       position: absolute;

@@ -3,6 +3,7 @@ import {validate} from "jquery-validation";
 import {navbar_toggle, accordion_click} from "./home";
 import {comp_form} from "./comps-form";
 import {form_validation} from "./form-validation";
+import {youtubeApi} from "./you-tube-api";
 
 
 // <script src="js/jquery-3.4.0.min.js"></script>
@@ -31,6 +32,7 @@ import "../styles/_quote.scss";
 import "../styles/_faqs.scss";
 import "../styles/_bottom-nav.scss";
 import "../styles/_footer.scss";
+import "../styles/_footer-social.scss";
 import "../styles/_accordion.scss";
 // import "../styles/_modal-video.scss";
 import "../styles/_youtube-popup.scss";

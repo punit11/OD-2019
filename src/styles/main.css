@@ -1229,10 +1229,6 @@ a.button {
   }
 }
 
-.modal-noscroll {
-  overflow: hidden;
-}
-
 body {
   margin: 0;
 }
@@ -1435,10 +1431,46 @@ body {
   padding: 0 1rem;
 }
 
+.tiles-heading .arrowed-title {
+  position: relative;
+}
+
+.tiles-heading .arrowed-title {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .tiles-heading .arrowed-title {
+    font-size: calc(16px + 6 * ((100vw - 768px) / 432));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tiles-heading .arrowed-title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tiles-heading .arrowed-title:before {
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 17px solid #ffd923;
+    position: relative;
+    top: 0.2rem;
+    margin-right: 1.6rem;
+  }
+}
+
 .tiles-wrapper {
   background-color: #000;
   color: #fff;
   overflow-y: auto;
+  position: relative;
 }
 
 @media (min-width: 576px) {
@@ -1621,6 +1653,24 @@ body {
 .tiles-wrapper .tile .date .place p:first-child {
   font-size: 1.75rem;
   line-height: 2.6rem;
+}
+
+.tiles-wrapper .tri-outline.face-left {
+  display: none;
+  position: absolute;
+  top: calc(125px - 32px);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: calc(16.667% - 92px);
+  max-width: 69px;
+  height: 76px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .tiles-wrapper .tri-outline.face-left {
+    display: block;
+  }
 }
 
 .comps {
@@ -2031,6 +2081,22 @@ body {
   background-color: #000;
   color: #fff;
   padding: 2rem 1rem;
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .manifesto:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 15.6rem;
+    height: 15.6rem;
+    background: #ffd923;
+    border-radius: 50%;
+    top: -7.8rem;
+    right: 10%;
+    z-index: 0;
+  }
 }
 
 @media (min-width: 576px) {
@@ -2075,6 +2141,24 @@ body {
 
 .manifesto span {
   display: inline-block;
+}
+
+.manifesto .shapes {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .manifesto .colourful-text {
+    z-index: 1;
+  }
+  .manifesto .shapes {
+    display: block;
+    right: 0px;
+    position: absolute;
+    z-index: 0;
+    top: calc(50% - 20rem);
+    height: 40rem;
+  }
 }
 
 .explore-campus {
@@ -2296,34 +2380,53 @@ body {
 }
 
 .quote-wrapper .student-pic {
-  background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
-  background-size: cover;
+  position: relative;
   width: 92%;
   height: 50vw;
   max-height: 529px;
   min-height: 288px;
   max-width: 528px;
+  z-index: 0;
 }
 
 @media (min-width: 576px) {
   .quote-wrapper .student-pic {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
     margin: 10rem 0;
     width: 50vw;
   }
 }
 
 .quote-wrapper .student-pic img {
-  margin: 30% -5%;
+  width: 100%;
 }
 
-@media (min-width: 576px) {
-  .quote-wrapper .student-pic img {
-    margin: 10% -10%;
-    width: 40%;
-  }
+.quote-wrapper .student-pic:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 237px;
+  height: 206px;
+  background: url(http://localhost:8080/src/images/shapre-dee-yellow.svg) no-repeat center;
+  top: 6rem;
+  left: -9rem;
+  z-index: 2;
+  background-size: cover;
+}
+
+.quote-wrapper .student-pic:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 11.8rem;
+  height: 11.8rem;
+  background: #ffffff;
+  border-radius: 50%;
+  bottom: 7rem;
+  left: -6rem;
+  z-index: -1;
 }
 
 @media (min-width: 576px) {
@@ -2342,6 +2445,7 @@ body {
   color: #fff;
   margin: 2rem 0rem -1.5rem -2rem;
   letter-spacing: -0.6px;
+  z-index: 1;
   line-height: 1.05em;
 }
 
@@ -2555,65 +2659,6 @@ body {
   line-height: 1.6rem;
 }
 
-.social-media-icons {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.social-media-icons li {
-  display: inline-block;
-  padding: 0 1em 1em 0;
-}
-
-.social-media-icons a {
-  background-image: url(//www.deakin.edu.au/__data/assets/image/0016/1203109/social-icons.png);
-  background-repeat: no-repeat;
-  display: block;
-  height: 36px;
-  transition: all 350ms ease-out;
-  -webkit-transition: all 350ms ease-out;
-  -o-transition: all 350ms ease-out;
-  width: 50px;
-}
-
-.social-media-icons a:hover {
-  filter: alpha(opacity=80);
-  opacity: 0.8;
-}
-
-.social-media-icons .facebook {
-  background-position: 0 0;
-}
-
-.social-media-icons .twitter {
-  background-position: -57px 0;
-}
-
-.social-media-icons .instagram {
-  background-position: -114px 0;
-}
-
-.social-media-icons .linkedin {
-  background-position: -171px 0;
-}
-
-.social-media-icons .explore {
-  background-position: 0 -38px;
-}
-
-.social-media-icons .this {
-  background-position: -57px -38px;
-}
-
-.social-media-icons .google {
-  background-position: -114px -38px;
-}
-
-.social-media-icons .youtube {
-  background-position: -171px -38px;
-}
-
 .accordion {
   background-color: #fff;
   color: #444;
@@ -2707,158 +2752,14 @@ body {
   transition: max-height .2s ease-out;
 }
 
-@-webkit-keyframes modal-video {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes modal-video {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes modal-video-inner {
-  from {
-    -webkit-transform: translate(0, 100px);
-            transform: translate(0, 100px);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@keyframes modal-video-inner {
-  from {
-    -webkit-transform: translate(0, 100px);
-            transform: translate(0, 100px);
-  }
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-.modal-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000000;
-  cursor: pointer;
-  opacity: 1;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-name: modal-video;
-          animation-name: modal-video;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
-}
-
-.modal-video-close {
-  opacity: 0;
-}
-
-.modal-video-close .modal-video-movie-wrap {
-  -webkit-transform: translate(0, 100px);
-  transform: translate(0, 100px);
-}
-
-.modal-video-body {
-  max-width: 940px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: table;
-}
-
-.modal-video-inner {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-}
-
-.modal-video-movie-wrap {
-  width: 100%;
-  height: 0;
-  position: relative;
-  padding-bottom: 56.25%;
-  background-color: #333;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-name: modal-video-inner;
-          animation-name: modal-video-inner;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-}
-
-.modal-video-movie-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.modal-video-close-btn {
-  position: absolute;
-  z-index: 2;
-  top: -35px;
-  right: -35px;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  overflow: hidden;
-  border: none;
-  background: transparent;
-}
-
-.modal-video-close-btn:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.modal-video-close-btn:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.modal-video-close-btn:before, .modal-video-close-btn:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  margin-top: -1px;
-  background: #fff;
-  border-radius: 5px;
-  margin-top: -6px;
-}
-
 /** Donna Galletta | LIGHTBOX MARKUP **/
 .lightbox {
   /** Default lightbox to hidden */
   display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 0.3s, opacity 0.3s linear;
+  transition: visibility 0s 0.3s, opacity 0.3s linear;
   /** Position and style */
   position: fixed;
   z-index: 999;
@@ -2874,6 +2775,19 @@ body {
   /** Remove default browser outline */
   outline: none;
   /** Unhide lightbox **/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s linear;
+  transition: opacity 0.35s linear;
+}
+
+.lightbox:target #videoModal .modal-header, .lightbox:target #videoModal .modal-body {
   display: block;
 }
 
@@ -2885,11 +2799,10 @@ body {
 }
 
 #videoModal .modal-header {
-  background: #000;
   border: 0;
   color: #fff;
   position: relative;
-  height: 35px;
+  display: none;
 }
 
 #videoModal .modal-header h3 {
@@ -2904,6 +2817,7 @@ body {
   padding: 0;
   max-height: none;
   overflow: hidden;
+  display: none;
 }
 
 #videoModal .modal-footer:empty {
@@ -2911,14 +2825,41 @@ body {
 }
 
 #videoModal .close {
-  font-size: 24px;
+  font-size: 0;
   margin: 0;
   opacity: 1;
   position: absolute;
-  right: 0;
+  right: -5rem;
   text-shadow: none;
-  top: 0;
+  top: -3rem;
   width: 38px;
   cursor: pointer;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+}
+
+#videoModal .close:before, #videoModal .close:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: -6px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#videoModal .close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.noscroll {
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

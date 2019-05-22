@@ -1,0 +1,263 @@
+/* Colors - Social Media
+================================================== */
+$color__facebook:       #3b5999;
+$color__twitter:        #55acee;
+$color__instagram:      #527fa3;
+$color__linkedin:       #0077b5;
+$color__snapchat:       #ffcc00;
+$color__google-plus:    #d84b37;
+$color__youtube:        #cd201f;
+$color__pinterest:      #de2127;
+
+$color--grey-05:    #333;
+/* Sprite
+================================================== */
+$sprite__grid:              30px;
+$sprite__location:          "/assets/images/sprite.png";
+$sprite__location--retina:  "/assets/images/sprite@2x.png";
+$sprite__width--retina:     1000px;
+$sprite__location--ie8:     "/assets/images/ie8/sprite-ie8.png";
+
+$spacing:                   20px;
+
+@mixin mixin_social-link($color, $icon-x-pos, $icon-y-pos){
+  i { background-position: (-($icon-x-pos*$sprite__grid)) (-($icon-y-pos*$sprite__grid)); }
+
+  .social-link__link:before {
+    background-color: $color;
+
+
+    
+    &:hover, &:focus {
+      background-color: softlight($color, $color--grey-05);
+    }
+  }
+
+  .social-link__share {
+    i {
+      background-color: $color;
+      outline: 4px solid $color;
+    }
+
+    &:hover, &:focus {
+      i {
+        background-color: softlight($color, $color--grey-05);
+        outline: 4px solid softlight($color, $color--grey-05);
+      }
+    }
+  }
+}
+
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin hide-text {
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+}
+
+
+.social-link {
+  @include inline-block;
+  margin: 0 15px 0 0;
+  background: 0 ;
+  p + & { margin-top: 0; }
+
+  &__facebook      { @include mixin_social-link($color__facebook, 2, 0);     }
+  &__twitter       { @include mixin_social-link($color__twitter, 1, 2);      }
+  &__instagram     { @include mixin_social-link($color__instagram, 1, 0);    }
+  &__linkedin,
+  &__linked-in     { @include mixin_social-link($color__linkedin, 2, 1);     }
+  &__snapchat      { @include mixin_social-link($color__snapchat, 0, 0);     }
+  &__google-plus   { @include mixin_social-link($color__google-plus, 0, 2);  }
+  &__youtube       { @include mixin_social-link($color__youtube, 1, 1);      }
+  &__pinterest     { @include mixin_social-link($color__pinterest, 0, 1);    }
+  &__research-gate { @include mixin_social-link(#00d0af, 10, 3);     }
+  &__orcid         { @include mixin_social-link(#a6ce39, 10, 0);     }
+  &__academia      { @include mixin_social-link(#3c3f42, 10, 1);     }
+  &__the-conversation { @include mixin_social-link(#d8352a, 10, 2);  }
+  &__weibo         { @include mixin_social-link(#d72928, 1, 11);  }
+  &__wechat         { @include mixin_social-link(#51c332, 3, 0);  }
+  &__deakin-this   { @include mixin_social-link(#8b8b8b, 9, 11);  }
+  &__deakin-explore{ @include mixin_social-link(#017c92, 10, 11);  }
+
+  &__atar {
+    .social-link__link {
+      background: transparent url('/assets/images/atar.png') no-repeat -5px -5px;
+      background-size: 44px;
+      height: 36px;
+      width: 36px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      } 
+    }
+  }
+
+  &__get-started {
+    .social-link__link {
+      background: transparent url('/assets/images/footer-gs.png') no-repeat 0px 0px;
+      background-size: 100%;
+      height: 34px;
+      width: 34px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      } 
+    }
+  }
+
+  &__dkn-life {
+    .social-link__link {
+      background: transparent url('/assets/images/footer-dl.png') no-repeat 0px 0px;
+      background-size: 100%;
+      height: 34px;
+      width: 34px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      } 
+    }
+  }
+
+  &__link i, &__share i {
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("https://www.deakin.edu.au/__data/assets/image/0012/767739/sprite@2x.png?v=0.1.12");
+    background-repeat: no-repeat;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-size: 500px auto;
+  }
+
+  &__link {
+    @include hide-text;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    padding: 3px 0;
+    margin-bottom: 15px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      content: "";
+      -webkit-backface-visibility: hidden;
+    }
+
+    &:hover:before {
+        transform: translateZ(0) scale(1.15);
+      }
+
+    i {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: scale(0.8);
+      backface-visibility: visible;
+    }
+  }
+
+  &__share {
+    display: inline-block;
+    padding: 10px 0 0;
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: $font-worldly-bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    i {
+      margin-right: 12px;
+      position: relative;
+      top: -4px;
+      left: -2px;
+    }
+
+    // @include mixin_transition(background-color 150ms ease-out);
+  }
+
+  &__wrapper, &__dropdown {
+    margin: $spacing/2 -5px 0;
+    @include inline-block;
+
+    & + .social-link__dropdown { display: none; }
+    &.visible + .social-link__dropdown { display: block; }
+
+    .social-link {
+      @include inline-block;
+      vertical-align: top;
+      list-style-type: none;
+      padding-left: 0;
+      background-image: none;
+      margin: 0 5px;
+      float: left;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 10;
+    float: left;
+    margin: 10px 0;
+    clear: both;
+    background-color: $white;
+    padding: $spacing 12px $spacing/2;
+    border: 1px solid $black;
+    border-radius: 50%;;
+
+    &:after, &:before {
+      bottom: 100%;
+      right: 16px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #ffffff;
+      border-width: 5px;
+      margin-right: -5px;
+    }
+
+    &:before {
+      border-color: rgba(5, 128, 149, 0);
+      border-bottom-color: $black;
+      border-width: 6px;
+      margin-right: -6px;
+    }
+  }
+
+  &__more  {
+    background-color: transparent;
+    a, i { transform: none !important }
+    // i { @include mixin_sprite--inline(2, 7, 30px, 30px); }
+  }
+}
+
+.footer-social-links__list {
+  margin: 0;
+  padding: 0;
+}
