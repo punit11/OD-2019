@@ -4,8 +4,8 @@ import {jQueryScrollbar} from "jquery.scrollbar";
 
 const modifySelect = (function(){
     $('.od-select').select2({
-      minimumResultsForSearch: Infinity,
-      width: 'resolve'
+      minimumResultsForSearch: Infinity
+      // width: 'resolve'
     });
     console.log('Select2 implemented and finished');
   

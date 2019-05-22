@@ -25,6 +25,8 @@ import "../styles/_modal-video.scss";
 import "../styles/_plan-yr-day.scss";
 import "../styles/_eventcard.scss";
 import "../styles/_select.scss";
+import "../styles/_select2.scss";
 import "../styles/_scrollbar.scss";
 import "../styles/_getting-here.scss";
 import "../styles/_practicle-learning.scss";
+import "../styles/_owl.carousel.scss";

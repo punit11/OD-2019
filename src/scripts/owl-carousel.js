@@ -14,7 +14,7 @@ import {owlCarousel} from "owl.carousel";
     responsiveClass:true,
     responsive:{
       0: {
-        items: 3
+        items: 1
       },
       576: {
         items: 2
