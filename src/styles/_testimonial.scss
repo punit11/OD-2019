@@ -1,4 +1,4 @@
-.testimonial-heading {
+.custom-heading {
   h2 {
     @extend %h1;
     // font-size: 5.75rem;
@@ -14,10 +14,8 @@
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
     @include sm {
-      // font-size: 10.75rem;
-      // margin-bottom: 3rem;
-      // font-size: 170px;
-      margin: 0 0 1vw 0;
+      // margin: 0 0 1vw 0;
+      margin: 0 0 0.55vw 0;
       padding: 0;
     }
     @include md {
@@ -55,12 +53,12 @@
     }
   }
 }
+
 .testimonial {
   display: flex;
   flex: 1 1 auto;
   align-items: flex-start;
   margin-bottom: 3.2rem;
-  
 
   @include sm {
     margin-bottom: 3.5rem;
@@ -73,7 +71,13 @@
 
   @include lg {
     margin-bottom: 9.1rem;
+    
+    &:nth-child(3), &:nth-child(4) {
+      margin-bottom: 0;
+    }
   }
+
+  
 
   &-wrapper {
     margin: 4rem 0;
@@ -86,10 +90,16 @@
     background-color: #000;
     padding: 1rem;
     width: 100%;
+    max-width: 4.8rem;
+    max-height: 4.8rem;
+    box-sizing: border-box;
 
 
     @include sm {
       padding: 2rem;
+      max-width: 100%;
+      max-height: 100%;
+      box-sizing: border-box;
     }
 
     &__container {
@@ -116,5 +126,24 @@
   }
   p {
     margin: 0;
+  }
+}
+
+.testimonial-wrapper {
+  &.location-page {
+
+    @include md {
+      margin: 12.7rem 0 11rem;
+    }
+    
+      h2 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0;
+
+        @include md {
+          margin-bottom: 6rem;
+        }
+      }
   }
 }

@@ -10,12 +10,26 @@
     min-height: 288px;
     max-width: 528px;
     z-index: 0;
+    
     @include sm {
       order: 0;
       margin: 10rem 0;
       width: 50vw;
     }
 
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 11.8rem;
+      height: 11.8rem;
+      background: #ffffff;
+      // border-radius: 50%;
+      bottom: 3rem;
+      left: -5rem;
+      z-index: -1;
+    }
+    
     img {
       width: 100%;
     }

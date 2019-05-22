@@ -1,39 +1,271 @@
 .hero-banner {
   background-color: #000;
-  padding: 1rem;
+  background: $black url(http://localhost:8080/src/images/deakin-bg.png) no-repeat top right;
+  background-size: contain;
+  padding: 4rem 1rem 2rem 1rem;
+  align-items: center;
+
     .text h1 {
         color: #fff;
         @extend %h1;
+        max-width: 60rem;
+        
         @include md {
-        font-size: 6.2rem;
-        line-height: 6.2rem;
+          font-size: 6.2rem;
+          line-height: 6.2rem;
         }
        span {
         display: block;
         margin-top: 3rem;
         color: $yellow;
+        position: relative;
       }
   }
   .hero-pic {
+    position: relative;
+    top: -5rem;
+    left: -3rem;
+
+    @include sm {
+      top: 0;
+      left: 0;
+    }
+
     @include md {
-      position: relative;
+      top: initial;
+
       .d-stencil {
         width: 100%;
-        }
-  }
-    .solid-triangle {
-      margin-left: 7rem;
+      }
+    }
+
+    @include xxl {
+      margin-left: -4rem;
+    }
+
+    &:before {
+
       @include md {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: transparent url(http://localhost:8080/src/images/shield-side-copy@2x.png) no-repeat center center;
         position: absolute;
-        top: 3%;
-        left: 15%;
-          }
+        top: 0;
+        left: 20px;
+        background-size: contain;
+        max-height: 225px;
+        margin-top: 11%;
+      }
+      
+    }
+
+    .triangle.face-right {
+      transform: rotate(-90deg);
+      width: 3.2rem;
+      position: relative;
+      left: calc(100% - 33px);
+      top: 3.3rem;
+
+      @include sm {
+        left: -30%;
+      }
+
+      @include md {
+        display: none;
+      }
     }
   }
+
   .msg{
       color:#fff;
       font-family: $font-worldly-light;
-      font-size: 1.8rem;
+      
+      position: relative;
+
+      @include xl {
+        top: -1rem;
+      }
+
+      @include xxl {
+        top: -7rem;
+      }
+      
+
+      p {
+        $min_width: 768px;
+        $max_width: 1200px;
+        $min_font: 17px;
+        $max_font: 22px;
+
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        line-height: 1.44em;
+        margin: 0;
+      }
+  }
+
+  &.location-page {
+    background: $blue;
+    padding: 0;
+    justify-content: space-between;
+
+    @include md {
+      flex-wrap: nowrap;
+    }
+
+    @include lg  {
+      justify-content: initial;
+    }
+
+    .text {
+      order: 2;
+      h1 {
+        $min_width: 768px;
+        $max_width: 1200px;
+        $min_font: 34px;
+        $max_font: 62px;
+
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        line-height: 1.03em;
+
+        span {
+          margin-top: 0;
+
+          @include lg {
+            // margin-top: 3rem;
+          }
+        }
+      }
+
+      @include sm {
+        padding: 0 12rem;
+      }
+
+      @include md {
+        padding: 0;
+      }
+      @include xl {
+        order: 1;
+      }
+    }
+
+    .icon-white-triangle {
+      width: 4.3rem;
+      position: absolute;      
+      height: 4.7rem;
+      left: calc(100% - 40px);
+      transform: rotate(180deg);
+      top: -6px;
+
+
+      @include md {
+        left: -6.2rem;
+        transform: rotate(0deg);
+        top: initial;
+
+      }
+    }
+
+    .hero-pic {
+      order: 1;
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      padding-bottom: 1.2rem;
+
+      @include md {
+        min-width: 46rem;
+        max-width: 61.4rem;
+        width: 37vw;
+        order: 2;
+        margin: -1rem 0 -1.3rem 0;
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 920px) {
+        max-width: 50%;
+        width: 100%;  
+        // order: 2;
+      }
+
+      img {
+        width: 100%;
+      }
+      
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 11.8rem;
+        height: 11.8rem;
+        background: $white;
+        border-radius: 50%;
+        top: 3rem;
+        left: -5rem;
+        z-index: -1;
+
+        @include lg {
+          top: 5rem;
+          left: -6rem;
+        }
+      }
+
+      &:after {
+        // display: none;
+
+        @include md {
+          $min_width: 1200px;
+          $max_width: 1644px;
+          $min_font: 145px;
+          $max_font: 165px;
+
+          @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        
+          content: "Deakin";
+          display: none;
+          position: absolute;
+          // font-size: 165px;
+          height: 100%;
+          text-transform: uppercase;
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+          top: -1px;
+          left: 93%;
+          font-family: "UniversLTStd-BoldCn", sans-serif;
+          z-index: -1;
+          color: $blue;
+          -webkit-text-fill-color: $blue;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: $white;
+          line-height: 1em;
+          opacity: 0.5;
+
+          @include lg {
+            display: block;
+          }
+          
+        }        
+      }
+      
+      .verticle-text {
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
+    }
+    
+    @include lg {
+      h1 {
+        padding-right: 10rem;
+
+        span {
+          margin-top: 0;
+        }
+      }
+    }
+ 
   }
 }
 

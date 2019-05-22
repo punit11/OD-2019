@@ -26,12 +26,12 @@
         width: 259px;
         text-align: right;
         margin-right: 2.4rem;
-        overflow-y: hidden;
     }
 
     .video-cta {
       display: flex;
       flex: 1;
+      align-items: center;
       cursor: pointer;
     }
     

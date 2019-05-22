@@ -1,0 +1,36 @@
+.btn {
+  -webkit-appearance: none;
+  -webkit-transition: all .15s ease-out;
+  appearance: none;
+  background: teal;
+  border-radius: 3rem;
+  border: 1px solid $teal;
+  color: $white;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-family: $font-stack-os-regular;
+  font-style: normal;
+  font-weight: 600;
+  max-height: 55px;
+  min-width: 15.2rem;
+  padding-left: 2rem!important;
+  padding: 1.6rem 2rem 1.8rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all .15s ease-out;
+  align-items: center;
+  justify-content: center;
+
+  &-inverse {
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #adadad;
+    color: #4d4d4b !important;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-right: 2.5rem;
+  }
+}
