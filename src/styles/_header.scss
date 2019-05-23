@@ -1,25 +1,28 @@
 .hero-banner {
-  background-color: #000;
-  background: $black url(http://localhost:8080/src/images/deakin-bg.png) no-repeat top right;
-  background-size: contain;
+  background: $black;
   padding: 4rem 1rem 2rem 1rem;
   align-items: center;
 
-    .text h1 {
-        color: #fff;
-        @extend %h1;
-        max-width: 60rem;
-        
-        @include md {
-          font-size: 6.2rem;
-          line-height: 6.2rem;
-        }
-       span {
-        display: block;
-        margin-top: 3rem;
-        color: $yellow;
-        position: relative;
+  @include md {
+    background: $black url(http://localhost:8080/src/images/deakin-bg.png) no-repeat top right;
+    background-size: contain;
+  }
+
+  .text h1 {
+      color: #fff;
+      @extend %h1;
+      max-width: 60rem;
+      
+      @include md {
+        font-size: 6.2rem;
+        line-height: 6.2rem;
       }
+      span {
+      display: block;
+      margin-top: 3rem;
+      color: $yellow;
+      position: relative;
+    }
   }
   .hero-pic {
     position: relative;

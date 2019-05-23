@@ -62,6 +62,10 @@
   max-height: none;
   overflow: hidden;
   display: none;
+
+  iframe#player {
+    max-width: 100%;
+  }
 }
 #videoModal .modal-footer:empty {
   display: none !important;
