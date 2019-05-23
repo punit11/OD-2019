@@ -1,14 +1,14 @@
 import $ from "jquery";
 
-var navbar_toggle = function() {
+var navbar_toggle = (function() {
   $(".Navbar__Link-toggle").on("click", function() {
     console.log("Clicked");
     const navs = document.querySelectorAll(".Navbar__Items");
     navs.forEach(nav => nav.classList.toggle("Navbar__ToggleShow"));
   });
-};
+}());
 
-var accordion_click = function() {
+var accordion_click = (function() {
   $("button.accordion").click(function() {
     $(this).toggleClass("active");
     if ($(this).hasClass("active")) {
@@ -21,7 +21,7 @@ var accordion_click = function() {
         .text("Show");
     }
   });
-};
+}());
 
 // Make site scroll again once video is closed.
 // $(document).on(

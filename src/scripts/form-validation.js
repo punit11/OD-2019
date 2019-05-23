@@ -1,6 +1,7 @@
 import $ from "jquery";
+import validate from "jquery-validation";
 
-const form_validation = function(){
+const form_validation = (function(){
 var iAmA_val = '';
 $("input[name='form-lead-type']").change(function(){
     iAmA_val = $( "input[name='form-lead-type']:checked" ).val();
@@ -93,6 +94,6 @@ $("#comps-form").validate({
             error.insertAfter(element);
     }
 });
-};
+}());
 
 export {form_validation};

@@ -1,7 +1,10 @@
 .hero-banner {
-  background-color: #000;
-  background: $black url(http://localhost:8080/src/images/deakin-bg.png) no-repeat top right;
-  background-size: contain;
+  background: none;
+  background-color: $black;
+  @include md {
+    background: $black url(http://localhost:8080/src/images/deakin-bg.png) no-repeat top right;
+    background-size: contain; 
+  }
   padding: 4rem 1rem 2rem 1rem;
   align-items: center;
 

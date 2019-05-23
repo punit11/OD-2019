@@ -1,18 +1,24 @@
 import $ from "jquery";
+import {validate, valid} from "jquery-validation";
 
 var comp_form = $(function() {
   $("#comps-button").on("click", function() {
     console.log("Clicked");
+    $(".comps-form").show();
     $(".registration-form fieldset:first-child").fadeIn("slow");
     return false;
   });
 
   // next step
   $(".registration-form .btn-next").on("click", function() {
-   
+    
+    var myform = $( "#comps-form" );
+    myform.validate();
+
     let fs_id = $($(this).data("id"));
-    console.log('fs_id ', fs_id);
-    if ($("#comps-form").valid()) {
+    console.log('valid ', myform.valid());
+    if ( myform.valid() ) {
+      console.log("Inside form function");
       var parent_fieldset = $(this).parents("fieldset");
       var next_step = true;
       if (next_step) {
@@ -72,15 +78,6 @@ var comp_form = $(function() {
         .join("; ");
       console.log("Campus__c: ", Study_Area__c);
 
-    //   console.log("firstName ", firstName);
-    //   console.log("Email ", Email);
-    //   console.log("mobilePhone ", mobilePhone);
-    //   console.log("Lead_Type__c ", Lead_Type__c);
-    //   console.log("Year_Level__c ", Year_Level__c);
-    //   console.log("Level_of_Study__c ", Level_of_Study__c);
-    //   console.log("Study_Area__c ", Study_Area__c);
-    //   console.log("Campus__c ", Campus__c);
-
       marketoSubmit(
         firstName,
         Email,
@@ -116,7 +113,7 @@ var comp_form = $(function() {
           return false;
         });
         form.addHiddenFields({
-          //These are the values which are submitted to Marketo
+          // These are the values which are submitted to Marketo
           FirstName: firstName,
           Email: Email,
           MobilePhone: mobilePhone,
@@ -128,6 +125,11 @@ var comp_form = $(function() {
           Campus__c: Campus__c
         });
         form.submit();
+        // Show sucessful form submission acknowledgement
+        $(".comps-form").fadeOut();
+        $(".comps-msg").empty().append("<p class='thankyou-msg'>ThankYou, your entry has been submitted.</p>").fadeIn();
+
+
       }); // Market form end
     }
   });
