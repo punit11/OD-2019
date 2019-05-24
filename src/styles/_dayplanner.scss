@@ -1,0 +1,179 @@
+.planyrday-wrapper {
+    background-color: #000000;
+    background-image: url("../images/shapre-dee-yellow.svg"), url("../images/deakin-bg.png"), url("../images/shapes.svg"), url("../images/pink-oval.svg");
+    background-repeat:  no-repeat, no-repeat;
+    background-position: 91% 206px, 100% 77.2%, 0 37%, 0 5%;
+    background-size: 259px 226px, 263px 567px, auto, auto;
+
+    h1 {
+        font-family: $font-stack-xl;
+        font-size: 9.6rem;
+        line-height: 1em;
+        letter-spacing: -1.6px;
+        text-transform: uppercase;
+    }
+
+    .sessions-container .eventcard {
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .step-container {
+        margin-bottom: 3.2rem;
+        padding: 3.2rem;
+
+        &.no-top-padding {
+            padding-top: 0;
+        }
+
+        .refine {
+            justify-content: flex-start;
+            padding-left: 4rem;
+            font-size: 1.8rem;
+            font-family: $font-worldly-light;
+
+            .bg--round-pink {
+                background: $magenta;
+                display: inline-flex;
+                border-radius: 50%;
+                height: 24px;
+                width: 24px;
+                box-sizing: border-box;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                padding-top: 3px;
+                margin-right: 8px;
+                position: relative;
+                top: 4px;
+            }
+
+            .select2 {
+                width: auto!important;
+                background: none;
+                color: $yellow;
+
+                &-container--default {
+                    .select2-selection--single {
+                        padding: 0;
+                        margin: 0 1.4rem 0 1.1rem;
+                        background: none;
+                        border: none;
+                        
+                        .select2-selection {
+                            &__rendered {
+                                color: $yellow;
+                                line-height: 3.1rem;
+                            }
+                            &__arrow {
+                                background: url(http://localhost:8080/src/images/yellow-downarrow.svg) no-repeat center !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            strong {
+                font-family: $font-worldly-bold;
+                font-size: 1.8rem;
+                margin: 0 1.2rem;
+            }
+        }
+    }
+
+    .eventcard {
+        padding: 0;
+        &__header {
+            align-items: center;
+            border-bottom: 1px solid $border-grey;
+            justify-content: space-between;
+            padding: 2.5rem;
+
+            .time {
+                font-family: $font-worldly-bold;
+                font-size: 1.8rem;
+                line-height: 1.33em;
+                color: $magenta;
+                margin: 0;
+
+                span {
+                    display: initial;
+                    margin-left: initial;
+                    margin-right: initial;
+                    margin-bottom: initial;
+
+                    &.alert {
+                        color: $charcoal;
+                        position: relative;
+                        top: -0.2rem;
+
+                        .icon-alert {
+                            display: inline-block;
+                            margin: 0 0.7rem;    
+                            position: relative;
+                            top: 0.2rem;
+                        }
+                        display: inline-block;
+                        
+                    }
+                }
+            }
+
+            .add {
+                &.selected {
+                    background: $green url("../images/tick.svg") no-repeat center center;
+                    color: $white;
+                    border: $green;
+                }
+            }
+        }
+        &__body {
+            align-items: baseline;
+            padding: 2.4rem 2.8rem;
+
+            .flexContainer--3qtr {
+                box-sizing: border-box;
+                margin-left: 7%;
+                flex: 1 0 68% ;
+            }
+
+            
+
+            .content {
+                padding-left: 2.5rem;
+                max-width: 44.2rem;
+            }
+        }
+
+        &--cancelled {
+            opacity: 0.6;
+
+            .time {
+                color: $black;
+            }
+
+            .remove {
+                font-family: $font-worldly-bold;
+                font-size: 1.4rem;
+                line-height: 1.33;
+                color: $black;
+                text-decoration: underline;
+                cursor: pointer;
+                flex: 0 0 auto;
+            }
+        }
+    }
+}
+
+.icon-alert {
+    display: inline-block;
+    height:1.6rem;
+    width:1.6rem;
+
+    svg {
+        max-width: 100%;
+    }
+}

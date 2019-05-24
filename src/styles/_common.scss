@@ -131,6 +131,22 @@ a.button {
     }
   }
 
+  &--qtr {
+    flex: 1 1 100%;
+
+    @include md {
+      flex: 1 1 25%;
+    }
+  }
+
+  &--3qtr {
+    flex: 1 1 100%;
+
+    @include md {
+      flex: 1 1 75%;
+    }
+  }
+
   &-mobile-wrap {
     flex-wrap: wrap;
 

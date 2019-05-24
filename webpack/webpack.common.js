@@ -7,7 +7,8 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     home: Path.resolve(__dirname, '../src/scripts/home-entry.js'),
-    location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
+    location: Path.resolve(__dirname, '../src/scripts/location-entry.js'),
+    dayplanner: Path.resolve(__dirname, '../src/scripts/dayplanner-entry.js')
   },
   output: {
     path: Path.join(__dirname, '../build'),
@@ -25,13 +26,11 @@ module.exports = {
       { from: Path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({
-<<<<<<< HEAD
       // template: Path.resolve(__dirname, '../src/location.html')
-      template: Path.resolve(__dirname, '../src/index.html')
-=======
-      template: Path.resolve(__dirname, '../src/index.html')
-      // template: Path.resolve(__dirname, '../src/index.html')
->>>>>>> bc6a2ad4508b7ac395a3f11c6f82a8968af4e08e
+      // template: Path.resolve(__dirname, '../src/index.html')     
+      // chunks: ['home', 'location', 'dayplanner'],
+      template: Path.resolve(__dirname, '../src/dayplanner.html')
+
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
