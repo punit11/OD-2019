@@ -12,7 +12,7 @@
     background-color: #fff;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 1.8rem 0;
     width: 100%;
     border: none;
     text-align: left;
@@ -24,6 +24,7 @@
     display: flex;
     flex: 1;
     justify-content: space-between;
+    align-items: center;
 
     span {
         font-family: "Worldly Bold";
