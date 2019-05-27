@@ -26,10 +26,10 @@ module.exports = {
       { from: Path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({
-      // template: Path.resolve(__dirname, '../src/location.html')
-      // template: Path.resolve(__dirname, '../src/index.html')     
-      // chunks: ['home', 'location', 'dayplanner'],
-      template: Path.resolve(__dirname, '../src/dayplanner.html')
+      // template: Path.resolve(__dirname, '../src/location.html'),
+      template: Path.resolve(__dirname, '../src/index.html'),
+      chunks: ['home'],
+      // template: Path.resolve(__dirname, '../src/dayplanner.html')
 
     }),
     new webpack.ProvidePlugin({

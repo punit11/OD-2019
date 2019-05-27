@@ -1,9 +1,13 @@
 .planyrday-wrapper {
     background-color: #000000;
-    background-image: url("../images/shapre-dee-yellow.svg"), url("../images/deakin-bg.png"), url("../images/shapes.svg"), url("../images/pink-oval.svg");
-    background-repeat:  no-repeat, no-repeat;
-    background-position: 91% 206px, 100% 77.2%, 0 37%, 0 5%;
-    background-size: 259px 226px, 263px 567px, auto, auto;
+
+    @include md {
+        background-image: url("../images/shapre-dee-yellow.svg"), url("../images/deakin-bg.png"), url("../images/shapes.svg"), url("../images/pink-oval.svg");
+        background-repeat:  no-repeat, no-repeat;
+        background-position: 91% 206px, 100% 92.5%, 0 37%, 0 5%;
+        background-size: 259px 226px, 198px 427px, auto, auto;
+    }
+    
 
     h1 {
         font-family: $font-stack-xl;
@@ -23,13 +27,20 @@
 
     .step-container {
         margin-bottom: 3.2rem;
-        padding: 3.2rem;
+        padding: 3.2rem 0.8rem;
+        @include md {
+            padding: 3.2rem;
+        }
+        
+        
 
         &.no-top-padding {
             padding-top: 0;
         }
 
         .refine {
+            overflow-x: hidden;
+            box-sizing: border-box;
             justify-content: flex-start;
             padding-left: 4rem;
             font-size: 1.8rem;
@@ -83,14 +94,14 @@
             }
         }
     }
-
+    
     .eventcard {
-        padding: 0;
+        padding: 2.5rem;
         &__header {
             align-items: center;
             border-bottom: 1px solid $border-grey;
             justify-content: space-between;
-            padding: 2.5rem;
+            // padding: 2.5rem;
 
             .time {
                 font-family: $font-worldly-bold;
@@ -164,6 +175,39 @@
                 cursor: pointer;
                 flex: 0 0 auto;
             }
+        }
+    }
+
+    .tiles {
+        padding-right: 0;
+        padding-left: 0;
+
+        @include md {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
+        &-heading {
+            margin-top: 8rem;
+            position: relative;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+
+        &-wrapper {
+            padding-bottom: 0;
+            overflow-y: hidden;
+        }
+    }
+
+    .btn {
+        font-size: 1.3rem;
+    }
+
+    @include md {
+        .module-with-carousel .owl-carousel .owl-stage {
+            left: -20rem;
         }
     }
 }

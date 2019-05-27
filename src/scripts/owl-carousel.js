@@ -11,10 +11,10 @@ import {owlCarousel} from "owl.carousel";
     nav: true,
     stagePadding: 0,
     heightStyle: "content",
-    responsiveClass:true,
+    // responsiveClass:true,
     responsive:{
-      0: {
-        items: 1
+      0:{
+        items:1
       },
       576: {
         items: 2

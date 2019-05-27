@@ -23,4 +23,27 @@
       font-size: 1.3rem;
       line-height: 1.6rem;
   }
+
+  .row.pt-3 {
+    position: relative;
+  }
+  .footer-image__wrapper {
+    display: none;
+
+    @include lg {
+      display: block;
+      position: absolute;
+      bottom: 2%;
+      right: -8%;
+      width: 100%;
+      max-width: 366px;
+      height: 100%;
+    }
+
+    @include xxl {
+      bottom: 95%;
+      right: 0;
+      max-width: 550px;
+    }
+}
 }

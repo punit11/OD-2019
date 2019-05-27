@@ -9,7 +9,7 @@ var navbar_toggle = (function() {
 }());
 
 var accordion_click = (function() {
-  $("button.accordion").click(function() {
+  $(document).on("click", "button.accordion", function() {
     $(this).toggleClass("active");
     if ($(this).hasClass("active")) {
       $(this)
