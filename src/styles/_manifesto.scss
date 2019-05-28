@@ -21,8 +21,8 @@
   
 
   @include sm {
-    background: #000 url("../images/deakin-twin-stencil.png") no-repeat left
-      center;
+    background: #000 url("../images/deakin-twin-stencil.png") no-repeat left center;
+    // background: #000 url("./?a=1913042") no-repeat left center;
   }
   .tri-outline {
     @include sm {

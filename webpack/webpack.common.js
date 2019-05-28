@@ -32,24 +32,25 @@ module.exports = {
       // template: Path.resolve(__dirname, '../src/dayplanner.html')
 
     }),
+
+    // new HtmlWebpackPlugin({
+    //   inject: false,
+    //   chunks: ['home'],
+    //   template: Path.resolve(__dirname, '../src/index.html')
+    //   // filename: '../src/index.html'
+    // }),
+    // new HtmlWebpackPlugin({
+    //   inject: false,
+    //   chunks: ['location'],
+    //   template: Path.resolve(__dirname, '../src/location.html')
+    //   // filename: '../src/location.html'
+    // }),
+
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
     })
-
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   chunks: ['home'],
-    //   template: Path.resolve(__dirname, '../src/index.html'),
-    //   filename: '../build/index.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   chunks: ['location'],
-    //   template: Path.resolve(__dirname, '../src/location.html'),
-    //   filename: '../build/location.html'
-    // })
   ],
   resolve: {
     alias: {
