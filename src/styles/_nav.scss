@@ -13,6 +13,7 @@ body {
     font-family: sans-serif;
     color: white;
     padding: 1.5rem 2.6rem;
+    position: relative;
 }
 
 .Navbar__Link {
@@ -66,12 +67,14 @@ body {
         margin-left: 0;
     }
     .Navbar__ToggleShow {
+        box-sizing: border-box;
         display: flex;
         position: absolute;
         width: 100%;
         left: 0;
-        top: 8.5rem;
+        top: 5rem;
         background: $white;
+        z-index: 100;
     }
     .Navbar__Link {
         padding: .5rem 1.5rem;

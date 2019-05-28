@@ -75,7 +75,8 @@
 
         &-nav {
             position: absolute;
-            top: calc(50% - 25px);
+            // top: calc(50% - 25px);
+            top: 8.8rem;
             display: none;
             flex: 0 0 100%;
             justify-content: space-between;

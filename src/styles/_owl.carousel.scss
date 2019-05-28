@@ -18,6 +18,7 @@
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
+    min-width: 6276px;
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
     content: ".";

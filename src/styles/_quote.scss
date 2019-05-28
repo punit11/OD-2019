@@ -110,7 +110,8 @@
     // }
 
     @include xxl {
-      right: 24%;
+      right: auto;
+      left: 54rem;
     }
     
     &:before {
@@ -160,6 +161,11 @@
       position: absolute;
       right: 24%;
       bottom: 15%;
+    }
+
+    @include xxl {
+      right: auto;
+      left: 54rem;
     }
   }
 }

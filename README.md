@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Webpack Frontend Starterkit
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/wbkd/webpack-starter.svg)](https://greenkeeper.io/)
@@ -31,6 +30,3 @@ npm run build
 * Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
 
 When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
-=======
-# OD-2019
->>>>>>> bc09396550fee8a905d549002a07737133eefcff
