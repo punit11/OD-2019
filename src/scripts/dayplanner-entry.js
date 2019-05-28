@@ -2,6 +2,7 @@ import $ from "jquery";
 import {navbar_toggle, accordion_click} from "./home";
 import {owl} from "./owl-carousel";
 import {modifySelect, fancy_scrollbar} from "./select2";
+import {show_sessioninfo} from "./dayplanner";
 // import {youtubeApi} from "./you-tube-api";
 
 import "../styles/_fonts.scss";
