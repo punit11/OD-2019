@@ -1,5 +1,6 @@
 .explore-campus {
     background: #ffffff url("../images/campus-video-v-1-mobile.jpg") no-repeat center;
+    // background:#fff url(./?a=1913031) no-repeat 50%;
     min-height: 250px;
     height: 66vw;
     width: 100%;
@@ -7,6 +8,7 @@
 
     @include lg {
       background: #ffffff url("../images/campus-video-v-1@2x.jpg") no-repeat top center;
+      // background:#fff url(./?a=1913030) no-repeat top;min-height:800px;
       min-height: 800px;
       background-size: cover;
       height: auto;
