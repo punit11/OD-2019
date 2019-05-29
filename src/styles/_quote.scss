@@ -94,15 +94,15 @@
       position: absolute;
       order: 2;
       width: 50vw;
-      max-width: 238px;
+      max-width: 250px;
       margin: 0rem 2rem 0 -4rem;
       min-width: 210px;
       right: 11%;
     }
 
     @include md {
-      max-width: 314px;
-      right: 15%;
+      max-width: 400px;
+      right: 12%;
     }
 
     // @include lg {
@@ -156,15 +156,17 @@
     margin-top: -1rem;
   }
   .student-info {
+    padding-top: 4rem;
     @include sm {
       order: 3;
       position: absolute;
       right: 24%;
-      bottom: 15%;
+      bottom: 12%;
+      padding-top: 1rem;
     }
 
     @include xxl {
-      right: auto;
+      right: 0;
       left: 54rem;
     }
   }

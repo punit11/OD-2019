@@ -126,8 +126,9 @@ var comp_form = $(function() {
         });
         form.submit();
         // Show sucessful form submission acknowledgement
-        $(".comps-form").fadeOut();
+        $(".comps-form, #comps-button").fadeOut();
         $(".comps-msg").empty().append("<p class='thankyou-msg'>Thanks for registering! Don't forget to start planning your day so you don't miss a thing at your Deakin Open Day.</p>").fadeIn();
+
 
 
       }); // Market form end

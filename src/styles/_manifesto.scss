@@ -48,9 +48,11 @@
   }
   span {
     display: inline-block;
-    margin-bottom: 0.5rem;
     line-height: normal;
-    height: 4rem;;
+    height: 3.5rem;
+    @include sm {
+      height: 5rem;
+    }
   }
 
   .shapes {
