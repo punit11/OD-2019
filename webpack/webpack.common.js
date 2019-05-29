@@ -6,9 +6,9 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    home: Path.resolve(__dirname, '../src/scripts/home-entry.js'),
-    location: Path.resolve(__dirname, '../src/scripts/location-entry.js'),
-    dayplanner: Path.resolve(__dirname, '../src/scripts/dayplanner-entry.js')
+    home: Path.resolve(__dirname, '../src/scripts/home-entry.js')
+    // location: Path.resolve(__dirname, '../src/scripts/location-entry.js'),
+    // dayplanner: Path.resolve(__dirname, '../src/scripts/dayplanner-entry.js')
   },
   output: {
     path: Path.join(__dirname, '../build'),
