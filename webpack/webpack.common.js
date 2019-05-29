@@ -26,17 +26,11 @@ module.exports = {
       { from: Path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({
-<<<<<<< HEAD
-      // template: Path.resolve(__dirname, '../src/location.html')
-       chunks: ['home'],
-       template: Path.resolve(__dirname, '../src/index.html')
-=======
       // template: Path.resolve(__dirname, '../src/location.html'),
       template: Path.resolve(__dirname, '../src/index.html'),
-      chunks: ['home'],
+      chunks: ['home']
       // template: Path.resolve(__dirname, '../src/dayplanner.html')
 
->>>>>>> 88748e21df23e466da1021fcbf7e649f88d2d535
     }),
 
     // new HtmlWebpackPlugin({

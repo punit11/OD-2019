@@ -51,23 +51,21 @@
       margin-left: -4rem;
     }
 
-    &:before {
-
-      @include md {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 100%;
-        background: transparent url(http://localhost:8080/src/images/shield-side-copy@2x.png) no-repeat center center;
-        position: absolute;
-        top: 0;
-        left: 20px;
-        background-size: contain;
-        max-height: 225px;
-        margin-top: 11%;
-      }
-      
-    }
+    // &:before {
+    //   @include md {
+    //     content: "";
+    //     display: block;
+    //     height: 100%;
+    //     width: 100%;
+    //     background: transparent url(http://localhost:8080/src/images/shield-side-copy@2x.png) no-repeat center center;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 20px;
+    //     background-size: contain;
+    //     max-height: 225px;
+    //     margin-top: 11%;
+    //   }
+    // }
 
     .triangle.face-right {
       transform: rotate(-90deg);

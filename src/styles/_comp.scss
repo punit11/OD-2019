@@ -25,10 +25,16 @@
   // }
 
   #comps-button {
-    margin-top: 2rem;
+    margin: 2rem 0;
     display: block;
     text-align: center;
-
+    width: 60%;
+    padding: 1.5rem 2rem;
+    @include sm {
+      width: auto;
+      padding: 1rem 2rem;
+    }
+   
     @include md {
       display: inline-block;
       text-align: left;
@@ -90,7 +96,6 @@
     }
 
     .comp-info {
-      
       @include md {
         margin-left: 3.4rem;
         padding-right: 2rem;
