@@ -31,7 +31,7 @@ var comp_form = $(function() {
         ) // when end
           .done(function() {
             $("html").animate({ scrollTop: fs_id.offset().top }, 500);
-            var offset = fs_id.offset();
+            // var offset = fs_id.offset();
           });
       }
     }
@@ -128,9 +128,9 @@ var comp_form = $(function() {
         // Show sucessful form submission acknowledgement
         $(".comps-form, #comps-button").fadeOut();
         $(".comps-msg").empty().append("<p class='thankyou-msg'>Thanks for registering! Don't forget to start planning your day so you don't miss a thing at your Deakin Open Day.</p>").fadeIn();
-
-
-
+      
+        let comps_offset = $( ".row.comps" );
+        $("html").animate({ scrollTop: comps_offset.offset().top }, 500);
       }); // Market form end
     }
   });
