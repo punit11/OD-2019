@@ -30,6 +30,13 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        @media (max-width: #{$screen-sm-min}) {
+            .panel {
+                padding: 0;
+            }    
+        }
+        
     }
 
     .step-container {
@@ -184,6 +191,7 @@
             button.accordion {
                 border-top: none;
                 position: relative;
+                padding-bottom: 0;
 
                 @include md {
                     display: none;
@@ -202,6 +210,14 @@
                     position: absolute;
                     left: 99px;
                     top: 23px;
+                }
+
+                &.active {
+                    padding-bottom: 1.8rem;
+
+                    svg {
+                        transform: rotate(180deg);
+                    }
                 }
             }
 
@@ -268,6 +284,9 @@
         font-size: 1.3rem;
     }
 
+    .module-with-carousel .owl-carousel .owl-stage {
+        left: 0;
+    }
     @include md {
         .module-with-carousel .owl-carousel .owl-stage {
             left: -20rem;
