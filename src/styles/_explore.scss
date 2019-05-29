@@ -15,8 +15,11 @@
     }
 
     p {
-        @extend %h1;
+      @media (max-width: #{$screen-sm-min}){
+        max-width: 19rem;
+      }
 
+        @extend %h1;
         $min_width: 568px;
         $max_width: 1600px;
         $min_font: 32px;
@@ -36,6 +39,10 @@
       flex: 1;
       align-items: center;
       cursor: pointer;
+
+      @media (max-width: #{$screen-sm-min}){
+        justify-content: center;
+      }
     }
     
     img {

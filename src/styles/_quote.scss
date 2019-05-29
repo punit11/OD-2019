@@ -53,26 +53,41 @@
       display: block;
       content: "";
       position: absolute;
-      width: 237px;
-      height: 206px;
+      width: 133px;
+      height: 116px;
       background: url(http://localhost:8080/src/images/shapre-dee-yellow.svg) no-repeat center;
-      top: 6rem;
-      left: -9rem;
+      top: 9rem;
+      left: -3rem;
       z-index: 2;
       background-size: cover;
+
+      @include lg {
+        top: 6rem;
+        width: 237px;
+        height: 206px;
+        left: -9rem;
+      }
     }
 
     &:after {
       display: block;
       content: "";
       position: absolute;
-      width: 11.8rem;
-      height: 11.8rem;
+      width: 6.1rem;
+      height: 6.1rem;
       background: #ffffff;
       border-radius: 50%;
       bottom: 7rem;
-      left: -6rem;
+      left: -3rem;
       z-index: -1;
+      top: calc(100% - 90px);
+
+      @include lg {
+        top: initial;
+        width: 11.8rem;
+        height: 11.8rem;
+        left: -6rem;
+      }
     }
   }
   .quote {
@@ -89,6 +104,7 @@
     margin: 2rem 0rem -1.5rem -2rem;
     letter-spacing: -0.6px;
     z-index: 1;
+    position: relative;
     
     @include sm {
       position: absolute;
@@ -101,7 +117,7 @@
     }
 
     @include md {
-      max-width: 400px;
+      max-width: 560px;
       right: 12%;
     }
 

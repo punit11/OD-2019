@@ -34,7 +34,7 @@
     $min_width: 568px;
     $max_width: 1200px;
     $min_font: 32px;
-    $max_font: 42px;
+    $max_font: 40px;
 
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
@@ -51,7 +51,7 @@
     line-height: normal;
     height: 3.5rem;
     @include sm {
-      height: 5rem;
+      height: 4rem;
     }
   }
 

@@ -3,6 +3,10 @@
     margin-bottom: 10rem;
     margin-top: 4.0rem;
     
+    @include sm {
+        margin-bottom: 16rem;
+    }
+    
     @include md {
         margin-bottom: 20rem;
     }
@@ -228,7 +232,7 @@
                             transition: all .15s ease-out;
                         }
                         &:after {
-                            content: "\e912";
+                            content: "\e91c";
                             display: inline-block;
                             font-family: icomoon !important;
                             -webkit-font-smoothing: antialiased;
@@ -239,7 +243,7 @@
                             speak: none;
                             text-transform: none;
                             top: 0.5rem;
-                            left: -2.8rem;
+                            left: -3rem;
                             color: #fff;
                             transition: all .15s ease-out;
                         }

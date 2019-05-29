@@ -4,7 +4,7 @@
 .blue {
   background-color: $blue;
   color: $white;
-  // @include sm {
+  // @include md {
   //   background-color: #fff;
   // }
 }
@@ -28,6 +28,7 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   padding: 0 1rem;
+  margin: -0.1rem 0;
 
   .arrowed-title{
     position: relative;
@@ -62,12 +63,18 @@
   color: #fff;
   overflow-y: auto;
   position: relative;
+  margin-bottom: -4.4rem;
 
   @include sm {
+    margin-bottom: 7.6rem;
+  }
+
+  @include md {
+    margin-bottom: 0;
     padding-bottom: 25rem;
   }
   .tiles {
-    @include sm {
+    @include md {
       display: flex;
     }
     .place {
@@ -76,11 +83,12 @@
       }
 
       p:first-child {
-        @include sm {
+        @include md {
           height: 5.2rem;
           margin-bottom:0.6rem;
           font-family: $font-worldly-bold;
           font-size: 2rem;
+          min-width: 11.2rem;
         }
 
         @include xxl {
@@ -89,8 +97,9 @@
       }
     }
     .date {
+      
       p:first-child {
-        @include sm {
+        @include md {
           font-family: $font-worldly-light;
           font-size: 1.6rem;
           font-weight: normal;
@@ -101,27 +110,39 @@
   }
   .yellow-triangle {
     margin: 3rem 0 0 3rem;
-    @include sm {
+    @include md {
       width: 8%;
     }
     z-index: 10;
     position: relative;
   }
+
+  .first-md {
+    @include md {
+      order: -1;
+    }
+    
+    p:first-child {
+      font-family: $font-worldly-bold;
+      position: relative;
+      top: 0.3rem;
+    }
+  }
   p {
     margin: 0;
   }
   .wbl {
-    @include sm {
+    @include md {
       border-left: 4px solid $magenta;
     }
   }
   .tile.gwp {
-    @include sm {
+    @include md {
       // background-color: $blue;
       border-left: 4px solid $blue;
     }    
     a span{
-    @include sm {
+    @include md {
       // color: #007d9b;
       }
     }
@@ -132,12 +153,12 @@
         color: #000;
       }
     }
-    @include sm {
+    @include md {
       border-left: 4px solid $yellow;
     }
   }
   .bur {
-    @include sm {
+    @include md {
       border-left: 4px solid $teal;
     }
   }
@@ -149,8 +170,24 @@
     flex: 1 1 0;
     transition: all 0.3s ease;
 
-    @include sm {
+    @include md {
+      padding: 2rem 1rem 3rem 1rem;
+    }
+    @include lg {
       padding: 2rem 2rem 3rem 2rem;
+    }
+
+    @media (max-width: #{$screen-sm-min}){
+      a.button {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+
+      .col-xs-6 {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
     }
 
     &:hover {
@@ -211,7 +248,7 @@
     }
 
     .date {
-      @include sm {
+      @include md {
         flex-direction: row-reverse;
         display: flex;
         flex-basis: 0;
@@ -219,7 +256,7 @@
       }
       
       sup {
-        font-family: $font-worldly-light;
+        font-family: $font-stack-xl;
         text-transform: uppercase;
         font-size: 1.6rem;
         font-weight: 300;
@@ -227,16 +264,31 @@
         top: 0.5rem;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
+
+        @include md {
+          font-family: $font-worldly-light;
+        }
       }
 
       p {
-        font-family: $font-worldly-light;
+        font-family: $font-stack-xl;
         text-transform: uppercase;
-        // font-weight: bold;
+        
+        @include md {
+          font-family: $font-worldly-light;
+        }
         &:last-child {
           font-size: 3rem;
           font-weight: 700;
           overflow: unset;
+          position: relative;
+          top: 1rem;
+          left: 0.5rem;
+
+          @include md {
+            top: initial;
+            left: initial;
+          }
         }
       }
       .place {

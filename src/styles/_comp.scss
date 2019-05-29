@@ -7,23 +7,6 @@
     margin-top: -12rem;
     margin-bottom: 10rem;
   }
-
-  // &:after {
-
-  //   @include md {
-  //     content: "";
-  //     display: block;
-  //     height: 15.6rem;
-  //     width: 15.6rem;
-  //     border-radius: 50%;
-  //     background: $yellow;
-  //     position: absolute;
-  //     bottom: -7.8rem;
-  //     right: 10%;
-  //   }
-    
-  // }
-
   #comps-button {
     margin: 2rem 0;
     display: block;
@@ -48,9 +31,15 @@
   
   h2 {
     @extend %h2;
-    @include sm {
+    $min_width: 768px;
+    $max_width: 1600px;
+    $min_font: 32px;
+    $max_font: 48px;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+    @include md {
       color: #fff;
-      font-size: 4.8rem;
+      // font-size: 4.8rem;
       line-height: 5rem;
       margin-top: 0;
     }
