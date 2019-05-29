@@ -13,10 +13,10 @@ var accordion_click = (function() {
     $(this).toggleClass("active");
     if ($(this).hasClass("active")) {
       $(this).find(".button-text").text("Hide");
-      $(this).find("span").text("Show less");
+      // $(this).find("span").text("Show less");
     } else {
       $(this).find(".button-text").text("Show");
-      $(this).find("span").text("Show more");
+      // $(this).find("span").text("Show more");
     }
   });
 }());
