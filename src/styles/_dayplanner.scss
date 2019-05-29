@@ -1,5 +1,6 @@
 .planyrday-wrapper {
     background-color: #000000;
+    padding-top: 0;
 
     @include md {
         background-image: url("../images/shapre-dee-yellow.svg"), url("../images/deakin-bg.png"), url("../images/shapes.svg"), url("../images/pink-oval.svg");
@@ -10,8 +11,14 @@
     
 
     h1 {
+        $min_width: 568px;
+        $max_width: 1600px;
+        $min_font: 32px;
+        $max_font: 96px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
         font-family: $font-stack-xl;
-        font-size: 9.6rem;
+        // font-size: 9.6rem;
         line-height: 1em;
         letter-spacing: -1.6px;
         text-transform: uppercase;
@@ -42,9 +49,15 @@
             overflow-x: hidden;
             box-sizing: border-box;
             justify-content: flex-start;
-            padding-left: 4rem;
+            padding-left: 0.8rem;
             font-size: 1.8rem;
             font-family: $font-worldly-light;
+            flex-wrap: wrap;
+
+            @include md {
+                flex-wrap: nowrap;
+                padding-left: 4rem;
+            }
 
             .bg--round-pink {
                 background: $magenta;
@@ -91,6 +104,15 @@
                 font-family: $font-worldly-bold;
                 font-size: 1.8rem;
                 margin: 0 1.2rem;
+                
+            }
+
+            .strong-date {
+                padding-left: 2.1rem;
+
+                @include sm {
+                    padding-left: 0;
+                }
             }
         }
     }
@@ -143,15 +165,56 @@
         }
         &__body {
             align-items: baseline;
-            padding: 2.4rem 2.8rem;
+            padding: 2rem 0rem;
+            
+            @include md {
+                padding: 2.4rem 2.8rem;
+            }
 
             .flexContainer--3qtr {
                 box-sizing: border-box;
-                margin-left: 7%;
-                flex: 1 0 68% ;
+                width: 100%;
+                
+                @include md {
+                    margin-left: 7%;
+                    flex: 1 0 68% ;
+                }
             }
 
-            
+            button.accordion {
+                border-top: none;
+                position: relative;
+
+                @include md {
+                    display: none;
+                }
+
+                span {
+                    color: $teal;
+                    font-size: 1.4rem;
+                    flex: 0 0 100%;
+                    font-family: $font-worldly-bold;
+                }
+
+                .icon-arrow {
+                    width: 1.2rem;
+                    height: 14px;
+                    position: absolute;
+                    left: 99px;
+                    top: 23px;
+                }
+            }
+
+            .panel {
+                p.body {
+                    margin-top: 0;
+
+                    @include md {
+                        margin: 0;
+                    }
+                    
+                }
+            }
 
             .content {
                 padding-left: 2.5rem;

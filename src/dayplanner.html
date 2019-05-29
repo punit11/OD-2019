@@ -23,6 +23,9 @@
               <symbol id="icon-alert" viewBox="0 0 16 16">
                     <path fill="#F5A623" fill-rule="nonzero" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm1 11.97H7v-2h2v2zm0-3H7v-5h2v5z"/>
               </symbol>
+              <symbol id="icon-arrow" viewBox="0 0 13 8">
+                <path d="M6.5 7a.62.62 0 0 1-.426-.172L1 2.084 1.851 1 6.5 5.347 11.149 1 12 2.084 6.926 6.828A.62.62 0 0 1 6.5 7z"/>
+                </symbol>
         </svg>
     </div>
     <!-- End SVG Symbols -->
@@ -102,7 +105,7 @@
                         <option value="waurnponds">Geelong Warun Ponds</option>
                         <option value="geelongwf">Geelong Waterfront</option>
                     </select>
-                    on <strong>25 August</strong> starting at <strong>9:00am</strong>
+                    on <strong class="strong-date">25 August</strong> starting at <strong>9:00am</strong>
                 </div>
 
                 <!-- Sessions container start-->
@@ -122,7 +125,19 @@
                                         <use href="#icon-pin" xlink:href="#icon-pin"></use>
                                     </svg>
                                     Building A, foyer (Level 1)</span>
-                                <span class="content">Melbourne Burwood Campus couldn't be in a better location. It's just 30 minutes from Melbourne.</span>
+                                    <div>
+                                            <button class="accordion active">
+                                                <span>Show more</span>
+                                                <svg class="icon-arrow">
+                                                    <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="panel">
+                                                <p class="body">
+                                                        Melbourne Burwood Campus couldn't be in a better location. It's just 30 minutes from Melbourne.
+                                                </p>
+                                            </div>
+                                        </div>
                             </div>
                         </div>
                     </div>
