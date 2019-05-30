@@ -48,6 +48,11 @@
   img {
     height: auto;
     width: 100%;
+
+    @include md {
+      position: relative;
+      top: -4rem;
+    }
   }
 
   // Location page comp section
@@ -99,5 +104,12 @@
         line-height: 1.63em;
       }
     }
+  }
+}
+
+a[name=rsvp] {
+  @include sm {
+    position: relative;
+    top: -10rem;
   }
 }
