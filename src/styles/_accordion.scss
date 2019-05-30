@@ -116,4 +116,13 @@
   overflow: hidden;
   -webkit-transition: max-height .2s ease-out;
   transition: max-height .2s ease-out;
+
+  ul {
+      li {
+          a {
+              font-family: $font-worldly-light;
+              font-size: 1.6rem;
+          }
+      }
+  }
 }
