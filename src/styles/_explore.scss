@@ -1,5 +1,5 @@
 .explore-campus {
-    background: #ffffff url("../images/campus-video-v-1-mobile.jpg") no-repeat center;
+    background: #ffffff url(//www.deakin.edu.au/__data/assets/image/0018/1913031/campus-video-v-1-mobile.jpg) no-repeat center;
     // background:#fff url(./?a=1913031) no-repeat 50%;
     min-height: 250px;
     height: 66vw;
@@ -7,9 +7,8 @@
     background-size: cover;
 
     @include lg {
-      background: #ffffff url("../images/campus-video-v-1@2x.jpg") no-repeat top center;
-      // background:#fff url(./?a=1913030) no-repeat top;min-height:800px;
-      min-height: 800px;
+      background: #ffffff url(//www.deakin.edu.au/__data/assets/image/0017/1913030/campus-video-v-1@2x.jpg) no-repeat center;
+      min-height: 560px;
       background-size: cover;
       height: auto;
     }

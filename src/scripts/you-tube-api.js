@@ -14,8 +14,10 @@ const youtubeApi = (function(){
     var player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            height: '489',
-            width: '870',
+            // height: '489',
+            // width: '870',
+            height: '100%',
+            width: '100%',
             videoId: 'pdld32DYO7A',
             playerVars: {rel: 0},
             events: {
@@ -48,12 +50,11 @@ const youtubeApi = (function(){
         }
     });
 
-    $('#campus-video').on('click', function(){
-    $('html').removeClass('noscroll');
-    player.stopVideo();
-    
-    // $(this).trigger('click');
-    
+    $('#campus-video, #videoModal button.close').on('click', function(){
+        $('html').removeClass('noscroll');
+        // player.stopVideo();
+        console.log('stop video');
+        stopVideo();
     });
 }());
 
