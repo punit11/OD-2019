@@ -17,6 +17,14 @@ $("input[name='form-lead-type']").change(function(){
         $('.iYL,.study-level').hide();
     }
 });
+// ***** Disable enter key
+$('#comps-form').on("keyup keypress", function(e) {
+    var code = e.keyCode || e.which; 
+    if (code === 13) {               
+        e.preventDefault();
+        return false;
+    }
+});
 
 $("#comps-form").validate({
     ignore: ":hidden",
@@ -92,8 +100,95 @@ $("#comps-form").validate({
             error.insertAfter('.form-title-location h3');
         else
             error.insertAfter(element);
+    },
+
+// submit
+//   $("#comps-form").submit(function(e) {
+    submitHandler: function (form) {
+      console.log("Form is valid");
+      let firstName = $.trim($("input[name='form-name']").val());
+      let mobilePhone = $("input[name='form-mobile']").val();
+      let Email = $.trim(
+        $("input[name='form-email']")
+          .val()
+          .toLowerCase()
+      );
+
+      let Lead_Type__c = $("input[name='form-lead-type']:checked").val();
+      let Year_Level__c = $("input[name='form-year-level']:checked").val();
+      let Level_of_Study__c = $("input[name=inputStudyLevel]:checked").val();
+      let Study_Area__c = $("input[name='form-ia']:checked")
+        .map(function() {
+          return this.value;
+        })
+        .get()
+        .join("; ");
+      let Campus__c = $("input[name='form-location']:checked")
+        .map(function() {
+          return this.value;
+        })
+        .get()
+        .join("; ");
+      console.log("Campus__c: ", Study_Area__c);
+
+      marketoSubmit(
+        firstName,
+        Email,
+        mobilePhone,
+        Lead_Type__c,
+        Year_Level__c,
+        Level_of_Study__c,
+        Study_Area__c,
+        Campus__c
+      );
+    // } else {
+    //   console.log("An error has occured");
+    // }
+
+    function marketoSubmit(
+      firstName,
+      Email,
+      mobilePhone,
+      Lead_Type__c,
+      Year_Level__c,
+      Level_of_Study__c,
+      Study_Area__c,
+      Campus__c
+    ) {
+      // Marketo form submission
+
+      MktoForms2.loadForm("//app-sn01.marketo.com", "209-INQ-367", 3598);
+      MktoForms2.whenReady(function(form) {
+        console.log("Form ID- ", form);
+        form.onSuccess(function(vals, tyURL) {
+          console.log("Form sucessfully submitted");
+          console.log("vals-", vals);
+          return false;
+        });
+        form.addHiddenFields({
+          // These are the values which are submitted to Marketo
+          FirstName: firstName,
+          Email: Email,
+          MobilePhone: mobilePhone,
+          Lead_Type__c: Lead_Type__c,
+          Study_Area__c: Study_Area__c,
+          disciplineArea: "Business",
+          Year_Level__c: Year_Level__c,
+          Level_of_Study__c: Level_of_Study__c,
+          Campus__c: Campus__c
+        });
+        form.submit();
+
+        // Show sucessful form submission acknowledgement
+        $(".comps-form").fadeOut();
+        $(".comps-msg").empty().append("<p class='thankyou-msg'>Thanks for registering! Don't forget to start planning your day so you don't miss a thing at your Deakin Open Day.</p>").fadeIn();
+        
+        // Scroll to succesful message text
+        let comps_offset = $( ".row.comps" );
+        $("html").animate({ scrollTop: comps_offset.offset().top }, 500);
+      }); // Market form end
     }
+}
 });
 }());
-
 export {form_validation};

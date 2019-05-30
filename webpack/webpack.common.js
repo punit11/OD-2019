@@ -30,7 +30,6 @@ module.exports = {
       template: Path.resolve(__dirname, '../src/index.html'),
       chunks: ['home']
       // template: Path.resolve(__dirname, '../src/dayplanner.html')
-
     }),
 
     // new HtmlWebpackPlugin({
@@ -47,7 +46,7 @@ module.exports = {
     // }),
 
     new webpack.ProvidePlugin({
-      $: 'jquery',
+      $ : 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
     })
