@@ -50,12 +50,11 @@ const youtubeApi = (function(){
         }
     });
 
-    $('#campus-video').on('click', function(){
-    $('html').removeClass('noscroll');
-    player.stopVideo();
-    
-    // $(this).trigger('click');
-    
+    $('#campus-video, #videoModal button.close').on('click', function(){
+        $('html').removeClass('noscroll');
+        // player.stopVideo();
+        console.log('stop video');
+        stopVideo();
     });
 }());
 

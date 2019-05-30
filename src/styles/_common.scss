@@ -72,7 +72,7 @@ a.button {
 .desktop-version {
   display: none;
   @include lg {
-    display: block;
+    display: inline-block;
   }
 }
 
