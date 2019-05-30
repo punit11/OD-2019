@@ -7,15 +7,15 @@ var comp_form = $(function() {
     $(".comps-form").show();
     $("#comps-button").hide();
     $(".registration-form fieldset:first-child").fadeIn("slow");
+    let comps_offset = $( ".comps-form" );
+    $("html").animate({ scrollTop: comps_offset.offset().top }, 500);
     return false;
   });
 
   // next step
   $(".registration-form .btn-next").on("click", function() {
-    
     var myform = $( "#comps-form" );
     myform.validate();
-
     let fs_id = $($(this).data("id"));
     // console.log('valid ', myform.valid());
     if ( myform.valid() ) {

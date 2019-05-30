@@ -17,7 +17,7 @@ $("input[name='form-lead-type']").change(function(){
         $('.iYL,.study-level').hide();
     }
 });
-
+// ***** Disable enter key
 $('#comps-form').on("keyup keypress", function(e) {
     var code = e.keyCode || e.which; 
     if (code === 13) {               
@@ -102,12 +102,9 @@ $("#comps-form").validate({
             error.insertAfter(element);
     },
 
-
-  // submit
+// submit
 //   $("#comps-form").submit(function(e) {
     submitHandler: function (form) {
-    // e.preventDefault();
-    // if ($("#comps-form").valid()) {
       console.log("Form is valid");
       let firstName = $.trim($("input[name='form-name']").val());
       let mobilePhone = $("input[name='form-mobile']").val();
@@ -181,15 +178,16 @@ $("#comps-form").validate({
           Campus__c: Campus__c
         });
         form.submit();
+
         // Show sucessful form submission acknowledgement
         $(".comps-form").fadeOut();
         $(".comps-msg").empty().append("<p class='thankyou-msg'>Thanks for registering! Don't forget to start planning your day so you don't miss a thing at your Deakin Open Day.</p>").fadeIn();
-      
+        
+        // Scroll to succesful message text
         let comps_offset = $( ".row.comps" );
         $("html").animate({ scrollTop: comps_offset.offset().top }, 500);
       }); // Market form end
     }
-//   });
 }
 });
 }());
