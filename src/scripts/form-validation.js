@@ -181,7 +181,7 @@ $("#comps-form").validate({
 
         // Show sucessful form submission acknowledgement
         $(".comps-form").fadeOut();
-        $(".comps-msg").empty().append("<p class='thankyou-msg'>Thanks for registering! Don't forget to start planning your day so you don't miss a thing at your Deakin Open Day.</p>").fadeIn();
+        $(".comps-msg").empty().append("<p class='thankyou-msg'>Great news! Now that you’ve registered, you’re in the draw to win some great prizes, including gift vouchers from ASOS, The Iconic, JB Hi-Fi and Netflix.</p>").fadeIn();
         
         // Scroll to succesful message text
         let comps_offset = $( ".row.comps" );
