@@ -8,7 +8,7 @@ var comp_form = $(function() {
     $("#comps-button").hide();
     $(".registration-form fieldset:first-child").fadeIn("slow");
     let comps_offset = $( ".comps-form" );
-    $("html").animate({ scrollTop: comps_offset.offset().top }, 500);
+    $("html, body").animate({ scrollTop: comps_offset.offset().top }, 500);
     return false;
   });
 
