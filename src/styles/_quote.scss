@@ -1,18 +1,29 @@
 .quote-wrapper {
   background-color: #c74298;
   .student-pic {
-    // background: #ffffff url("../images/quote@2x.jpg") no-repeat center;
-    // background-size: cover;
     position: relative;
     width: 92%;
-    height: 50vw;
-    max-height: 529px;
+    // height: 50vw;
+    height: auto;
+    // padding-bottom: 11rem;
+    // max-height: 529px;
     min-height: 288px;
     max-width: 528px;
     z-index: 0;
     
+    
     @include sm {
+      padding-bottom: 0;
       order: 0;
+      margin: 5rem 0;
+      width: 60vw;
+      display: flex;
+      max-width: 60%;
+      flex: 1;
+      align-items: center;
+    }
+
+    @include md {
       margin: 10rem 0;
       width: 50vw;
     }
@@ -31,23 +42,10 @@
     }
     
     img {
+      height: auto;
+      max-width: 528px;
       width: 100%;
     }
-    
-    // img {
-    //   margin: 30% -5%;
-    //   @include sm {
-    //     margin: 10% -10%;
-    //     width: 40%;
-    //   }
-    // }
-
-    // &:before {
-    //   display: block;
-    //   content: url('../src/images/shapre-dee-yellow.svg') no-repeat center center;
-    //   background-size: cover;
-    //   width: 40%;
-    // }
 
     &:before {
       display: block;
@@ -55,11 +53,15 @@
       position: absolute;
       width: 133px;
       height: 116px;
-      background: url(http://localhost:8080/src/images/shapre-dee-yellow.svg) no-repeat center;
-      top: 9rem;
+      background: url(//www.deakin.edu.au/__data/assets/file/0004/1913062/shapre-dee-yellow.svg) no-repeat center;
+      top: 18rem;
       left: -3rem;
       z-index: 2;
       background-size: cover;
+
+      @include sm {
+        top: 9rem;
+      }
 
       @include lg {
         top: 6rem;
@@ -80,7 +82,8 @@
       bottom: 7rem;
       left: -3rem;
       z-index: -1;
-      top: calc(100% - 90px);
+      top: calc(100% - 200px);
+      // top: calc(100% - 90px);
 
       @include lg {
         top: initial;
@@ -101,33 +104,47 @@
   h4 {
     @extend %h4;
     color: #fff;
-    margin: 2rem 0rem -1.5rem -2rem;
-    letter-spacing: -0.6px;
+    margin: 2rem 1rem -4rem -1rem;
+    letter-spacing: -0.4px;
     z-index: 1;
     position: relative;
+    line-height: 1.08em;
     
     @include sm {
       position: absolute;
       order: 2;
       width: 50vw;
       max-width: 250px;
-      margin: 0rem 2rem 0 -4rem;
+      margin: 0rem 2rem 0 0;
       min-width: 210px;
-      right: 11%;
+      left: calc(100% - 40px);
+      // top: calc(50% - 80px);
     }
 
     @include md {
-      max-width: 560px;
-      right: 12%;
+      max-width: 320px;
     }
 
-    // @include lg {
-    //   right: 24%;
-    // }
+    @include lg {
+      max-width: 420px;
+      // top: calc(50% - 80px);
+      left: calc(100% - 100px);
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+      max-width: 470px;
+      right: -10%;
+    }
+
+    @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+      max-width: 470px;
+      right: 0%;
+    }
 
     @include xxl {
+      // max-width: 560px;
       right: auto;
-      left: 54rem;
+      left: 44rem
     }
     
     &:before {
@@ -151,7 +168,7 @@
     $max_font: 38px;
 
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
-    line-height: 1.05em;
+    // line-height: 1.05em;
   }
 
   .student-name,
@@ -172,13 +189,23 @@
     margin-top: -1rem;
   }
   .student-info {
-    padding-top: 4rem;
+    position: relative;
+    width: calc(100% + 35px);
+    margin-bottom: 30px;
+
+
     @include sm {
+      width: 100%;
       order: 3;
       position: absolute;
-      right: 24%;
-      bottom: 12%;
-      padding-top: 1rem;
+      left: calc(100% - 100px);
+      bottom: 0px;
+      margin-bottom: 0;
+      max-width: 320px;
+    }
+
+    @include lg {
+      left: 100%;
     }
 
     @include xxl {
