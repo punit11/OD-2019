@@ -48,7 +48,11 @@ var navbar_click = (function() {
 
 var what_os = (function() {
   var whatOS = navigator.platform;
+  var userAgent = window.navigator.userAgent;
   $('body').addClass(whatOS);
+  if (/Android/.test(userAgent)) {
+    $('body').addClass('android');  
+  }
 }());
 
 // $('.Navbar__Link a').on('click', function(e){
