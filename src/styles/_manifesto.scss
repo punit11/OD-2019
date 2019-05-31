@@ -76,10 +76,7 @@
 }
 
 // background style for mac
-.Macintosh, 
-.MacIntel, 
-.MacPPC, 
-.Mac68K {
+body[class^='Mac'] {
   .manifesto {
     span {
       line-height: initial;
@@ -88,13 +85,11 @@
 }
 
 // background style for Windows
-.Win32,
-.Win64,
-.Windows,
-.WinCE {
+body[class^='Win'] {
   .manifesto {
     span {
       line-height: inherit;
+      height: 4.5rem;
     }
   }
 }
