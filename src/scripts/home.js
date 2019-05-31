@@ -37,11 +37,22 @@ var navbar_click = (function() {
     // console.log('comps_offset ',comps_offset);
     // let ele_offset = document.querySelector('[name='+el]');
  console.log('ele  ',ele);
+ 
     let ele_offset = $('[name='+ele+']');
+    console.log('scrollTop = ' + ele_offset.offset().top);
     console.log('ele_offset ',ele_offset);
-    $("html").animate({ scrollTop: ele_offset.offset().top }, ani_time);
+    $("html, body").animate({ scrollTop: ele_offset.offset().top }, ani_time);
     }
   });
+}());
+
+var what_os = (function() {
+  var whatOS = navigator.platform;
+  var userAgent = window.navigator.userAgent;
+  $('body').addClass(whatOS);
+  if (/Android/.test(userAgent)) {
+    $('body').addClass('android');  
+  }
 }());
 
 // $('.Navbar__Link a').on('click', function(e){
