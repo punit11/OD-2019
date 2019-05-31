@@ -18,7 +18,6 @@
       z-index: 0;
     }
   }
-  
 
   @include sm {
     background: #000 url(//www.deakin.edu.au/__data/assets/image/0020/1913042/deakin-twin-stencil.png) no-repeat left center;
@@ -41,12 +40,9 @@
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
     letter-spacing: -0.53px;
-    // line-height: 1em;
-    vertical-align: middle;
 
     @include sm {
       letter-spacing: -0.8px;
-      // line-height: 1em;
     }
   }
   span {
@@ -54,7 +50,7 @@
     // line-height: normal;
     height: 3.5rem;
     @include sm {
-      height: 4rem;
+      height: 1em;
     }
   }
 
@@ -77,4 +73,39 @@
     }
   }
   
+}
+
+// background style for mac
+.Macintosh, 
+.MacIntel, 
+.MacPPC, 
+.Mac68K {
+  .manifesto {
+    span {
+      line-height: initial;
+    }
+  }
+}
+
+// background style for Windows
+.Win32,
+.Win64,
+.Windows,
+.WinCE {
+  .manifesto {
+    span {
+      line-height: inherit;
+    }
+  }
+}
+
+// background style for iPhone
+.iPhone,
+.iPad,
+.iPod {
+  .manifesto {
+    span {
+      line-height: initial;
+    }
+  }
 }
