@@ -43,9 +43,21 @@
 
         &.desktop-version {
             position: absolute;
-            left: -2rem;
+            left: -5rem;
             top: 0;
             z-index: -1;
+
+            // @include md {
+            //     left: -4rem
+            // }
+
+            // @include lg {
+            //     left: -3rem;
+            // }
+
+            // @include xl {
+            //     left: -2rem;
+            // }
         }
     }
 
