@@ -46,6 +46,11 @@ var navbar_click = (function() {
   });
 }());
 
+var what_os = (function() {
+  var whatOS = navigator.platform;
+  $('body').addClass(whatOS);
+}());
+
 // $('.Navbar__Link a').on('click', function(e){
 //   e.preventDefault();
 

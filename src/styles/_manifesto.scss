@@ -30,7 +30,9 @@
     }
   }
   h1 {
-    @extend %h1;
+    font-family: $font-stack-xl;
+    font-weight: normal;
+    text-transform: uppercase;
     $min_width: 568px;
     $max_width: 1200px;
     $min_font: 32px;
@@ -39,16 +41,17 @@
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
     letter-spacing: -0.53px;
-    line-height: 1em;
+    // line-height: 1em;
+    vertical-align: middle;
 
     @include sm {
       letter-spacing: -0.8px;
-      line-height: 1em;
+      // line-height: 1em;
     }
   }
   span {
     display: inline-block;
-    line-height: normal;
+    // line-height: normal;
     height: 3.5rem;
     @include sm {
       height: 4rem;
