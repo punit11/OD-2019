@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 import {navbar_toggle, accordion_click} from "./home";
 import {form_validation} from "./form-validation";
 import {comp_form} from "./comps-form";
@@ -24,5 +24,4 @@ import "../styles/_bottom-nav.scss";
 import "../styles/_footer.scss";
 import "../styles/_footer-social.scss";
 import "../styles/_accordion.scss";
-// import "../styles/_modal-video.scss";
 import "../styles/_youtube-popup.scss";

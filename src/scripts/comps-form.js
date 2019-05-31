@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 import {validate, valid} from "jquery-validation";
 
 var comp_form = $(function() {

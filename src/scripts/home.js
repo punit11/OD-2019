@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 // import { brotliDecompressSync } from "zlib";
 
 var navbar_toggle = (function() {
