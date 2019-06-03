@@ -184,3 +184,12 @@ body {
   max-height: 100%;
   max-width: 100%;
 }
+
+.center {
+  text-align: center;
+
+  .checkbox-button {
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -85,7 +85,8 @@
           margin-bottom:0.6rem;
           font-family: $font-worldly-bold;
           font-size: 2rem;
-          min-width: 11.2rem;
+          min-width: 12.2rem;
+          overflow-y: hidden;
         }
 
         @include xxl {
