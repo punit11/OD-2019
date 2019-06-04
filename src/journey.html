@@ -82,35 +82,34 @@
                           </div>
                            <div class="form-group">
                                <label for="firstname">First Name<span class="asterix">*</span></label>
-                              <input type="text" id="firstname" name="fname" class="form-control" placeholder="First name">
+                              <input type="text" id="firstname" name="firstName" class="form-control" placeholder="First name">
                            </div>
                            <div class="form-group">
-                               <label for="reg_email">Email<span class="asterix">*</span></label>                        
-                              <input type="email" id="reg_email" name="sign-up-email" class="form-control" placeholder="Email">
+                               <label for="email">Email<span class="asterix">*</span></label>                        
+                              <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                            </div>
                            <div class="form-group">
                                <label for="reg_password">Create a password<span class="asterix">*</span></label>    
                               <input type="password" id="reg_password" name="pass" class="form-control" placeholder="Password">
                            </div>
                            <div class="form-group">
-                               <label for="mobile">Phone<span class="asterix">*</span></label>                               
-                              <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile">
+                               <label for="mobilePhone">Phone<span class="asterix">*</span></label>                               
+                              <input type="text" id="mobilePhone" name="mobilePhone" class="form-control" placeholder="Mobile">
                            </div>
                            <div class="form-group">
                               <!-- <label for="inputIama">I am a...</label> -->
-                               <label for="inputIama">I am a&hellip;<span class="asterix">*</span></label>
-                              <select name="Iama" id="inputIama" class="form-control od-select">
+                               <label for="Lead_Type__c">I am a&hellip;<span class="asterix">*</span></label>
+                              <select name="Lead_Type__c" id="Lead_Type__c" class="form-control od-select">
                                  <option value="" selected>I am...</option>
-                                 <option value="School Leaver">A secondary school student</option>
+                                 <option value="School Leaver">School student</option>
                                  <option value="TAFE Student">A TAFE student</option>
                                  <option value="University Student">A university student</option>
                                  <option value="Employed">In the workforce</option>
-                                 <option value="Parent">A parent</option>
-                                 <option value="Other">Other</option>
+                                 <option value="Parent">Parent or guardian</option>
+                                 <option value="Career Practitioner">Careers Practitioner</option>
                               </select>
                            </div>
-                           <div class="form-group iYL" style="display: none;">
-                              <!--<label for="inputYearLevel">Year Level</label>-->
+                           <!-- <div class="form-group iYL" style="display: none;">
                                <label for="inputYearLevel">Year Level<span class="asterix">*</span></label>
                               <select name="inputYearLevel" id="inputYearLevel" class="form-control">
                                  <option value="" selected>Choose year level</option>
@@ -132,11 +131,11 @@
                                  <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
                                  <label for="inputStudyLevel2">Postgraduate</label>
                                </p>
-                            </div>
+                            </div> -->
                            <div class="form-group">
-                               <label for="inputCampus">Select a campus<span class="asterix">*</span></label>
+                               <label for="Campus__c">Which Open Day campus will you attend?<span class="asterix">*</span></label>
                               <!--<label for="inputCampus">Select a campus</label>-->
-                              <select name="campus" id="inputCampus" class="form-control  od-select">
+                              <select name="Campus__c" id="Campus__c" class="form-control  od-select">
                                  <option value="" selected>Choose a campus</option>
                                  <option value="Melbourne Burwood">Melbourne Burwood</option>
                                  <option value="Geelong Waterfront">Geelong Waterfront</option>
@@ -147,8 +146,8 @@
                            <div class="signup_wrapper center">
                             <div class="form-group">
                                 <div class="checkbox-button">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                    <label class="form-check-label" for="gridCheck1">Stay up to date with Deakin</label>
+                                    <input class="form-check-input" type="checkbox" id="Email_Opt_In__c">
+                                    <label class="form-check-label" for="Email_Opt_In__c">Stay up to date with Deakin</label>
                                 </div>
                             </div>                  
                             <button type="submit" name="register" class="button button--primary teal" data-analytics="openday_create_account_submit">Create Account</button>
