@@ -64,14 +64,14 @@ body {
 
 .mobile-version {
   display: block;
-  @include lg {
+  @include md {
     display: none;
   }
 }
 
 .desktop-version {
   display: none;
-  @include lg {
+  @include md {
     display: inline-block;
   }
 }

@@ -1,5 +1,4 @@
 .openDay-planner {
-    
     button {
         display: flex;
         flex: 0;
@@ -12,6 +11,15 @@
         height: 2rem;
         margin-right: 1.6rem;
         width: 2.2rem;
+    }
+
+    &.mobile-version {
+        position: absolute;
+        right: 35px;
+        
+        button {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -118,6 +126,10 @@
 
     .modal-body {
         padding: 0;
+
+        @media (max-width: #{$screen-xs-min}){
+            // padding-bottom: 4.9rem;
+        }
     }
 
     .modal-footer {
@@ -179,7 +191,7 @@
 
 #forgot-pwd-form {
     padding-bottom: 4rem;
-    
+
     button {
         display: block;
         margin: auto;
