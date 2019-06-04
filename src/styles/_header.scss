@@ -96,7 +96,6 @@
   }
 
   &.location-page {
-    background: $blue;
     padding: 0;
     justify-content: space-between;
 
@@ -223,8 +222,6 @@
           left: 93%;
           font-family: "UniversLTStd-BoldCn", sans-serif;
           z-index: -1;
-          color: $blue;
-          -webkit-text-fill-color: $blue;
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: $white;
           line-height: 1em;
@@ -259,3 +256,56 @@
   }
 }
 
+body {
+  &.gwp {
+    .hero-banner.location-page {
+      background: $blue;
+
+      .hero-pic:after {
+        color: $blue;
+        -webkit-text-fill-color: $blue;
+      }
+    }
+
+  }
+
+  &.bwd {
+    .hero-banner.location-page {
+      background: $teal;
+      
+      .hero-pic:after {
+        color: $teal;
+        -webkit-text-fill-color: $teal;
+      }
+    }
+  }
+
+  &.gwf {
+    .hero-banner.location-page {
+      background: $yellow;
+
+      h1 {
+        span {
+          color: $black;
+        }
+      }
+      
+      .hero-pic:after {
+        color: $white;
+        -webkit-text-fill-color: $white;
+      }
+    }
+    
+  }
+
+  &.wbl {
+    .hero-banner.location-page {
+      background: $magenta;
+
+      .hero-pic:after {
+        color: $magenta;
+        -webkit-text-fill-color: $magenta;
+      }
+    }
+  }
+}
