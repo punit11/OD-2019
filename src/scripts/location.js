@@ -61,7 +61,10 @@ var getdata = (function() {
         console.log(textStatus + ": " + errorThrown);
     }); // fail end
     
-    $( document ).ready(function() {
+    // $( document ).ready(function() {
+    //   bind_owl();
+    // });
+    $(window).on('load', function () {
       bind_owl();
     });
 
