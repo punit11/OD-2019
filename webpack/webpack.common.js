@@ -6,8 +6,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    home: Path.resolve(__dirname, '../src/scripts/home-entry.js')
-    // location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
+    // home: Path.resolve(__dirname, '../src/scripts/home-entry.js')
+    location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
     // dayplanner: Path.resolve(__dirname, '../src/scripts/dayplanner-entry.js')
     // journey: Path.resolve(__dirname, '../src/scripts/journey-entry.js')
   },
@@ -27,9 +27,9 @@ module.exports = {
       { from: Path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({
-      // template: Path.resolve(__dirname, '../src/location.html'),
-      template: Path.resolve(__dirname, '../src/index.html'),
-      chunks: ['home'],
+      template: Path.resolve(__dirname, '../src/location.html'),
+      // template: Path.resolve(__dirname, '../src/index.html'),
+      chunks: ['location']
       // template: Path.resolve(__dirname, '../src/dayplanner.html')
       // template: Path.resolve(__dirname, '../src/journey.html')
     }),
