@@ -64,14 +64,14 @@ body {
 
 .mobile-version {
   display: block;
-  @include lg {
+  @include md {
     display: none;
   }
 }
 
 .desktop-version {
   display: none;
-  @include lg {
+  @include md {
     display: inline-block;
   }
 }
@@ -183,4 +183,13 @@ body {
 .icon-burger {
   max-height: 100%;
   max-width: 100%;
+}
+
+.center {
+  text-align: center;
+
+  .checkbox-button {
+    justify-content: center;
+    align-items: center;
+  }
 }

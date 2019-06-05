@@ -17,7 +17,7 @@
     <!-- <script src="js/jquery-3.4.0.min.js"></script> -->
 
   </head>
-  <body>
+  <body class="wbl"> <!-- location classes to be added to body depending on campus: .gwp, .bwd, .gwf, .wbl -->
 
     <!-- SVG Symbols -->
       <div class="hidden">
@@ -129,7 +129,7 @@
                      </svg>
                      Open Day
                   </span>
-               18 august 9am-3pm</h1>
+               18 august <span style="color:#fff">9am-3pm</span></h1>
          </div>
          <div class="hero-pic">
             <!-- <picture>
@@ -350,229 +350,63 @@
             <fieldset class="yr-details">
                <div class="form-top">
                   <div class="form-top-left">
-                     <p>1/4</p>
+                     <p>1/2</p>
                      <h3>Enter you details:</h3>
                   </div>
                   <div class="form-top-right"> <i class="fa fa-user"></i> </div>
                </div>
                <div class="form-bottom">
-                  <div class="form-group"> <label class="sr-only" for="form-name">Name</label> <input type="text" name="form-name" placeholder="Name" class="form-name form-control" id="form-name" /> </div>
-                  <div class="form-group"> <label class="sr-only" for="form-mobile">Mobile</label> <input type="text" name="form-mobile" placeholder="Mobile" class="form-mobile form-control" id="form-mobile" /> </div>
-                  <div class="form-group"> <label class="sr-only" for="form-email">Email</label> <input name="form-email" placeholder="Email" class="form-email form-control" id="form-email" type="email"></input> </div>
+                  <div class="form-group">
+                     <label class="sr-only" for="firstName">Your first name</label>
+                     <input type="text" name="firstName" placeholder="Name" class="form-name form-control" id="firstName" />
+                  </div>
+                  <div class="form-group">
+                        <label class="sr-only" for="email">Your email</label>
+                        <input name="email" placeholder="Email" class="form-email form-control" id="email" type="email"></input>
+                     </div>
+                  <div class="form-group">
+                     <label class="sr-only" for="mobilePhone">Mobile</label>
+                     <input type="text" name="mobilePhone" placeholder="Mobile" class="form-mobile form-control" id="mobilePhone" />
+                  </div>
                </div>
+
                <div class="btn-container">
-                  <button type="button" class="btn btn-next button">Next</button>
+                  <button data-id="#feildset3" type="button" class="btn btn-next">Next</button>
                </div>
             </fieldset>
+
             <!-- FeildSet 2 -->
-            <fieldset>
+            <fieldset id="feildset2">
                <div class="form-top">
                   <div class="form-top-left form-stutype">
-                     <p>2 / 4</p>
-                     <h3>Which best describes you?</h3>
+                     <p>2/2</p>
+                     <h3>Which Open Day campus will you attend?</h3>
                   </div>
                </div>
                <div class="form-bottom direction-col">
                   <div class="form-group">
                      <div class="radio-option">
-                        <input type="radio" id="form-school-student" name="form-lead-type" value="School Leaver" class="form-email form-control" /> 
-                        <label class="sr-only" for="form-school-student">School student</label>
+                        <input type="radio" id="warrnambool" name="Campus__c" value="warrnambool" class="form-email form-control" /> 
+                        <label class="sr-only" for="warrnambool">Warrnambool</label>
                      </div>
                      <div class="radio-option">
-                        <input type="radio" id="form-employed" name="form-lead-type" value="Employed" class="form-email form-control" />
-                        <label class="sr-only" for="form-employed">In the workforce</label>
+                        <input type="radio" id="geelong-waurnponds" name="Campus__c" value="geelong-waurnponds" class="form-email form-control" /> 
+                        <label class="sr-only" for="geelong-waurnponds">Geelong Waurn Ponds</label>
                      </div>
                      <div class="radio-option">
-                        <input type="radio" id="form-TAFE-student" name="form-lead-type" value="TAFE Student" class="form-email form-control" />
-                        <label class="sr-only" for="form-TAFE-student">TAFE student</label> 
-                     </div>
-                     <div class="radio-option">  
-                        <input type="radio" id="form-university-student" name="form-lead-type" value="University Student" class="form-email form-control" />
-                        <label class="sr-only" for="form-university-student">University student</label> 
+                        <input type="radio" id="geelong-waterfront" name="Campus__c" value="geelong-waterfront" class="form-email form-control" /> 
+                        <label class="sr-only" for="geelong-waterfront">Geelong Waterfront</label>
                      </div>
                      <div class="radio-option">
-                        <input type="radio" id="form-parent" name="form-lead-type" value="Parent" class="form-email form-control" />
-                        <label class="sr-only" for="form-parent">Parent or guardian</label>
-                     </div>
-                     <div class="radio-option">
-                        <input type="radio" id="form-career-practitioner" name="form-lead-type" value="Career Practitioner" class="form-email form-control" /> 
-                        <label class="sr-only" for="form-career-practitioner">Careers Practitioner</label> 
+                        <input type="radio" id="burwood" name="Campus__c" value="burwood" class="form-email form-control" /> 
+                        <label class="sr-only" for="burwood">Melbourne Burwood</label>
                      </div>
                   </div>
-                  <div class="form-group iYL">
-                     <h3>Year level<span class="asterix">*</span></h3>
-                     <div class="form-bottom">
-                        <div class="radio-option">
-                           <input type="radio" id="yearlessthan7" name="form-year-level" value="&#60;7">
-                           <label for="yearlessthan7">Less than 7</label> 
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="year7" name="form-year-level" value="7">
-                           <label for="year7">Year 7</label> 
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="year8" name="form-year-level" value="8">
-                           <label for="year8">Year 8</label> 
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="year9" name="form-year-level" value="9">
-                           <label for="year9">Year 9</label> 
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="year10" name="form-year-level" value="10">
-                           <label for="year10">Year 10</label> 
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="year11" name="form-year-level" value="11">
-                           <label for="year11">Year 11</label> 
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="year12" name="form-year-level" value="12">
-                           <label for="year12">Year 12</label>
-                        </div>
-                     </div>
+                  <div class="btn-container">
+                     <button type="button" class="btn btn-previous"> Previous </button>
+                     <button type="submit" class="btn btn-submit">Submit my entry</button>
                   </div>
-                  <div class="form-group study-level">
-                     <h3>Study level<span class="asterix">*</span></h3>
-                     <div class="form-bottom">
-                        <div class="radio-option">
-                           <input type="radio" id="inputStudyLevel1" name="inputStudyLevel" value="Undergraduate" />
-                           <label for="inputStudyLevel1">Undergraduate (your first degree)</label>
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
-                           <label for="inputStudyLevel2">Postgraduate</label>
-                        </div>
-                        <div class="radio-option">
-                           <input type="radio" id="inputStudyLevel3" name="inputStudyLevel" value="Higher Degree Research" />
-                           <label for="inputStudyLevel3">Higher Degree Research</label>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="btn-container">
-                  <button type="button" class="btn btn-previous"> Previous </button>
-                  <button type="button" class="btn btn-next">Next</button>
-               </div>
-            </fieldset>
-            <!-- FeildSet 3 -->
-            <fieldset>
-               <div class="form-top">
-                  <div class="form-top-left form-title-ia">
-                     <p>Step 3 / 4</p>
-                     <h3>Which study area interests you?</h3>
-                  </div>
-               </div>
-               <div class="form-bottom">
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-ancm" name="form-ia" value="Architecture and construction management">
-                     <label for="form-ancm">Architecture and construction management</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-business" name="form-ia" value="Business">
-                     <label for="form-business">Business</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-design" name="form-ia" value="Design">
-                     <label for="form-design">Design</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-ent" name="form-ia" value="Education and teaching">
-                     <label for="form-ent">Education and teaching </label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-engineering" name="form-ia" value="Engineering">
-                     <label for="form-engineering">Engineering</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-elc" name="form-ia" value="English languages courses">
-                     <label for="form-elc">English languages courses</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-environment" name="form-ia" value="Environment">
-                     <label for="form-environment">Environment</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-fnd" name="form-ia" value="Food, nutrition and dietetics">
-                     <label for="form-fnd">Food, nutrition and dietetics</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-hsah" name="form-ia" value="Health sciences and allied health">
-                     <label for="form-hsah">Health sciences and allied health </label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-hssl" name="form-ia" value="Humanities, social sciences and languages">
-                     <label for="form-hssl">Humanities, social sciences and languages </label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-it" name="form-ia" value="Information technology">
-                     <label for="form-it">Information technology</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-law" name="form-ia" value="Law">
-                     <label for="form-law">Law</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-mcca" name="form-ia" value="Media, communication and creative arts">
-                     <label for="form-mcca">Media, communication and creative arts </label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-medicine" name="form-ia" value="Medicine">
-                     <label for="form-medicine">Medicine</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-nm" name="form-ia" value="Nursing and midwifery">
-                     <label for="form-nm">Nursing and midwifery</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-psychology" name="form-ia" value="Psychology">
-                     <label for="form-psychology">Psychology</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="fm-sciences" name="form-ia" value="Sciences">
-                     <label for="fm-sciences">Sciences </label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-sport" name="form-ia" value="Sport">
-                     <label for="form-sport">Sport</label>
-                  </div>
-               </div>
-               <div class="btn-container">
-                  <button type="button" class="btn btn-previous"> Previous </button>
-                  <button type="button" class="btn btn-next">Next</button>
-               </div>
-            </fieldset>
-            <!-- FeildSet 4 -->
-            <fieldset>
-               <div class="form-top">
-                  <div class="form-top-left form-title-location">
-                     <p>Step 4 / 4</p>
-                     <h3>Which open day campus you will attend:</h3>
-                  </div>
-               </div>
-               <div class="form-bottom">
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-bwd" name="form-location" value="Melbourne Burwood">
-                     <label for="form-bwd">Melbourne Burwood</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-gwp" name="form-location" value="Geelong Waurn Ponds">
-                     <label for="form-gwp">Geelong Waurn Ponds</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-gwf" name="form-location" value="Geelong Waterfront">
-                     <label for="form-gwf">Geelong Waterfront</label>
-                  </div>
-                  <div class="checkbox-button">
-                     <input type="checkbox" id="form-wbl" name="form-location" value="Warrnambool">
-                     <label for="form-wbl">Warrnambool</label>
-                  </div>
-               </div>
-               <div class="btn-container">
-                  <button type="button" class="btn btn-previous"> Previous </button>
-                  <button type="submit" class="btn btn-submit">Submit my entry</button>
-               </div>
-            </fieldset>
+               </fieldset>
          </form>
       </div> <!-- /.comps-form -->
 

@@ -102,11 +102,12 @@
             }
         }
         .p48 {
-            color: $blue;
+            // color: $blue;
             font-family:  $font-stack-xl;
             text-transform: uppercase;
             width: 100%;
             order: 1;
+            overflow: hidden;
 
             @include md {
                 order: 2;
@@ -125,3 +126,47 @@
     }
 
 }
+
+body {
+    &.gwp {
+      .practicle-learning .video-text .p48 {
+        color: $blue;
+      }
+
+      .practicle-learning .video-container:before {
+            border-top: 70px solid $blue;
+      }
+  
+    }
+  
+    &.bwd {
+      .practicle-learning .video-text .p48 {
+        color: $teal;
+      }
+
+        .practicle-learning .video-container:before {
+            border-top: 70px solid $teal;
+        }
+    }
+  
+    &.gwf {
+      .practicle-learning .video-text .p48 {
+        color: $yellow;
+      }
+
+        .practicle-learning .video-container:before {
+            border-top: 70px solid $yellow;
+        }
+      
+    }
+  
+    &.wbl {
+      .practicle-learning .video-text .p48 {
+        color: $magenta;
+      }
+
+        .practicle-learning .video-container:before {
+            border-top: 70px solid $magenta;
+        }
+    }
+  }

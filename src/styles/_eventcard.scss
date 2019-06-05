@@ -124,12 +124,14 @@
                 left: -22px;
 
                 @include sm {
-                    left: -140px;
+                    // left: -140px;
+                    left: -23%;
                 }
 
                 @include md {
                     // left: -200px;
-                    left: -260px;
+                    // left: -260px;
+                    left: -20%;
                 }
                 
             }
