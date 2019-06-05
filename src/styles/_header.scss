@@ -43,12 +43,23 @@
       top: initial;
 
       .d-stencil {
+        display: none;
         width: 100%;
       }
     }
 
     @include xxl {
       margin-left: -4rem;
+    }
+
+    img {
+      &:first-child {
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
     }
 
     .triangle.face-right {

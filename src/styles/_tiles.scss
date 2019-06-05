@@ -253,7 +253,6 @@
         flex-direction: row-reverse;
         display: flex;
         flex: 0 0 auto;
-        flex-basis: 0;
         margin: 3rem 0;
       }
       
@@ -286,7 +285,7 @@
           position: relative;
           top: 1rem;
           left: 0.5rem;
-          lineheight: 1em;
+          line-height: 1em;
 
           @include md {
             top: initial;
