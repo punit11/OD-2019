@@ -4,6 +4,7 @@ import {form_validation} from "./form-validation";
 import {comp_form} from "./comps-form";
 import {modifySelect, fancy_scrollbar} from "./select2";
 import {youtubeApi} from "./you-tube-api";
+// import {initMap} from "./location";
 
 import "../styles/_fonts.scss";
 import "../styles/_variables.scss";
