@@ -60,7 +60,7 @@
 
     .owl {
         &-item {
-            opacity: 0.2;
+            // opacity: 0.2;
             transition: opacity 0.3s ease;
             z-index: 100;
 
@@ -191,4 +191,3 @@
         padding: 0;
     }
 }
-

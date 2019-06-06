@@ -1,264 +1,263 @@
 .planyrday-wrapper {
-    background: $black;
-    color: $white;
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+  background: $black;
+  color: $white;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+
+  @include md {
+    padding-top: 7.2rem;
+    padding-bottom: 14.8rem;
+  }
+
+  .intro {
+    padding-left: 0;
+
+    p {
+      font-family: $font-worldly-bold;
+      font-size: 1.8rem;
+    }
+  }
+
+  h2 {
+    @extend %h1;
+    $min_width: 768px;
+    $max_width: 1200px;
+    $min_font: 32px;
+    $max_font: 68px;
+
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+    color: $yellow;
+    // font-size: 6.8rem;
+    // line-height: 6.2rem;
+    letter-spacing: -0.5px;
+    margin: 0 0 3.7rem;
+  }
+
+  h4 {
+    color: $yellow;
+    font-family: $font-stack-xl;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-top: 3.4rem;
+    margin-bottom: 2.1rem;
+    text-transform: uppercase;
+    padding-left: 2.4rem;
     position: relative;
 
-    @include md {
-        padding-top: 7.2rem;
-        padding-bottom: 14.8rem;
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 16px solid $yellow;
+      position: absolute;
+      left: 0px;
     }
 
-    .intro {
-        padding-left: 0;
+    &:after {
+      content: "";
+      display: block;
+      border-top: 6px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 12px solid $black;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+    }
+  }
 
-        p {
-            font-family: $font-worldly-bold;
-            font-size: 1.8rem;
+  h5 {
+    color: $yellow;
+    font-family: $font-worldly-bold;
+    font-size: 1.8rem;
+    line-height: 1.33em;
+    margin: 0 0 1rem;
+    padding: 0;
+
+    & > p {
+      font-family: $font-worldly-light;
+      font-size: 1.6rem;
+      line-height: 1.5em;
+    }
+  }
+
+  .step-container {
+    background: $charcoal;
+    padding: 0 1rem;
+    position: relative;
+
+    @include lg {
+      padding: 0 4rem;
+    }
+
+    .orange {
+      background-color: transparent;
+      color: $orange;
+    }
+
+    .option-container {
+      padding: 1.5rem 0 4.3rem;
+
+      &:first-child {
+        border-bottom: 1px solid $black;
+      }
+
+      &:last-child {
+        border-top: 1px solid $black;
+        padding-top: 4.3rem;
+      }
+
+      @include lg {
+        padding: 3rem 0;
+
+        &:first-child {
+          border-right: 1px solid $black;
+          padding-right: 5%;
+
+          p {
+            max-width: 40rem;
+          }
         }
-    }
 
-    h2 {
-        @extend %h1;
-        $min_width: 768px;
-        $max_width: 1200px;
-        $min_font: 32px;
-        $max_font: 68px;
-
-        @include fluid-type($min_width, $max_width, $min_font, $max_font);
-
-        color: $yellow;
-        // font-size: 6.8rem;
-        // line-height: 6.2rem;
-        letter-spacing: -0.5px;
-        margin: 0 0 3.7rem;
-    }
-
-    h4 {
-        color: $yellow;
-        font-family: $font-stack-xl;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        margin-top: 3.4rem;
-        margin-bottom: 2.1rem;
-        text-transform: uppercase;
-        padding-left: 2.4rem;
-        position: relative;
-
-        &:before {
-            content: "";
-            display: block;
-            width: 0;
-            height: 0;
-            border-top: 8px solid transparent;
-            border-bottom: 8px solid transparent;
-            border-left: 16px solid $yellow;
-            position: absolute;
-            left: 0px;
+        &:last-child {
+          border-left: 1px solid $black;
+          padding-left: 5%;
+          padding-top: 3rem;
         }
+      }
 
-        &:after {
-            content: "";
-            display: block;
-            border-top: 6px solid transparent;
-            border-bottom: 5px solid transparent;
-            border-left: 12px solid $black;
-            width: 0;
-            height: 0;
-            position: absolute;
-            top: 2px;
-            left: 2px;
+      p {
+        margin: 0 0 1rem 0;
+
+        & > .orange {
+          text-transform: uppercase;
+          color: $orange;
+          font-family: $font-stack-xl;
+          line-height: 1.71em;
         }
-    }
+      }
 
-    h5 {
-        color: $yellow;
-        font-family: $font-worldly-bold;
-        font-size: 1.8rem;
-        line-height: 1.33em;
-        margin: 0 0 1rem;
-        padding: 0;
-
-        & > p {
-            font-family: $font-worldly-light;
-            font-size: 1.6rem;
-            line-height: 1.5em;
-        }
-    }
-
-    .step-container {
-        background: $charcoal;
-        padding: 0 1rem;
-        position: relative;
+      &.flexContainer--half {
+        flex: 1 1 100%;
 
         @include lg {
-            padding: 0 4rem;
+          flex: 1 1 50%;
         }
-        
-
-        .orange {
-            background-color: transparent;
-            color: $orange;
-        }
-
-        .option-container {
-            padding: 1.5rem 0 4.3rem;
-
-            &:first-child {
-                border-bottom: 1px solid $black;
-            }
-
-            &:last-child {
-                border-top: 1px solid $black;
-                padding-top: 4.3rem;
-            }
-
-            @include lg {
-                padding: 3rem 0;
-
-                &:first-child {
-                    border-right: 1px solid $black;
-                    padding-right: 5%;
-
-                    p {
-                        max-width: 40rem;
-                    }
-                }
-    
-                &:last-child {
-                    border-left: 1px solid $black;
-                    padding-left: 5%;
-                    padding-top: 3rem;
-                }
-            }
-            
-            p {
-                margin: 0 0 1rem 0;
-
-                & > .orange {
-                    text-transform: uppercase;
-                    color: $orange;
-                    font-family: $font-stack-xl;
-                    line-height: 1.71em;
-                }
-            }
-
-            &.flexContainer--half {
-                flex: 1 1 100%;
-
-                @include lg {
-                    flex: 1 1 50%;
-                }
-            }
-            
-        }
-
-        .seperator {
-            &-or {
-                @include flex-center;
-                background: $black;
-                height: 4.7rem;
-                width: 4.7rem;
-                border-radius: 50%;
-                color: $white;
-                position: absolute;
-                display: flex;
-                flex: 0 0 auto;
-                top: calc(50% - 37px);
-                left: calc(50% - 23px);
-
-                @media only screen and (min-width: 694px) {
-                    top: calc(50% - 37px);
-                }
-
-                @include lg {
-                    top: calc(50% - 23px);
-                    left: calc(50% - 23px);
-                }
-
-                span {
-                    font-family: $font-worldly-bold;
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        .refine {
-            $min_width: 768px;
-            $max_width: 1200px;
-            $min_font: 14px;
-            $max_font: 16px;
-
-            @include fluid-type($min_width, $max_width, $min_font, $max_font);
-            display: flex;
-            flex: 0 0 100%;
-            flex-direction: row;
-            font-family: $font-worldly-bold;
-            line-height: 1.86em;
-            padding: 2rem 0;
-            justify-content: center;
-            border-bottom: 2px solid #000;
-            margin-bottom: 3.2rem;
-            margin-left: -1rem;
-            width: calc(100% + 2rem);
-            
-            @include lg {
-                margin-left: -4rem;
-                width: calc(100% + 8rem);
-            }
-
-            ul {
-                padding: 0;
-                margin: 0;
-                display: block;
-
-                ol {
-                    display: inline-block;
-                    margin: 0;
-                    padding: 0 1rem 0 0.5rem;
-                    border-right: 1px solid rgba(255, 255,255, 0.2);
-
-                    &:last-child {
-                        border: none;
-                    }
-
-                    &.selected {
-                        color: $magenta;
-                    }
-                }
-            }
-
-        }
+      }
     }
+
+    .seperator {
+      &-or {
+        @include flex-center;
+        background: $black;
+        height: 4.7rem;
+        width: 4.7rem;
+        border-radius: 50%;
+        color: $white;
+        position: absolute;
+        display: flex;
+        flex: 0 0 auto;
+        top: calc(50% - 37px);
+        left: calc(50% - 23px);
+
+        @media only screen and (min-width: 694px) {
+          top: calc(50% - 37px);
+        }
+
+        @include lg {
+          top: calc(50% - 23px);
+          left: calc(50% - 23px);
+        }
+
+        span {
+          font-family: $font-worldly-bold;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .refine {
+      $min_width: 768px;
+      $max_width: 1200px;
+      $min_font: 14px;
+      $max_font: 16px;
+
+      @include fluid-type($min_width, $max_width, $min_font, $max_font);
+      display: flex;
+      flex: 0 0 100%;
+      flex-direction: row;
+      font-family: $font-worldly-bold;
+      line-height: 1.86em;
+      padding: 2rem 0;
+      justify-content: center;
+      border-bottom: 2px solid #000;
+      margin-bottom: 3.2rem;
+      margin-left: -1rem;
+      width: calc(100% + 2rem);
+
+      @include lg {
+        margin-left: -4rem;
+        width: calc(100% + 8rem);
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        display: block;
+
+        li {
+          display: inline-block;
+          margin: 0;
+          padding: 0 1rem 0 0.5rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.2);
+          &:last-child {
+            border: none;
+          }
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+          &.selected a {
+            color: $magenta;
+          }
+        }
+      }
+    }
+  }
 }
 
 .sessions-added {
-    align-items: center;
-    background: $teal;
-    display: flex;
-    flex: 0 0 100%;
-    
-    font-family: $font-stack-os-regular;
-    font-size: 1.6rem;
-    height: 74px;
-    justify-content: center;
-    line-height: 1.5em;
-    text-align: center;
-    width: 100%;
-    z-index: 100;
+  align-items: center;
+  background: $teal;
+  display: flex;
+  flex: 0 0 100%;
 
-    @include md {
-        margin-top: 10rem;
-        text-align: left;
-    }
+  font-family: $font-stack-os-regular;
+  font-size: 1.6rem;
+  height: 74px;
+  justify-content: center;
+  line-height: 1.5em;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
 
-    .sessions {
-        margin-right: 1rem;
-    }
+  @include md {
+    margin-top: 10rem;
+    text-align: left;
+  }
+
+  .sessions {
+    margin-right: 1rem;
+  }
 }
 
 .sticky-bar {
-    position: sticky;
-    bottom: 0; /* required */
+  position: sticky;
+  bottom: 0; /* required */
 }

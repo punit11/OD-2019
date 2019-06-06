@@ -1,10 +1,11 @@
-import {owl} from "./owl-carousel";
+// import {owl} from "./owl-carousel";
 import {navbar_toggle, accordion_click} from "./home";
 // import {form_validation} from "./form-validation";
 // import {comp_form} from "./comps-form";
 import {modifySelect, fancy_scrollbar} from "./select2";
 // import {youtubeApi} from "./you-tube-api";
-import {getdata} from "./location";
+import {populate_cards} from "./populate-cards";
+import {filters} from "./filters";
 
 import "../styles/_fonts.scss";
 import "../styles/_variables.scss";
