@@ -86,7 +86,7 @@
   margin: 0;
   opacity: 1;
   position: absolute;
-  right: -5rem;
+  right: 1rem;
   text-shadow: none;
   top: -3rem;
   width: 38px;
@@ -94,6 +94,10 @@
   -webkit-appearance: none;
   background: none;
   border: none;
+
+  @include lg {
+    right: -5rem;
+  }
 
   &:before, &:after {
     content: '';
