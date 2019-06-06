@@ -1,7 +1,7 @@
 import $ from "jquery";
 import {owlCarousel} from "owl.carousel";
 
- 
+
  // Make eventcards into a carousel
  function bind_owl() {
   //  console.log('content', content);
@@ -12,8 +12,8 @@ import {owlCarousel} from "owl.carousel";
     // $('.owl-carousel').empty();
     $(".owl-carousel").owlCarousel({
       center: true,
-      loop:true,
-      margin:10,
+      margin: 10,
+      loop: true,
       nav: true,
       stagePadding: 30,
       autoWidth: true,

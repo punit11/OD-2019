@@ -18,7 +18,6 @@
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
-    min-width: 4276px;
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
     content: ".";
@@ -65,20 +64,11 @@
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot {
-    // background: none;
-    // color: inherit;
+    background: none;
+    color: inherit;
     border: none;
-    // padding: 0 !important;
-    // font: inherit; 
-  }
-  // .owl-carousel button.owl-dot {
-  //   height: 0.7rem;
-  //   width: 0.7rem;
-  //   background: #ffffff;
-  //   border-radius: 50%;
-  //   margin: 5px;
-  //   padding: 0;
-  // }
+    padding: 0 !important;
+    font: inherit; }
   .owl-carousel.owl-loaded {
     display: block; }
   .owl-carousel.owl-loading {
@@ -194,7 +184,3 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
-
-
-  // Custom overrides
-  // .eventcard {max-width: 382px}

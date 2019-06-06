@@ -11,6 +11,10 @@
         display: flex;
         flex: 0 0 100%;
         flex-wrap: nowrap;
+        height: 86px;
+        overflow: hidden;
+        justify-content: space-between;
+        text-overflow: ellipsis;
 
         .add {
             @include flex-center;
@@ -23,7 +27,6 @@
             height: 4rem;
             width: 4rem;
             margin-left: 1.9rem;
-            margin-right: -0.8rem;
         }
     }
 
@@ -31,6 +34,10 @@
         font-family: $font-worldly-bold;
         font-size: 1.8rem;
         line-height: 1.44em;
+        display: block;
+        margin: 0;
+        height: 6.5rem;
+        margin-bottom: 1.2rem;
     }
 
     span {
@@ -63,6 +70,7 @@
             // opacity: 0.2;
             transition: opacity 0.3s ease;
             z-index: 100;
+            // max-width: 333px;
 
             &.active.center {
                 opacity: 1;
@@ -125,12 +133,13 @@
 
                 @include sm {
                     // left: -140px;
-                    left: -23%;
+                    left: -22%;
                 }
 
                 @include md {
                     // left: -200px;
                     // left: -260px;
+                    // left: -20%;
                     left: -20%;
                 }
                 
