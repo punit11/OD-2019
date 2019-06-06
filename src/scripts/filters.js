@@ -15,8 +15,13 @@ $('.filter-morning').on('click', function (e) {
     // var c_id = this.id;
     // console.log("morning clicked");
     session_time_flag = 'Morning';
+    $('.owl-carousel').hide();
     $('.owl-carousel').empty();
     populate_cards(session_time_flag);
+    setTimeout(function(){
+        $('.owl-carousel').fadeIn(300);
+    }, 300);
+    
 });
 
 $('.filter-noon').on('click', function (e) {

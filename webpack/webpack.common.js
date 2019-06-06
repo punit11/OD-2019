@@ -29,9 +29,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/location.html'),
       // template: Path.resolve(__dirname, '../src/index.html'),
+      // template: Path.resolve(__dirname, '../src/dayplanner.html'),
+      // template: Path.resolve(__dirname, '../src/journey.html'),
       chunks: ['location']
-      // template: Path.resolve(__dirname, '../src/dayplanner.html')
-      // template: Path.resolve(__dirname, '../src/journey.html')
     }),
 
     // new HtmlWebpackPlugin({
