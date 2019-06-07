@@ -17,7 +17,10 @@ const modifySelect = (function(){
 }());
 
 const fancy_scrollbar = $('select').on('select2:open', function(e){
+  setTimeout(function(){
     $('.select2-results__options').scrollbar().parent().addClass('scrollbar-outer');
+  }, 300);
+    
   });
 
 export {modifySelect, fancy_scrollbar};
