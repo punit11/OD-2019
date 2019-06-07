@@ -5,48 +5,57 @@ import {dd_template, card_template} from './templates';
 import {owlCarousel} from "owl.carousel";
 // import bind_owl from "./owl-carousel";
 
-function populate_cards(session) {
-    var session = session || ''; //set default to all
-    // console.log(session);
-//    var URL = "https://api.github.com/search/repositories?sort=stars&q=javascript&per_page=10&page=1";
+function populate_cards(session,selected_ia) {
+       session = session || ''; //set default to all
+       selected_ia = selected_ia || ''; //set default to all
+
+       console.log("session ", session);
+       console.log("selected_ia ", selected_ia);
+
+       // var URL = "https://api.github.com/search/repositories?sort=stars&q=javascript&per_page=10&page=1";
        var URL = "src/data/Burwood.json";
        makeAjaxCall(URL)
       .done(function (result) {
         console.log("data loading done");
         // courseFinder2(data);
         let dd_arr= result;
+        dd_arr.sort(function (a, b) {
+          return new Date('1970/01/01 ' + a.Start_time) - new Date('1970/01/01 ' + b.Start_time);
+        });
         // console.log('result', result);
-      
         // Extract IA's from returned JSON & bind drop-down template
         let session_type = 'Course information session';
         let dd_arr_cleaned = [...new Set(dd_arr.filter(o => o.Session_type === session_type && o.Interest_area.trim() !== '').reduce((c, v) => c.concat(v.Interest_area.split(',')), []).map(o => o.trim()))];
         dd_arr_cleaned.sort();
         console.log('dd_arr_cleaned ', dd_arr_cleaned);
+
+        if ($("#course-area option").length < 1) {
+        $("#course-area").empty();
         dd_arr_cleaned.forEach(function (dd_val) {
         let template_dd = dd_template({'val': dd_val});
         $("#course-area").append(template_dd);
         });
-        
-        let my_course_data = result;
+        }
 
+        let my_course_data = result;
         // Bind drop-down template for -- Course Info Sessions --
-        let course_info_arr = my_course_data.filter(o => o.Session_type === 'Course information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session));
-        console.log('course_info_arr ', course_info_arr);
+        let course_info_arr = my_course_data.filter(o => o.Session_type === 'Course information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session)  && o.Interest_area.includes(selected_ia));
+        console.log('course_info_arr ', course_info_arr.length);
         render_cards(course_info_arr, '.course-info-carousel');
 
         // Bind drop-down template for -- Tour & Exp Info Sessions --
-        let tours_exp_arr = my_course_data.filter(o => (o.Session_type === 'Tour' || o.Session_type === 'Experience') && o.Session_type.trim() !== '' && o.Session_start.includes(session));
-        console.log('tours_exp_arr ', tours_exp_arr);
+        let tours_exp_arr = my_course_data.filter(o => (o.Session_type === 'Tour' || o.Session_type === 'Experience') && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Interest_area.includes(selected_ia));
+        console.log('tours_exp_arr ', tours_exp_arr.length);
         render_cards(tours_exp_arr, '.tours-exp-carousel');
 
         // Bind drop-down template for -- General Info Sessions --
-        let gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session));
-        console.log('gen_info_arr ', gen_info_arr);
+        let gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Interest_area.includes(selected_ia));
+        console.log('gen_info_arr ', gen_info_arr.length);
         render_cards(gen_info_arr, '.gen-info-carousel');
+
 
         // ----- Render function
         function render_cards(render_data, render_loc) {
-          var content = '';
         render_data.forEach(function (evt) {
         let template_dd = card_template({
           'evt_title': evt.Title,
@@ -55,7 +64,8 @@ function populate_cards(session) {
           'evt_end_time': evt.End_time,
           'evt_desc': evt.Description
         });
-        $(render_loc).append(template_dd);
+        $(render_loc).append(template_dd).hide(); // Hide the cards initially to prevent ugly resizing
+        
         });
       }
      console.log("template loading done");
@@ -63,56 +73,85 @@ function populate_cards(session) {
     //  callback();
     $(function() {
     bind_owl();
+    // Populate counters
+    $("#course_evt_count").text(course_info_arr.length);
+    $("#tour_evt_count").text(tours_exp_arr.length);
+    $("#gen_evt_count").text(gen_info_arr.length);
     });
     })
       .fail(function (jqXHR, textStatus, errorThrown) {
         console.log(textStatus + ": " + errorThrown);
     }); // fail end
-    
-    
 }
 populate_cards();
-
 // Initialise and bind owl carousel
 function bind_owl() {
   console.log("owl binding started");
+let course_cards_len = $(".course-info-carousel .eventcard").length;
+let tours_cards_len = $(".tours-exp-carousel .eventcard").length;
+let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
+
   var owl = $('.owl-carousel');
-  // $('.owl-carousel').empty();
-  owl.owlCarousel('destroy'); // Kill owl first on click
   
-  // owl.trigger('destroy.owl.carousel');
-  // owl.html(owl.find('.owl-stage-outer').html()).removeClass('owl-loaded');
-  // owl.data('owlCarousel').destroy();
-	owl.owlCarousel({
+  owl.removeClass("owl-hidden");
+  owl.owlCarousel('destroy'); // Kill owl first on click before re-init
+  owl.fadeIn('slow'); // Unhide cards before re-init
+  $(".course-info-carousel").owlCarousel({
     stagePadding: 20,
-    // center: true,
+    margin: 10,
+    nav: true,
     loop:true,
-		margin: 10,
-		nav: true,
     rewindNav:false,
-    // responsiveClass:true,
-    //  items:4,
     lazyLoad:true,
     lazyContent:true,
-      // responsiveBaseElement:".module-with-carousel",
 		responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 2
-			},
-			1000: {
-        items: 3.5,
-        dotsEach: 3,
-        slideBy: 3
+			0: {items: 1},
+			600: {items: 2},
+			1000: {items: 3.5,
+            loop:(course_cards_len > 3) ? true: false,
+            dotsEach: (course_cards_len > 3) ? 3: 1,
+            slideBy: (course_cards_len > 3) ? 3: 1
 			}
 		}
   });
-  // owl.trigger('refresh.owl.carousel');
-  // $('.owl-carousel').trigger('refresh.owl.carousel');
-  // owl.trigger('refresh.owl.carousel');
+
+  $(".tours-exp-carousel").owlCarousel({
+    stagePadding: 20,
+    margin: 10,
+    nav: true,
+    loop:true,
+    rewindNav:false,
+    lazyLoad:true,
+    lazyContent:true,
+		responsive: {
+			0: {items: 1},
+			600: {items: 2},
+			1000: {items: 3.5,
+            loop:(tours_cards_len > 3) ? true: false,
+            dotsEach: (tours_cards_len > 3) ? 3: 1,
+            slideBy: (tours_cards_len > 3) ? 3: 1
+
+			}
+		}
+  });
+
+  $(".gen-info-carousel").owlCarousel({
+    stagePadding: 20,
+    margin: 10,
+    nav: true,
+    loop:true,
+    rewindNav:false,
+    lazyLoad:true,
+    lazyContent:true,
+		responsive: {
+			0: {items: 1},
+			600: {items: 2},
+			1000: {items: 3.5,
+            loop:(gen_info_cards_len > 3) ? true: false,
+            dotsEach: (gen_info_cards_len > 3) ? 3: 1,
+            slideBy: (gen_info_cards_len > 3) ? 3: 1
+			}
+		}
+  });
 }// end owl bind
-
-
 export {populate_cards};
