@@ -1,4 +1,4 @@
-.comps-form {
+.comps-form, .baf-form {
     display: none;
     margin-bottom: 10rem;
     margin-top: 4.0rem;
@@ -257,31 +257,34 @@
         margin-right: 0;
     }
 
-    label {
-        position: relative;
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &:before {
-            content: "";
-            background: #fff;
-            border-radius: 3px;
-            border: 2px solid #0C8573;;
-            display: inline-flex;
-            flex: 0;
-            height: 2rem;
-            width: 2rem;
+    
+        label:not(.error) {
             position: relative;
-            margin-left: -3.4rem;
-            margin-right: 1rem;
-            justify-content: center;
-            align-content: center;
-            top: 0.5rem;
-            transition: all .15s ease-out;
+    
+            &:hover {
+                cursor: pointer;
+            }
+    
+            &:before {
+                content: "";
+                background: #fff;
+                border-radius: 3px;
+                border: 2px solid #0C8573;;
+                display: inline-flex;
+                flex: 0;
+                height: 2rem;
+                width: 2rem;
+                position: relative;
+                margin-left: -3.4rem;
+                margin-right: 1rem;
+                justify-content: center;
+                align-content: center;
+                top: 0.5rem;
+                transition: all .15s ease-out;
+            }
         }
-    }
+    
+    
 
     input {
         position: absolute;
@@ -322,4 +325,5 @@
         flex: 1 0 21%;
         margin-right: 2.5rem;
     }
+  
 }

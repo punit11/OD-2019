@@ -1,10 +1,8 @@
-// import {owl} from "./owl-carousel";
 import {navbar_toggle, accordion_click} from "./home";
-// import {form_validation} from "./form-validation";
-// import {comp_form} from "./comps-form";
 import {modifySelect, fancy_scrollbar} from "./select2";
-// import {youtubeApi} from "./you-tube-api";
 import {populate_cards} from "./populate-cards";
+import {baf_form_validation} from "./form-validation-baf";
+import {baf_form} from "./baf-form";
 import {filters} from "./filters";
 
 import "../styles/_fonts.scss";
@@ -16,7 +14,7 @@ import "../styles/_common.scss";
 import "../styles/_buttons.scss";
 import "../styles/_nav.scss";
 import "../styles/_header.scss";
-// import "../styles/_tiles.scss";
+import "../styles/_tiles.scss";
 import "../styles/_comp.scss";
 import "../styles/_comps-form.scss";
 import "../styles/_testimonial.scss";

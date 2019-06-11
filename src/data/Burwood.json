@@ -5,7 +5,7 @@
     "Title": "Accounting",
     "Description": "Complex global markets and reporting requirements mean that never before has accounting been a more dynamic and exciting profession. Find out about our internationally recognised and EPAS accredited commerce course.",
     "Location": "Building LB, Room LB2.101",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -16,7 +16,7 @@
     "Title": "Advertising",
     "Description": "Learn about how Deakin is producing the next generation of big idea thinkers through its communication course, with a specialisation in advertising. Explore the world of brand communication and understand how you can develop critical and creative skills.",
     "Location": "Building P, Creative Media Lab, Room P3.04",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -27,7 +27,7 @@
     "Title": "Anthropology",
     "Description": "Anthropology is the study of the lives of people in a range of societies. Find out what you will learn and its relevance for you and your career.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 2",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -38,7 +38,7 @@
     "Title": "Arts - see where it can take you",
     "Description": "Learn about our arts course and the amazing choices on offer.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -49,7 +49,7 @@
     "Title": "Arts - see where it can take you",
     "Description": "Learn about our arts course and the amazing choices on offer.",
     "Location": "Building BC, Level 2, North 1-3",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -60,7 +60,7 @@
     "Title": "Arts - see where it can take you",
     "Description": "Learn about our arts course and the amazing choices on offer.",
     "Location": "Building BC, Level 2, North 1-3",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -71,7 +71,7 @@
     "Title": "Associate Degree of Arts",
     "Description": "Our associate degree programs introduce you to university study and provide guaranteed entry into a range of arts and education courses, or transition into other Deakin undergraduate programs, with credit.",
     "Location": "Building BC, Level 2, East 1",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -82,7 +82,7 @@
     "Title": "Associate degree of Education",
     "Description": "Our associate degree programs introduce you to university study and provide guaranteed entry into a range of arts and education courses, or transition into other Deakin undergraduate programs, with credit.",
     "Location": "Building N, Room N3.10, Interactive Classroom",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -93,7 +93,7 @@
     "Title": "Associate Degree of Education",
     "Description": "Our associate degree programs introduce you to university study and provide guaranteed entry into our Bachelor of Education (Primary) degree, with credit.",
     "Location": "Building N, Room N3.10",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -104,7 +104,7 @@
     "Title": "Backyard honey",
     "Description": "Come and learn about the importance of bees in the environment from our science students.",
     "Location": "Building M, Level 2, M2.109",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -115,7 +115,7 @@
     "Title": "Biomedical science",
     "Description": "Biomedical science leads to careers in biomedical research, veterinary science, genetic counselling, patent law, genetic engineering, hospital and laboratory science, pharmaceutical/medical sales, as well as a pathway to further studies in medicine.",
     "Location": "Building I, Room I2.07, Lecture Theatre 1A",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -126,7 +126,7 @@
     "Title": "Bringing physiology to life through body paint",
     "Description": "Have your hands painted and learn fun facts about the human body from our science students.",
     "Location": "Building M, Room M2.109",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -137,7 +137,7 @@
     "Title": "Building student employability skills for the jobs of the future",
     "Description": "Discover how the Faculty of Science, Engineering and Built Environment is building our graduates? employability skills through a variety of industry-based programs, such as internships, professional work placements and overseas study/placement  opportunities.",
     "Location": "Building I, Room I2.07, Lecture Theatre 1A",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -148,7 +148,7 @@
     "Title": "Business",
     "Description": "Learn all about our business degree - its practical business focus, work-integrated learning opportunities and embedded personal leadership experiences.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -159,7 +159,7 @@
     "Title": "Business",
     "Description": "Learn all about our business degree - its practical business focus, work-integrated learning opportunities and embedded personal leadership experiences.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -170,7 +170,7 @@
     "Title": "Business",
     "Description": "Learn all about our business degree - its practical business focus, work-integrated learning opportunities and embedded personal leadership experiences.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -181,7 +181,7 @@
     "Title": "Business",
     "Description": "Learn all about our business degree - its practical business focus, work-integrated learning opportunities and embedded personal leadership experiences.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -192,7 +192,7 @@
     "Title": "Centre for Cellular and Molecular Biology (CCMB)",
     "Description": "CCMB conducts research involving cellular and molecular biology. Tour the laboratories, talk to research students and see a demonstration using a confocal microscope, cell culture facilities and research equipment. Tours on the half hour from 12.30-2.30 pm.",
     "Location": "Building L, Foyer, Level 1",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "2:30 PM",
     "Session_type": "Tour",
     "Session_start": "Afternoon"
@@ -203,7 +203,7 @@
     "Title": "Commerce",
     "Description": "Commerce is internationally recognised and EPAS accredited. Combine a solid foundation in business studies with choice of majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -214,7 +214,7 @@
     "Title": "Commerce",
     "Description": "Commerce is internationally recognised and EPAS accredited. Combine a solid foundation in business studies with choice of majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -225,7 +225,7 @@
     "Title": "Commerce",
     "Description": "Commerce is internationally recognised and EPAS accredited. Combine a solid foundation in business studies with choice of majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -236,7 +236,7 @@
     "Title": "Commerce",
     "Description": "Commerce is internationally recognised and EPAS accredited. Combine a solid foundation in business studies with choice of majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Building LB, Room LB2.207, Lecture Theatre 14",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -247,7 +247,7 @@
     "Title": "Communication showcase - see the work of our talented journalism students",
     "Description": "See the work of our talented journalism and public relations students.",
     "Location": "Building P, Room P3.03, Newsroom",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Course information session",
     "Session_start": "All day"
@@ -258,7 +258,7 @@
     "Title": "Computer science - enabling a data-driven world",
     "Description": "The rise of robotics, artificial intelligence, smart devices and the Internet of Things, along with the widespread use of machine learning over traditional algorithms, has revolutionised computer science. The modern computer scientist needs to understand the devices that generate data, the software and algorithms that consume data, and the application of these techniques to solve challenging problems that face communities, nations and the planet as a whole. In this session, you?ll be introduced to some exciting topics covered in our computer science course, taking you on the journey from devices to data and connecting you with an exciting new data-driven world.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -269,7 +269,7 @@
     "Title": "Construction management (honours)/Property and real estate",
     "Description": "The only course of its kind offered in Australia, your expertise in both construction and property will uniquely position you for extensive employment opportunities.",
     "Location": "Building B, Room B1.20, Lecture Theatre 11",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -280,7 +280,7 @@
     "Title": "Creative arts tours",
     "Description": "Tour Deakin's creative and performing arts facilities, including the television studio, editing labs, performance spaces and photography darkrooms.",
     "Location": "Building P, Foyer, Level 1",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Tour",
     "Session_start": "All day"
@@ -291,7 +291,7 @@
     "Title": "Criminology",
     "Description": "Crime, security, policing and punishment - come and learn how criminology looks at these areas and find out how you can work in criminology, policy development, intelligence, paralegal and security services.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, North 1-3",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -302,7 +302,7 @@
     "Title": "Criminology",
     "Description": "Crime, security, policing and punishment - come and learn how criminology looks at these areas and find out how you can work in criminology, policy development, intelligence, paralegal and security services.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, North 1-3",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -313,7 +313,7 @@
     "Title": "Criminology",
     "Description": "Crime, security, policing and punishment - come and learn how criminology looks at these areas and find out how you can work in criminology, policy development, intelligence, paralegal and security services.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, North 1-3",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -324,7 +324,7 @@
     "Title": "Crossings - roaming performance",
     "Description": "Enjoy a roaming performance by our talented drama students.",
     "Location": "Melbourne Burwood Campus",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -335,7 +335,7 @@
     "Title": "Cyber security - securing our digital future",
     "Description": "Cyber security explained - learn how Deakin?s cyber security courses equip you with the skills required to be a cyber security professional, including those enabling you to investigate and combat cyber-crime and cyber-terrorism. This talk discusses the global cyber skills shortage and describes how Deakin's industry-led cyber security courses are designed to produce graduates that are highly sought-after by employers.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -346,7 +346,7 @@
     "Title": "Deakin Abroad - where do you want to go?",
     "Description": "Study overseas and gain credit towards your degree, without extending your time at Deakin. Experience new cultures, become a global citizen and gain that competitive edge.",
     "Location": "Building HE, Room HE1.014",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:00 AM",
     "Session_type": "General information session",
     "Session_start": "Morning"
@@ -357,7 +357,7 @@
     "Title": "Deakin Abroad - where do you want to go?",
     "Description": "Drop by our office and have a chat to our friendly staff and past exchange students about where your Deakin degree can take you.",
     "Location": "Deakin Abroad Office, Building B, Level 2, Room B2.26",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "General information session",
     "Session_start": "All day"
@@ -368,7 +368,7 @@
     "Title": "Deakin Abroad - where do you want to go?",
     "Description": "Study overseas and gain credit towards your degree, without extending your time at Deakin. Experience new cultures, become a global citizen and gain that competitive edge.",
     "Location": "Building I, Room I2.07, Lecture Theatre 1A",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "General information session",
     "Session_start": "Afternoon"
@@ -379,7 +379,7 @@
     "Title": "Deakin Accelerate - VCE extension studies",
     "Description": "Deakin offers the opportunity to study first-year university subjects as part of your VCE. High achievers can get ahead by studying two subjects in a wide range of areas, and potentially benefit from a boost to their ATAR. Come along to find out more about Deakin Accelerate - a presentation for Year 10 and 11 students.",
     "Location": "Building HE, Room HE1.014",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "General information session",
     "Session_start": "Morning"
@@ -390,7 +390,7 @@
     "Title": "Deakin Camera Obscura",
     "Description": "A pre-photographic technology that led to the invention of the camera. A large dark enclosure in which images from the outside world appear before your eyes. Subject to weather conditions.",
     "Location": "Building P, Level 1 (outside)",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -401,7 +401,7 @@
     "Title": "Deakin Motion.Lab showcase",
     "Description": "Experience our state-of-the-art motion capture facility, where live motion capture, live animation, live virtual reality and live facial capture come to life.",
     "Location": "Building B, Room B1.81, Deakin Motion.Lab",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -412,7 +412,7 @@
     "Title": "Deakin Motion.Lab showcase",
     "Description": "Experience our state-of-the-art motion capture facility, where live motion capture, live animation, live virtual reality and live facial capture come to life.",
     "Location": "Building B, Room B1.81, Deakin Motion.Lab",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -423,7 +423,7 @@
     "Title": "Deakin Motion.Lab showcase",
     "Description": "Experience our state-of-the-art motion capture facility, where live motion capture, live animation, live virtual reality and live facial capture come to life.",
     "Location": "Building B, Room B1.81, Deakin Motion.Lab",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1.30pm",
     "Session_type": "Experience",
     "Session_start": "Afternoon"
@@ -434,7 +434,7 @@
     "Title": "Deakin Reactor",
     "Description": "How do you think your hand-eye coordination compares to elite athletes? Check out our Deakin Reactor and test your skills against professional athletes from the Geelong Cats, Netball Australia and Deakin Melbourne Boomers.",
     "Location": "Building P (outside), lawn",
-    "Start_time": "12:00:00 AM",
+    "Start_time": "12:00 AM",
     "End_time": "12:00 AM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -445,7 +445,7 @@
     "Title": "Deakin teachers are classroom ready",
     "Description": "Hear from students about their experiences on school placement and other exciting opportunites, such as our Global Education Program, National Exceptional Teachers Disadvantaged Students program and ASPIRE.",
     "Location": "Building N, Room N3.10",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -478,7 +478,7 @@
     "Title": "Design studio",
     "Description": "Visit our studio to see student work and chat to current students. Talks about our design courses in 3D animation, digital technologies and visual communication will be conducted in this space at 10:30am and 2:30pm.",
     "Location": "Building P, Room P3.14, Design Studio",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3.00:00 PM",
     "Session_type": "Course information session, Experience",
     "Session_start": "Morning"
@@ -489,7 +489,7 @@
     "Title": "Digital media",
     "Description": "Explore new and emerging trends in digital media, social media, web design and development in a hands-on environment with Deakin's specialist digital media course.",
     "Location": "Building P, Creative Media Lab, Rooms P3.04 and P3.05",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -500,7 +500,7 @@
     "Title": "Drama",
     "Description": "Hear how our drama students are taught to become dynamic, independent and entrepreneurial, equipped to perform, create, direct, design, teach and produce.",
     "Location": "Building P, Room P1.28",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -511,7 +511,7 @@
     "Title": "Drama installation",
     "Description": "Explore the work of our talented drama students to gain an insight into our drama studies course.",
     "Location": "Building P, Room P1.19",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -522,7 +522,7 @@
     "Title": "Drama student performance",
     "Description": "Enjoy a showcase of our talented drama students' work. Featuring half hour performances from drama assessment pieces.",
     "Location": "Building P, Room P1.16",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12.30:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -544,7 +544,7 @@
     "Title": "Early years",
     "Description": "Did you know our four-year early years education course is really a dual qualification? Find out how you can become qualified to teach in early childhood, as well as primary settings. Hear our students share their journey and school placement experiences.",
     "Location": "Building B, Room B3.05, Lecture Theatre 4",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -555,7 +555,7 @@
     "Title": "Early years",
     "Description": "Did you know our four-year early years education course is really a dual qualification? Find out how you can become qualified to teach in early childhood, as well as primary settings. Hear our students share their journey and school placement experiences.",
     "Location": "Building B, Room B3.05, Lecture Theatre 4",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "12:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -566,7 +566,7 @@
     "Title": "Early years and primary teaching",
     "Description": "Listen to students share their journey and talk about their unique professional and global experiences.",
     "Location": "Building N, Room N3.10, Interactive Classroom",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -577,7 +577,7 @@
     "Title": "Economics",
     "Description": "Economics is offered as a major in commerce and combined commerce courses; it's a social science based on human behaviour that aims to enhance all aspects of business.",
     "Location": "Building LB, Room LB2.308",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -588,7 +588,7 @@
     "Title": "Education and teaching - postgraduate study options",
     "Description": "Already a teacher, education professional or looking for a career change? Come and chat to us and hear about our postgraduate study options in teaching.",
     "Location": "Building HE, Room HE1.009",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Course information session",
     "Session_start": "All day"
@@ -599,7 +599,7 @@
     "Title": "Employability Precinct - find out how we prepare you for career success",
     "Description": "Visit the Employability Precinct and find out why we are #1 university in Victoria for skills development, integrating real-world expertise with practical skills into our courses to give our students a competitive edge. Chat to our staff, current students and graduates about internships, study tours, international experiences and graduate employment services focused on preparing our students for the jobs and careers of the future.",
     "Location": "Career and Course Information Centre",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "General information session",
     "Session_start": "All day"
@@ -610,7 +610,7 @@
     "Title": "Engineering",
     "Description": "Explore engineering careers in computer modelling, virtual reality environments, 3D printing and world-leading rapid prototyping capabilities. Gain practical experience and the knowledge and skills employers are looking for.",
     "Location": "Building B, Room B1.20, Lecture Theatre 11",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -621,7 +621,7 @@
     "Title": "Exercise and sport science",
     "Description": "Our exercise and sport science program is professionally accredited and explores the physical health, wellbeing and performance of individuals, elite athletes and teams through training, coaching, research and more. Deakin is the #1 ranked sport science school in the world and puts you on the path to becoming an elite sport scientist working with athletes or elite sporting teams.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -632,7 +632,7 @@
     "Title": "Exercise and sport science",
     "Description": "Our exercise and sport science program is professionally accredited and explores the physical health, wellbeing and performance of individuals, elite athletes and teams through training, coaching, research and more. Deakin is the #1 ranked sport science school in the world and puts you on the path to becoming an elite sport scientist working with athletes or elite sporting teams.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -643,7 +643,7 @@
     "Title": "Exercise and sport science",
     "Description": "Our exercise and sport science program is professionally accredited and explores the physical health, wellbeing and performance of individuals, elite athletes and teams through training, coaching, research and more. Deakin is the #1 ranked sport science school in the world and puts you on the path to becoming an elite sport scientist working with athletes or elite sporting teams.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -654,7 +654,7 @@
     "Title": "Exercise and sport science lab tour",
     "Description": "Observe the effects of impact force on Bob the punching man (our test dummy), which helps us to understand the effects of concussion and impact trauma in sport. Visualise how we use oxygen and the effects that strenuous physical exercise can have with our VO2 max demonstration. Put your reaction speed to the test in our 3D Gait timing reaction drill. Tours every half hour from 9.30am.",
     "Location": "Career and Course Information Centre",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "3:00 PM",
     "Session_type": "Tour",
     "Session_start": "Morning"
@@ -665,7 +665,7 @@
     "Title": "Film and television studio",
     "Description": "Join in crewing the TV studio or be part of the live audience. Activities run all day with special guest appearances and surprises. Activities run all day.",
     "Location": "Building P, Room P1.21, Film and Television Studio",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -676,7 +676,7 @@
     "Title": "Film, television and animation",
     "Description": "Access to world-leading facilities and a rich program that develops your knowledge and skills of film, television production and animation.",
     "Location": "Building P, Room P1.28",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -687,7 +687,7 @@
     "Title": "Finance",
     "Description": "The finance major equips you for entry into the finance and investment areas in business organisations, the finance industry or government. Find out about our internationally recognised and EPAS accredited commerce course.",
     "Location": "Building LB, Room LB2.101",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -698,7 +698,7 @@
     "Title": "Financial planning",
     "Description": "Launch or advance your career in the fast-growing area of financial planning and wealth management. Our accredited financial planning courses enable you to enter a financially rewarding profession, which has the potential to transform the lives of the people you work with. New changes in legislation will provide significant job opportunities going forward for suitably qualified financial planners.",
     "Location": "Building LB, Room LB2.100",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -709,7 +709,7 @@
     "Title": "Finding accommodation",
     "Description": "Find out about your accommodation options at Melbourne Burwood Campus and close to the campus, costs and how and when to apply. Tours of the student residences will follow.",
     "Location": "Building HD, Rooms HD3.008 and HD3.009",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:30 AM",
     "Session_type": "General information session, Tour",
     "Session_start": "Morning"
@@ -720,7 +720,7 @@
     "Title": "Finding accommodation",
     "Description": "Find out about your accommodation options at Melbourne Burwood Campus and close to the campus, costs and how and when to apply. Tours of the student residences will follow.",
     "Location": "Building LB, Room LB2.101",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:30 PM",
     "Session_type": "General information session, Tour",
     "Session_start": "Afternoon"
@@ -731,7 +731,7 @@
     "Title": "Forensic science",
     "Description": "Formal training to examine and present scientific evidence. Professionally accredited, graduates work in the pharmaceutical and chemical industries, risk analysis, insurance investigation or as a forensic scientist.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -742,7 +742,7 @@
     "Title": "From go to pro - reflections from Deakin IT students and alumni",
     "Description": "Hear from a panel comprising Deakin alumni, current students and young researchers as they share their journey through higher education and their tips on surviving and thriving at university and beyond.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -753,7 +753,7 @@
     "Title": "Gender and sexuality studies",
     "Description": "Learn about the significance of sex, gender and sexuality in contemporary and historical cultures.",
     "Location": "Building P, Room P1.03",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -764,7 +764,7 @@
     "Title": "Gender and sexuality studies",
     "Description": "Learn about the significance of sex, gender and sexuality in contemporary and historical cultures.",
     "Location": "Building P, Room P1.28",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -775,7 +775,7 @@
     "Title": "Genes in a bottle",
     "Description": "In these 30-minute workshops the public will be able to extract their own DNA and take home an amulet containing the DNA as a memento.",
     "Location": "Building M, Room M2.109",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -786,7 +786,7 @@
     "Title": "Geography and society",
     "Description": "An understanding of everything from how and why volcanos are formed to the impact of overcrowding in urban areas, geographers are integral to finding solutions to some of the biggest issues in the world. Find out more about the geography study area.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 1",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -797,7 +797,7 @@
     "Title": "Giant Jenga game",
     "Description": "Come and take part in our Giant Jenga game and learn about the various components and unique aspects of our arts course.",
     "Location": "Building BC, Level 2",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -808,7 +808,7 @@
     "Title": "Global Education Program",
     "Description": "Hear from students and learn about our Global Education Program.",
     "Location": "Building N, Raymond Trotter, Room N3.10",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "General information session",
     "Session_start": "Afternoon"
@@ -819,7 +819,7 @@
     "Title": "Health and physical education (secondary teaching)",
     "Description": "Become a health and physical education secondary school teacher - a career choice that promotes being physically active and healthy. Find out more on selection, course options, transition support and other career possibilities.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -830,7 +830,7 @@
     "Title": "Health and physical education (secondary teaching)",
     "Description": "Become a health and physical education secondary school teacher - a career choice that promotes being physically active and healthy. Find out more on selection, course options, transition support and other career possibilities.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -841,7 +841,7 @@
     "Title": "Health sciences",
     "Description": "Our health sciences program focuses on solving real-world health problems. The course offers a range of majors, allowing you to tailor your learning to align with your interests. This offers you career outcomes to make a difference in health and human services throughout the health field, across community, population, government and more.",
     "Location": "Building B, Room B1.77, Lecture Theatre 3",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -852,7 +852,7 @@
     "Title": "Health sciences",
     "Description": "Our health sciences program focuses on solving real-world health problems. The course offers a range of majors, allowing you to tailor your learning to align with your interests. This offers you career outcomes to make a difference in health and human services throughout the health field, across community, population, government and more.",
     "Location": "Building I, Room I2.07, Lecture Theatre 1A",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "3:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -863,7 +863,7 @@
     "Title": "Community garden - health sciences and health promotion",
     "Description": "Explore our Community Garden and ?Collect a free seedling? while you chat to our health sciences staff and students about health and sustainability careers in food security, community engagement, rehabilitation, mental health, the environment and more.",
     "Location": "Building S, Car Park 8",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -874,7 +874,7 @@
     "Title": "History",
     "Description": "The insistence of the past in the present - history at Deakin. Join this information session to explore our stimulating and challenging history program.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 1",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -885,7 +885,7 @@
     "Title": "Industry panel - IT careers of the future",
     "Description": "Learn about the state of the global IT industry, career opportunities and skills in demand from industry professionals and leaders.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "9:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -896,7 +896,7 @@
     "Title": "Information systems and business analytics",
     "Description": "Have a passion for technology, but not necessarily for coding? Our courses open up opportunities in business technology roles through our industry-focused courses and compulsory internships.",
     "Location": "Building LB, Room LB2.100",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -907,7 +907,7 @@
     "Title": "Information technology - driving digital transformation",
     "Description": "IT professionals are accelerating digital transformation across industry sectors, driving innovation and enabling economic growth.Our Bachelor of Information Technology provides you with contemporary knowledge, as well as the skills and experience required for a successful career as an IT professional. Explore options available to tailor course outcomes to your career aspirations.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -918,7 +918,7 @@
     "Title": "Institute for Frontier Materials - postgraduate studies - electromaterials tour",
     "Description": "Visit the Institute for Frontier Materials laboratories and see our research into new materials with energy applications. Our master's and PhD students are looking at next generation batteries and thermocells to convert body heat into power for wearable electronics, such as fitness trackers.",
     "Location": "Building K",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Tour",
     "Session_start": "Morning"
@@ -929,7 +929,7 @@
     "Title": "Institute for Frontier Materials - postgraduate studies - electromaterials tour",
     "Description": "Visit the Institute for Frontier Materials laboratories and see our research into new materials with energy applications. Our master's and PhD students are looking at next generation batteries and thermocells to convert body heat into power for wearable electronics, such as fitness trackers.",
     "Location": "Building K",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Tour",
     "Session_start": "Afternoon"
@@ -940,7 +940,7 @@
     "Title": "International studies and work-integrated learning",
     "Description": "A unique course combining study, workplace skills development, travel and real world experience. Learn about the course structure, available majors and international experience options. Hear Deakin students talk about their experiences on study exchange, internships and study tours.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 1",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -951,7 +951,7 @@
     "Title": "IT showcase",
     "Description": "Visit our interactive IT display - explore new perspectives with analytics, smart technologies and virtual reality, meet our fun and cute humanoids and discover how IT is a part of everyday life. See some of our student work and exciting research.",
     "Location": "Building M, RIOT Lab and Foyer, Level 1",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -962,7 +962,7 @@
     "Title": "Journalism",
     "Description": "Check out our new state-of-the-art newsroom. Find out how our journalism course offers you the knowledge, skills and confidence to become news professionals across traditional media platforms, including print and broadcast news, as well as in digital media.",
     "Location": "Building P, Newsroom, Room P3.03 and Building P, Creative Media Lab, Room P3.04",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -973,7 +973,7 @@
     "Title": "Languages - Indonesian, Arabic, Chinese and Spanish",
     "Description": "Language programs in Arabic, Chinese, Indonesian and Spanish - discover the opportunities to study overseas and immerse yourself in the language and culture you're studying.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 1",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -984,7 +984,7 @@
     "Title": "Law",
     "Description": "Learn about our law course, one of the few law degrees offered in Australia with innovative practising law clinics.",
     "Location": "Building LA, Room LA3.205",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -995,7 +995,7 @@
     "Title": "Law",
     "Description": "Learn about our law course, one of the few law degrees offered in Australia with innovative practising law clinics.",
     "Location": "Building LA, Room LA3.205",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1006,7 +1006,7 @@
     "Title": "Law",
     "Description": "Learn about our law course, one of the few law degrees offered in Australia with innovative practising law clinics.",
     "Location": "Building LA, Room LA3.205",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1017,7 +1017,7 @@
     "Title": "Life at Deakin",
     "Description": "Thinking about studying at Deakin but not sure what to expect? Take a walk through our student experience from your offer to your first exam and find out what a typical day might look like for you.",
     "Location": "Building HE, Room HE1.014",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "General information session",
     "Session_start": "Afternoon"
@@ -1028,7 +1028,7 @@
     "Title": "Literary studies and children's literature",
     "Description": "Read, discuss and write about contemporary and classical works of literature in literary studies. Study classics and new children's authors, especially of interest to primary and secondary education students.",
     "Location": "Building P, Room P1.03",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1039,7 +1039,7 @@
     "Title": "Little L project - a virtual prehistoric experience",
     "Description": "Get up close and personal with a wallaby-sized polar dinosaur found in the Otways - the 'Leaellynasaura'.",
     "Location": "Building T",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1050,7 +1050,7 @@
     "Title": "LIVE Alpona drawing by Anindita Banerjee",
     "Description": "Come watch Anindita Banerjee draw live outside the Deakin University Art Gallery. The event will also be streaming LIVE on Facebook @ArtsDeakin.",
     "Location": "Building FA, outside the Deakin University Art Gallery",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "12:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1061,7 +1061,7 @@
     "Title": "Maggot art",
     "Description": "See creative paintings by maggots. Learn how maggots are being used to research the relationship between blowflies, maggots and bacteria, while watching them produce cool artwork.",
     "Location": "Building M, Room M3.109, Physiology Laboratory",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1072,7 +1072,7 @@
     "Title": "Management",
     "Description": "Management is a major in our Bachelor of Commerce. It has a strong practical focus, providing work-integrated learning opportunities and developing the skills you need to get the job you want.",
     "Location": "Building LB, Room LB2.101",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1083,7 +1083,7 @@
     "Title": "Marine biology",
     "Description": "Our marine biology course is available at Warrnambool and Geelong Waurn Ponds, offering access to a wide range of aquatic environments and diversity of marine life. Students experience a classroom without walls. Hear how fieldwork and industry placements prepare you for a rewarding career.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1094,7 +1094,7 @@
     "Title": "Marketing",
     "Description": "Offered as a major in our business degrees, marketing develops knowledge and skills in strategy, research, integrated marketing communication, analysis and planning, branding, advertising, public relations, implementation and consumer behaviour.",
     "Location": "Building LB, Room LB2.100",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1105,7 +1105,7 @@
     "Title": "Master of Applied Learning and Teaching",
     "Description": "Looking for a career change? Come and hear about this postgraduate initial teacher qualification and how it will equip you with the skills and experience to work in secondary schools and other youth settings, such as VCAL and TAFE.",
     "Location": "Building HE, Room HE1.009",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1116,7 +1116,7 @@
     "Title": "Master of Teaching",
     "Description": "Looking for a career change? The Master of Teaching enables graduates from various disciplines to gain teaching qualifications in one of early childhood, primary or secondary education strands, or dual qualifications in primary/early childhood or primary/secondary.",
     "Location": "Building HE, Room HE1.009",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1127,7 +1127,7 @@
     "Title": "Master of Teaching",
     "Description": "Looking for a career change? The Master of Teaching enables graduates from various disciplines to gain teaching qualifications in one or two of three strands: early childhood, primary or secondary education.",
     "Location": "Building HE, Room HE1.009",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1138,7 +1138,7 @@
     "Title": "Media, communication and creative arts",
     "Description": "This session is a must for students interested in communication and creative arts. Come along and hear about the breadth of courses on offer, with information relating to specific courses and disciplines.",
     "Location": "Building P, Room P1.28",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1149,7 +1149,7 @@
     "Title": "Medical imaging",
     "Description": "Our medical imaging course integrates both academic and clinical studies throughout the course. Develop clinical skills under the supervision of experienced practitioners in a range of settings and graduate with the knowledge and skills to work as a highly competent and in demand registered diagnostic radiographer.",
     "Location": "Building B, Room B3.05, Lecture Theatre 4",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1160,7 +1160,7 @@
     "Title": "Medical imaging",
     "Description": "Our medical imaging course integrates both academic and clinical studies throughout the course. Develop clinical skills under the supervision of experienced practitioners in a range of settings and graduate with the knowledge and skills to work as a highly competent and in demand registered diagnostic radiographer.",
     "Location": "Building B, Room B1.20, Lecture Theatre 11",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1171,7 +1171,7 @@
     "Title": "Medicine",
     "Description": "Our Doctor of Medicine places a strong emphasis on clinical skills development, team work and communication training, providing the best opportunities for medical training in metropolitan and rural settings. Learn through problem-based seminars and practical classes before undergoing intensive clinical training within professional health services across Victoria.",
     "Location": "Building I, Room I2.07, Lecture Theatre 1A",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1182,7 +1182,7 @@
     "Title": "Money matters",
     "Description": "Everything you need to know about tuition fees, HECS-HELP, invoices and payment options. Discover if you are eligible for a scholarship or financial assistance.",
     "Location": "Building HE, Room HE1.014",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "General information session",
     "Session_start": "Morning"
@@ -1193,7 +1193,7 @@
     "Title": "MonSoon Sim",
     "Description": "Experience what it is like to operate a real company with the MonsoonSim gaming platform. Teams work against the clock to manage practical business constraints and become the most successful company.",
     "Location": "Building LB, Room LB2.301, Telstra Trading Room",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "12:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1204,7 +1204,7 @@
     "Title": "Moot court",
     "Description": "Deakin's law course focuses on practical experience. See Deakin Law School academics and students bring law to life in a mock trial.",
     "Location": "Building LA, Room LA3.205",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "11:00 AM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1215,7 +1215,7 @@
     "Title": "Moot court",
     "Description": "Deakin's law course focuses on practical experience. See Deakin Law School academics and students bring law to life in a mock trial.",
     "Location": "Building LA, Room LA3.205",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1226,7 +1226,7 @@
     "Title": "Nursing and midwifery",
     "Description": "Our nursing and midwifery courses are delivered by a school ranked in the top 1% in the world. Students graduate in demand, with the knowledge, skills and professionalism to work as a registered nurse and/or midwife in a diverse range of health settings.",
     "Location": "Building B, Room B1.77, Lecture Theatre 3",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1237,7 +1237,7 @@
     "Title": "Nursing and midwifery",
     "Description": "Our nursing and midwifery courses are delivered by a school ranked in the top 1% in the world. Students graduate in demand, with the knowledge, skills and professionalism to work as a registered nurse and/or midwife in a diverse range of health settings.",
     "Location": "Building B, Room B1.77, Lecture Theatre 3",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1248,7 +1248,7 @@
     "Title": "Nursing and midwifery clinical simulation centre",
     "Description": "Visit our purpose-built learning spaces and simulated clinical spaces, which closely replicate hospital and community environments. Observe our state-of-the-art 3G SimMan patient manikin programmed to simulate a variety of patient scenarios and talk to academic staff and students to learn more about our courses and equipment.",
     "Location": "Building W, Level 2",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Tour",
     "Session_start": "Morning"
@@ -1259,7 +1259,7 @@
     "Title": "Nutrition science lab tour",
     "Description": "Visit our food sensory labs at the Centre for Advanced Sensory Science (CASS). Participate in various food demonstrations, sample different freeze dried foods, marvel at surface bacterial swabs and learn about different manufacturing and packaging techniques.",
     "Location": "Career and Course Information Centre",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "3:00 PM",
     "Session_type": "Tour",
     "Session_start": "Morning"
@@ -1270,7 +1270,7 @@
     "Title": "Nutrition sciences",
     "Description": "Our nutrition course explores the vital role of food and nutrition in human health and disease prevention. You?ll be equipped to pursue a pathway into dietetics or work as a nutritional specialist in a range of industry sectors, such as government, private, community or population health.",
     "Location": "Building I, Room I2.02, Lecture Theatre 1",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1281,7 +1281,7 @@
     "Title": "Nutrition sciences",
     "Description": "Our nutrition course explores the vital role of food and nutrition in human health and disease prevention. You?ll be equipped to pursue a pathway into dietetics or work as a nutritional specialist in a range of industry sectors, such as government, private, community or population health.",
     "Location": "Building I, Room I2.02, Lecture Theatre 1",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1292,7 +1292,7 @@
     "Title": "Nutrition sciences",
     "Description": "Our nutrition course explores the vital role of food and nutrition in human health and disease prevention. You?ll be equipped to pursue a pathway into dietetics or work as a nutritional specialist in a range of industry sectors, such as government, private, community or population health.",
     "Location": "Building I, Room I2.05, Lecture Theatre 2",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1303,7 +1303,7 @@
     "Title": "Occupational therapy",
     "Description": "Our occupational therapy course gives you the specialised knowledge to improve clients? lives every day, as well as the skills to promote good health and wellbeing. Taught in our new state-of-the-art simulated teaching labs, you will have access to hands-on assistive technologies in the classroom, in addition to more than 1000 hours hands-on experience through practical placement.",
     "Location": "Building I, Room I2.05, Lecture Theatre 2",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1314,7 +1314,7 @@
     "Title": "Online studies - interactive learning at its best",
     "Description": "Deakin's Cloud Campus is supported by outstanding online resources and digital tools - your classroom in the cloud is where you'll take classes, submit assessments and participate in discussions. Find out more.",
     "Location": "Building HE, Room HE1.009",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "General information session",
     "Session_start": "Morning"
@@ -1325,7 +1325,7 @@
     "Title": "Optometry",
     "Description": "Our 3.5-year accelerated optometry course is a specialised combined degree that focuses on detecting, managing and treating eye disease and supplying corrective solutions. It leads to registration as an optometrist and provides graduates with the discipline-specific knowledge required to practise as an optometrist throughout Australia and New Zealand.",
     "Location": "Building B, Room B3.05, Lecture Theatre 4",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1336,7 +1336,7 @@
     "Title": "Optometry",
     "Description": "Our 3.5-year accelerated optometry course is a specialised combined degree that focuses on detecting, managing and treating eye disease and supplying corrective solutions. It leads to registration as an optometrist and provides graduates with the discipline-specific knowledge required to practise as an optometrist throughout Australia and New Zealand.",
     "Location": "Building B, Room B3.05, Lecture Theatre 4",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1347,7 +1347,7 @@
     "Title": "Pathway to Deakin - Deakin College",
     "Description": "Diploma courses include commerce, computing, engineering, health sciences, management, media and communication and science - pathway into second year at Deakin.",
     "Location": "Building HD, Rooms HD3.008 and HD3.009",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "General information session",
     "Session_start": "Afternoon"
@@ -1358,7 +1358,7 @@
     "Title": "Pathways to Deakin",
     "Description": "Learn more about our partnerships and alternate pathways to starting your dream degree at Deakin.",
     "Location": "Building HD, Rooms HD3.008 and HD3.009",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "General information session",
     "Session_start": "Morning"
@@ -1369,7 +1369,7 @@
     "Title": "Pathways to Deakin",
     "Description": "Learn more about our partnerships and alternate pathways to starting your dream degree at Deakin.",
     "Location": "Building HD, Rooms HD3.008 and HD3.009",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "General information session",
     "Session_start": "Afternoon"
@@ -1380,7 +1380,7 @@
     "Title": "Philosophy and studies of religions",
     "Description": "Philosophy - challenge your thinking and explore the fundamental questions of human existence; Studies of religions - inform and change how you think about religion.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 1",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1391,7 +1391,7 @@
     "Title": "Photography",
     "Description": "Interested in a creative career? Our unique approach to the creative arts allows you to specialise in photography, with access to outstanding facilities and a team of academics with extensive industry experience.",
     "Location": "Building P, Room P1.03",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1402,7 +1402,7 @@
     "Title": "Photography studio and print lab demonstrations",
     "Description": "Join the photography team for a tour of our state-of-the-art digital and analogue facilities, including a demonstration of our rapid digital workflow from capture and print to installation.",
     "Location": "Building P, Rooms P4.15, P4.17 and P4.19",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Tour",
     "Session_start": "Morning"
@@ -1413,7 +1413,7 @@
     "Title": "Photography studio and print lab demonstrations",
     "Description": "Join the photography team for a tour of our state-of-the-art digital and analogue facilities, including a demonstration of our rapid digital workflow from capture and print to installation.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, North 1-3",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Tour",
     "Session_start": "Afternoon"
@@ -1424,7 +1424,7 @@
     "Title": "Politics and policy studies, international relations, international politics, Middle East studies",
     "Description": "Learn how studying contemporary international politics and related disciplines can increase your job opportunities and equip you with the skills to make a change in the world.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, North 1-3",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1435,7 +1435,7 @@
     "Title": "Portfolio skills workshop",
     "Description": "Looking for a career in the creative or communication industries? This is an opportunity not to be missed. Gain handy tips and insights to enhance and develop your portfolio.",
     "Location": "Building P, Room P1.28",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1446,7 +1446,7 @@
     "Title": "Postgraduate studies - communication and creative arts",
     "Description": "Expand your skills and diversify your reach in the creative arts or communication by undertaking a graduate certificate, graduate diploma or master's degree. Perfect for artists looking to deepen their critical art practice or those who are working in the communications industry or looking for a career change.",
     "Location": "Building P, Room P1.03",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1457,7 +1457,7 @@
     "Title": "Postgraduate studies - cultural heritage and museum studies",
     "Description": "Develop the knowledge, research skills and practical experience to make a difference in the cultural heritage sector. You may want to work with collections, manage a museum or heritage site, or protect and interpret significant sites. If you're a mid-career professional or looking for a unique career change, come along to learn more.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 2",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1468,7 +1468,7 @@
     "Title": "Postgraduate studies - international and community development",
     "Description": "Development programs to promote justice, reduce poverty and build environments for people to lead productive, creative and fulfilling lives. If you have compassion and empathy and want to see a better world, this course is for you.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 2",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1479,7 +1479,7 @@
     "Title": "Primary teaching",
     "Description": "Discover the rewards of studying a primary teaching degree. Hear our friendly staff discussing selection, course information and career options.",
     "Location": "Building I, Room I2.02, Lecture Theatre 1",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1490,7 +1490,7 @@
     "Title": "Property and real estate",
     "Description": "Property and real estate is practical, profitable and in-demand. Deakin delivers Victoria's only three-year property course with Certified Practising Valuer (CPV) accreditation.",
     "Location": "Building LB, Room LB2.308",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1501,7 +1501,7 @@
     "Title": "Psychology",
     "Description": "Our psychology course exposes you to the biological, developmental, social and cognitive factors that affect the way humans think, feel and behave. Studying psychology puts you on the path to becoming a registered psychologist equipped to work in a range of psychology fields, such as clinical, forensic, organisational, educational, health and more.",
     "Location": "Building B, Room B1.77, Lecture Theatre 3",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1512,7 +1512,7 @@
     "Title": "Psychology",
     "Description": "Our psychology course exposes you to the biological, developmental, social and cognitive factors that affect the way humans think, feel and behave. Studying psychology puts you on the path to becoming a registered psychologist equipped to work in a range of psychology fields, such as clinical, forensic, organisational, educational, health and more.",
     "Location": "Building B, Room B1.77, Lecture Theatre 3",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1523,7 +1523,7 @@
     "Title": "Psychology labs",
     "Description": "Explore our clinical psychology labs and witness demonstrations of the application and monitoring of magnetic stimulation to a subject's brain and the effects this has on their hand-motor region and brain wave electrograph. Tours every half hour from 10.00 am",
     "Location": "Building BC, Level 1",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Tour",
     "Session_start": "Morning"
@@ -1534,7 +1534,7 @@
     "Title": "Public health and health promotion",
     "Description": "Our public health and health promotion course gives you the skills to tackle big-picture population health problems. Develop invaluable skills in program planning and evaluation, health education, community engagement and policy development and analysis.",
     "Location": "Building I, Room I2.05, Lecture Theatre 2",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1545,7 +1545,7 @@
     "Title": "Primary teaching",
     "Description": "Discover the rewards of studying a primary teaching degree. Hear our friendly staff discussing selection, course information and career options.",
     "Location": "Building I, Room I2.05, Lecture Theatre 2",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1556,7 +1556,7 @@
     "Title": "Public relations",
     "Description": "Public relations is about professional and strategic communication. An occupation with global reach and opportunities, our PR graduates enjoy exciting careers here and overseas.",
     "Location": "Building P, Creative Media Lab, Room P3.04",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1567,7 +1567,7 @@
     "Title": "Public health and health promotion",
     "Description": "Our public health and health promotion course gives you the skills to tackle big-picture population health problems. Develop invaluable skills in program planning and evaluation, health education, community engagement and policy development and analysis.",
     "Location": "Building B, Room B1.20, Lecture Theatre 11",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1578,7 +1578,7 @@
     "Title": "Renewable energy",
     "Description": "Come and speak to Deakin electrical and electronic engineering lecturers about Deakin?s exciting developments in renewable energy.",
     "Location": "Building T",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1589,7 +1589,7 @@
     "Title": "Returning to study - mature-age students and non-Year 12 students",
     "Description": "Looking to return to study? This session provides a guide on choosing the right course for you and tips on how to navigate the application process. Learn how study can suit your lifestyle, with flexible delivery options to help juggle work and family commitments.",
     "Location": "Building HE, Room HE1.014",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:30 PM",
     "Session_type": "General information session",
     "Session_start": "Afternoon"
@@ -1600,7 +1600,7 @@
     "Title": "Secondary teaching",
     "Description": "Find out about the pathways to your career as a secondary teacher. Learn about selection, course information and career options.",
     "Location": "Building I, Room I2.02, Lecture Theatre 1",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1611,7 +1611,7 @@
     "Title": "Secondary teaching - arts",
     "Description": "Find out about the pathways to your career as a secondary teacher. Learn about selection, course information and career options.",
     "Location": "Building I, Room I2.02, Lecture Theatre 1",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1622,7 +1622,7 @@
     "Title": "Secondary teaching - science",
     "Description": "Find out about the pathways to your career as a secondary science teacher. Learn about selection, course information and career options.",
     "Location": "Building I, Room I2.02, Lecture Theatre 1",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1633,7 +1633,7 @@
     "Title": "Science",
     "Description": "Not just about lab work, science at Deakin provides practical hands-on learning experiences, including field trips, industry learning and the establishment of valuable networks. You can elect your specialisation and choose to study science with a degree in commerce, teaching, law or arts.",
     "Location": "Building I, Room I2.07, Lecture Theatre 1A",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1644,7 +1644,7 @@
     "Title": "Science display",
     "Description": "Come and see an interactive display highlighting our study areas in the life sciences.",
     "Location": "Building M, Room M2.109, Physiology Laboratory",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -1655,7 +1655,7 @@
     "Title": "Social work",
     "Description": "Our social work program is accredited with the Australian Association of Social Workers and gives graduates the opportunity to have a rewarding career working with individuals, families, communities and organisations. It is designed around real world experience with students completing more than 1000 hours of practical placement.",
     "Location": "Building I, Room I2.05, Lecture Theatre 2",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1666,7 +1666,7 @@
     "Title": "Sociology",
     "Description": "Study the people around you. The rich, the poor, the strong, the weak, the powerful, the oppressed and all in between. Learn to change the way you see the world.",
     "Location": "Building BC, Burwood Corporate Centre, Level 2, East 1",
-    "Start_time": "2:00:00 PM",
+    "Start_time": "2:00 PM",
     "End_time": "2:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1677,7 +1677,7 @@
     "Title": "Software engineering - engineering a smarter future",
     "Description": "Software engineers are shaping the way we experience life, with innovative solutions for cars, homes, cities, health care and even space. Learn how our innovative software engineering (honours) course prepares you to operate at the intersection of software development and systems engineering, applying specialised robotics and cyber-physical computing skills to drive the design and development of computing solutions that operate within and interact with people, environments and other technologies.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1688,7 +1688,7 @@
     "Title": "Sport management and sport development",
     "Description": "A world leader in tertiary sport courses, sport management provides industry-specific and business training, while sport development focuses on participation, pathways and the benefits of community sport.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1699,7 +1699,7 @@
     "Title": "Sport management and sport development",
     "Description": "A world leader in tertiary sport courses, sport management provides industry-specific and business training, while sport development focuses on participation, pathways and the benefits of community sport.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1710,7 +1710,7 @@
     "Title": "Sport management and sport development",
     "Description": "A world leader in tertiary sport courses, sport management provides industry-specific and business training, while sport development focuses on participation, pathways and the benefits of community sport.",
     "Location": "Building HC, Room HC2.005, Lecture Theatre 13",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1721,7 +1721,7 @@
     "Title": "Teaching science - science education labs",
     "Description": "Discover why teaching science and technology in today?s classroom is an exciting and challenging activity. Participate in activities, discover contemporary STEM teaching and challenge yourself to design a new solution, all in our new science education labs.",
     "Location": "Building M, Education Science Lab, Rooms M1.103 and M1.105",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1732,7 +1732,7 @@
     "Title": "Student exhibition",
     "Description": "Enjoy displays of student work from visual communication design, visual arts, photography, animation and more in our impressive gallery space.",
     "Location": "Building B, Room B1.70, Phoenix Gallery",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -1743,7 +1743,7 @@
     "Title": "Take a library tour",
     "Description": "Our modern libraries will be open and offering tours on request. Discover what makes our students love our libraries and learn about the spaces, facilities and services available.",
     "Location": "Building JC, Level 2",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Tour",
     "Session_start": "All day"
@@ -1754,7 +1754,7 @@
     "Title": "Teaching the arts in schools - facilities tour",
     "Description": "Tour our facilities for arts education and get a glimpse into the amazing hands-on teaching and learning experiences enjoyed by our primary and secondary teaching students.",
     "Location": "Building E, Foyer, Level 1",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Tour",
     "Session_start": "Morning"
@@ -1765,7 +1765,7 @@
     "Title": "The Poescope - writing and literature hub",
     "Description": "",
     "Location": "Building P, Level 1 (outside)",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -1776,7 +1776,7 @@
     "Title": "Teaching the arts in schools - facilities tour",
     "Description": "Tour our facilities for arts education and get a glimpse into the amazing hands-on teaching and learning experiences enjoyed by our primary and secondary teaching students.",
     "Location": "Building E, Foyer, Level 1",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Tour",
     "Session_start": "Afternoon"
@@ -1787,7 +1787,7 @@
     "Title": "Telstra Trading Room - open for trading sessions",
     "Description": "Come and explore Deakin's Telstra Trading Room, which is a high-tech, innovative teaching space that operates like an interbank FX trading floor. You will have the opportunity to see students simulating the fast-paced nature of the trading world.",
     "Location": "Building LB, Room LB2.301, Telstra Trading Room",
-    "Start_time": "10:00:00 AM",
+    "Start_time": "10:00 AM",
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Session_start": "Morning"
@@ -1798,7 +1798,7 @@
     "Title": "Visual arts",
     "Description": "Learn an array of visual art techniques, including contemporary drawing, painting and 3D modelling. Develop a solid knowledge of contemporary art theory and combine cutting-edge theory with specialised studio practice.",
     "Location": "Building P, Room P1.03",
-    "Start_time": "11:00:00 AM",
+    "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1809,7 +1809,7 @@
     "Title": "Visual arts gallery",
     "Description": "Visit Deakin's new visual arts studio to see the amazing work of our visual arts students.",
     "Location": "Building HD, Room HD2.006, Richard Searby Room, Visual Arts Studio",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -1820,7 +1820,7 @@
     "Title": "Visual arts studio",
     "Description": "See the amazing work of our visual arts students and learn about the creative process.",
     "Location": "Building P, Room P2.02, Visual Arts Studio",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -1831,7 +1831,7 @@
     "Title": "Under the microscope lens",
     "Description": "Enjoy the opportunity to learn how a microscope works and look down a microscope and see things in our world larger than ever before.",
     "Location": "Building M, Room M2.109",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -1842,10 +1842,10 @@
     "Title": "Understanding VTAC's SEAS",
     "Description": "Information about VTAC's Special Entry and Access Scheme (SEAS), including the application process, different SEAS categories and how SEAS impacts on university selection. Ask questions of our specialists.",
     "Location": "Building HD, Rooms HD3.008 and HD3.009",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "General information session",
-    "Session_start": "Morning"
+    "Session_start": "Afternoon"
   },
   {
     "Event_code": "BW-169",
@@ -1853,7 +1853,7 @@
     "Title": "Why choose Deakin?",
     "Description": "Come and hear why Deakin is the best place to study and how students are prepared for future career opportunities. Get tips on how to make the most of your Open day visit - a presentation for students and parents.",
     "Location": "Building HD, Rooms HD3.008 and HD3.009",
-    "Start_time": "1:30:00 PM",
+    "Start_time": "1:30 PM",
     "End_time": "2:30 PM",
     "Session_type": "General information session",
     "Session_start": "Afternoon"
@@ -1864,7 +1864,7 @@
     "Title": "Why choose Deakin?",
     "Description": "Come and hear why Deakin is the best place to study and how students are prepared for future career opportunities. Get tips on how to make the most of your Open day visit - a presentation for students and parents.",
     "Location": "Building HD, Rooms HD3.008 and HD3.009",
-    "Start_time": "9:30:00 AM",
+    "Start_time": "9:30 AM",
     "End_time": "10:30 AM",
     "Session_type": "General information session",
     "Session_start": "Morning"
@@ -1875,7 +1875,7 @@
     "Title": "Why study architecture and construction management?",
     "Description": "Find out what's distinctive about our courses, why staff are passionate about teaching and why you should choose to study architecture and the built environment at Deakin's Geelong Waterfront Campus.",
     "Location": "Building B, Room B1.20, Lecture Theatre 11",
-    "Start_time": "11:30:00 AM",
+    "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1886,7 +1886,7 @@
     "Title": "Wildlife and conservation biology, environmental sustainability",
     "Description": "Environmental management focuses on finding sustainable solutions to the world's most pressing environmental problems. Wildlife and conservation biology offers theoretical and practical experience in wildlife ecology, landscape and vegetation management, biodiversity and conservation, animal biology and wildlife research, leading to an exciting range of careers.",
     "Location": "Building I, Room I2.07, Lecture Theatre 1A",
-    "Start_time": "10:30:00 AM",
+    "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1897,7 +1897,7 @@
     "Title": "Wildlife and conservation biology, environmental sustainability",
     "Description": "Environmental management focuses on finding sustainable solutions to the world's most pressing environmental problems. Wildlife and conservation biology offers theoretical and practical experience in wildlife ecology, landscape and vegetation management, biodiversity and conservation, animal biology and wildlife research, leading to an exciting range of careers.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "1:00:00 PM",
+    "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"
@@ -1908,7 +1908,7 @@
     "Title": "Writing and literature",
     "Description": "Learn about the world of writing and literature through a dynamic panel discussion.",
     "Location": "Building P, Room P1.28",
-    "Start_time": "12:00:00 PM",
+    "Start_time": "12:00 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Morning"
@@ -1919,7 +1919,7 @@
     "Title": "You design Deakin - Deakin merchandise",
     "Description": "Come and vote for your favourite vintage design for our student t-shirt design competition. Great prizes to be won.",
     "Location": "Career and Course Information Centre",
-    "Start_time": "9:00:00 AM",
+    "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Session_start": "All day"
@@ -1930,7 +1930,7 @@
     "Title": "Zoology and animal science",
     "Description": "Study animal diversity, ecology and behaviour, comparative physiology, biochemistry, genetics, evolutionary biology and animal nutrition, with hands-on experience using native Australian fauna and ecosystems.",
     "Location": "Building X, Room X2.05, Lecture Theatre 12",
-    "Start_time": "12:30:00 PM",
+    "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Session_start": "Afternoon"

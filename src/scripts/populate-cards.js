@@ -2,8 +2,8 @@
 import makeAjaxCall from "./model";
 import "../data/Burwood.json";
 import {dd_template, card_template} from './templates';
-import {owlCarousel} from "owl.carousel";
-// import bind_owl from "./owl-carousel";
+// import {owlCarousel} from "owl.carousel";
+import bind_owl from "./owl-carousel";
 
 function populate_cards(session,selected_ia) {
        session = session || ''; //set default to all
@@ -31,6 +31,7 @@ function populate_cards(session,selected_ia) {
 
         if ($("#course-area option").length < 1) {
         $("#course-area").empty();
+        $('#course-area').append($("<option/>").val('').text("Please select an interest area"));
         dd_arr_cleaned.forEach(function (dd_val) {
         let template_dd = dd_template({'val': dd_val});
         $("#course-area").append(template_dd);
@@ -49,10 +50,12 @@ function populate_cards(session,selected_ia) {
         render_cards(tours_exp_arr, '.tours-exp-carousel');
 
         // Bind drop-down template for -- General Info Sessions --
-        let gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Interest_area.includes(selected_ia));
+        
+        let gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session));
         console.log('gen_info_arr ', gen_info_arr.length);
         render_cards(gen_info_arr, '.gen-info-carousel');
-
+        $("#gen_evt_count").text(gen_info_arr.length);
+        
 
         // ----- Render function
         function render_cards(render_data, render_loc) {
@@ -71,87 +74,88 @@ function populate_cards(session,selected_ia) {
      console.log("template loading done");
     //  console.log("callback", callback);
     //  callback();
+
     $(function() {
-    bind_owl();
-    // Populate counters
-    $("#course_evt_count").text(course_info_arr.length);
-    $("#tour_evt_count").text(tours_exp_arr.length);
-    $("#gen_evt_count").text(gen_info_arr.length);
+        bind_owl();
+        // Populate counters
+        $("#course_evt_count").text(course_info_arr.length);
+        $("#tour_evt_count").text(tours_exp_arr.length);
     });
+
     })
       .fail(function (jqXHR, textStatus, errorThrown) {
         console.log(textStatus + ": " + errorThrown);
     }); // fail end
 }
 populate_cards();
-// Initialise and bind owl carousel
-function bind_owl() {
-  console.log("owl binding started");
-let course_cards_len = $(".course-info-carousel .eventcard").length;
-let tours_cards_len = $(".tours-exp-carousel .eventcard").length;
-let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
+// // Initialise and bind owl carousel
+// function bind_owl() {
+//   console.log("owl binding started");
+// let course_cards_len = $(".course-info-carousel .eventcard").length;
+// let tours_cards_len = $(".tours-exp-carousel .eventcard").length;
+// let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
 
-  var owl = $('.owl-carousel');
+//   var owl = $('.owl-carousel');
   
-  owl.removeClass("owl-hidden");
-  owl.owlCarousel('destroy'); // Kill owl first on click before re-init
-  owl.fadeIn('slow'); // Unhide cards before re-init
-  $(".course-info-carousel").owlCarousel({
-    stagePadding: 20,
-    margin: 10,
-    nav: true,
-    loop:true,
-    rewindNav:false,
-    lazyLoad:true,
-    lazyContent:true,
-		responsive: {
-			0: {items: 1},
-			600: {items: 2},
-			1000: {items: 3.5,
-            loop:(course_cards_len > 3) ? true: false,
-            dotsEach: (course_cards_len > 3) ? 3: 1,
-            slideBy: (course_cards_len > 3) ? 3: 1
-			}
-		}
-  });
+//   owl.removeClass("owl-hidden");
+//   owl.owlCarousel('destroy'); // Kill owl first on click before re-init
+//   owl.fadeIn('slow'); // Unhide cards before re-init
+//   $(".course-info-carousel").owlCarousel({
+//     stagePadding: 20,
+//     margin: 10,
+//     nav: true,
+//     loop:true,
+//     rewindNav:false,
+//     lazyLoad:true,
+//     lazyContent:true,
+// 		responsive: {
+// 			0: {items: 1},
+// 			600: {items: 2},
+// 			1000: {items: 3.5,
+//             loop:(course_cards_len > 3) ? true: false,
+//             dotsEach: (course_cards_len > 3) ? 3: 1,
+//             slideBy: (course_cards_len > 3) ? 3: 1
+// 			}
+// 		}
+//   });
 
-  $(".tours-exp-carousel").owlCarousel({
-    stagePadding: 20,
-    margin: 10,
-    nav: true,
-    loop:true,
-    rewindNav:false,
-    lazyLoad:true,
-    lazyContent:true,
-		responsive: {
-			0: {items: 1},
-			600: {items: 2},
-			1000: {items: 3.5,
-            loop:(tours_cards_len > 3) ? true: false,
-            dotsEach: (tours_cards_len > 3) ? 3: 1,
-            slideBy: (tours_cards_len > 3) ? 3: 1
+//   $(".tours-exp-carousel").owlCarousel({
+//     stagePadding: 20,
+//     margin: 10,
+//     nav: true,
+//     loop:true,
+//     rewindNav:false,
+//     lazyLoad:true,
+//     lazyContent:true,
+// 		responsive: {
+// 			0: {items: 1},
+// 			600: {items: 2},
+// 			1000: {items: 3.5,
+//             loop:(tours_cards_len > 3) ? true: false,
+//             dotsEach: (tours_cards_len > 3) ? 3: 1,
+//             slideBy: (tours_cards_len > 3) ? 3: 1
 
-			}
-		}
-  });
+// 			}
+// 		}
+//   });
 
-  $(".gen-info-carousel").owlCarousel({
-    stagePadding: 20,
-    margin: 10,
-    nav: true,
-    loop:true,
-    rewindNav:false,
-    lazyLoad:true,
-    lazyContent:true,
-		responsive: {
-			0: {items: 1},
-			600: {items: 2},
-			1000: {items: 3.5,
-            loop:(gen_info_cards_len > 3) ? true: false,
-            dotsEach: (gen_info_cards_len > 3) ? 3: 1,
-            slideBy: (gen_info_cards_len > 3) ? 3: 1
-			}
-		}
-  });
-}// end owl bind
+//   $(".gen-info-carousel").owlCarousel({
+//     stagePadding: 20,
+//     margin: 10,
+//     nav: true,
+//     loop:true,
+//     rewindNav:false,
+//     lazyLoad:true,
+//     lazyContent:true,
+// 		responsive: {
+// 			0: {items: 1},
+// 			600: {items: 2},
+// 			1000: {items: 3.5,
+//             loop:(gen_info_cards_len > 3) ? true: false,
+//             dotsEach: (gen_info_cards_len > 3) ? 3: 1,
+//             slideBy: (gen_info_cards_len > 3) ? 3: 1
+// 			}
+// 		}
+//   });
+// }// end owl bind
 export {populate_cards};

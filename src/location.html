@@ -234,7 +234,7 @@
           <div class="step-container flexContainer flexContainer-mobile-wrap ">
              <div class="option-container flexContainer flexContainer--half flexContainer--column">
                   <h5>Create your own Day Plan</h5>
-                  <p style="padding-right: 2rem;">Select a course area you’re interested in to view related sessions.</p>
+                  <p style="padding-right: 2rem;">Select a course area you're interested in to view related sessions.</p>
                   
                   <select name="course-area" id="course-area" class="od-select">
                      <!-- Options added dynamically -->
@@ -331,24 +331,24 @@
          </div>
          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 comp-info">
             <h2>Invite a friend  to a deakin open day and win!</h2>
-            <p>
-               Bring a friend to Open Day and go in the draw to win over 50 prizes, including:
-               <ul>
-                  <ol>$10,000 around the world adventure</ol>
-                  <ol>Fitbit Alta HRs</ol>
-                  <ol>Heaps of cool Deakin merch</ol>
+            
+               <ul class="baf-msg">
+                     Bring a friend to Open Day and go in the draw to win over 50 prizes, including:<br>
+                  <li>$10,000 around the world adventure</li>
+                  <li>Fitbit Alta HRs</li>
+                  <li>Heaps of cool Deakin merch</li>
                </ul>
-            </p>
-            <a id="comps-button" href="#" class="button magenta"><span>Enter now to win</span></a>
+            
+            <a id="baf-form-button" href="#" class="button magenta"><span>Enter now to win</span></a>
          </div>
       </div>
       <!-- competition end -->
-      <div class="comps-form">
-         <form id="comps-form" role="form" class="registration-form col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-8 col-lg-offset-2">
+      <div class="baf-form">
+         <form id="baf-form" role="form" class="registration-form col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-8 col-lg-offset-2">
             <!-- FeildSet 1 -->
             <fieldset class="yr-details">
                <div class="form-top">
-                  <div class="form-top-left">
+                  <div class="form-top-left form-title-location">
                      <p>1/2</p>
                      <h3>Enter you details:</h3>
                   </div>
@@ -356,8 +356,12 @@
                </div>
                <div class="form-bottom">
                   <div class="form-group">
-                     <label class="sr-only" for="firstName">Your first name</label>
-                     <input type="text" name="firstName" placeholder="Name" class="form-name form-control" id="firstName" />
+                     <label class="sr-only" for="firstName">First name</label>
+                     <input type="text" name="firstName" placeholder="First name" class="form-name form-control" id="firstName" />
+                  </div>
+                  <div class="form-group">
+                     <label class="sr-only" for="lastName">Last name</label>
+                     <input type="text" name="lastName" placeholder="Last name" class="form-name form-control" id="lastName" />
                   </div>
                   <div class="form-group">
                         <label class="sr-only" for="email">Your email</label>
@@ -377,7 +381,7 @@
             <!-- FeildSet 2 -->
             <fieldset id="feildset2">
                <div class="form-top">
-                  <div class="form-top-left form-stutype">
+                  <div class="form-top-left form-title-location">
                      <p>2/2</p>
                      <h3>Which Open Day campus will you attend?</h3>
                   </div>
@@ -385,22 +389,46 @@
                <div class="form-bottom direction-col">
                   <div class="form-group">
                      <div class="radio-option">
-                        <input type="radio" id="warrnambool" name="Campus__c" value="warrnambool" class="form-email form-control" /> 
+                        <input type="radio" id="warrnambool" name="Campus__c" value="Warrnambool" class="form-email form-control" /> 
                         <label class="sr-only" for="warrnambool">Warrnambool</label>
                      </div>
                      <div class="radio-option">
-                        <input type="radio" id="geelong-waurnponds" name="Campus__c" value="geelong-waurnponds" class="form-email form-control" /> 
+                        <input type="radio" id="geelong-waurnponds" name="Campus__c" value="Geelong Waurn Ponds" class="form-email form-control" /> 
                         <label class="sr-only" for="geelong-waurnponds">Geelong Waurn Ponds</label>
                      </div>
                      <div class="radio-option">
-                        <input type="radio" id="geelong-waterfront" name="Campus__c" value="geelong-waterfront" class="form-email form-control" /> 
+                        <input type="radio" id="geelong-waterfront" name="Campus__c" value="Geelong Waterfront" class="form-email form-control" /> 
                         <label class="sr-only" for="geelong-waterfront">Geelong Waterfront</label>
                      </div>
                      <div class="radio-option">
-                        <input type="radio" id="burwood" name="Campus__c" value="burwood" class="form-email form-control" /> 
+                        <input type="radio" id="burwood" name="Campus__c" value="Melbourne Burwood" class="form-email form-control" /> 
                         <label class="sr-only" for="burwood">Melbourne Burwood</label>
                      </div>
                   </div>
+                  
+                  <div class="checkbox-button optin-checkbox">
+                     <input type="checkbox" id="Email_Opt_In__c" name="Email_Opt_In__c" value="yes" class="form-email-optin form-control" /> 
+                     <label class="sr-only" for="Email_Opt_In__c">I agree to receive information about opportunities and events at Deakin University</label>
+                  
+                  </div>
+
+                  <div class="checkbox-button tnc-checkbox">
+                     <input type="checkbox" id="openDayChoice" name="openDayChoice" value="yes" class="form-od-choice form-control" /> 
+                     <label class="sr-only" for="openDayChoice">I have read the collection statement and accept the terms and conditions of the competitions</label>
+                     
+                  </div>
+
+                  <div class="disclaimer">
+                     <p>Deakin University is collecting your personal information on this form for the primary purpose of entering you into the Open Day Bring a Friend Competition. Deakin will use this personal information to select the winner and contact you if you have won.</p>
+
+                     <p>You are not required to provide the information requested, however if the information is not provided, Deakin may not be able to register you for the draw or communicate with you about Deakin University, their courses or events.</p>
+
+                     <p>Deakin manages personal information, including requests by individuals for access to their personal information, in accordance with the Privacy and Data Protection Act 2014 (Vic). Deakin’s Privacy Policy is available from the Policy Library.</p>
+
+                     <p>For further information regarding your personal information please contact us on (03) 5227 8524 or by email to privacy@deakin.edu.au</p>
+
+                  </div>
+
                   <div class="btn-container">
                      <button type="button" class="btn btn-previous"> Previous </button>
                      <button type="submit" class="btn btn-submit">Submit my entry</button>
@@ -513,11 +541,9 @@
               You can apply directly to Deakin for one course, provided you've
               not already submitted any applications through VTAC. But if you're
               applying for more than one course, you must apply through VTAC.
-              <a
-                data-analytics="cop_find_how_to_apply_direct"
+              <a data-analytics="cop_find_how_to_apply_direct"
                 href="//www.deakin.edu.au/courses/how-to-apply"
-                target="_blank"
-              >
+                target="_blank">
                 <u>Find out how to apply direct</u>
                   </a>
                </p>
@@ -706,7 +732,7 @@
       
       
       <!-- form-validation.js -->
-      <form id="mktoForm_3598" ></form>
+      <form id="mktoForm_3590" ></form>
              
        <script type="text/javascript">
        (function() {

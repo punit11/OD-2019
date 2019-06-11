@@ -17,13 +17,14 @@ $("input[name='form-lead-type']").change(function(){
         $('.iYL,.study-level').hide();
     }
 });
-// ***** Disable enter key
+// ----- Disable enter key
 $('#comps-form').on("keyup keypress", function(e) {
     var code = e.keyCode || e.which; 
     if (code === 13) {               
         e.preventDefault();
         return false;
     }
+
 });
 
 $("#comps-form").validate({
@@ -137,6 +138,7 @@ $("#comps-form").validate({
         mobilePhone,
         Lead_Type__c,
         Year_Level__c,
+        
         Level_of_Study__c,
         Study_Area__c,
         Campus__c
