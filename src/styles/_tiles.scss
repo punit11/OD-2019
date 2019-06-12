@@ -129,12 +129,12 @@
   p {
     margin: 0;
   }
-  .wbl {
+  .warrnambool {
     @include md {
       border-left: 4px solid $magenta;
     }
   }
-  .tile.gwp {
+  .tile.waurn-ponds {
     @include md {
       // background-color: $blue;
       border-left: 4px solid $blue;
@@ -145,7 +145,7 @@
       }
     }
   }
-  .gwf {
+  .waterfront {
     .button {
       span {
         color: #000;
@@ -155,7 +155,7 @@
       border-left: 4px solid $yellow;
     }
   }
-  .bur {
+  .burwood {
     @include md {
       border-left: 4px solid $teal;
     }
@@ -219,15 +219,15 @@
       }
     }
 
-    &.wbl:hover {
+    &.warrnambool:hover {
       background-color: $magenta;
     }
 
-    &.gwp:hover {
+    &.waurn-ponds:hover {
       background-color: $blue;
     }
 
-    &.gwf:hover {
+    &.waterfront:hover {
       background-color: $yellow;
 
       p, sup {
@@ -235,7 +235,7 @@
       }
     }
 
-    &.bur:hover {
+    &.burwood:hover {
       background-color: $teal;
     }
 
