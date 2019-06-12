@@ -124,7 +124,12 @@
             &.iYL, &.study-level {display: none;}
         }
 
-        
+        .disclaimer {
+            p {
+                font-family: $font-stack-os-regular;
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .btn {
@@ -326,4 +331,12 @@
         margin-right: 2.5rem;
     }
   
+}
+
+.baf-form form.registration-form fieldset.yr-details {
+    .form-group {
+        @include xl {
+            flex: 1 1 50%;
+        }
+    }
 }
