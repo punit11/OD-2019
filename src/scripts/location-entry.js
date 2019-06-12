@@ -4,6 +4,7 @@ import {populate_cards} from "./populate-cards";
 import {baf_form_validation} from "./form-validation-baf";
 import {baf_form} from "./baf-form";
 import {filters} from "./filters";
+import {youtubeApi} from "./you-tube-api";
 
 // Homepage/Generic CSS
 import "../styles/_base.scss";
@@ -19,3 +20,5 @@ import "../styles/_scrollbar.scss";
 import "../styles/_getting-here.scss";
 import "../styles/_practicle-learning.scss";
 import "../styles/_owl.carousel.scss";
+import "../styles/_accommodation.scss";
+import "../styles/_youtube-popup.scss";

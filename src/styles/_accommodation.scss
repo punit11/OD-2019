@@ -1,0 +1,84 @@
+.accommodation {
+    background: $black;
+    color: $white;
+    display: flex;
+    flex: 1 1 auto;
+    padding: 2.5rem 1rem;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    position: relative;
+
+    @include md {
+        padding: 8rem;
+    }
+
+    .text__container {
+        position: relative;
+
+        &:before {
+            display: none;
+            position: absolute;
+            content: "";
+            width: 14rem;
+            height: 14rem;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            opacity: 0.5;
+            top: -8rem;
+            left: -17rem;
+    
+            @include md {
+                display: block;
+            }
+        }
+    }
+    .image__container {
+        max-width: 100%;
+        height: 300px;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+
+        @include md {
+            height: auto;
+            overflow: visible;
+            max-width: 48.9rem;
+            margin-left: 3rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:after {
+            background: url("/src/images/black-triangle-outline.svg") no-repeat -169px 0;
+            content: "";
+            display: none;
+            width: 31.7rem;
+            height: 34.5rem;
+            position: absolute;
+            top: calc(50% - 16rem);
+            left: 98%;
+
+            @include md {
+                display: block;
+            }
+        }
+    }
+
+    h2{
+        @extend %h2;
+        $min_width: 768px;
+        $max_width: 1600px;
+        $min_font: 32px;
+        $max_font: 48px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        // margin-top: 18rem;
+    }
+
+    p {
+        font-family: $font-worldly-light;
+        font-size: 1.6rem;
+        line-height: 1.63;
+    }
+}

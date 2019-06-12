@@ -215,8 +215,8 @@
         @include md {
           $min_width: 1200px;
           $max_width: 1644px;
-          $min_font: 145px;
-          $max_font: 165px;
+          $min_font: 142px;
+          $max_font: 155px;
 
           @include fluid-type($min_width, $max_width, $min_font, $max_font);
         
