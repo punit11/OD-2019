@@ -10,8 +10,18 @@ let card_template = ( { evt_title, evt_location, evt_start_time, evt_end_time, e
                            <h3>${evt_title}</h3>
                            <span class="add">+</span>
                         </div>
-                        <span class="where">${evt_location}</span>
-                        <span class="when">${evt_start_time} - ${evt_end_time}</span>
+                        <span class="where">
+                           <svg class="icon-pin">
+                              <use href="#icon-pin" xlink:href="#icon-pin"></use>
+                           </svg>
+                           ${evt_location}
+                        </span>
+                        <span class="when">
+                           <svg class="icon-clock">
+                              <use href="#icon-clock" xlink:href="#icon-clock"></use>
+                           </svg>
+                           ${evt_start_time} - ${evt_end_time}
+                        </span>
                         <div>
                            <button class="accordion">
                               <span>Show more</span>

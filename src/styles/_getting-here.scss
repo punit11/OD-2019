@@ -2,7 +2,8 @@
     &__wrapper {
         position: relative;
         margin-bottom: 6.7rem;
-        overflow-x: hidden;
+        overflow: hidden;
+        padding-bottom: 4.4rem;
 
         &:after {
             content: "";
@@ -12,12 +13,15 @@
             height: 14.8rem;
             border-radius: 50%;
             position: absolute;
-            bottom: -5rem;
+            bottom: 0;
             right: calc(50% - 7.4rem);
             z-index: -1;
 
             @include md {
-                display: none;
+                width: 21.4rem;
+                height: 21.4rem;
+                right: calc(50% - 10.7rem);
+                bottom: -3rem;
             }
         }
 
@@ -26,33 +30,10 @@
             overflow: initial;
             
             &:after {
-                width: 21.4rem;
-                height: 21.4rem;
-                right: calc(50% - 10.7rem);
+                
             }
         }
-
-
-        & > div {
-            &:after {
-                display: none;
-                content: "";
-                position: absolute;
-                width: 21.4rem;
-                height: 21.4rem;
-                background: #007d9b;
-                border-radius: 50%;
-                bottom: -6rem;
-                left: 34rem;
-                z-index: -1;
-
-                @include md {
-                display: block;
-                }
-            }
-
-            
-        }
+        
         .custom-heading {
 
             @include lg {
@@ -215,7 +196,7 @@
     background: none!important;
     height: 507px;
     max-width: 631px;
-    width: calc(100% + 5.6rem);
+    width: calc(100% + 8.6rem);
     
     @include md {
         height: 507px;

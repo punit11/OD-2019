@@ -25,7 +25,7 @@ let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
 		responsive: {
 			0: {items: 1},
 			600: {items: 2},
-			1000: {items: 3.5,
+			1000: {items: 2.5,
             loop:(course_cards_len > 3) ? true: false,
             dotsEach: (course_cards_len > 3) ? 3: 1,
             slideBy: (course_cards_len > 3) ? 3: 1
@@ -44,10 +44,10 @@ let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
 		responsive: {
 			0: {items: 1},
 			600: {items: 2},
-			1000: {items: 3.5,
+			1000: {items: 2.5,
             loop:(tours_cards_len > 3) ? true: false,
-            dotsEach: (tours_cards_len > 3) ? 3: 1,
-            slideBy: (tours_cards_len > 3) ? 3: 1
+            dotsEach: (tours_cards_len > 3) ? 2: 1,
+            slideBy: (tours_cards_len > 3) ? 2: 1
 
 			}
 		}
@@ -64,10 +64,10 @@ let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
 		responsive: {
 			0: {items: 1},
 			600: {items: 2},
-			1000: {items: 3.5,
+			1000: {items: 2.5,
             loop:(gen_info_cards_len > 3) ? true: false,
-            dotsEach: (gen_info_cards_len > 3) ? 3: 1,
-            slideBy: (gen_info_cards_len > 3) ? 3: 1
+            dotsEach: (gen_info_cards_len > 2) ? 2: 1,
+            slideBy: (gen_info_cards_len > 2) ? 2: 1
 			}
 		}
   });
