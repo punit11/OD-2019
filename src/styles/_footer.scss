@@ -3,6 +3,12 @@
   min-height: 200px;
   color: #fff;
   padding: 2rem;
+  overflow-x: hidden;
+
+  @include md {
+    overflow-x: initial;
+  }
+
   img {
     position: absolute;
     right: 0;

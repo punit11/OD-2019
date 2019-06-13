@@ -7,10 +7,12 @@
   }
   padding: 4rem 1rem 2rem 1rem;
   align-items: center;
+  overflow-x: hidden;
 
   @include md {
     background: $black url(//www.deakin.edu.au/__data/assets/image/0018/1913040/deakin-bg.png) no-repeat top right;
     background-size: contain;
+    overflow: initial;
   }
 
   .text h1 {
@@ -33,6 +35,7 @@
     position: relative;
     top: -5rem;
     left: -3rem;
+
     @include sm {
       top: 0;
       left: 0;
@@ -170,15 +173,19 @@
       order: 1;
       position: relative;
       z-index: 0;
-      width: 100%;
+      width: calc(100% + 2rem);
       padding-bottom: 1.2rem;
+
+      top: 0;
+      left: -1rem;
+      padding: 0;
 
       @include md {
         min-width: 46rem;
         max-width: 61.4rem;
         width: 37vw;
         order: 2;
-        margin: -1rem 0 -1.3rem 0;
+        margin: -1rem 0 0 0;
       }
 
       @media only screen and (min-width: 768px) and (max-width: 920px) {
@@ -188,11 +195,38 @@
       }
 
       img {
-        width: 100%;
+        width: calc(100% + 1rem);
+        max-width: calc(100% + 1rem);
+        position: relative;
+
+        &:after {
+          content: "";
+          background: url(//www.deakin.edu.au/__data/assets/file/0004/1913062/shapre-dee-yellow.svg) no-repeat 50%;
+          display: block;
+          width: 11.6rem;
+          height: 8.7rem;
+          position: absolute;
+          bottom: 11rem;
+          right: -5rem;
+          background-size: 85%;
+
+          @include md {
+            display: none;
+          }
+        }
+
+        @include md {
+          width: 100%;
+          max-width: 100%;
+        }
+         
+         &:first-child {
+           display: block;
+         }
       }
       
       &:before {
-        display: block;
+        display: none;
         content: "";
         position: absolute;
         width: 11.8rem;
@@ -203,6 +237,10 @@
         left: -5rem;
         z-index: -1;
 
+        @include md {
+          display: block;
+        }
+
         @include lg {
           top: 5rem;
           left: -6rem;
@@ -210,13 +248,11 @@
       }
 
       &:after {
-        // display: none;
-
         @include md {
           $min_width: 1200px;
           $max_width: 1644px;
-          $min_font: 145px;
-          $max_font: 165px;
+          $min_font: 142px;
+          $max_font: 155px;
 
           @include fluid-type($min_width, $max_width, $min_font, $max_font);
         

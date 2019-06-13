@@ -2,6 +2,14 @@ body {
     margin: 0
 }
 
+.nav {
+    overflow-x: hidden;
+
+    @include md {
+        overflow: initial;
+    }
+}
+
 .navbar-wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -116,5 +124,82 @@ body {
         padding-left: 2.5em;
         background: transparent url(//www.deakin.edu.au/__data/assets/image/0011/1813097/e-icon-chat-white-2-x.png) no-repeat;
         background-position: left center;
+    }
+}
+
+.secondary__nav {
+    display: flex;
+    flex: 1 1 100%;
+    padding: 0 0rem;
+    background: $light-grey;
+    
+    position: relative;
+    z-index: 1;
+
+    @include md {
+        padding: 0 2.6rem;
+        height: 4.8rem;
+    }
+
+    .Navbar__Items {
+        display: flex;
+        flex: 1 1 auto;
+        overflow-x: auto;
+        align-items: normal;
+        
+        @media screen and (max-width: $screen-sm-min) {
+            padding: 1rem 0;
+        }
+
+        @include md {
+            margin-left: 15.6rem;
+        }
+
+        ul {
+            display: flex;
+            flex: 1 1 100%;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            align-items: center;
+
+            li {
+                @media screen and (max-width: $screen-sm-min) {
+                    border-right: 1px solid $border-grey;
+                }
+            }
+        }
+
+        .Navbar__Link {
+            @media screen and (max-width: $screen-sm-min) {
+                padding: 0.5rem 0.6rem;
+
+                &:first-child {
+                    a {
+                        min-width: 5.5rem;
+                    }
+                }
+            }
+            
+
+            a {
+                @media screen and (max-width: $screen-sm-min) {
+                    text-align: center;
+                }
+                
+                $min_width: 320px;
+                $max_width: 768px;
+                $min_font: 12px;
+                $max_font: 14px;
+                @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+                color: $charcoal;
+                font-family: $font-stack-os-bold;                
+                cursor: pointer;
+                padding: 0 1rem;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
     }
 }

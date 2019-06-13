@@ -1,12 +1,14 @@
 .practicle-learning {
     background: $black;
     color: $white;
-    
     position: relative;
+    overflow-x: hidden;
     
 
     @include md {
         padding: 7rem 7rem 0 7rem;
+        z-index: 0;
+        overflow: initial;
         z-index: -1;
     }
 
@@ -102,7 +104,7 @@
             }
         }
         .p48 {
-            // color: $blue;
+            color: $blue;
             font-family:  $font-stack-xl;
             text-transform: uppercase;
             width: 100%;
