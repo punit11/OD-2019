@@ -4,10 +4,12 @@
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   position: relative;
+  // overflow-x: hidden;
 
   @include md {
     padding-top: 7.2rem;
     padding-bottom: 14.8rem;
+    overflow: initial;
   }
 
   .intro {
@@ -16,6 +18,12 @@
     p {
       font-family: $font-worldly-bold;
       font-size: 1.8rem;
+      text-align: justify;
+
+      @include md {
+        text-align: initial;
+      }
+
     }
   }
 
@@ -77,8 +85,12 @@
     font-family: $font-worldly-bold;
     font-size: 1.8rem;
     line-height: 1.33em;
-    margin: 3rem;
+    margin: 3rem 0;
     padding: 0;
+
+    @include md {
+      margin: 3rem;
+    }
 
     & > p {
       font-family: $font-worldly-light;

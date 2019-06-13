@@ -7,9 +7,11 @@
     align-items: center;
     flex-wrap: wrap-reverse;
     position: relative;
+    overflow-x: hidden;
 
     @include md {
         padding: 8rem;
+        overflow-x: initial;
     }
 
     .text__container {
@@ -80,5 +82,11 @@
         font-family: $font-worldly-light;
         font-size: 1.6rem;
         line-height: 1.63;
+    }
+}
+
+.burwood {
+    .accommodation {
+        display: none;
     }
 }

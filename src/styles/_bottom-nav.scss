@@ -1,6 +1,12 @@
 .bottom-nav {
     background-color: #e1e1e1;
     padding: 1rem;
+    overflow-x: hidden;
+
+    @include md {
+        overflow-x: initial;
+    }
+    
     a {
         color: #333;
         text-decoration: none;

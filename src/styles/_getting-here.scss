@@ -1,6 +1,37 @@
 .getting-here {
     &__wrapper {
         position: relative;
+        margin-bottom: 6.7rem;
+        overflow-x: hidden;
+
+        &:after {
+            content: "";
+            display: block;
+            background: $blue;
+            width: 14.8rem;
+            height: 14.8rem;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -5rem;
+            right: calc(50% - 7.4rem);
+            z-index: -1;
+
+            @include md {
+                display: none;
+            }
+        }
+
+        @include md {
+            margin-bottom: 10rem;
+            overflow: initial;
+            
+            &:after {
+                width: 21.4rem;
+                height: 21.4rem;
+                right: calc(50% - 10.7rem);
+            }
+        }
+
 
         & > div {
             &:after {
@@ -40,7 +71,6 @@
                 }
             }
         }
-        margin-bottom: 10rem;
     }
 
     &__container {

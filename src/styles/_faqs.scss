@@ -1,7 +1,12 @@
 .faqs-wrapper {
     margin: 1rem;
     position: relative;
+    overflow-x: hidden;
 
+    @include md {
+        overflow-x: initial;
+    }
+    
     @include lg {   
         min-height: 500px;
     }
