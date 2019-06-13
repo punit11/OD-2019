@@ -7,7 +7,7 @@ import {filters} from "./filters";
 import {youtubeApi} from "./you-tube-api";
 
 // Homepage/Generic CSS
-import "../styles/_base.scss";
+// import "../styles/_base.scss";
 
 
 // Location page specific css

@@ -5,7 +5,7 @@ import {comp_form} from "./comps-form";
 import {youtubeApi} from "./you-tube-api";
 
 // Generie CSS
-import "../styles/_base.scss";
+// import "../styles/_base.scss";
 
 // Homepage specific CSS
 import "../styles/_explore.scss";

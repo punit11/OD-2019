@@ -6,8 +6,10 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    // home: Path.resolve(__dirname, '../src/scripts/home-entry.js')
-    location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
+    
+    base: Path.resolve(__dirname, '../src/styles/_base.scss'),
+    home: Path.resolve(__dirname, '../src/scripts/home-entry.js'),
+    // location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
     // dayplanner: Path.resolve(__dirname, '../src/scripts/dayplanner-entry.js')
     // journey: Path.resolve(__dirname, '../src/scripts/journey-entry.js')
   },
@@ -20,6 +22,8 @@ module.exports = {
       chunks: 'all',
       name: false
     }
+
+
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -27,25 +31,12 @@ module.exports = {
       { from: Path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/location.html'),
-      // template: Path.resolve(__dirname, '../src/index.html'),
+      // template: Path.resolve(__dirname, '../src/location.html'),
+      template: Path.resolve(__dirname, '../src/index.html'),
       // template: Path.resolve(__dirname, '../src/dayplanner.html'),
       // template: Path.resolve(__dirname, '../src/journey.html'),
-      chunks: ['location']
+      // chunks: ['location']
     }),
-
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   chunks: ['home'],
-    //   template: Path.resolve(__dirname, '../src/index.html')
-    //   // filename: '../src/index.html'
-    // }),
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   chunks: ['location'],
-    //   template: Path.resolve(__dirname, '../src/location.html')
-    //   // filename: '../src/location.html'
-    // }),
 
     new webpack.ProvidePlugin({
       $ : 'jquery',
