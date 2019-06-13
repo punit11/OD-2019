@@ -202,3 +202,23 @@
         }
     }
 }
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 507px;
+    max-width: 631px;
+    width: calc(100% + 6.6rem);
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 507px;
+    max-width: 631px;
+    width: calc(100% + 5.6rem);
+    
+    @include md {
+        height: 507px;
+        width: 631px;	
+    }
+}
