@@ -6,7 +6,7 @@ import {baf_form} from "./baf-form";
 import {filters} from "./filters";
 
 // Homepage/Generic CSS
-import "../styles/_base.scss";
+// import "../styles/_base.scss";
 
 
 // Location page specific css
