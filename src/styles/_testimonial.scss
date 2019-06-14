@@ -156,8 +156,18 @@
         margin-top: 0;
 
         @include md {
-          margin-bottom: 6rem;
+          margin-bottom: 1rem;
         }
+      }
+
+      h3.testimonital-instructions {
+        text-align: center;
+        margin-top: 0px;
+        font-size: 2rem;
+        margin-bottom: 6rem;
+        font-family: $font-worldly-regular;
+        font-weight: normal;
+        line-height: 2.2rem;
       }
   }
 }
