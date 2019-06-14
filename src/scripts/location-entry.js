@@ -22,4 +22,3 @@ import "../styles/_getting-here.scss";
 import "../styles/_practicle-learning.scss";
 import "../styles/_owl.carousel.scss";
 import "../styles/_accommodation.scss";
-import "../styles/_youtube-popup.scss";
