@@ -1,7 +1,12 @@
 const youtubeApi = (function(){
+    // Check what campus page is open and assign different videoIds accordingly
+    var videoUrl = $('.js-video-popup img').data("video-id");
+
     //Youtube
     // 1. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
+
+    
 
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -15,7 +20,8 @@ const youtubeApi = (function(){
         player = new YT.Player('player', {
             height: '100%',
             width: '100%',
-            videoId: 'pdld32DYO7A',
+            videoId: videoUrl,
+            // videoId: 'pdld32DYO7A',
             playerVars: {rel: 0},
             events: {
             'onReady': onPlayerReady

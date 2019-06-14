@@ -10,10 +10,12 @@
 //     }
 // }
 
-// .navbar-wrapper {
-//     padding-left: 0;
-//     padding-right: 0;
-// }
+.navbar-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    z-index: 2;
+}
 
 // .Navbar {
 //     background-color: #363635;
@@ -133,8 +135,8 @@
 //     padding: 0 0rem;
 //     background: $light-grey;
     
-//     position: relative;
-//     z-index: 1;
+    position: relative;
+    z-index: 2;
 
 //     @include md {
 //         padding: 0 2.6rem;

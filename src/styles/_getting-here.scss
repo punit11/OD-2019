@@ -2,7 +2,8 @@
     &__wrapper {
         position: relative;
         margin-bottom: 6.7rem;
-        overflow-x: hidden;
+        overflow: hidden;
+        padding-bottom: 4.4rem;
 
         &:after {
             content: "";
@@ -12,12 +13,15 @@
             height: 14.8rem;
             border-radius: 50%;
             position: absolute;
-            bottom: -5rem;
+            bottom: 0;
             right: calc(50% - 7.4rem);
             z-index: -1;
 
             @include md {
-                display: none;
+                width: 21.4rem;
+                height: 21.4rem;
+                right: calc(50% - 10.7rem);
+                bottom: -3rem;
             }
         }
 
@@ -26,33 +30,10 @@
             overflow: initial;
             
             &:after {
-                width: 21.4rem;
-                height: 21.4rem;
-                right: calc(50% - 10.7rem);
+                
             }
         }
 
-
-        & > div {
-            &:after {
-                display: none;
-                content: "";
-                position: absolute;
-                width: 21.4rem;
-                height: 21.4rem;
-                background: #007d9b;
-                border-radius: 50%;
-                bottom: -6rem;
-                left: 34rem;
-                z-index: -1;
-
-                @include md {
-                display: block;
-                }
-            }
-
-            
-        }
         .custom-heading {
 
             @include lg {
@@ -191,7 +172,7 @@
 
                 @include lg {
                     overflow: hidden;
-                    max-height: 50.7rem;
+                    max-height: 54.7rem;
                     max-width: 69rem!important;
                     position: absolute;
                     right: 7rem;
@@ -205,7 +186,7 @@
 .mapouter {
     position: relative;
     text-align: right;
-    height: 507px;
+    height: 547px;
     max-width: 631px;
     width: calc(100% + 6.6rem);
 }
@@ -213,12 +194,12 @@
 .gmap_canvas {
     overflow: hidden;
     background: none!important;
-    height: 507px;
+    height: 547px;
     max-width: 631px;
-    width: calc(100% + 5.6rem);
+    width: calc(100% + 8.6rem);
     
     @include md {
-        height: 507px;
+        height: 547px;
         width: 631px;	
     }
 }
