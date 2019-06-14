@@ -130,7 +130,7 @@
 }
 
 body {
-    &.gwp {
+    &.waurn-ponds {
       .practicle-learning .video-text .p48 {
         color: $blue;
       }
@@ -141,7 +141,7 @@ body {
   
     }
   
-    &.bwd {
+    &.burwood {
       .practicle-learning .video-text .p48 {
         color: $teal;
       }
@@ -151,7 +151,7 @@ body {
         }
     }
   
-    &.gwf {
+    &.waterfront {
       .practicle-learning .video-text .p48 {
         color: $yellow;
       }
@@ -162,7 +162,7 @@ body {
       
     }
   
-    &.wbl {
+    &.warrnambool {
       .practicle-learning .video-text .p48 {
         color: $magenta;
       }
@@ -172,3 +172,4 @@ body {
         }
     }
   }
+
