@@ -12,4 +12,3 @@ import "../styles/_explore.scss";
 import "../styles/_manifesto.scss";
 import "../styles/_quote.scss";
 import "../styles/_footer-social.scss";
-import "../styles/_youtube-popup.scss";
