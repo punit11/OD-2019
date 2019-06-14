@@ -1,211 +1,51 @@
-// body {
-//     margin: 0
-// }
+.Navbar__Link {
+    padding: .25rem .75rem;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-right: 2rem;
 
-// .nav {
-//     overflow-x: hidden;
+    }
+    a img {
+        max-width: 100%;
+        height: auto;
+    }
 
-//     @include md {
-//         overflow: initial;
-//     }
-// }
-
-.navbar-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
-    z-index: 2;
+    &-brand {
+        a {
+            display: block;
+        }
+    }
 }
 
-// .Navbar {
-//     background-color: #363635;
-//     display: flex;
-//     font-family: sans-serif;
-//     color: white;
-//     padding: 1.5rem 2.6rem;
-//     position: relative;
-// }
+.Navbar__Items {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 1rem;
+}
 
-// .Navbar__Link {
-//     padding: .25rem .75rem;
-//     a{
-//         color: white;
-//         text-decoration: none;
-//         font-size: 1.5rem;
-//         display: inline-block;
-//         margin-right: 2rem;
 
-//     }
-//     a img {
-//         // padding-right: 1rem;
-//         // vertical-align: middle;
-//         max-width: 100%;
-//         height: auto;
-//     }
+.Navbar__Items,
+.Navbar {
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
 
-//     &-brand {
-//         a {
-//             display: block;
-//         }
-//     }
-// }
+.Navbar__Items {
+    display: none;
+}
 
-// .Navbar__Items {
-//     display: flex;
-//     flex: 1;
-//     align-items: center;
-//     padding: 1rem;
-// }
+.Navbar__Link {
+    padding: .5rem 1.5rem;
 
-// .Navbar__Items--right {
-//     margin-left: auto;
-//     flex: 0 0 auto;
-// }
-
-// .Navbar__Link-toggle {
-//     display: none;
-// }
-
-// @media only screen and (max-width: 768px) {
-//     .Navbar__Items,
-//     .Navbar {
-//         flex-direction: column;
-//         flex: 1;
-//         justify-content: center;
-//     }
-//     .Navbar {
-//         padding: 1rem 0.9rem;
-//     }
-//     .Navbar__Items {
-//         display: none;
-//     }
-//     .Navbar__Items--right {
-//         margin-left: 0;
-//     }
-//     .Navbar__ToggleShow {
-//         box-sizing: border-box;
-//         display: flex;
-//         position: absolute;
-//         width: 100%;
-//         left: 0;
-//         top: 5rem;
-//         background: $white;
-//         z-index: 100;
-//         align-items: flex-start;
-//     }
-//     .Navbar__Link {
-//         padding: .5rem 1.5rem;
-
-//         a {
-//             color: $charcoal;
-//         }
-
-//         &-brand {
-//             padding: 0;
-//             a {
-//                 max-width: 9rem;
-//                 max-height: 3rem;
-//             }
-//         }
-//     }
-
-//     .Navbar__Link-toggle {
-//         align-self: flex-end;
-//         display: initial;
-//         position: absolute;
-//         cursor: pointer;
-//         padding: 1rem;
-//         // padding: 0;
-//         // width: 1.6rem;
-//         // height: 1.2rem;
-//     }
-//     .Navbar__Link-toggle span {
-//         font-size: 2.25rem;
-//     }
-//     .Navbar__Link a.chat {
-//         padding-left: 2.5em;
-//         background: transparent url(//www.deakin.edu.au/__data/assets/image/0011/1813097/e-icon-chat-white-2-x.png) no-repeat;
-//         background-position: left center;
-//     }
-// }
-
-// .secondary__nav {
-//     display: flex;
-//     flex: 1 1 100%;
-//     padding: 0 0rem;
-//     background: $light-grey;
-    
-    // position: relative;
-    // z-index: 2;
-
-//     @include md {
-//         padding: 0 2.6rem;
-//         height: 4.8rem;
-//     }
-
-//     .Navbar__Items {
-//         display: flex;
-//         flex: 1 1 auto;
-//         overflow-x: auto;
-//         align-items: normal;
-        
-//         @media screen and (max-width: $screen-sm-min) {
-//             padding: 1rem 0;
-//         }
-
-//         @include md {
-//             margin-left: 15.6rem;
-//         }
-
-//         ul {
-//             display: flex;
-//             flex: 1 1 100%;
-//             padding: 0;
-//             list-style: none;
-//             margin: 0;
-//             align-items: center;
-
-//             li {
-//                 @media screen and (max-width: $screen-sm-min) {
-//                     border-right: 1px solid $border-grey;
-//                 }
-//             }
-//         }
-
-//         .Navbar__Link {
-//             @media screen and (max-width: $screen-sm-min) {
-//                 padding: 0.5rem 0.6rem;
-
-//                 &:first-child {
-//                     a {
-//                         min-width: 5.5rem;
-//                     }
-//                 }
-//             }
-            
-
-//             a {
-//                 @media screen and (max-width: $screen-sm-min) {
-//                     text-align: center;
-//                 }
-                
-//                 $min_width: 320px;
-//                 $max_width: 768px;
-//                 $min_font: 12px;
-//                 $max_font: 14px;
-//                 @include fluid-type($min_width, $max_width, $min_font, $max_font);
-
-//                 color: $charcoal;
-//                 font-family: $font-stack-os-bold;                
-//                 cursor: pointer;
-//                 padding: 0 1rem;
-//                 margin-right: auto;
-//                 margin-left: auto;
-//             }
-//         }
-//     }
-// }
-
+    a {
+        color: $charcoal;
+    }
+}
 
 // Navigation Variables
 $content-width: 1000px;
@@ -215,20 +55,30 @@ $nav-background: #262626;
 $nav-font-color: #ffffff;
 $link-hover-color: #2581DC;
 
+// .navbar-wrapper {
+//     padding-left: 0;
+//     padding-right: 0;
+//     position: relative;
+//     z-index: 2;
+// }
+
 // Outer navigation wrapper
 .navigation {
-  height: $nav-height;
-  background: $nav-background;
+  background: $charcoal;
 }
 
 // Logo and branding
 .brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: $nav-height;
+    box-sizing: border-box;
+    // padding: 1rem .9rem;
+    position: absolute;
+//   float: left;
+//   line-height: $nav-height;
   text-transform: uppercase;
   font-size: 1.4em;
+  top: 1rem;
+  left: .9rem;
+  width: 120px;
   a,
   a:visited {
     color: $nav-font-color;
@@ -238,35 +88,47 @@ $link-hover-color: #2581DC;
 
 // Container with no padding for navbar
 .nav-container {
-  max-width: $content-width;
-  margin: 0 auto;
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 // Navigation 
 nav {
-  float: right;
+  clear: both;
+  position: relative;
+  z-index: 3;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     li {
-      float: left;
       position: relative;
       a,
       a:visited {
         display: block;
         padding: 0 20px;
-        line-height: $nav-height;
-        background: $nav-background;
-        color: $nav-font-color;
+        line-height: 1.69em;;
+        background: $white;
+        color: $charcoal;
         text-decoration: none;
+        position: relative;
+
+        font-family: $font-worldly-bold;
+        font-size: 1.6rem;
         &:hover {
-          background: $link-hover-color;
-          color: $nav-font-color;
+          color: $blue;
         }
         &:not(:only-child):after {
-          padding-left: 4px;
-          content: ' ▾';
+            content: '';
+            background: url(//www.deakin.edu.au/__data/assets/file/0005/1913054/magenta-downarrow.svg) no-repeat center !important;
+            height: 9px;
+            position: absolute;
+            width: 17px;
+            background-size: cover;
+            display: block;
+            right: 10px;
+            top: 17px;
         }
       } // Dropdown list
       ul li {
@@ -282,10 +144,9 @@ nav {
 
 // Dropdown list binds to JS toggle event
 .nav-dropdown {
-  position: absolute;
+  position: relative;
   display: none;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Mobile navigation */
@@ -296,22 +157,22 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  background: $nav-background;
+  background: $charcoal;
   height: $nav-height;
   width: $nav-height;
 }
-@media only screen and (max-width: 798px) {
+
+@media only screen and (max-width: 768px) {
   // Hamburger nav visible on mobile only
   .nav-mobile {
     display: block;
   }
   nav {
    width: 100%;
-    padding: $nav-height 0 15px;
+    padding: $nav-height 0 1px;
     ul {
       display: none;
       li {
-        float: none;
         a {
           padding: 15px;
           line-height: 20px;
@@ -321,16 +182,13 @@ nav {
         }
       }
     }
-  }
+}
   .nav-dropdown {
-    position: static;
+    background: pink;
+    position: relative;
   }
 }
-@media screen and (min-width: $breakpoint) {
-  .nav-list {
-    display: block !important;
-  }
-}
+
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -377,3 +235,135 @@ article {
   margin: 0 auto;
   padding: 10px;
 }
+
+
+//Secondary Nav that appears on Location page
+.secondary__nav {
+    display: flex;
+    flex: 1 1 100%;
+    padding: 0 0rem;
+    background: $light-grey;
+    
+    position: relative;
+    z-index: 2;
+
+    @include md {
+        padding: 0 2.6rem;
+        height: 4.8rem;
+    }
+
+    .Navbar__Items {
+        display: flex;
+        flex: 1 1 auto;
+        overflow-x: auto;
+        align-items: normal;
+        
+        @media screen and (max-width: $screen-sm-min) {
+            padding: 1rem 0;
+        }
+
+        @include md {
+            margin-left: 15.6rem;
+        }
+
+        ul {
+            display: flex;
+            flex: 1 1 100%;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            align-items: center;
+
+            li {
+                @media screen and (max-width: $screen-sm-min) {
+                    border-right: 1px solid $border-grey;
+                }
+            }
+        }
+
+        .Navbar__Link {
+            @media screen and (max-width: $screen-sm-min) {
+                padding: 0.5rem 0.6rem;
+
+                &:first-child {
+                    a {
+                        min-width: 5.5rem;
+                    }
+                }
+            }
+            
+
+            a {
+                @media screen and (max-width: $screen-sm-min) {
+                    text-align: center;
+                }
+                
+                $min_width: 320px;
+                $max_width: 768px;
+                $min_font: 12px;
+                $max_font: 14px;
+                @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+                color: $charcoal;
+                font-family: $font-stack-os-bold;                
+                cursor: pointer;
+                padding: 0 1rem;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@include md {
+    .brand {
+        position: relative;
+        background-color: #363635;
+        display: flex;
+        font-family: sans-serif;
+        color: #fff;
+        padding: 1rem 2.6rem;
+        width: auto;
+        top: auto;
+        padding: 0;
+    }
+    nav ul.nav-list {
+      display: flex;
+      position: relative;
+      margin-left: 8.6rem;
+
+       li {
+           padding: 2rem 1rem;
+          a {
+              background: transparent;
+              color: $white;
+              padding: 0 ;
+              &:after {
+                  position: absolute;
+                  top: 0.8rem;
+                  right: -2rem;
+              }
+          }
+
+          .nav-dropdown {
+            position: absolute;
+            z-index: 8;
+            background: $light-grey;
+            
+            a {
+                color: $charcoal;
+            }
+          }
+      }
+    }
+
+    nav ul.nav-list > li {
+        border-top: 3px solid $charcoal;
+        padding: 2rem 0;
+        margin-right: 3rem;
+
+        &:hover {
+            border-color: $yellow;
+        }
+    }
+  }
