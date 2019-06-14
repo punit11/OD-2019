@@ -81,6 +81,10 @@
             &.active {
                 opacity: 1;
             }
+
+            &.fadeOut {
+                opacity: 0.2;
+            }
         }
 
         &-nav {
@@ -143,7 +147,7 @@
                     // left: -200px;
                     // left: -260px;
                     // left: -20%;
-                    left: 0;
+                    left: 10%;
                 }
                 
             }

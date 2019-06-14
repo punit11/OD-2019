@@ -342,3 +342,19 @@
         }
     }
 }
+
+.comps-location-page .comp-info{
+    .baf-msg {
+        @include md {
+            max-width: 38.8rem;
+            padding-left: 2rem;
+            margin-bottom: 5rem;
+    
+            &-intro {
+                font-family: "Worldly Regular";
+                font-size: 1.6rem;
+                line-height: 1.63em;
+            }
+        }
+    }
+}
