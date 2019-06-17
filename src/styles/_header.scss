@@ -351,9 +351,15 @@ body {
     .hero-banner.location-page {
       background: $magenta;
 
-      .hero-pic:after {
-        color: $magenta;
-        -webkit-text-fill-color: $magenta;
+      .hero-pic {
+        @media (min-width: $screen-md-min) and (max-width: 1600px) {
+          left: 9rem;
+        }
+
+        &:after {
+          color: $magenta;
+          -webkit-text-fill-color: $magenta;
+        }
       }
     }
   }

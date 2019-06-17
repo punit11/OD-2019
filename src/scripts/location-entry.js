@@ -5,7 +5,7 @@ import {baf_form_validation} from "./form-validation-baf";
 import {baf_form} from "./baf-form";
 import {filters} from "./filters";
 import {youtubeApi} from "./you-tube-api";
-import {add_to_planner} from "./add-to-planner";
+// import {add_to_planner} from "./add-to-planner";
 
 // Homepage/Generic CSS
 // import "../styles/_base.scss";
