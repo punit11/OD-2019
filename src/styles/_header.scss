@@ -331,22 +331,39 @@ body {
 
   &.waterfront {
     .hero-banner.location-page {
-      background: $yellow;
+      background: $charcoal;
+
+      svg {
+        path {
+          stroke: $yellow;
+        }
+      }
 
       h1 {
         span {
-          color: $black;
+          color: $yellow;
         }
       }
       
-      .hero-pic:after {
-        color: $white;
-        -webkit-text-fill-color: $white;
+      .hero-pic {
+        &:after {
+          color: $yellow;
+          -webkit-text-fill-color: $yellow;
+          -webkit-text-stroke-color: $yellow;
+          opacity: 1;
+        }
+
+        &:before {
+          background: $yellow;
+        }
       }
     }
     
+    #icon-white-triangle path {
+      stroke: $yellow;
+    }
   }
-
+  
   &.warrnambool {
     .hero-banner.location-page {
       background: $magenta;

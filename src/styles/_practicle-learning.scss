@@ -124,6 +124,10 @@
 
         @include md {
             flex-wrap: nowrap;
+
+            a {
+                position: relative;
+            }
         }
     }
 
@@ -131,9 +135,26 @@
 
 body {
     &.waurn-ponds {
-      .practicle-learning .video-text .p48 {
-        color: $blue;
+      .practicle-learning .video-text  {
+        .p48 {
+            color: $blue;
+        }
+
+        a {
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 69px 32px 0 32px;
+                border-color: $blue transparent transparent transparent;
+                top: -4rem;
+            }
+        }
       }
+      
 
       .practicle-learning .video-container:before {
             border-top: 70px solid $blue;
@@ -142,8 +163,25 @@ body {
     }
   
     &.burwood {
-      .practicle-learning .video-text .p48 {
-        color: $teal;
+      .practicle-learning .video-text {
+        .p48 {
+            color: $teal;
+        }
+
+        a {
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 69px 32px 0 32px;
+                border-color: $teal transparent transparent transparent;
+                top: -4rem;
+            }
+        }
+
       }
 
         .practicle-learning .video-container:before {
@@ -152,8 +190,25 @@ body {
     }
   
     &.waterfront {
-      .practicle-learning .video-text .p48 {
-        color: $yellow;
+      .practicle-learning .video-text {
+        .p48 {
+            color: $yellow;
+        }
+
+        a {
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 69px 32px 0 32px;
+                border-color: $yellow transparent transparent transparent;
+                top: -4rem;
+            }
+        }
+
       }
 
         .practicle-learning .video-container:before {
@@ -163,8 +218,24 @@ body {
     }
   
     &.warrnambool {
-      .practicle-learning .video-text .p48 {
-        color: $magenta;
+      .practicle-learning .video-text {
+        .p48 {
+            color: $magenta;
+          }
+
+          a {
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 69px 32px 0 32px;
+                border-color: $magenta transparent transparent transparent;
+                top: -4rem;
+            }
+        }
       }
 
         .practicle-learning .video-container:before {
