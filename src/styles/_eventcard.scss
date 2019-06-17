@@ -27,6 +27,22 @@
             height: 4rem;
             width: 4rem;
             margin-left: 1.9rem;
+            &:after{
+                content: "\002B";
+            }
+        }
+
+        .selected:after {
+            content: "\2713";
+            background-color: #0c8573;
+            color: white;
+            border-radius: 50%;
+            font-size: 2.5rem;
+            height: 4rem;
+            width: 4rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
         }
     }
 

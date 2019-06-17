@@ -4,11 +4,11 @@ let dd_template = ( { val } ) => `
 `;
 
 // --------- Event-cards template
-let card_template = ( { evt_title, evt_location, evt_start_time, evt_end_time, evt_desc  } ) => `
+let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc  } ) => `
                     <div class="eventcard">
                         <div class="eventcard__header">
                            <h3>${evt_title}</h3>
-                           <span class="add">+</span>
+                           <span data-eventId="${evt_code}" class="add"></span>
                         </div>
                         <span class="where">
                            <svg class="icon-pin">

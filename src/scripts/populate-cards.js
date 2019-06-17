@@ -5,6 +5,7 @@ import {dd_template, card_template} from './templates';
 // import {owlCarousel} from "owl.carousel";
 import bind_owl from "./owl-carousel";
 
+
 function populate_cards(session,selected_ia) {
        session = session || ''; //set default to all
        selected_ia = selected_ia || ''; //set default to all
@@ -12,19 +13,19 @@ function populate_cards(session,selected_ia) {
        console.log("session ", session);
        console.log("selected_ia ", selected_ia);
 
-       // var URL = "https://api.github.com/search/repositories?sort=stars&q=javascript&per_page=10&page=1";
-      //  var URL = "src/data/Burwood.json";
+      // var URL = "https://api.github.com/search/repositories?sort=stars&q=javascript&per_page=10&page=1";
+       var URL = "src/data/Burwood.json";
 
-      if (window.location.href.indexOf("burwood") > -1) {
-        URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
-            }
-        else if (window.location.href.indexOf("warrnambool") > -1) {
-        URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
-            }
-        else if (window.location.href.indexOf("waterfront") > -1) {
-        URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
-            }
-        else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
+      // if (window.location.href.indexOf("burwood") > -1) {
+      //   URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
+      //       }
+      //   else if (window.location.href.indexOf("warrnambool") > -1) {
+      //   URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
+      //       }
+      //   else if (window.location.href.indexOf("waterfront") > -1) {
+      //   URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
+      //       }
+      //   else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
 
        makeAjaxCall(URL)
       .done(function (result) {
@@ -73,6 +74,7 @@ function populate_cards(session,selected_ia) {
         function render_cards(render_data, render_loc) {
         render_data.forEach(function (evt) {
         let template_dd = card_template({
+          'evt_code': evt.Event_code,
           'evt_title': evt.Title,
           'evt_location': evt.Location,
           'evt_start_time': evt.Start_time,
@@ -100,74 +102,5 @@ function populate_cards(session,selected_ia) {
     }); // fail end
 }
 populate_cards();
-// // Initialise and bind owl carousel
-// function bind_owl() {
-//   console.log("owl binding started");
-// let course_cards_len = $(".course-info-carousel .eventcard").length;
-// let tours_cards_len = $(".tours-exp-carousel .eventcard").length;
-// let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
 
-//   var owl = $('.owl-carousel');
-  
-//   owl.removeClass("owl-hidden");
-//   owl.owlCarousel('destroy'); // Kill owl first on click before re-init
-//   owl.fadeIn('slow'); // Unhide cards before re-init
-//   $(".course-info-carousel").owlCarousel({
-//     stagePadding: 20,
-//     margin: 10,
-//     nav: true,
-//     loop:true,
-//     rewindNav:false,
-//     lazyLoad:true,
-//     lazyContent:true,
-// 		responsive: {
-// 			0: {items: 1},
-// 			600: {items: 2},
-// 			1000: {items: 3.5,
-//             loop:(course_cards_len > 3) ? true: false,
-//             dotsEach: (course_cards_len > 3) ? 3: 1,
-//             slideBy: (course_cards_len > 3) ? 3: 1
-// 			}
-// 		}
-//   });
-
-//   $(".tours-exp-carousel").owlCarousel({
-//     stagePadding: 20,
-//     margin: 10,
-//     nav: true,
-//     loop:true,
-//     rewindNav:false,
-//     lazyLoad:true,
-//     lazyContent:true,
-// 		responsive: {
-// 			0: {items: 1},
-// 			600: {items: 2},
-// 			1000: {items: 3.5,
-//             loop:(tours_cards_len > 3) ? true: false,
-//             dotsEach: (tours_cards_len > 3) ? 3: 1,
-//             slideBy: (tours_cards_len > 3) ? 3: 1
-
-// 			}
-// 		}
-//   });
-
-//   $(".gen-info-carousel").owlCarousel({
-//     stagePadding: 20,
-//     margin: 10,
-//     nav: true,
-//     loop:true,
-//     rewindNav:false,
-//     lazyLoad:true,
-//     lazyContent:true,
-// 		responsive: {
-// 			0: {items: 1},
-// 			600: {items: 2},
-// 			1000: {items: 3.5,
-//             loop:(gen_info_cards_len > 3) ? true: false,
-//             dotsEach: (gen_info_cards_len > 3) ? 3: 1,
-//             slideBy: (gen_info_cards_len > 3) ? 3: 1
-// 			}
-// 		}
-//   });
-// }// end owl bind
 export {populate_cards};
