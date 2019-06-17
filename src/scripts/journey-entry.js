@@ -1,4 +1,4 @@
-import {navbar_toggle, accordion_click} from "./home"; 
+import {navbar_toggle, accordion_click, navbar_click, what_os} from "./home"; 
 import {journey} from "./journey";
 import {form_validation} from "./form-validation";
 import {modifySelect, fancy_scrollbar} from "./select2";

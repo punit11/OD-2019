@@ -6,7 +6,6 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    
     base: Path.resolve(__dirname, '../src/styles/_base.scss'),
     // home: Path.resolve(__dirname, '../src/scripts/home-entry.js'),
     location: Path.resolve(__dirname, '../src/scripts/location-entry.js')

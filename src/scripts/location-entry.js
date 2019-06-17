@@ -1,10 +1,11 @@
-import {navbar_toggle, accordion_click} from "./home";
+import {navbar_toggle, accordion_click, navbar_click, what_os} from "./home";
 import {modifySelect, fancy_scrollbar} from "./select2";
 import {populate_cards} from "./populate-cards";
 import {baf_form_validation} from "./form-validation-baf";
 import {baf_form} from "./baf-form";
 import {filters} from "./filters";
 import {youtubeApi} from "./you-tube-api";
+import {add_to_planner} from "./add-to-planner";
 
 // Homepage/Generic CSS
 // import "../styles/_base.scss";
