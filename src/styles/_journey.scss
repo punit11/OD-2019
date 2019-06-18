@@ -38,6 +38,9 @@
         }
 
         &-group {
+            display: flex;
+            flex-wrap: wrap;
+
             label {
                 display: block;
                 font-family: $font-stack-os-bold;
@@ -48,6 +51,14 @@
                 letter-spacing: 0.2px;
                 color: $charcoal;
                 margin-bottom: 0.5rem;
+
+                &.error {
+                    color: $red!important;
+                    font-size: 1.25em!important;
+                    order: 2;
+                    margin-top: -25px;
+                    margin-bottom: 1.5rem!important;
+                }
             }
     
             input,
@@ -63,6 +74,7 @@
                 padding-bottom: 1rem;
                 margin-bottom: 2.8rem;
                 border-bottom: 1px solid #ccc;
+                order: 1;
             }
         }
     }
@@ -161,7 +173,17 @@
         text-transform: uppercase;
     }
 
+    & ~ .select2-container--default .select2-results__option {
+        background: $white!important;
+        color: $charcoal;
 
+        &--highlighted {
+            &[aria-selected] {
+                background-color: $teal!important;
+                color: $white;
+            }
+        }
+    }
 }
 
 #login-form,
@@ -195,5 +217,43 @@
     button {
         display: block;
         margin: auto;
+    }
+}
+
+#form-success {
+    text-align: center;
+    padding: 0 9rem 9rem;
+
+    .check {
+        display: flex;
+        width: 6.8rem;
+        height: 6.8rem;
+        background: $light-grey;
+        border-radius: 50%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex: 1 1 auto;
+
+        .icon-tick {
+            position: absolute;
+            max-width: 2.3rem;
+        }
+    }
+
+    h2 {
+        margin: 2.5rem 0 0;
+    }
+
+    p {
+        font-family: $font-stack-os-regular;
+        font-size: 1.6rem;
+        line-height: 1.63em;
+        color: $teal;
+
+        span {
+            font-family: $font-stack-os-bold;
+        }
     }
 }

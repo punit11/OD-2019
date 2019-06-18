@@ -9,6 +9,13 @@
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
    </head>
    <body>
+      <div class="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+               <symbol id="icon-tick" viewBox="0 0 23 18">
+                  <path fill="#0C8573" fill-rule="nonzero" d="M8.05 11.25l-4.6-4.5L0 10.125 8.05 18 23 3.375 19.55 0z"/>
+               </symbol>
+            </svg>
+         </div>
       <!-- navigation start -->
       <div class="row nav">
          <div class="col-xs-12 navbar-wrapper">
@@ -75,100 +82,113 @@
                         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                            ~~~ Form #1 - Signup form start ~~~
                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                        <form id="register-form">
-                          <div class="form__header">
-                                <h2>Sign up</h2>
-                                <p>Sign up to start planning your Deakin Open Day.</p>
-                          </div>
-                           <div class="form-group">
-                               <!-- <label for="firstname">First Name<span class="asterix">*</span></label> -->
-                              <input type="text" id="fname" name="fname" class="form-control" placeholder="First name">
-                           </div>
-                           <div class="form-group">
-                              <!-- <label for="lastname">Last Name<span class="asterix">*</span></label> -->
-                             <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last name">
-                          </div>
-                           <div class="form-group">
-                               <!-- <label for="email">Email<span class="asterix">*</span></label>  -->
-                              <input type="email" id="sign-up-email" name="sign-up-email" class="form-control" placeholder="Email">
-                           </div>
-                           <div class="form-group">
-                               <!-- <label for="reg_password">Create a password<span class="asterix">*</span></label> -->
-                              <input type="password" id="pass" name="pass" class="form-control" placeholder="Password">
-                           </div>
-                           <div class="form-group">
-                               <!-- <label for="mobilePhone">Phone<span class="asterix">*</span></label>  -->
-                              <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile">
-                           </div>
-                           <div class="form-group">
-                              <!-- <label for="inputIama">I am a...</label> -->
-                               <!-- <label for="Lead_Type__c">I am a&hellip;<span class="asterix">*</span></label> -->
-                              <select name="Iama" id="Iama" class="form-control od-select">
-                                 <option value="" selected>I am...</option>
-                                 <option value="School Leaver">School student</option>
-                                 <option value="TAFE Student">A TAFE student</option>
-                                 <option value="University Student">A university student</option>
-                                 <option value="Employed">In the workforce</option>
-                                 <option value="Parent">Parent or guardian</option>
-                                 <option value="Career Practitioner">Careers Practitioner</option>
-                              </select>
-                           </div>
-                           <div class="form-group iYL" style="display: none;">
-                               <!-- <label for="inputYearLevel">Year Level<span class="asterix">*</span></label> -->
-                              <select name="inputYearLevel" id="inputYearLevel" class="form-control od-select">
-                                 <option value="" selected>Choose year level</option>
-                                 <option value="7">Year 7</option>
-                                 <option value="8">Year 8</option>
-                                 <option value="9">Year 9</option>
-                                 <option value="10">Year 10</option>
-                                 <option value="11">Year 11</option>
-                                 <option value="12">Year 12</option>
-                              </select>
-                           </div>
-                           <div class="form-group study-level" style="display: none;">
-                                 <!-- <label for="inputStudyLevel">Study Level<span class="asterix">*</span></label> -->
-                                 <!-- <p>
-                                 <input type="radio" id="inputStudyLevel1" name="inputStudyLevel" value="Undergraduate" />
-                                 <label for="inputStudyLevel1">Undergraduate (your first degree)</label>
-                                 </p>
-                                 <p>
-                                 <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
-                                 <label for="inputStudyLevel2">Postgraduate</label>
-                               </p> -->
-                               <select name="inputStudyLevel" id="inputStudyLevel" class="form-control od-select">
-                                 <option value="" selected>Choose year study level</option>
-                                 <option value="Undergraduate">Undergraduate</option>
-                                 <option value="Postgraduate">Postgraduate</option>
-                                 <option value="Higher Degree Research">Higher Degree Research</option>
-                              </select>
-                            </div>
-                           <div class="form-group">
-                               <!-- <label for="Campus__c">Which Open Day campus will you attend?<span class="asterix">*</span></label> -->
-                              <!--<label for="inputCampus">Select a campus</label>-->
-                              <select name="campus" id="campus" class="form-control  od-select">
-                                 <option value="" selected>Choose a campus</option>
-                                 <option value="Melbourne Burwood">Melbourne Burwood</option>
-                                 <option value="Geelong Waterfront">Geelong Waterfront</option>
-                                 <option value="Geelong Waurn Ponds">Geelong Waurn Ponds</option>
-                                 <option value="Warrnambool">Warrnambool</option>
-                              </select>
-                           </div>
-                           <div class="signup_wrapper center">
-                            <div class="form-group">
-                                <div class="checkbox-button">
-                                    <input class="form-check-input" type="checkbox" id="Email_Opt_In__c">
-                                    <label class="form-check-label" for="Email_Opt_In__c">Stay up to date with Deakin</label>
-                                </div>
-                            </div>                  
-                            <button type="submit" name="register" class="button button--primary teal" data-analytics="openday_create_account_submit">Create Account</button>
-
-                            <div class="modal-footer">
-                                <p>Got an account?
-                                    <a class="login-toggle" data-showform="login-form" href="#">Login now</a>
-                                </p>
-                            </div>  
-                           </div>
-                        </form>
+                           <form id="register-form">
+                              <div class="form__header">
+                                    <h2>Sign up</h2>
+                                    <p>Sign up to start planning your Deakin Open Day.</p>
+                              </div>
+                                 <div class="form-group">
+                                    <!-- <label for="firstname">First Name<span class="asterix">*</span></label> -->
+                                    <input type="text" id="fname" name="fname" class="form-control" placeholder="First name">
+                                 </div>
+                                 <div class="form-group">
+                                    <!-- <label for="lastname">Last Name<span class="asterix">*</span></label> -->
+                                 <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last name">
+                              </div>
+                                 <div class="form-group">
+                                    <!-- <label for="email">Email<span class="asterix">*</span></label>  -->
+                                    <input type="email" id="sign-up-email" name="sign-up-email" class="form-control" placeholder="Email">
+                                 </div>
+                                 <div class="form-group">
+                                    <!-- <label for="reg_password">Create a password<span class="asterix">*</span></label> -->
+                                    <input type="password" id="pass" name="pass" class="form-control" placeholder="Password">
+                                 </div>
+                                 <div class="form-group">
+                                    <!-- <label for="mobilePhone">Phone<span class="asterix">*</span></label>  -->
+                                    <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile">
+                                 </div>
+                                 <div class="form-group">
+                                    <!-- <label for="inputIama">I am a...</label> -->
+                                    <!-- <label for="Lead_Type__c">I am a&hellip;<span class="asterix">*</span></label> -->
+                                    <select name="Iama" id="Iama" class="form-control od-select">
+                                       <option value="" selected>I am...</option>
+                                       <option value="School Leaver">School student</option>
+                                       <option value="TAFE Student">A TAFE student</option>
+                                       <option value="University Student">A university student</option>
+                                       <option value="Employed">In the workforce</option>
+                                       <option value="Parent">Parent or guardian</option>
+                                       <option value="Career Practitioner">Careers Practitioner</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group iYL" style="display: none;">
+                                    <!-- <label for="inputYearLevel">Year Level<span class="asterix">*</span></label> -->
+                                    <select name="inputYearLevel" id="inputYearLevel" class="form-control od-select">
+                                       <option value="" selected>Choose year level</option>
+                                       <option value="7">Year 7</option>
+                                       <option value="8">Year 8</option>
+                                       <option value="9">Year 9</option>
+                                       <option value="10">Year 10</option>
+                                       <option value="11">Year 11</option>
+                                       <option value="12">Year 12</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group study-level" style="display: none;">
+                                       <!-- <label for="inputStudyLevel">Study Level<span class="asterix">*</span></label> -->
+                                       <!-- <p>
+                                       <input type="radio" id="inputStudyLevel1" name="inputStudyLevel" value="Undergraduate" />
+                                       <label for="inputStudyLevel1">Undergraduate (your first degree)</label>
+                                       </p>
+                                       <p>
+                                       <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
+                                       <label for="inputStudyLevel2">Postgraduate</label>
+                                    </p> -->
+                                    <select name="inputStudyLevel" id="inputStudyLevel" class="form-control od-select">
+                                       <option value="" selected>Choose year study level</option>
+                                       <option value="Undergraduate">Undergraduate</option>
+                                       <option value="Postgraduate">Postgraduate</option>
+                                       <option value="Higher Degree Research">Higher Degree Research</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group">
+                                    <!-- <label for="Campus__c">Which Open Day campus will you attend?<span class="asterix">*</span></label> -->
+                                    <!--<label for="inputCampus">Select a campus</label>-->
+                                    <select name="campus" id="campus" class="form-control  od-select">
+                                       <option value="" selected>Choose a campus</option>
+                                       <option value="Melbourne Burwood">Melbourne Burwood</option>
+                                       <option value="Geelong Waterfront">Geelong Waterfront</option>
+                                       <option value="Geelong Waurn Ponds">Geelong Waurn Ponds</option>
+                                       <option value="Warrnambool">Warrnambool</option>
+                                    </select>
+                                 </div>
+                                 <div class="signup_wrapper center">
+                                 <div class="form-group">
+                                    <div class="checkbox-button">
+                                          <input class="form-check-input" type="checkbox" id="Email_Opt_In__c">
+                                          <label class="form-check-label" for="Email_Opt_In__c">Stay up to date with Deakin</label>
+                                    </div>
+                                 </div>                  
+                                 <button type="submit" name="register" class="button button--primary teal" data-analytics="openday_create_account_submit">Create Account</button>
+                              
+                                 <div class="modal-footer">
+                                    <p>Got an account?
+                                          <a class="login-toggle" data-showform="login-form" href="#">Login now</a>
+                                    </p>
+                                 </div>  
+                                 </div>
+                              </form>
+                              
+                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           ~~~ Account created ~~~
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <div id="form-success" style="display: none;">
+                           <span class="check">
+                                 <svg class="icon-tick">
+                                    <use href="#icon-tick" xlink:href="#icon-tick"></use>
+                                 </svg>
+                           </span>
+                           <h2>Account Created</h2>
+                           <p>You’re ready to start planning your day at <span>[campus]</span></p>
+                        </div>
                         <!-- Signup form end -->
                         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                            ~~~ Form #2 - Login form start ~~~
