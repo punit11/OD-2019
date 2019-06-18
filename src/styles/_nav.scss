@@ -351,7 +351,17 @@ article {
             background: $light-grey;
             
             a {
+                transition: all 300ms ease-in-out;
                 color: $charcoal;
+            }
+
+            li {
+                &:hover {
+                    a {
+                        transition: all 300ms ease-in-out;
+                        color: $magenta;           
+                    }
+                }
             }
           }
       }
