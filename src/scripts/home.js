@@ -60,7 +60,7 @@ var navbar_click = (function() {
     // let comps_offset = $( ".comps-form" );
     // console.log('comps_offset ',comps_offset);
     // let ele_offset = document.querySelector('[name='+el]');
- console.log('ele  ',ele);
+    console.log('ele  ',ele);
  
     let ele_offset = $('[name='+ele+']');
     console.log('scrollTop = ' + ele_offset.offset().top);

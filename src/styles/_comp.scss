@@ -84,9 +84,10 @@
       top: -1rem;
       width: 8.6rem;
       margin-left: 7rem;
+      z-index: 1;
 
       @include md {
-        top: -10rem;
+        top: -13rem;
       }
     }
 
