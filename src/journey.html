@@ -75,31 +75,35 @@
                         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                            ~~~ Form #1 - Signup form start ~~~
                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                        <form id="journey-form">
+                        <form id="register-form">
                           <div class="form__header">
                                 <h2>Sign up</h2>
                                 <p>Sign up to start planning your Deakin Open Day.</p>
                           </div>
                            <div class="form-group">
-                               <label for="firstname">First Name<span class="asterix">*</span></label>
-                              <input type="text" id="firstname" name="firstName" class="form-control" placeholder="First name">
+                               <!-- <label for="firstname">First Name<span class="asterix">*</span></label> -->
+                              <input type="text" id="fname" name="fname" class="form-control" placeholder="First name">
                            </div>
                            <div class="form-group">
-                               <label for="email">Email<span class="asterix">*</span></label>                        
-                              <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                              <!-- <label for="lastname">Last Name<span class="asterix">*</span></label> -->
+                             <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last name">
+                          </div>
+                           <div class="form-group">
+                               <!-- <label for="email">Email<span class="asterix">*</span></label>  -->
+                              <input type="email" id="sign-up-email" name="sign-up-email" class="form-control" placeholder="Email">
                            </div>
                            <div class="form-group">
-                               <label for="reg_password">Create a password<span class="asterix">*</span></label>    
-                              <input type="password" id="reg_password" name="pass" class="form-control" placeholder="Password">
+                               <!-- <label for="reg_password">Create a password<span class="asterix">*</span></label> -->
+                              <input type="password" id="pass" name="pass" class="form-control" placeholder="Password">
                            </div>
                            <div class="form-group">
-                               <label for="mobilePhone">Phone<span class="asterix">*</span></label>                               
-                              <input type="text" id="mobilePhone" name="mobilePhone" class="form-control" placeholder="Mobile">
+                               <!-- <label for="mobilePhone">Phone<span class="asterix">*</span></label>  -->
+                              <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile">
                            </div>
                            <div class="form-group">
                               <!-- <label for="inputIama">I am a...</label> -->
-                               <label for="Lead_Type__c">I am a&hellip;<span class="asterix">*</span></label>
-                              <select name="Lead_Type__c" id="Lead_Type__c" class="form-control od-select">
+                               <!-- <label for="Lead_Type__c">I am a&hellip;<span class="asterix">*</span></label> -->
+                              <select name="Iama" id="Iama" class="form-control od-select">
                                  <option value="" selected>I am...</option>
                                  <option value="School Leaver">School student</option>
                                  <option value="TAFE Student">A TAFE student</option>
@@ -109,9 +113,9 @@
                                  <option value="Career Practitioner">Careers Practitioner</option>
                               </select>
                            </div>
-                           <!-- <div class="form-group iYL" style="display: none;">
-                               <label for="inputYearLevel">Year Level<span class="asterix">*</span></label>
-                              <select name="inputYearLevel" id="inputYearLevel" class="form-control">
+                           <div class="form-group iYL" style="display: none;">
+                               <!-- <label for="inputYearLevel">Year Level<span class="asterix">*</span></label> -->
+                              <select name="inputYearLevel" id="inputYearLevel" class="form-control od-select">
                                  <option value="" selected>Choose year level</option>
                                  <option value="7">Year 7</option>
                                  <option value="8">Year 8</option>
@@ -122,20 +126,26 @@
                               </select>
                            </div>
                            <div class="form-group study-level" style="display: none;">
-                                 <p><label for="inputStudyLevel">Study Level<span class="asterix">*</span></label></p>
-                                 <p>
+                                 <!-- <label for="inputStudyLevel">Study Level<span class="asterix">*</span></label> -->
+                                 <!-- <p>
                                  <input type="radio" id="inputStudyLevel1" name="inputStudyLevel" value="Undergraduate" />
                                  <label for="inputStudyLevel1">Undergraduate (your first degree)</label>
                                  </p>
                                  <p>
                                  <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
                                  <label for="inputStudyLevel2">Postgraduate</label>
-                               </p>
-                            </div> -->
+                               </p> -->
+                               <select name="inputStudyLevel" id="inputStudyLevel" class="form-control od-select">
+                                 <option value="" selected>Choose year study level</option>
+                                 <option value="Undergraduate">Undergraduate</option>
+                                 <option value="Postgraduate">Postgraduate</option>
+                                 <option value="Higher Degree Research">Higher Degree Research</option>
+                              </select>
+                            </div>
                            <div class="form-group">
-                               <label for="Campus__c">Which Open Day campus will you attend?<span class="asterix">*</span></label>
+                               <!-- <label for="Campus__c">Which Open Day campus will you attend?<span class="asterix">*</span></label> -->
                               <!--<label for="inputCampus">Select a campus</label>-->
-                              <select name="Campus__c" id="Campus__c" class="form-control  od-select">
+                              <select name="campus" id="campus" class="form-control  od-select">
                                  <option value="" selected>Choose a campus</option>
                                  <option value="Melbourne Burwood">Melbourne Burwood</option>
                                  <option value="Geelong Waterfront">Geelong Waterfront</option>
@@ -432,7 +442,7 @@
       <!-- footer end -->
    
       <!-- form-validation.js -->
-      <form id="mktoForm_3598" style="display:none"></form>
+      <form id="mktoForm_3610" style="display:none"></form>
              
        <script type="text/javascript">
        (function() {
