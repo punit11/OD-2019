@@ -20,8 +20,9 @@ import "../styles/_buttons.scss";
 import "../styles/_eventcard.scss";
 import "../styles/_journey.scss";
 import "../styles/_modal.scss";
-import "../styles/_select.scss";
 import "../styles/_select2.scss";
+import "../styles/_select.scss";
+
 import "../styles/_scrollbar.scss";
 import "../styles/_getting-here.scss";
 import "../styles/_practicle-learning.scss";
