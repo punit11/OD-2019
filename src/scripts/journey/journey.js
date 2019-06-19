@@ -1,5 +1,6 @@
 var journey = (function() {
     $('.js-journey').on('click', function(){
+        console.log("Working");
         if($('.modal.fade').hasClass('out')) {
             $('.modal.fade').removeClass('out').addClass('in').show();
         } else {

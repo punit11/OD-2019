@@ -84,6 +84,14 @@
                            </li>
                      </ul>
                   </li>
+
+                  <button class="button teal js-journey">
+                     <svg class="icon-calendar">
+                         <use href="#icon-calendar" xlink:href="#icon-calendar"></use>
+                     </svg>
+                     Open day planner
+                 </button>  
+                 
                   </ul>
                </nav>
             </div>
@@ -726,68 +734,255 @@
             </div>
          </div>
          <!-- footer end -->
+
+      <!-- Register/Signup modal -->
+      <div class="modal fade out" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>                
+               <div class="modal-body">
+                  <div id="signup">
+                     <div class="loader" style="display: none;"></div>
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #1 - Signup form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <form id="register-form">
+                       <div class="form__header">
+                             <h2>Sign up</h2>
+                             <p>Sign up to start planning your Deakin Open Day.</p>
+                       </div>
+                        <div class="form-group">
+                            <!-- <label for="firstname">First Name<span class="asterix">*</span></label> -->
+                           <input type="text" id="fname" name="fname" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                           <!-- <label for="lastname">Last Name<span class="asterix">*</span></label> -->
+                          <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last name">
+                       </div>
+                        <div class="form-group">
+                            <!-- <label for="email">Email<span class="asterix">*</span></label>  -->
+                           <input type="email" id="sign-up-email" name="sign-up-email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="reg_password">Create a password<span class="asterix">*</span></label> -->
+                           <input type="password" id="pass" name="pass" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="mobilePhone">Phone<span class="asterix">*</span></label>  -->
+                           <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile">
+                        </div>
+                        <div class="form-group">
+                           <!-- <label for="inputIama">I am a...</label> -->
+                            <!-- <label for="Lead_Type__c">I am a&hellip;<span class="asterix">*</span></label> -->
+                           <select name="Iama" id="Iama" class="form-control od-select">
+                              <option value="" selected>I am...</option>
+                              <option value="School Leaver">School student</option>
+                              <option value="TAFE Student">A TAFE student</option>
+                              <option value="University Student">A university student</option>
+                              <option value="Employed">In the workforce</option>
+                              <option value="Parent">Parent or guardian</option>
+                              <option value="Career Practitioner">Careers Practitioner</option>
+                           </select>
+                        </div>
+                        <div class="form-group iYL" style="display: none;">
+                            <!-- <label for="inputYearLevel">Year Level<span class="asterix">*</span></label> -->
+                           <select name="inputYearLevel" id="inputYearLevel" class="form-control od-select">
+                              <option value="" selected>Choose year level</option>
+                              <option value="7">Year 7</option>
+                              <option value="8">Year 8</option>
+                              <option value="9">Year 9</option>
+                              <option value="10">Year 10</option>
+                              <option value="11">Year 11</option>
+                              <option value="12">Year 12</option>
+                           </select>
+                        </div>
+                        <div class="form-group study-level" style="display: none;">
+                              <!-- <label for="inputStudyLevel">Study Level<span class="asterix">*</span></label> -->
+                              <!-- <p>
+                              <input type="radio" id="inputStudyLevel1" name="inputStudyLevel" value="Undergraduate" />
+                              <label for="inputStudyLevel1">Undergraduate (your first degree)</label>
+                              </p>
+                              <p>
+                              <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
+                              <label for="inputStudyLevel2">Postgraduate</label>
+                            </p> -->
+                            <select name="inputStudyLevel" id="inputStudyLevel" class="form-control od-select">
+                              <option value="" selected>Choose year study level</option>
+                              <option value="Undergraduate">Undergraduate</option>
+                              <option value="Postgraduate">Postgraduate</option>
+                              <option value="Higher Degree Research">Higher Degree Research</option>
+                           </select>
+                         </div>
+                        <div class="form-group">
+                            <!-- <label for="Campus__c">Which Open Day campus will you attend?<span class="asterix">*</span></label> -->
+                           <!--<label for="inputCampus">Select a campus</label>-->
+                           <select name="campus" id="campus" class="form-control  od-select">
+                              <option value="" selected>Choose a campus</option>
+                              <option value="Melbourne Burwood">Melbourne Burwood</option>
+                              <option value="Geelong Waterfront">Geelong Waterfront</option>
+                              <option value="Geelong Waurn Ponds">Geelong Waurn Ponds</option>
+                              <option value="Warrnambool">Warrnambool</option>
+                           </select>
+                        </div>
+                        <div class="signup_wrapper center">
+                         <div class="form-group">
+                             <div class="checkbox-button">
+                                 <input class="form-check-input" type="checkbox" id="Email_Opt_In__c">
+                                 <label class="form-check-label" for="Email_Opt_In__c">Stay up to date with Deakin</label>
+                             </div>
+                         </div>                  
+                         <button type="submit" name="register" class="button button--primary teal" data-analytics="openday_create_account_submit">Create Account</button>
+
+                         <div class="modal-footer">
+                             <p>Got an account?
+                                 <a class="login-toggle" data-showform="login-form" href="#">Login now</a>
+                             </p>
+                         </div>  
+                        </div>
+                     </form>
+                     <!-- Signup form end -->
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #2 - Login form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <form id="login-form">
+                         <div class="form-header">
+                             <h2 class="modal-title" id="myModalLabel">Log in</h2>  
+                         </div>                         
+                         <div class="form-group">
+                             <label for="log_email">Email</label>
+                             <input type="text" id="log_email" class="form-control" name="sign-in-email" placeholder="Email Address">
+                         </div>
+                         <div class="form-group">
+                             <label for="log_password">Password</label>
+                             <input type="password" id="log_password" class="form-control" name="sign-in-pass" placeholder="Password">
+                         </div>
+                         <div class="signup_wrapper center">                        
+                             <div class="form-group">
+                                 <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Login</button>
+                                 <p class="forgot-password">
+                                     <a class="login-toggle" data-showform="forgot-pwd-form" href="#"> Forgot Password</a>
+                                 </p>
+                             </div>
+                             <div class="modal-footer">
+                                 <p>Don't have an account?
+                                     <a class="login-toggle" data-showform="journey-form" href="#">Sign up now</a>
+                                 </p>
+                             </div>  
+                             
+                         </div>
+                     </form>
+                     <!-- Login form end -->
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #3 - Forgot password form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <form id="forgot-pwd-form">
+                       <div class="form-header">
+                           <h2>Forgot password</h2>
+                            <p>Enter your email below to start the password recovery process.</p>                  
+                       </div>                           
+                        <div class="form-group">
+                            <label for="forgot_email">Email</label>                            
+                           <input type="text" id="forgot_email" class="form-control" name="forgot-pwd-email" placeholder="Email Address">
+                        </div>
+                        <div class="signup_wrapper">   
+                            <div class="form-group">
+                               <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Submit</button>
+                               <p>Already started your plan?
+                                  <a data-showform="login-form" class="login-toggle" href="#">Login in now </a>
+                               </p>
+                               <p>or
+                                  <a data-showform="reset-pwd-form" class="login-toggle" href="#">Reset your password</a> if you have received a verification code
+                               </p>
+                            </div>                        
+                        </div>
+                     </form>
+                     <!--Forgot password form end-->
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #4 - Reset password form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <form id="reset-pwd-form">
+                       <div class="form-header">
+                             <h2>Forgot password</h2>
+                            <p>Enter your email below to start the password recovery process.</p>                  
+                       </div>                          
+                        <div class="form-group">
+                            <label for="reset_email">Email</label>
+                           <input type="text" id="reset_email" class="form-control" name="reset-pwd-email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                           <input type="password" id="password" class="form-control" name="reset-pass" placeholder="Enter New Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="verification">Verification Code</label>
+                           <input type="text" di="verification" class="form-control" name="reset-verify-code" placeholder="Enter Verification Code">
+                        </div>
+                        <div class="signup_wrapper center">                          
+                            <div class="form-group">
+                               <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Reset Password</button>
+                               <div class="modal-footer">
+                                     <p>Already started your plan?
+                                         <a data-showform="login-form" class="login-toggle" href="#">Login in now </a>
+                                     </p>    
+                               </div>
+                            </div>
+                        </div>    
+                     </form>
+                     <!--Reset password form end-->
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Sucess/ Failure Messages ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                     <!-- +++++++++++++++++++++++++++++++++++++++++++++
+                        Register/Signup form - Form 1 - messages start 
+                        +++++++++++++++++++++++++++++++++++++++++++ -->
+                     <!--Success-->
+                     <div class="f1-success" role="alert"></div>
+                     <!-- Failure -->
+                     <div class="f1-fail alert alert-danger" role="alert"></div>
+                     <!-- +++++++++++++++++++++++++++++++++++++
+                        Login form - Form 2 - messages start 
+                        +++++++++++++++++++++++++++++++++++-->
+                     <!--Success-->
+                     <!--No mesage for success, just a redirect-->
+                     <div class="f2-success" role="alert"></div>
+                     <!-- Failure -->
+                     <div class="f2-fail alert alert-danger" role="alert"></div>
+                     <!-- +++++++++++++++++++++++++++++++++++++++++++++
+                        ++++ Reset pwd form - Form 3 - messages start ++
+                        ++++++++++++++++++++++++++++++++++++++++++++++ -->
+                     <!--Success-->
+                     <div class="f3-success alert alert-success" role="alert"></div>
+                     <!-- Failure -->
+                     <div class="f3-fail alert alert-danger" role="alert"></div>
+                     <!-- +++++++++++++++++++++++++++++++++++++++++++++
+                        ++++ Forgot pwd form - Form 4 - messages start ++
+                        ++++++++++++++++++++++++++++++++++++++++++++++ -->
+                     <!--Success-->
+                     <div class="f4-success alert alert-success" role="alert"></div>
+                     <!-- Failure -->
+                     <div class="f4-fail alert alert-danger" role="alert"></div>
+                  </div>
+                  <!-- Sign up / Login wrapper end -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Register/Signup modal end -->
       
       <!-- form-validation.js -->
       <form class="mktoForm" data-formId="3590" id="mktoForm_3590"></form> <!-- BAF Form -->
       <form class="mktoForm" data-formId="3610" id="mktoForm_3610"></form> <!-- Registration Form -->
 
+      <!-- <form class="mktoForm" data-formId="3590"></form>
+      <form class="mktoForm" data-formId="3610"></form> -->
 
-      <!-- Marketo form initilisation -->
-      <script>
-      /* config area - replace with your instance values */
 
-      var mktoFormConfig = {
-            podId : "//app-sj01.marketo.com",
-            munchkinId : "410-XOR-673",
-            formIds : [341, 787]
-      };
-      
-      /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
-      
-      function mktoFormChain(config) {
-      
-         /* util */
-         var arrayFrom = Function.prototype.call.bind(Array.prototype.slice);
-      
-         /* const */
-         var MKTOFORM_ID_ATTRNAME = "data-formId";
-         
-         /* fix inter-form label bug! */
-         MktoForms2.whenRendered(function(form) {
-            var formEl = form.getFormElem()[0],
-               rando = "_" + new Date().getTime() + Math.random();
-      
-            arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
-               var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
-               if (forEl) {
-                  labelEl.htmlFor = forEl.id = forEl.id + rando;
-               }
-            });
-         });
-      
-         /* chain, ensuring only one #mktoForm_nnn exists at a time */
-         arrayFrom(config.formIds).forEach(function(formId) {
-            var loadForm = MktoForms2.loadForm.bind(MktoForms2,config.podId,config.munchkinId,formId),
-               formEls = arrayFrom(document.querySelectorAll("[" + MKTOFORM_ID_ATTRNAME + '="' + formId + '"]'));
-      
-            (function loadFormCb(formEls) {
-               var formEl = formEls.shift();
-               formEl.id = "mktoForm_" + formId;
-      
-               loadForm(function(form) {
-                  formEl.id = "";
-                  if (formEls.length) {
-                     loadFormCb(formEls);
-                  }
-               });
-            })(formEls);
-         });
-      }
-      
-      mktoFormChain(mktoFormConfig);
-   </script>
-      <!-- Marketo form initilisation end -->
-      
+    
+      <!-- Marketo Bridge -->
        <script type="text/javascript">
        (function() {
          var didInit = false;
@@ -809,8 +1004,65 @@
          s.onload = initMunchkin;
          document.getElementsByTagName('head')[0].appendChild(s);
        })();
-       </script> <!-- Marketo Bridge -->
+       </script> 
 
       <script src="//app-sn01.marketo.com/js/forms2/js/forms2.min.js"></script> <!-- Marketo Script -->
+
+        <!-- Marketo form initilisation -->
+        <script>
+         /* config area - replace with your instance values */
+   
+         var mktoFormConfig = {
+               podId : "//app-sn01.marketo.com",
+               munchkinId : "209-INQ-367",
+               formIds : [3590, 3610]
+         };
+         
+         /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
+         
+         function mktoFormChain(config) {
+         
+            /* util */
+            var arrayFrom = Function.prototype.call.bind(Array.prototype.slice);
+         
+            /* const */
+            var MKTOFORM_ID_ATTRNAME = "data-formId";
+            
+            /* fix inter-form label bug! */
+            MktoForms2.whenRendered(function(form) {
+               var formEl = form.getFormElem()[0],
+                  rando = "_" + new Date().getTime() + Math.random();
+         
+               arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
+                  var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
+                  if (forEl) {
+                     labelEl.htmlFor = forEl.id = forEl.id + rando;
+                  }
+               });
+            });
+         
+            /* chain, ensuring only one #mktoForm_nnn exists at a time */
+            arrayFrom(config.formIds).forEach(function(formId) {
+               var loadForm = MktoForms2.loadForm.bind(MktoForms2,config.podId,config.munchkinId,formId),
+                  formEls = arrayFrom(document.querySelectorAll("[" + MKTOFORM_ID_ATTRNAME + '="' + formId + '"]'));
+         
+               (function loadFormCb(formEls) {
+                  var formEl = formEls.shift();
+                  formEl.id = "mktoForm_" + formId;
+         
+                  loadForm(function(form) {
+                     formEl.id = "";
+                     if (formEls.length) {
+                        loadFormCb(formEls);
+                     }
+                  });
+               })(formEls);
+            });
+         }
+         
+         mktoFormChain(mktoFormConfig);
+      </script>
+         <!-- Marketo form initilisation end -->
+
   </body>
 </html>
