@@ -129,6 +129,10 @@
                 position: relative;
             }
         }
+
+        @media (min-width: 2450px) {
+            margin-left: 30%; 
+        }
     }
 
 }
