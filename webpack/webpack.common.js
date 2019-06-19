@@ -30,6 +30,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/location.html'),
       // template: Path.resolve(__dirname, '../src/index.html'),
+      // template: Path.resolve(__dirname, '../src/journey.html'),
       // chunks:['base','location']
      }),
 
