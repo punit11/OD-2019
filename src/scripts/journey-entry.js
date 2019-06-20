@@ -1,5 +1,5 @@
 import {navbar_toggle, accordion_click, navbar_click, what_os} from "./home"; 
-import {journey} from "./journey";
+import {journey} from "./journey/journey";
 import {form_validation} from "./form-validation";
 import {modifySelect, fancy_scrollbar} from "./select2";
 import {reg_form_validation} from "./journey/register";
