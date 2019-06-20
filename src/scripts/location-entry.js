@@ -18,10 +18,11 @@ import {reg_form_validation} from "./journey/register";
 import "../styles/_plan-yr-day.scss";
 import "../styles/_buttons.scss";
 import "../styles/_eventcard.scss";
-import "../styles/_journey.scss";
+
 import "../styles/_modal.scss";
 import "../styles/_select2.scss";
 import "../styles/_select.scss";
+import "../styles/_journey.scss";
 
 import "../styles/_scrollbar.scss";
 import "../styles/_getting-here.scss";
