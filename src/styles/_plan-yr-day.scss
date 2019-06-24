@@ -108,6 +108,10 @@
       padding: 0 4rem 4rem;
     }
 
+    &.flexContainer.flexContainer-mobile-wrap {
+      padding: 0 4rem;
+    }
+
     .orange {
       background-color: transparent;
       color: $orange;

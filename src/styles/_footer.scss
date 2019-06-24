@@ -7,6 +7,7 @@
 
   @include md {
     overflow-x: initial;
+    // overflow-y: visible;
   }
 
   img {
@@ -40,7 +41,7 @@
       display: block;
       position: absolute;
       bottom: 2%;
-      right: -8%;
+      right: -2%;
       width: 100%;
       max-width: 366px;
       height: 100%;

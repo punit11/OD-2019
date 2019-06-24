@@ -250,7 +250,7 @@
       }
 
       &:after {
-        @include md {
+        @include lg {
           $min_width: 1200px;
           $max_width: 1644px;
           $min_font: 117px;
@@ -265,8 +265,8 @@
           text-transform: uppercase;
           -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-          top: 35%;
-          left: 67%;
+          top: 50%;
+          left: 57%;
           font-family: "UniversLTStd-BoldCn", sans-serif;
           z-index: -1;
           -webkit-text-stroke-width: 1px;
@@ -275,9 +275,10 @@
           opacity: 0.5;
 
           @include lg {
-            display: block;
-            height: 100%;
-            max-height: 15.5rem;
+            display: flex;
+            height: 0;
+            flex: 1;
+            max-height: 12.5rem;
           }
           
         }        
@@ -286,7 +287,7 @@
       .verticle-text {
         display: none;
 
-        @include md {
+        @include lg {
           display: block;
         }
       }
@@ -376,6 +377,7 @@ body {
         &:after {
           color: $magenta;
           -webkit-text-fill-color: $magenta;
+          left: 50%;
         }
       }
     }
