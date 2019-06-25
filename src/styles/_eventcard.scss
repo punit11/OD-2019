@@ -176,16 +176,18 @@
             button {
                 &.owl-dot {
                     height: 0.7rem;
-                    width: 0.7rem;
+                    width: 0.3rem;
                     background: #ffffff;
-                    border-radius: 50%;
-                    margin: 5px;
                     padding: 0;
                     opacity: 0.2;
                     pointer: cursor;
 
                     &.active {
                         opacity: 1;
+                    }
+
+                    @include md {
+                        width: 0.7rem;
                     }
                 }
             }

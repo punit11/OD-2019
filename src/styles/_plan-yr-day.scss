@@ -122,7 +122,10 @@
     }
 
     &.flexContainer.flexContainer-mobile-wrap {
-      padding: 0 4rem;
+      @include md {
+        padding: 0 4rem;
+      }
+      
     }
 
     .orange {
@@ -175,6 +178,11 @@
 
       &.flexContainer--half {
         flex: 1 1 100%;
+        min-height: 23.3rem;
+
+        @include md {
+          min-height: initial;
+        }
 
         @include lg {
           flex: 1 1 50%;
