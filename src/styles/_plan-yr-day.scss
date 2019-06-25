@@ -12,6 +12,19 @@
     overflow: initial;
   }
 
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: calc(50% - 41px);
+    top: -4rem;
+    border-left: 41px solid transparent;
+    border-right: 41px solid transparent;
+    
+    border-top: 75px solid $magenta;
+  }
+
   .intro {
     padding-left: 0;
 
@@ -277,4 +290,20 @@
 .sticky-bar {
   position: sticky;
   bottom: 0; /* required */
+}
+
+
+body.warrnambool {
+  .planyrday-wrapper .step-container {
+    .seperator-or ,
+    .option-container.flexContainer.flexContainer--half.flexContainer--column:last-child() {
+      display: none;
+    }
+
+    .option-container:first-child {
+      border: none;
+      padding-right: 0;
+    }
+  }
+  
 }
