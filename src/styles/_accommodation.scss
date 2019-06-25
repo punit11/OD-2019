@@ -14,25 +14,34 @@
         overflow-x: initial;
     }
 
+    &:before {
+        display: none;
+        position: absolute;
+        content: "";
+        background: url("/src/images/circle-triangle.png") no-repeat 0 0;
+        background-size: contain;
+        width: 18.2rem;
+        height: 19rem;
+        // border: 2px solid #ffffff;
+        opacity: 0.5;
+        top: 4rem;
+        left: 0;
+
+        @include md {
+            display: block;
+        }
+    }
+
     .text__container {
         position: relative;
 
-        &:before {
-            display: none;
-            position: absolute;
-            content: "";
-            width: 14rem;
-            height: 14rem;
-            border-radius: 50%;
-            border: 2px solid #ffffff;
-            opacity: 0.5;
-            top: -8rem;
-            left: -17rem;
-    
-            @include md {
-                display: block;
-            }
-        }
+        
+        // &:before {
+        //     display: none;
+        //     position: absolute;
+        //     content: "";
+        //     background: url("/src/images/circle-triangle.png") no-repeat 0 0;
+        // }
     }
     .image__container {
         max-width: 100%;

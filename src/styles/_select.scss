@@ -9,9 +9,14 @@
     }
 }
 .select2-container--default  {
+    max-width: 33.4rem;
+
+    @include md {
+        max-width: initial;
+    }
     .select2-selection--single {
         border: none;
-        padding: 1.6rem 1.8rem;
+        padding: 1.6rem 1rem;
         border-radius: 0!important;
         height: auto!important;
         display: flex!important;
@@ -19,14 +24,19 @@
         align-items: center;
         justify-content: space-between;
 
+        @include md {
+            padding: 1.6rem 1.8rem;
+        }
+
         .select2-selection__rendered {
             font-family: $font-stack-os-regular;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             line-height: 1em;
             padding-left: 0!important;
             padding-right: 1rem!important;
 
             @include md {
+                font-size: 1.6rem;
                 padding-left: 0.8rem!important;
                 padding-right: 2rem!important;
             }
