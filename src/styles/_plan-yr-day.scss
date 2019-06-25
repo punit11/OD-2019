@@ -315,3 +315,9 @@ body.warrnambool {
   }
   
 }
+
+body.dayplanner {
+  .planyrday-wrapper:before {
+    display: none;
+  }
+}
