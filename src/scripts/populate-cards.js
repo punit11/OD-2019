@@ -6,9 +6,10 @@ import {dd_template, card_template} from './templates';
 import bind_owl from "./owl-carousel";
 import render_ticks from "./journey/render-ticks";
 
-function populate_cards(session,selected_ia) {
+function populate_cards(session,selected_ia,caller) {
        session = session || ''; //set default to all
        selected_ia = selected_ia || ''; //set default to all
+       caller = caller || ''; //set default to all
 
        console.log("session ", session);
        console.log("selected_ia ", selected_ia);
@@ -54,18 +55,33 @@ function populate_cards(session,selected_ia) {
 
         let my_course_data = result;
         // Bind drop-down template for -- Course Info Sessions --
-        let course_info_arr = my_course_data.filter(o => o.Session_type === 'Course information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session)  && o.Interest_area.includes(selected_ia));
+        if (caller == "courses") {
+        var course_info_arr = my_course_data.filter(o => o.Session_type === 'Course information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session)  && o.Pre_selected.includes(selected_ia));
+        }
+        else {
+          var course_info_arr = my_course_data.filter(o => o.Session_type === 'Course information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session)  && o.Interest_area.includes(selected_ia));
+        }
         console.log('course_info_arr ', course_info_arr.length);
         render_cards(course_info_arr, '.course-info-carousel');
 
         // Bind drop-down template for -- Tour & Exp Info Sessions --
-        let tours_exp_arr = my_course_data.filter(o => (o.Session_type === 'Tour' || o.Session_type === 'Experience') && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Interest_area.includes(selected_ia));
+        if (caller =="courses") {
+          var tours_exp_arr = my_course_data.filter(o => (o.Session_type === 'Tour' || o.Session_type === 'Experience') && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Pre_selected.includes(selected_ia));
+          }
+        else {
+          var tours_exp_arr = my_course_data.filter(o => (o.Session_type === 'Tour' || o.Session_type === 'Experience') && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Interest_area.includes(selected_ia));
+        }
         console.log('tours_exp_arr ', tours_exp_arr.length);
         render_cards(tours_exp_arr, '.tours-exp-carousel');
 
         // Bind drop-down template for -- General Info Sessions --
         
-        let gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session));
+        if ((caller =="courses")) {
+          var gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Pre_selected.includes(selected_ia));
+          }
+        else {
+        var gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session));
+        }
         console.log('gen_info_arr ', gen_info_arr.length);
         render_cards(gen_info_arr, '.gen-info-carousel');
         $("#gen_evt_count").text(gen_info_arr.length);
@@ -95,7 +111,7 @@ function populate_cards(session,selected_ia) {
         // Populate counters
         $("#course_evt_count").text(course_info_arr.length);
         $("#tour_evt_count").text(tours_exp_arr.length);
-        // render_ticks();
+        render_ticks();
     });
 
     })
@@ -104,9 +120,6 @@ function populate_cards(session,selected_ia) {
     }); // fail end
 
 // Tick any pre-selected cards for a logged-in user
-   
-
-
 }
 populate_cards();
 
