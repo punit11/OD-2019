@@ -7,8 +7,8 @@ const modifySelect = $(function() {
       minimumResultsForSearch: Infinity
       // width: 'resolve'
     });
+   
     console.log('Select2 implemented and finished');
-  
   
 //   modifySelect();
   $.when(modifySelect).done(function(){

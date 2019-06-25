@@ -51,6 +51,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
     "amazon-cognito-identity-js": "^3.0.13",
+    "aws-sdk": "^2.478.0",
     "core-js": "^3.0.1",
     "jquery": "^3.4.1",
     "jquery-validation": "^1.19.0",

@@ -4,7 +4,7 @@ import "../data/Burwood.json";
 import {dd_template, card_template} from './templates';
 // import {owlCarousel} from "owl.carousel";
 import bind_owl from "./owl-carousel";
-
+import render_ticks from "./journey/render-ticks";
 
 function populate_cards(session,selected_ia) {
        session = session || ''; //set default to all
@@ -95,12 +95,18 @@ function populate_cards(session,selected_ia) {
         // Populate counters
         $("#course_evt_count").text(course_info_arr.length);
         $("#tour_evt_count").text(tours_exp_arr.length);
+        // render_ticks();
     });
 
     })
       .fail(function (jqXHR, textStatus, errorThrown) {
         console.log(textStatus + ": " + errorThrown);
     }); // fail end
+
+// Tick any pre-selected cards for a logged-in user
+   
+
+
 }
 populate_cards();
 

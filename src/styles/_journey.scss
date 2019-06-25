@@ -1,4 +1,4 @@
-.openDay-planner {
+nav {
     button {
         display: flex;
         flex: 0;
@@ -190,7 +190,7 @@
 #forgot-pwd-form,
 #reset-pwd-form {
     padding-top: 4.5rem;
-    display: none;
+    // display: none;
 
     h2 {
         margin: 0;
@@ -257,3 +257,11 @@
         }
     }
 }
+
+.alert-danger, .aws-error {
+  color: red;
+}
+
+div[class$="success"], div[class$="fail"], .aws-error {
+    display:none;
+  }
