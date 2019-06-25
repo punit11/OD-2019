@@ -1,5 +1,3 @@
-import tick_cards from "./tick-cards";
-
 var render_ticks = function () {
 
     // retrieve stored data (JSON stringified) and convert

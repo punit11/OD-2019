@@ -10,7 +10,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-002",
@@ -23,24 +24,26 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws; Bachelor of Education (Primary)"
   },
   {
     "Event_code": "BW-003",
     "Interest_area": "",
     "Title": "Understanding VTAC's SEAS",
-    "Description": "Find out all you need to know about VTAC�s Special Entry and Access Scheme (SEAS) from our specialists, including the application process, different SEAS categories and how SEAS impacts university selection.",
+    "Description": "Find out all you need to know about VTAC's Special Entry and Access Scheme (SEAS) from our specialists, including the application process, different SEAS categories and how SEAS impacts university selection.",
     "Location": "Bldg B, Room B1.20, LT 11",
     "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-004",
-    "Interest_area": "Architecture and built environment; Design",
+    "Interest_area": "Architecture and construction management; Design",
     "Title": "Architecture and construction management",
     "Description": "Find out what's distinctive about our courses, why staff are passionate about teaching and why you should choose to study architecture and the built environment at Deakin's Geelong Waterfront Campus.",
     "Location": "Bldg B, Room B1.20, LT 11",
@@ -49,12 +52,13 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-005",
-    "Interest_area": "Architecture and built environment",
-    "Title": "Construction management (Honours)/Property and real estate",
+    "Interest_area": "Architecture and construction management",
+    "Title": "Construction management (Honours)/property and real estate",
     "Description": "The only course of its kind offered in Australia, your expertise in both construction and property will uniquely position you for extensive employment opportunities.",
     "Location": "Bldg B, Room B1.20, LT 11",
     "Start_time": "12:00 PM",
@@ -62,7 +66,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-006",
@@ -75,7 +80,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-007",
@@ -88,7 +94,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-008",
@@ -101,7 +108,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-009",
@@ -114,12 +122,13 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-010",
     "Interest_area": "Psychology",
-    "Title": "Psychology",
+    "Title": "Nursing and midwifery",
     "Description": "Discover how our psychology courses expose you to the biological, developmental, social and cognitive factors that affect the way humans think, feel and behave. Start on the path to becoming a registered psychologist equipped to work in a range of psychology fields such as clinical, forensic, organisational, educational, health and more. Undergraduate psychology at Deakin leads the way among Victorian universities and is ranked by our students to be well above the national benchmark for education experience, learning resources and teaching quality (Quality Indicators for Learning and Teaching (QILT) 2018).",
     "Location": "Bldg B, Room B1.77, LT 3",
     "Start_time": "10:30 AM",
@@ -127,7 +136,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-011",
@@ -140,7 +150,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-012",
@@ -153,7 +164,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-013",
@@ -166,7 +178,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-014",
@@ -179,7 +192,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-015",
@@ -192,7 +206,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-016",
@@ -205,7 +220,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-017",
@@ -218,7 +234,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws; Bachelor of Commerce"
   },
   {
     "Event_code": "BW-018",
@@ -231,7 +248,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-019",
@@ -244,7 +262,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws; Bachelor of Education (Primary)"
   },
   {
     "Event_code": "BW-020",
@@ -257,7 +276,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-021",
@@ -270,7 +290,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-022",
@@ -283,7 +304,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-023",
@@ -296,7 +318,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-024",
@@ -309,20 +332,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-025",
     "Interest_area": "",
     "Title": "Pathways to Deakin",
-    "Description": "The traditional path from Year 12 to university isn�t the only way to Deakin. Learn more about our alternate pathways to starting your dream degree at Deakin, either through courses at Deakin, with our partner Deakin College or our TAFE partners across Victoria.",
+    "Description": "The traditional path from Year 12 to university isn't the only way to Deakin. Learn more about our alternate pathways to starting your dream degree at Deakin, either through courses at Deakin, with our partner Deakin College or our TAFE partners across Victoria.",
     "Location": "Bldg B, Room B3.07, LT 5",
     "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-026",
@@ -335,7 +360,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-027",
@@ -348,20 +374,22 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-028",
     "Interest_area": "",
     "Title": "Pathways to Deakin",
-    "Description": "The traditional path from Year 12 to university isn�t the only way to Deakin. Learn more about our alternate pathways to starting your dream degree at Deakin, either through courses at Deakin, with our partner Deakin College or our TAFE partners across Victoria.",
+    "Description": "The traditional path from Year 12 to university isn't the only way to Deakin. Learn more about our alternate pathways to starting your dream degree at Deakin, either through courses at Deakin, with our partner Deakin College or our TAFE partners across Victoria.",
     "Location": "Bldg B, Room B3.07, LT 5",
     "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-029",
@@ -374,7 +402,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-030",
@@ -387,7 +416,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-031",
@@ -400,7 +430,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-032",
@@ -413,7 +444,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-033",
@@ -426,7 +458,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-034",
@@ -439,33 +472,36 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-035",
     "Interest_area": "Humanities, social sciences and languages",
     "Title": "Anthropology",
-    "Description": "Want to learn more about the lives of people in different societies? Come and learn about what you�ll learn through the study of anthropology and the different careers pathways available.",
+    "Description": "Want to learn more about the lives of people in different societies? Come and learn about what you'll learn through the study of anthropology and the different careers pathways available.",
     "Location": "Bldg BC, Level 2, East 2",
     "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-036",
     "Interest_area": "Humanities, social sciences and languages",
     "Title": "Associate Degree of Arts",
-    "Description": "Our Associate Degree of Arts provides a pathway to university study and guaranteed entry into Deakin�s Bachelor of Arts or Bachelor of Criminology. You also have the option to transition into other Deakin undergraduate programs, with credit.",
+    "Description": "Our Associate Degree of Arts provides a pathway to university study and guaranteed entry into Deakin's Bachelor of Arts or Bachelor of Criminology. You also have the option to transition into other Deakin undergraduate programs, with credit.",
     "Location": "Bldg BC, Level 2, East 2",
     "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-037",
@@ -478,7 +514,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-038",
@@ -491,7 +528,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-039",
@@ -504,7 +542,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-040",
@@ -517,7 +556,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-041",
@@ -530,7 +570,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-042",
@@ -543,7 +584,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-043",
@@ -556,7 +598,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-044",
@@ -569,20 +612,22 @@
     "Session_type": "Tour",
     "Tour_notes": "Every 15 mins from 12pm.",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-045",
     "Interest_area": "",
     "Title": "Higher Degree by Research - Art and performance exhibition",
-    "Description": "Visit the Art Gallery and view an exhibition of current art and performance Higher Degree by Research candidates. The exhibition will include a special performance especially for Open Day alongside the work of some of Deakin�s artistic researchers.",
-    "Location": "Bldg FA",
+    "Description": "Visit the Art Gallery and view an exhibition of current art and performance Higher Degree by Research candidates. The exhibition will include a special performance especially for Open Day alongside the work of some of Deakin's artistic researchers.",
+    "Location": "Bldg FA, Deakin Art Gallery",
     "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-046",
@@ -595,7 +640,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-047",
@@ -608,20 +654,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-048",
     "Interest_area": "Law",
     "Title": "Law",
-    "Description": "Do you have a passion for law? Discover what it�s like to study law at Deakin, one of the few degrees offered in Australia that is home to an innovative practising law clinic.",
+    "Description": "Do you have a passion for law? Discover what it's like to study law at Deakin, one of the few degrees offered in Australia that is home to an innovative practising law clinic.",
     "Location": "Bldg HC, Room HC2.005, LT 13",
     "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-049",
@@ -634,7 +682,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-050",
@@ -647,20 +696,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-051",
     "Interest_area": "Law",
     "Title": "Law",
-    "Description": "Do you have a passion for law? Discover what it�s like to study law at Deakin, one of the few degrees offered in Australia that is home to an innovative practising law clinic.",
+    "Description": "Do you have a passion for law? Discover what it's like to study law at Deakin, one of the few degrees offered in Australia that is home to an innovative practising law clinic.",
     "Location": "Bldg HC, Room HC2.005, LT 13",
     "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws"
   },
   {
     "Event_code": "BW-052",
@@ -673,12 +724,13 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-053",
     "Interest_area": "Media, communication and creative arts",
-    "Title": "Third year visual arts studio",
+    "Title": "Third-year visual arts studio",
     "Description": "Visit our specilaised visual art studio and take a glimpse at the amazing work of our third year and postgraduate visual arts students.",
     "Location": "Bldg HD, Room HD2.006, Richard Searby Room, Visual Arts Studio",
     "Start_time": "9:00 AM",
@@ -686,7 +738,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-054",
@@ -699,7 +752,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-055",
@@ -712,7 +766,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-056",
@@ -725,7 +780,8 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-057",
@@ -738,20 +794,22 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-058",
     "Interest_area": "Law",
     "Title": "Witness examination",
-    "Description": "Join us for a live witness examination in a mock court. Learn about the various kinds of examination and the different meanings behind �Objection, your Honour� as the witness testifies.",
+    "Description": "Join us for a live witness examination in a mock court. Learn about the various kinds of examination and the different meanings behind 'Objection, your Honour' as the witness testifies.",
     "Location": "Bldg HD, Room HD3.009",
     "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
-    "Session_type": "Experience, Course information session",
+    "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-059",
@@ -764,46 +822,50 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Commerce"
   },
   {
     "Event_code": "BW-060",
     "Interest_area": "Law",
     "Title": "Witness examination",
-    "Description": "Join us for a live witness examination in a mock court. Learn about the various kinds of examination and the different meanings behind �Objection, your Honour� as the witness testifies.",
+    "Description": "Join us for a live witness examination in a mock court. Learn about the various kinds of examination and the different meanings behind 'Objection, your Honour' as the witness testifies.",
     "Location": "Bldg HD, Room HD3.009",
     "Start_time": "2:30 PM",
     "End_time": "3:00 PM",
-    "Session_type": "Experience, Course information session",
+    "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws"
   },
   {
     "Event_code": "BW-061",
     "Interest_area": "",
     "Title": "Empowering entrepreneurs at Deakin",
-    "Description": "SPARK Deakin supports students in learning how to build a business or social enterprise, turning ideas into projects. Learn how with funding, support and mentorship, you�ll be able to take your ideas into the world.",
+    "Description": "SPARK Deakin supports students in learning how to build a business or social enterprise, turning ideas into projects. Learn how with funding, support and mentorship, you'll be able to take your ideas into the world.",
     "Location": "Bldg HE, Room HE3.002",
     "Start_time": "10:00 AM",
     "End_time": "10:30 AM",
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-062",
-    "Interest_area": "",
+    "Interest_area": "Sport",
     "Title": "Deakin's Elite Athlete Program",
-    "Description": "Learn about Deakin�s Elite Athlete Program and how Deakin can assist you with balancing your studies and sporting commitments. Hear from current students about how they utilise our program to help them succeed both on and off the field.",
+    "Description": "Learn about Deakin's Elite Athlete Program and how Deakin can assist you with balancing your studies and sporting commitments. Hear from current students about how they utilise our program to help them succeed both on and off the field.",
     "Location": "Bldg HE, Room HE3.002",
     "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-063",
@@ -816,64 +878,69 @@
     "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Information Technology"
   },
   {
     "Event_code": "BW-064",
     "Interest_area": "",
     "Title": "Mind Racer",
-    "Description": "Step into the Mind Racer arena for the ultimate test of brainpower. Battle your friends and future classmates in a race of mind over matter utilising the latest in brain-computer interface technology. Do you have what it takes to land first place? There�s only one way to find out.",
+    "Description": "Step into the Mind Racer arena for the ultimate test of brainpower. Battle your friends and future classmates in a race of mind over matter utilising the latest in brain-computer interface technology. Do you have what it takes to land first place? There's only one way to find out.",
     "Location": "Bldg HF, Level 2, Central Precinct",
     "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws; Bachelor of Information Technology; Bachelor of Education (Primary); Bachelor of Commerce"
   },
   {
     "Event_code": "BW-065",
     "Interest_area": "",
     "Title": "Deakin residences tours",
-    "Description": "Join in on one of our residence tours and discover the different types of accommodation available at our Melbourne Burwood Campus. Learn from the experts just what it�s like to live near campus and how you can become part of our close-knit resident community.",
+    "Description": "Join in on one of our residence tours and discover the different types of accommodation available at our Melbourne Burwood Campus. Learn from the experts just what it's like to live near campus and how you can become part of our close-knit resident community.",
     "Location": "Bldg HF, Level 2, Central Precinct",
     "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
-    "Session_type": "Tour",
+    "Session_type": "General information session",
     "Tour_notes": "Tours departing on demand.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Information Technology; Bachelor of Education (Primary); Bachelor of Commerce"
   },
   {
     "Event_code": "BW-066",
     "Interest_area": "",
     "Title": "Campus tours",
-    "Description": "Join one of our tours to discover more of the Burwood campus. Led by our Student Ambassadors who know all the ins and outs of Deakin, you�ll get a feel for campus life while learning more about our study areas, state-of-the-art facilities, and how to make the best transition into university.",
+    "Description": "Join one of our tours to discover more of the Burwood campus. Led by our Student Ambassadors who know all the ins and outs of Deakin, you'll get a feel for campus life while learning more about our study areas, state-of-the-art facilities, and how to make the best transition into university.",
     "Location": "Bldg HF, Level 2, Central Precinct, Tour departure booth",
     "Start_time": "9:30 AM",
     "End_time": "2:30 PM",
     "Session_type": "Tour",
     "Tour_notes": "Every 30 mins from 9.30am.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws; Bachelor of Education (Primary)"
   },
   {
     "Event_code": "BW-067",
     "Interest_area": "Sport",
     "Title": "Exercise and sport science lab tour",
-    "Description": "Be one of the first to tour our brand new Specialised Indoor Exercise and Sport Science Building, equipped with specialist facilities and equipment for biomechanics, motor learning and exercise prescription teaching. You�ll see our climate chamber, 40m indoor running lanes, motion capture systems and more.",
+    "Description": "Be one of the first to tour our brand new Specialised Indoor Exercise and Sport Science Building, equipped with specialist facilities and equipment for biomechanics, motor learning and exercise prescription teaching. You'll see our climate chamber, 40m indoor running lanes, motion capture systems and more.",
     "Location": "Bldg HF, Level 2, Central Precinct, Tour departure booth",
     "Start_time": "9:30 AM",
     "End_time": "2:30 PM",
     "Session_type": "Tour",
     "Tour_notes": "Every 30 mins from 9.30am.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-068",
     "Interest_area": "Food, nutrition and dietetics",
-    "Title": "Nutrition science lab tour",
+    "Title": "Nutrition and dietetics lab tour",
     "Description": "Visit our food sensory labs at the Centre for Advanced Sensory Science (CASS). Participate in various food demonstrations, sample different freeze dried foods, marvel at surface bacterial swabs and learn about different manufacturing and packaging techniques.",
     "Location": "Bldg HF, Level 2, Central Precinct, Tour departure booth",
     "Start_time": "9:30 AM",
@@ -881,7 +948,8 @@
     "Session_type": "Tour",
     "Tour_notes": "Every 30 mins from 9.30am.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-069",
@@ -894,7 +962,8 @@
     "Session_type": "Tour",
     "Tour_notes": "Every 30 mins from 10am.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-070",
@@ -907,7 +976,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws; Bachelor of Information Technology; Bachelor of Education (Primary); Bachelor of Commerce"
   },
   {
     "Event_code": "BW-071",
@@ -920,7 +990,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-072",
@@ -933,7 +1004,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-073",
@@ -946,7 +1018,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-074",
@@ -959,7 +1032,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-075",
@@ -972,7 +1046,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-076",
@@ -985,7 +1060,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-077",
@@ -998,20 +1074,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-078",
     "Interest_area": "Health sciences and allied health",
     "Title": "Occupational therapy",
-    "Description": "Study occupational therapy and gain the specialised knowledge to improve clients� lives every day, as well as the skills to promote good health and wellbeing at home, at work and in the community. Taught in our new state-of-the-art simulated teaching labs, you'll have access to hands-on assistive technologies in the classroom, in addition to more than 1000 hours of hands-on experience through practical placements.",
+    "Description": "Study occupational therapy and gain the specialised knowledge to improve clients' lives every day, as well as the skills to promote good health and wellbeing at home, at work and in the community. Taught in our new state-of-the-art simulated teaching labs, you'll have access to hands-on assistive technologies in the classroom, in addition to more than 1000 hours of hands-on experience through practical placements.",
     "Location": "Bldg I, Room I2.05, LT 2",
     "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-079",
@@ -1024,7 +1102,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-080",
@@ -1037,7 +1116,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-081",
@@ -1050,20 +1130,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-082",
     "Interest_area": "Environment",
     "Title": "Wildlife conservation and environmental sustainability",
-    "Description": "Discover what it�s like to study environmental management and wildlife conservation at Deakin. While environmental management focuses on finding sustainable solutions to the world�s most pressing environmental problems, wildlife and conservation biology offers theoretical and practical experience in areas including wildlife ecology and biodiversity and conservation.",
+    "Description": "Discover what it's like to study environmental management and wildlife conservation at Deakin. While environmental management focuses on finding sustainable solutions to the world's most pressing environmental problems, wildlife and conservation biology offers theoretical and practical experience in areas including wildlife ecology and biodiversity and conservation.",
     "Location": "Bldg I, Room I2.07, LT 1A",
     "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-083",
@@ -1076,7 +1158,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-084",
@@ -1089,7 +1172,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Education (Primary)"
   },
   {
     "Event_code": "BW-085",
@@ -1102,7 +1186,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-086",
@@ -1115,7 +1200,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-087",
@@ -1128,7 +1214,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-088",
@@ -1141,12 +1228,13 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-089",
     "Interest_area": "Sciences",
-    "Title": "Centre for Cellular and Molecular Biology (CCMB)",
+    "Title": "Centre for Cellular and Molecular Biology (CCMB) tour",
     "Description": "CCMB conducts research involving cellular and molecular biology. Tour the laboratories, talk to research students and see a demonstration using a confocal microscope, cell culture facilities and research equipment.",
     "Location": "Bldg L, Level 1",
     "Start_time": "12:30 PM",
@@ -1154,7 +1242,8 @@
     "Session_type": "Tour",
     "Tour_notes": "Every 30 mins from 12.30pm.",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-090",
@@ -1167,20 +1256,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-091",
     "Interest_area": "Business",
     "Title": "Management and human resources",
-    "Description": "Discover what it�s like to study management and human resource management as part of our Bachelor of Commerce. With a strong practical focus, you�ll be exposed to work-integrated learning opportunities and develop the skills you need to get the job you want.",
+    "Description": "Discover what it's like to study management and human resource management as part of our Bachelor of Commerce. With a strong practical focus, you'll be exposed to work-integrated learning opportunities and develop the skills you need to get the job you want.",
     "Location": "Bldg LB, Room LB2.100",
     "Start_time": "10:30 AM",
     "End_time": "11:00 AM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Commerce"
   },
   {
     "Event_code": "BW-092",
@@ -1193,7 +1284,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Commerce"
   },
   {
     "Event_code": "BW-093",
@@ -1206,7 +1298,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-094",
@@ -1219,59 +1312,64 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-095",
     "Interest_area": "",
     "Title": "Deakin residences accommodation",
-    "Description": "Join us to tour and learn more about the variety of accommodation options available at our Burwood Campus. Discover the great benefits of living so close to campus, exclusive programs and events for residents and what it�s like to be part of an enthusiastic and supporting community, all while making friends for life.",
+    "Description": "Join us to tour and learn more about the variety of accommodation options available at our Burwood campus. Discover the great benefits of living so close to campus, exclusive programs and events for residents and what it's like to be part of an enthusiastic and supporting community, all while making friends for life.",
     "Location": "Bldg LB, Room LB2.101",
     "Start_time": "11:00 AM",
     "End_time": "12:00 PM",
-    "Session_type": "General information session, Tour",
+    "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws"
   },
   {
     "Event_code": "BW-096",
     "Interest_area": "Business",
     "Title": "Marketing",
     "Description": "Offered as a major in our Bachelor of Commerce, marketing develops knowledge and skills to prepare you for a range of different marketing roles in marketing communications, branding, consumer engagement, marketing insights and strategy and specialist areas like services marketing and business marketing.",
-    "Location": "Bldg LB, Room LB2.101",
+    "Location": "Bldg LB, Room LB2.100",
     "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-097",
     "Interest_area": "",
     "Title": "Deakin residences accommodation",
-    "Description": "Join us to tour and learn more about the variety of accommodation options available at our Burwood Campus. Discover the great benefits of living so close to campus, exclusive programs and events for residents and what it�s like to be part of an enthusiastic and supporting community, all while making friends for life.",
+    "Description": "Join us to tour and learn more about the variety of accommodation options available at our Burwood Campus. Discover the great benefits of living so close to campus, exclusive programs and events for residents and what it's like to be part of an enthusiastic and supporting community, all while making friends for life.",
     "Location": "Bldg LB, Room LB2.101",
     "Start_time": "1:00 PM",
     "End_time": "2:00 PM",
-    "Session_type": "General information session, Tour",
+    "Session_type": "General information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-098",
     "Interest_area": "Business",
     "Title": "Commerce",
-    "Description": "Discover what it�s like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
+    "Description": "Discover what it's like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Bldg LB, Room LB2.207, LT 14",
     "Start_time": "9:30 AM",
     "End_time": "10:00 AM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-099",
@@ -1284,20 +1382,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-100",
     "Interest_area": "Business",
     "Title": "Commerce",
-    "Description": "Discover what it�s like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
+    "Description": "Discover what it's like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Bldg LB, Room LB2.207, LT 14",
     "Start_time": "11:00 AM",
     "End_time": "11:30 AM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Commerce"
   },
   {
     "Event_code": "BW-101",
@@ -1310,20 +1410,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-102",
     "Interest_area": "Business",
     "Title": "Commerce",
-    "Description": "Discover what it�s like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
+    "Description": "Discover what it's like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Bldg LB, Room LB2.207, LT 14",
     "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-103",
@@ -1336,20 +1438,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-104",
     "Interest_area": "Business",
     "Title": "Commerce",
-    "Description": "Discover what it�s like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
+    "Description": "Discover what it's like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Bldg LB, Room LB2.207, LT 14",
     "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-105",
@@ -1362,7 +1466,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-106",
@@ -1375,7 +1480,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Commerce"
   },
   {
     "Event_code": "BW-107",
@@ -1388,7 +1494,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-108",
@@ -1401,7 +1508,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-109",
@@ -1414,12 +1522,13 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-110",
-    "Interest_area": "Architecture and built environment",
-    "Title": "PaperSpace display",
+    "Interest_area": "Architecture and construction management",
+    "Title": "Architecture student exhibition - PaperSpace",
     "Description": "Catch a sneak peak at our mini PaperSpace exhibition. The annual PaperSpace event is held at Federation square in November and showcases the best of our students work.",
     "Location": "Bldg M, Level 1",
     "Start_time": "9:00 AM",
@@ -1427,7 +1536,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-111",
@@ -1440,7 +1550,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-112",
@@ -1453,7 +1564,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-113",
@@ -1466,20 +1578,22 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Information Technology"
   },
   {
     "Event_code": "BW-114",
     "Interest_area": "Education and teaching",
     "Title": "Teaching science in schools",
-    "Description": "Discover why teaching science and technology in today�s classroom is an exciting and challenging activity. Discover contemporary STEM teaching by participating in activities and challenging yourself to design a new solution in our new science education labs.",
+    "Description": "Discover why teaching science and technology in today's classroom is an exciting and challenging activity. Discover contemporary STEM teaching by participating in activities and challenging yourself to design a new solution in our new science education labs.",
     "Location": "Bldg M, Room M1.103",
     "Start_time": "12:00 PM",
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-115",
@@ -1492,7 +1606,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-116",
@@ -1505,7 +1620,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-117",
@@ -1518,7 +1634,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-118",
@@ -1531,7 +1648,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-119",
@@ -1544,7 +1662,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-120",
@@ -1557,7 +1676,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-121",
@@ -1570,7 +1690,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-122",
@@ -1583,7 +1704,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-123",
@@ -1596,7 +1718,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Education (Primary)"
   },
   {
     "Event_code": "BW-124",
@@ -1609,7 +1732,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Education (Primary)"
   },
   {
     "Event_code": "BW-125",
@@ -1622,7 +1746,8 @@
     "Session_type": "Tour",
     "Tour_notes": "Every 30 mins from 9.30am.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-126",
@@ -1635,7 +1760,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-127",
@@ -1648,7 +1774,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-128",
@@ -1661,7 +1788,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-129",
@@ -1674,7 +1802,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-130",
@@ -1687,20 +1816,22 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-131",
     "Interest_area": "Media, communication and creative arts",
     "Title": "Writing and literature",
-    "Description": "Join us for this two part session where you�ll meet published authors and poets and gain insight into being a practising writer, then find out all you need to know about studying writing and literature at Deakin and how you can turn your hobby or talent into a fulfilling career.",
+    "Description": "Join us for this two part session where you'll meet published authors and poets and gain insight into being a practising writer, then find out all you need to know about studying writing and literature at Deakin and how you can turn your hobby or talent into a fulfilling career.",
     "Location": "Bldg P, Room P1.03",
     "Start_time": "12:00 PM",
     "End_time": "1:00 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-132",
@@ -1713,7 +1844,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-133",
@@ -1726,20 +1858,22 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-134",
     "Interest_area": "Media, communication and creative arts",
     "Title": "Film and television studio",
-    "Description": "The Home of NITV�s Marngrook Footy Show. Join in crewing the TV studio or be part of the live audience. Activities run all day with special guest appearances and surprises. See film and animation screenings and see examples of work by third year film and animation students.",
+    "Description": "The Home of NITV's Marngrook Footy Show. Join in crewing the TV studio or be part of the live audience. Activities run all day with special guest appearances and surprises. See film and animation screenings and see examples of work by third year film and animation students.",
     "Location": "Bldg P, Room P1.21, Film and Television Studio",
     "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-135",
@@ -1752,7 +1886,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-136",
@@ -1765,7 +1900,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-137",
@@ -1778,7 +1914,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-138",
@@ -1791,7 +1928,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-139",
@@ -1804,7 +1942,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-140",
@@ -1817,7 +1956,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-141",
@@ -1830,7 +1970,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-142",
@@ -1843,7 +1984,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-143",
@@ -1856,7 +1998,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-144",
@@ -1869,7 +2012,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-145",
@@ -1882,7 +2026,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-146",
@@ -1895,7 +2040,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-147",
@@ -1905,10 +2051,11 @@
     "Location": "Bldg P, Room P3.14, Design Studio",
     "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
-    "Session_type": "Course information session, Experience",
+    "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-148",
@@ -1921,7 +2068,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-149",
@@ -1934,7 +2082,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-150",
@@ -1947,7 +2096,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-151",
@@ -1960,33 +2110,36 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-152",
     "Interest_area": "Health sciences and allied health",
     "Title": "Deakin's Community Garden",
     "Description": "Explore our Community Garden and 'collect a free packet of seedlings' while you chat with our health sciences staff and students about health and sustainability careers in food security, community engagement, rehabilitation, mental health, the environment and more.",
-    "Location": "Bldg S",
+    "Location": "Bldg S (outside)",
     "Start_time": "12:30 PM",
     "End_time": "1:30 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-153",
     "Interest_area": "Sport",
     "Title": "Challenge yourself on the Deakin Reactor",
-    "Description": "How do you think your hand-eye coordination compares to elite athletes? Check out our Deakin Reactor and test your skills against professional athletes from the Geelong Cats, the Samsung Australian Diamonds and the Deakin Melbourne Boomers.",
+    "Description": "How do you think your hand-eye coordination compares to elite athletes? Check out our Deakin Reactor and test your skills against professional athletes from the Geelong Cats, the Melbourne Vixens and the Deakin Melbourne Boomers.",
     "Location": "Bldg U, Level 1",
     "Start_time": "9:00 AM",
     "End_time": "3:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-154",
@@ -1999,7 +2152,8 @@
     "Session_type": "Tour",
     "Tour_notes": "Tours available on request.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Laws; Bachelor of Information Technology; Bachelor of Education (Primary); Bachelor of Commerce"
   },
   {
     "Event_code": "BW-155",
@@ -2012,7 +2166,8 @@
     "Session_type": "Experience",
     "Tour_notes": "",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-156",
@@ -2025,7 +2180,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Information Technology"
   },
   {
     "Event_code": "BW-157",
@@ -2038,12 +2194,13 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Information Technology"
   },
   {
     "Event_code": "BW-158",
     "Interest_area": "Information technology",
-    "Title": "Information Technology - cyber security, cloud computing, VR and creative technologies",
+    "Title": "Information technology - cyber security, cloud computing, VR and creative technologies",
     "Description": "IT professionals are accelerating digital transformation across industry sectors, driving innovation and enabling economic growth. Our Bachelor of Information Technology provides you with contemporary knowledge, as well as the skills and experience required for a successful career as an IT professional. Explore options available to tailor course outcomes to your career aspirations.",
     "Location": "Bldg X, Room X2.05, LT 12",
     "Start_time": "10:30 AM",
@@ -2051,7 +2208,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Information Technology"
   },
   {
     "Event_code": "BW-159",
@@ -2064,7 +2222,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-160",
@@ -2077,11 +2236,12 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Morning",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": "Bachelor of Information Technology"
   },
   {
     "Event_code": "BW-161",
-    "Interest_area": "Environment",
+    "Interest_area": "Environment; Science",
     "Title": "Marine biology or marine science? What's the difference?",
     "Description": "Find out the difference between our marine biology and marine science degrees, both offering unique diverse marine environments to learn in that will allow you to pursue your passion for marine life and climate preservation. Hear how fieldwork and industry placements will prepare you for a rewarding career.",
     "Location": "Bldg X, Room X2.05, LT 12",
@@ -2090,7 +2250,8 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-162",
@@ -2103,33 +2264,36 @@
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-163",
     "Interest_area": "Environment",
     "Title": "Wildlife conservation and environmental sustainability",
-    "Description": "Discover what it�s like to study environmental management and wildlife conservation at Deakin. While environmental management focuses on finding sustainable solutions to the world�s most pressing environmental problems, wildlife and conservation biology offers theoretical and practical experience in areas including wildlife ecology and biodiversity and conservation.",
+    "Description": "Discover what it's like to study environmental management and wildlife conservation at Deakin. While environmental management focuses on finding sustainable solutions to the world's most pressing environmental problems, wildlife and conservation biology offers theoretical and practical experience in areas including wildlife ecology and biodiversity and conservation.",
     "Location": "Bldg X, Room X2.05, LT 12",
     "Start_time": "1:00 PM",
     "End_time": "1:30 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-164",
     "Interest_area": "Sciences",
     "Title": "Forensic science",
-    "Description": "Study our professionally accredited forensic science degree and ensure you�re equipped with the formal training to examine and present scientific evidence. Upon graduation you�ll be ready to work in fields including pharmaceutical and chemical industries, risk analysis, insurance investigation or as a forensic scientist.",
+    "Description": "Study our professionally accredited forensic science degree and ensure you're equipped with the formal training to examine and present scientific evidence. Upon graduation you'll be ready to work in fields including pharmaceutical and chemical industries, risk analysis, insurance investigation or as a forensic scientist.",
     "Location": "Bldg X, Room X2.05, LT 12",
     "Start_time": "1:30 PM",
     "End_time": "2:00 PM",
     "Session_type": "Course information session",
     "Tour_notes": "",
     "Session_start": "Afternoon",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   },
   {
     "Event_code": "BW-165",
@@ -2142,6 +2306,7 @@
     "Session_type": "Tour",
     "Tour_notes": "Every 60 mins from 10am.",
     "Session_start": "All day",
-    "Active": "T"
+    "Active": "T",
+    "Pre_selected": ""
   }
 ]

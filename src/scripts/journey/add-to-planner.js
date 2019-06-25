@@ -1,10 +1,9 @@
 // import {check_if_user_logged_in} from "./session-handler";
 import {getCookieValue} from "./get-cookies";
-import tick_cards from "./tick-cards";
+import {show_hide_modal} from "./show-hide-modal";
 
  var add_to_planner = (function(){
     var clickedEventID = '';
-    
 
     //  $('.owl-carousel .selected').each(function() {
     //       course_arr.push($(this).data("eventid"));
@@ -42,12 +41,19 @@ import tick_cards from "./tick-cards";
       else {
         course_count -= 1;
         clickedEventID = $(this).data("eventid");
-        course_arr = course_arr.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
-        console.log('Inside else', course_arr);
+        // Remove event from local storage
+        let storedData = localStorage.getItem("od_saved_events");
+        if (storedData) {
+          let od_saved_events = JSON.parse(storedData);
+
+          od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
+          console.log('Inside else', od_saved_events);
+          localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
       }
+    }
       $('.js-sessions-added').text(course_count);
     }
-    else console.log("Please login first before adding events to your calendar");
+    else  show_hide_modal();
   });
 
     // ---------------------
@@ -57,7 +63,7 @@ import tick_cards from "./tick-cards";
     $('.add-to-planner').on('click', function () {
      
     let logged_in = getCookieValue('od-token');
-    console.log("logged_in", logged_in);
+    // console.log("logged_in", logged_in);
     // console.log("original_events_arr ", original_events_arr);
     if (logged_in) {
     // Get the values of all 3 cookies
@@ -107,8 +113,7 @@ import tick_cards from "./tick-cards";
         }
     });
     }
-    else console.log("User is NOT logged in");
-  
+    else show_hide_modal();
 }); // Add to planner end
 
 }());
