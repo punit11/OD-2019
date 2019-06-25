@@ -289,7 +289,7 @@ $("#register-form").submit(function (e) {
             // console.log("User name is " + cognitoUser.getUsername());
             var successPost = result.userConfirmed;
             //  var successPost = "Yes";
-            // marketoSubmit(successPost, fname, useremail, mobile_mkt, year, studentType, studyLevel, campusLocation, emailOptIn);
+            marketoSubmit(successPost, fname, useremail, mobile_mkt, year, studentType, studyLevel, campusLocation, emailOptIn);
         });
     }
 });

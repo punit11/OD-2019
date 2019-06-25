@@ -106,7 +106,7 @@ import {show_hide_modal} from "./show-hide-modal";
         async: false,
         success: function (data) {
             console.log("success");
-            $(".planner-add-success").text("Events were sucessfully added to your planner.").delay(3000).fadeOut('slow');
+            $(".planner-add-success").text("Events were sucessfully added to your planner.").show().delay(3000).fadeOut('slow');
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(textStatus, errorThrown);
@@ -118,4 +118,4 @@ import {show_hide_modal} from "./show-hide-modal";
 
 }());
 
-export {add_to_planner};
+export default add_to_planner;
