@@ -135,6 +135,7 @@
         &:first-child {
           border-right: 1px solid $black;
           padding-right: 5%;
+          min-width: 45%;
 
           p {
             max-width: 40rem;

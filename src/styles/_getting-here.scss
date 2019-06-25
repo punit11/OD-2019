@@ -103,10 +103,10 @@
             &-details {
                 flex-direction: column;
                 order: 2;
-                max-width: 45%;
-                margin-right: 5%;
 
                 @include md {
+                    max-width: 45%;
+                    margin-right: 5%;
                     order: 1;
                 }
 

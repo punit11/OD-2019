@@ -49,6 +49,10 @@
             background-color: $charcoal!important;
         }
     }
+
+    &:after {
+        display: none;
+    }
 }
 
 
