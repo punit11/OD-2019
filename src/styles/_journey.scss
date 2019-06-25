@@ -129,11 +129,15 @@ nav {
     }
     
     .modal-content {
-        padding: 4.5rem 6rem 0;
+        padding: 4.5rem 2rem 0;
         max-height: 660px;
         overflow: auto;
         // top: 200px;
         height: 100%;
+
+        @include md {
+            padding: 4.5rem 6rem 0;
+        }
     }
 
     .modal-body {
@@ -220,9 +224,13 @@ nav {
     }
 }
 
-#form-success {
+#form-success, .f1-success {
     text-align: center;
-    padding: 0 9rem 9rem;
+    padding: 0 0 4rem;
+
+    @include md {
+        padding: 0 8rem 9rem;
+    }
 
     .check {
         display: flex;
