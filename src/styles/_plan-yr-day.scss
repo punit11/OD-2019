@@ -108,6 +108,10 @@
       padding: 0 4rem 4rem;
     }
 
+    &.flexContainer.flexContainer-mobile-wrap {
+      padding: 0 4rem;
+    }
+
     .orange {
       background-color: transparent;
       color: $orange;
@@ -131,6 +135,7 @@
         &:first-child {
           border-right: 1px solid $black;
           padding-right: 5%;
+          min-width: 45%;
 
           p {
             max-width: 40rem;

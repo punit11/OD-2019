@@ -104,11 +104,18 @@
                 flex-direction: column;
                 order: 2;
 
+                @include md {
+                    max-width: 45%;
+                    margin-right: 5%;
+                    order: 1;
+                }
 
                 @include lg {
                     flex-direction: row;
                     max-width: 54%!important;
                     flex-wrap: wrap;
+                    max-width: 50%;
+                    margin-right: 0;
                 }
                 
 
@@ -170,14 +177,23 @@
                 left: -4.3rem;
                 top: -3.3rem;
 
+                @include md {
+                    left: 0;
+                    top: 0;
+                }
+
                 @include lg {
                     overflow: hidden;
                     max-height: 54.7rem;
-                    max-width: 69rem!important;
+                    max-width: 42vw!important;
                     position: absolute;
-                    right: 7rem;
-                    left: auto;
+                    right: auto;
+                    left: 60%;
                     top: auto;
+                }
+
+                @include xl {
+                    left: 54%;
                 }
             }
         }
@@ -187,7 +203,8 @@
     position: relative;
     text-align: right;
     height: 547px;
-    max-width: 631px;
+    // max-width: 631px;
+    max-width: 682px;
     width: calc(100% + 6.6rem);
 }
 
@@ -195,11 +212,20 @@
     overflow: hidden;
     background: none!important;
     height: 547px;
-    max-width: 631px;
+    max-width: 682px;
     width: calc(100% + 8.6rem);
     
     @include md {
+        // width: 50vw;
+        width: 100%;
+    }
+
+    @include lg {
+        // width: 42vw;
+    }
+
+    @include xxl {
         height: 547px;
-        width: 631px;	
+        width: 682px;	
     }
 }

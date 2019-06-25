@@ -50,6 +50,10 @@
             background-color: $charcoal!important;
         }
     }
+
+    &:after {
+        display: none;
+    }
 }
 
 .select2-container--default:after {
