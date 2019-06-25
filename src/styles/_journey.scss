@@ -142,10 +142,6 @@ nav {
 
     .modal-body {
         padding: 0;
-
-        @media (max-width: #{$screen-xs-min}){
-            // padding-bottom: 4.9rem;
-        }
     }
 
     .modal-footer {
@@ -192,7 +188,8 @@ nav {
 
 #login-form,
 #forgot-pwd-form,
-#reset-pwd-form {
+#reset-pwd-form,
+#register-form {
     padding-top: 4.5rem;
     // display: none;
 
@@ -201,11 +198,33 @@ nav {
     }
 
     .button--primary {
-        margin-bottom: 0;
+        // margin-bottom: 0;
+        height: 5rem;
+        border-radius: 2.5rem;
+        width: 100%;
+
+        @include md {
+            width: 50%;
+        }
     }
 
     a {
         color: $teal;
+    }
+}
+
+#login-form {
+    .button--primary {
+        margin: 4rem auto 0;
+        @include md {
+            
+        }
+    }
+}
+
+#register-form {
+    @media (max-width: #{$screen-xs-min}){
+        padding-bottom: 4.9rem;
     }
 }
 
@@ -221,6 +240,12 @@ nav {
     button {
         display: block;
         margin: auto;
+    }
+    
+    .form-group {
+        p {
+            margin: 0;
+        }
     }
 }
 
