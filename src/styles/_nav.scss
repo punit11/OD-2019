@@ -97,6 +97,7 @@ $link-hover-color: #2581DC;
 nav {
   clear: both;
   position: relative;
+  width: 100%;
   z-index: 3;
   ul {
     list-style: none;
@@ -377,3 +378,38 @@ article {
         }
     }
   }
+
+.nav-right {
+    position: absolute;
+    right: 7.5rem;
+    top: 1.8rem;
+
+    svg {
+        display: none;
+    }
+
+    @include md {
+        right: 1.5rem;
+        top: 1.5rem;
+
+        svg {
+            display: inline-block;
+        }
+    }
+}
+
+.num--pink--circle {
+    background: $magenta;
+    display: none;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    flex: 0 0 24px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+
+    @include md {
+        display: inline-flex;
+    }
+}

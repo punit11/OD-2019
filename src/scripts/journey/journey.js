@@ -3,6 +3,8 @@ import {select2} from "select2";
 var journey = $(function() {
     $('.js-journey').on('click', function(){
         
+        $("body").addClass('noscroll');
+
         console.log("Working");
         if($('.modal.fade').hasClass('out')) {
             $('.modal.fade').removeClass('out').addClass('in').show();
@@ -24,6 +26,7 @@ var journey = $(function() {
 
     $('#SignupModal .close').on('click', function(){
         $('#SignupModal').removeClass('in').addClass('out').hide();
+        $("body").removeClass('noscroll');
     });
 
     $('.login-toggle').on('click', function(){
@@ -32,6 +35,14 @@ var journey = $(function() {
         $('form').hide();
         $('form#' + nextform).show();
     });
+
+    $(document).ready(function(){
+        setTimeout(function(){
+            $("head style").remove();
+        }, 1000);
+        
+    });
+    
 }());
 
 export {journey};
