@@ -206,3 +206,10 @@ h1.modal-title{
         width: 900px
     }
 }
+
+// Fixes to counter that stupid STYLE tage added in head
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    margin: 0!important;
+}

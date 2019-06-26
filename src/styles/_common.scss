@@ -56,6 +56,8 @@ body {
   }
 
   @include md {
+    max-width: 400px;
+    max-width: -moz-fit-content;
     max-width: fit-content;
   }
 }
