@@ -106,3 +106,9 @@ box-shadow: none!important;
 .od-select {
     visibility: hidden;
 }
+
+.dayplanner {
+    .select2-dropdown {
+        top: 0;
+    }
+}

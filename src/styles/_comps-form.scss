@@ -20,6 +20,7 @@
             border: none;
             padding: 6% 10%;
             position: relative;
+            max-width: fit-content;
 
             &:before {
                 content: '';
@@ -351,7 +352,7 @@
             margin-bottom: 5rem;
     
             &-intro {
-                font-family: "Worldly Regular";
+                font-family: "Worldly Light";
                 font-size: 1.6rem;
                 line-height: 1.63em;
             }
