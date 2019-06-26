@@ -19,19 +19,4 @@ var secondaryNavbar_scroll = $(function() {
     });
 }());
 
-<<<<<<< HEAD
-// var removeMarketoStyle = $(function(){
-//    setTimeout(() => {
-//     $('head style').remove();    
-//    }, 1000);
-    
-// }());
-=======
-var removeMarketoStyle = $(function(){
-   setTimeout(() => {
-    $('head style').remove();    
-   }, 1000);
-}());
->>>>>>> f2f0fde34cbd6332803850c59b9f7bfe30e2f43b
-
 export {secondaryNavbar_scroll};
