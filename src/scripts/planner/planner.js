@@ -286,6 +286,7 @@ console.log("Select clicked");
               if (storedData !== "undefined") {
               displayPlannerData(campus_value);
               }
+              else $('#no-events-in-planner').show();
       
           } else {
             $( ".not-logged-in a" ).click(function(e) {

@@ -4,6 +4,8 @@ import {show_hide_modal} from "./show-hide-modal";
 
  var add_to_planner = (function(){
     var clickedEventID = '';
+    
+    var od_saved_events = [];
 
     //  $('.owl-carousel .selected').each(function() {
     //       course_arr.push($(this).data("eventid"));
@@ -30,28 +32,32 @@ import {show_hide_modal} from "./show-hide-modal";
 
       // Push the item to localStorage saved events
       let storedData = localStorage.getItem("od_saved_events");
-      if (storedData !== "undefined") {
-        let od_saved_events = JSON.parse(storedData);
-        od_saved_events.push(clickedEventID);
-      // course_arr.push(clickedEventID);
-      // console.log('Arr ', course_arr);
-      localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
-      }
-    }
+
+          if (storedData) {
+            let od_saved_events = JSON.parse(storedData);
+            od_saved_events.push(clickedEventID);
+            localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
+          }
+          else {
+            od_saved_events.push(clickedEventID);
+            localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
+          }
+        }
       else {
         course_count -= 1;
         clickedEventID = $(this).data("eventid");
         // Remove event from local storage
         let storedData = localStorage.getItem("od_saved_events");
-        if (storedData !== "undefined") {
+
+        if (storedData) {
           let od_saved_events = JSON.parse(storedData);
 
           od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
           // console.log('Inside else', od_saved_events);
           localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
       }
-      
     }
+    
       $('.js-sessions-added').text(course_count);
     }
     else  show_hide_modal();
@@ -80,13 +86,13 @@ import {show_hide_modal} from "./show-hide-modal";
       // console.log('Altered array ', course_arr);
 
       let storedData = localStorage.getItem("od_saved_events");
-      if (storedData !== "undefined") {
+      if (storedData) {
         var od_saved_events = JSON.parse(storedData);
       }
 
       // Calculate difference between arrays
       // var arr_diff = original_events_arr.filter(function(obj) { return course_arr.indexOf(obj) == -1; });
-      // console.log('arr_diff ', arr_diff);
+      console.log('od_saved_events ', od_saved_events);
 
       var dataset = {
         sub: sub_value,

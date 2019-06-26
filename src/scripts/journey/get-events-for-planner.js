@@ -21,7 +21,9 @@ function getOdEvents() {
             success: function (data) {
                 console.log("success");
                 getODresults = data;
+                
                 let original_events_arr = getODresults["EventID"];
+
                 console.log('getODresults ', original_events_arr);
 
                 // store array to localstorage

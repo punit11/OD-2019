@@ -6,7 +6,8 @@ var render_ticks = function () {
     var storedData = localStorage.getItem("od_saved_events");
 
     console.log('storedData ', typeof(storedData), storedData);
-    if (storedData !== "undefined") {
+    if ((storedData !== "undefined") && (storedData !== null)) {
+        // if (storedData) {
         console.log('Inside Storeddata');
         let od_saved_events = JSON.parse(storedData);
         console.log("Fetched from lcoal storage", od_saved_events);
