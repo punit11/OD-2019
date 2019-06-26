@@ -55,13 +55,6 @@ $nav-background: #262626;
 $nav-font-color: #ffffff;
 $link-hover-color: #2581DC;
 
-// .navbar-wrapper {
-//     padding-left: 0;
-//     padding-right: 0;
-//     position: relative;
-//     z-index: 2;
-// }
-
 // Outer navigation wrapper
 .navigation {
   background: $charcoal;
@@ -70,20 +63,17 @@ $link-hover-color: #2581DC;
 // Logo and branding
 .brand {
     box-sizing: border-box;
-    // padding: 1rem .9rem;
     position: absolute;
-//   float: left;
-//   line-height: $nav-height;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  top: 1rem;
-  left: .9rem;
-  width: 120px;
-  a,
-  a:visited {
-    color: $nav-font-color;
-    text-decoration: none;
-  }
+    text-transform: uppercase;
+    font-size: 1.4em;
+    top: 1rem;
+    left: .9rem;
+    width: 120px;
+    a,
+    a:visited {
+        color: $nav-font-color;
+        text-decoration: none;
+    }
 }
 
 // Container with no padding for navbar
@@ -115,7 +105,7 @@ nav {
         text-decoration: none;
         position: relative;
 
-        font-family: $font-worldly-bold;
+        font-family: $font-stack-os-bold;
         font-size: 1.6rem;
         &:hover {
           color: $blue;
