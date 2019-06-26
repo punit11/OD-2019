@@ -1,6 +1,6 @@
 import $ from "jquery";
 import {select2} from "select2";
-// import {jQueryScrollbar} from "jquery.scrollbar";
+import {jQueryScrollbar} from "jquery.scrollbar";
 
 const modifySelect = $(function() {
     $('.od-select').select2({

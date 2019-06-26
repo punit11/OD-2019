@@ -6,6 +6,7 @@ import {reg_form_validation} from "./journey/register";
 
 // import "../styles/_base.scss";
 
+
 import "../styles/_journey.scss";
 import "../styles/_modal.scss";
 import "../styles/_select.scss";

@@ -15,18 +15,19 @@ import {add_to_planner} from "./journey/add-to-planner";
 
 
 // Homepage/Generic CSS
-// import "../styles/_base.scss";
+import "../styles/_base.scss";
 
 
 // Location page specific css
 import "../styles/_plan-yr-day.scss";
 import "../styles/_eventcard.scss";
 
-
+// Required for modal
 import "../styles/_modal.scss";
 import "../styles/_select.scss";
 import "../styles/_select2.scss";
 import "../styles/_journey.scss";
+
 
 import "../styles/_scrollbar.scss";
 import "../styles/_buttons.scss";

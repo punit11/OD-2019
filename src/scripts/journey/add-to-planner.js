@@ -47,7 +47,7 @@ import {show_hide_modal} from "./show-hide-modal";
           let od_saved_events = JSON.parse(storedData);
 
           od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
-          console.log('Inside else', od_saved_events);
+          // console.log('Inside else', od_saved_events);
           localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
       }
     }
