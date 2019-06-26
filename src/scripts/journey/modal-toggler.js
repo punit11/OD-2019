@@ -1,7 +1,7 @@
 //$(document).ready(function () {
 
 var modal_toggler = (function() {
-    $(".login-toggle").click(function () {
+    $("#SignupModal .login-toggle").click(function () {
         console.log("Inside Login-Toggle click function");
         let currentfrmID = $(this).closest('form').attr('id');
         let showformID = $(this).data("showform");
@@ -11,7 +11,7 @@ var modal_toggler = (function() {
         $(".f1-success,.f1-fail,.f2-success,.f2-fail").hide();
     });
 
-    $(".forgot-login-toggle").click(function () {
+    $("#SignupModal .forgot-login-toggle").click(function () {
         let currentfrmID = $(this).closest('form').attr('id');
         let showformID = $(this).data("showform");
         $('#'+currentfrmID).toggle();
