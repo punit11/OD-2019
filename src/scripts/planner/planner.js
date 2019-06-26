@@ -71,12 +71,14 @@ console.log("Select clicked");
           // global_myODEvents = getOdEvents();
 
           let storedData = localStorage.getItem("od_saved_events");
-        if (storedData) {
+          if (storedData !== "undefined") {
           global_myODEvents = JSON.parse(storedData);
           console.log('myEvents', global_myODEvents);
           campus_present('WB', 'WP', 'WF', 'BW');
           // return $.Deferred().resolve();
         } // end getEventsfromDB
+
+        
       
         console.log("CheckPoint 4");
       }
@@ -280,7 +282,10 @@ console.log("Select clicked");
       
               getEventsfromDB();
               //$.when(deferred_EFDB).done(function(){displayPlannerData(campus_value);});
+              let storedData = localStorage.getItem("od_saved_events");
+              if (storedData !== "undefined") {
               displayPlannerData(campus_value);
+              }
       
           } else {
             $( ".not-logged-in a" ).click(function(e) {
