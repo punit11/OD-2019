@@ -19,4 +19,9 @@ var secondaryNavbar_scroll = $(function() {
     });
 }());
 
+jQuery(window).on('load',function(){
+    $('head style').remove();
+    console.log('======= > head style removed');
+ });
+
 export {secondaryNavbar_scroll};
