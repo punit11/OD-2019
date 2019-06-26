@@ -1,4 +1,4 @@
-var secondaryNavbar_scroll = (function() {
+var secondaryNavbar_scroll = $(function() {
     $(".secondary__nav a").on("click", function(e) {
         e.preventDefault();
         let clicked_class = $(this).attr("href");
