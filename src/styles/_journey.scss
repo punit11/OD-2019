@@ -147,6 +147,10 @@ nav {
     .modal-footer {
         border: none;
         background: $light-grey;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         position: relative;
         left: -2rem;

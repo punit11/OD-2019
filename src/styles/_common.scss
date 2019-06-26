@@ -203,3 +203,18 @@ body.location-page {
     overflow-x: hidden;
   }
 }
+
+/* Change input autofill background to white ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+  padding-left: 0!important;
+}
