@@ -1,10 +1,13 @@
 var render_ticks = function () {
-
+    "use strict";
     // retrieve stored data (JSON stringified) and convert
     // let saved_events = getOdEvents();
     console.log("Inside tick-cards", "Comma works");
     var storedData = localStorage.getItem("od_saved_events");
-    if (storedData) {
+
+    console.log('storedData ', typeof(storedData), storedData);
+    if (storedData !== "undefined") {
+        console.log('Inside Storeddata');
         let od_saved_events = JSON.parse(storedData);
         console.log("Fetched from lcoal storage", od_saved_events);
         let original_events_len = od_saved_events.length;
@@ -16,6 +19,7 @@ var render_ticks = function () {
     $('.js-sessions-added').text(original_events_len);
     $('.btn.add-to-planner').html('Update Planner');
     }
+    
 
 };
 

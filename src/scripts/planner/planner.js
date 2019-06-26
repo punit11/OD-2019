@@ -192,8 +192,6 @@ console.log("Select clicked");
             render_cards(globals_bw_wrapper);
           }
 
-
-
           // ----- Render function
           function render_cards(render_data) {
           render_data.forEach(function (evt) {
@@ -248,6 +246,7 @@ console.log("Select clicked");
       
       $("#campus-location").on('change', function () {
           var campus_value = $('#campus-location').val();
+          console.log('campus_value is ',campus_value);
           displayPlannerData(campus_value);
       });
       

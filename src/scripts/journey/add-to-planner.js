@@ -30,7 +30,7 @@ import {show_hide_modal} from "./show-hide-modal";
 
       // Push the item to localStorage saved events
       let storedData = localStorage.getItem("od_saved_events");
-      if (storedData) {
+      if (storedData !== "undefined") {
         let od_saved_events = JSON.parse(storedData);
         od_saved_events.push(clickedEventID);
       // course_arr.push(clickedEventID);
@@ -43,13 +43,14 @@ import {show_hide_modal} from "./show-hide-modal";
         clickedEventID = $(this).data("eventid");
         // Remove event from local storage
         let storedData = localStorage.getItem("od_saved_events");
-        if (storedData) {
+        if (storedData !== "undefined") {
           let od_saved_events = JSON.parse(storedData);
 
           od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
           // console.log('Inside else', od_saved_events);
           localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
       }
+      
     }
       $('.js-sessions-added').text(course_count);
     }
@@ -79,7 +80,7 @@ import {show_hide_modal} from "./show-hide-modal";
       // console.log('Altered array ', course_arr);
 
       let storedData = localStorage.getItem("od_saved_events");
-      if (storedData) {
+      if (storedData !== "undefined") {
         var od_saved_events = JSON.parse(storedData);
       }
 
@@ -90,6 +91,7 @@ import {show_hide_modal} from "./show-hide-modal";
       var dataset = {
         sub: sub_value,
         EventID: od_saved_events
+        
     };
     //var JSONObject= {"uname":uname, "password":password };
     var jsonData = JSON.stringify(dataset);
