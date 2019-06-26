@@ -21,17 +21,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.button {
-  border-radius: 2rem;
+.button, .btn {
+  border-radius: 2.5rem;
   padding: 1rem 2rem;
-  border: 0;
+  border: 1px solid $teal;
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: $font-stack-os-bold;
+  background: $teal;
   color: #fff;
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
+  height: 5rem;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  &-inverse {
+    background: $white;
+    color: $teal;
+  }
+
+  &.magenta {
+    background: $magenta;
+    border: 1px solid $magenta;
+
+    &-inverse {
+      background: $white;
+      color: $magenta;
+    }
+  }
+
+  @include md {
+    max-width: fit-content;
+  }
 }
 
 %h1, %h2, %h4 {
@@ -202,4 +228,19 @@ body.location-page {
   @media (max-width: $screen-sm-min) {
     overflow-x: hidden;
   }
+}
+
+/* Change input autofill background to white ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+  padding-left: 0!important;
 }

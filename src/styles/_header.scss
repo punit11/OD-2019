@@ -201,25 +201,29 @@
         max-width: calc(100% + 1rem);
         position: relative;
 
-        &:after {
-          content: "";
-          background: url(//www.deakin.edu.au/__data/assets/file/0004/1913062/shapre-dee-yellow.svg) no-repeat 50%;
-          display: block;
-          width: 11.6rem;
-          height: 8.7rem;
-          position: absolute;
-          bottom: 11rem;
-          right: -5rem;
-          background-size: 85%;
-
-          @include md {
-            display: none;
-          }
+        &.d {
+          position: absolute!important;
+          bottom: 2rem;
+          left: 2rem;
+          max-width: 10rem!important;
         }
 
         @include md {
           width: 100%;
           max-width: 100%;
+
+          &.d {
+            bottom: -6rem;
+            left: 2rem;
+            max-width: 186px!important;
+          }
+        }
+
+        @include xxl {
+          &.d {
+            left: 4rem;
+            max-width: 216px!important;
+          }
         }
          
          &:first-child {
@@ -378,6 +382,10 @@ body {
           color: $magenta;
           -webkit-text-fill-color: $magenta;
           left: 50%;
+
+          @media (min-width: 1600px) {
+            left: 59%;
+          }
         }
       }
     }
