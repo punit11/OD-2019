@@ -6,6 +6,7 @@
     &-container {
         background: $white;
         color: $charcoal;
+        border-bottom: none!important;
     }
 }
 .select2-container--default  {
@@ -62,7 +63,7 @@
     }
 
     &:after {
-        display: none;
+        display: none!important;
     }
 }
 
@@ -70,7 +71,7 @@
 display: none;
 }
 .select2-container--focus, .error + .select2-container--focus {
-box-shadow: none!important;
+box-shadow: none!important; 
 }
 
 .select2-container--default .select2-results>.select2-results__options {
@@ -81,6 +82,7 @@ box-shadow: none!important;
     border: 1px solid $charcoal!important;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
     top: -3rem;
+    z-index: 1051!important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow  {
