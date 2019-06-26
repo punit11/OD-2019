@@ -72,7 +72,7 @@ nav {
                 outline: none;
                 border: none;
                 padding-bottom: 1rem;
-                margin-bottom: 2.8rem;
+                margin-bottom: 1.5rem;
                 border-bottom: 1px solid #ccc;
                 order: 1;
             }
@@ -80,7 +80,7 @@ nav {
     }
 
     .checkbox-button {
-        margin-bottom: 4rem;
+        margin: 2rem 0;
         label {
             font-family: $font-stack-os-regular;
         }
@@ -96,7 +96,7 @@ nav {
     }
 
     .button--primary {
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -200,7 +200,7 @@ nav {
 #forgot-pwd-form,
 #reset-pwd-form,
 #register-form {
-    padding-top: 2rem;
+    // padding-top: 2rem;
     // display: none;
 
     h2 {

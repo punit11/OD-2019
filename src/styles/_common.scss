@@ -21,6 +21,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mktoForm[data-styles-ready="true"] {
+  visibility: hidden;
+  display: none;
+}
+
 .button, .btn {
   border-radius: 2.5rem;
   padding: 1rem 2rem;
