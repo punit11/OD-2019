@@ -130,7 +130,7 @@ nav {
     
     .modal-content {
         padding: 4.5rem 2rem 0;
-        max-height: 660px;
+        min-height: 500px;
         overflow: auto;
         // top: 200px;
         height: 100%;
@@ -149,8 +149,14 @@ nav {
         background: $light-grey;
         text-align: center;
         position: relative;
-        left: -6rem;
-        width: calc(100% + 9rem);
+        left: -2rem;
+        width: calc(100% + 1rem);
+        
+
+        @include md {
+            left: -6rem;
+            width: calc(100% + 9rem);
+        }
         
         p {
             font-family: $font-stack-os-regular;

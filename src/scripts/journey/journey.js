@@ -9,7 +9,14 @@ var journey = $(function() {
             pageHeight = $(window).outerHeight(),
             maxContentHeight = pageHeight - 100;
 
-        $(".modal-content").css('max-height', maxContentHeight + 'px');
+            console.log("pageheight = " + pageHeight);
+        if($(window).height() > 550) {
+            console.log("window height > 500");
+            $(".modal-content").css('max-height', maxContentHeight + 'px');
+        } else {
+            console.log("window height < 500");
+            $(".modal-content").css('max-height', '500px');
+        }
     });
 
     
