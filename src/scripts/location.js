@@ -23,7 +23,6 @@ var removeMarketoStyle = $(function(){
    setTimeout(() => {
     $('head style').remove();    
    }, 1000);
-    
 }());
 
 export {secondaryNavbar_scroll};
