@@ -866,6 +866,7 @@
                         <p>You’re ready to start planning your day at <span>[campus]</span></p>
                      </div>
                      <!-- Signup form end -->
+
                      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                         ~~~ Form #2 - Login form start ~~~
                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -881,6 +882,18 @@
                              <label for="log_password">Password</label>
                              <input type="password" id="log_password" class="form-control" name="sign-in-pass" placeholder="Password">
                          </div>
+
+                        <!-- +++++++++++++++++++++++++++++++++++++ 
+                        Login form - Form 2 - messages start -->
+                        <div class="form-group">
+                           <!--Success-->
+                           <!--No mesage for success, just a redirect-->
+                           <label class="f2-success" role="alert"></label>
+                           <!-- Failure -->
+                           <label class="f2-fail error" role="alert"></label>
+                        </div>
+                        <!--+++++++++++++++++++++++++++++++++++-->
+
                          <div class="signup_wrapper center">                        
                              <div class="form-group">
                                  <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Login</button>
@@ -909,6 +922,17 @@
                             <label for="forgot_email">Email</label>                            
                            <input type="text" id="forgot_email" class="form-control" name="forgot-pwd-email" placeholder="Email Address">
                         </div>
+
+                        <!-- +++++++++++++++++++++++++++++++++++++ 
+                        Forgot password form start - Form 3 - messages start -->
+                        <div class="form-group">
+                           <!--Success-->
+                           <!--No mesage for success, just a redirect-->
+                           <label class="f3-success" role="alert"></label>
+                           <!-- Failure -->
+                           <label class="f3-fail error" role="alert"></label>
+                        </div>
+                        <!--+++++++++++++++++++++++++++++++++++-->
                         
                         <div class="signup_wrapper center">
                             <div class="form-group">
@@ -968,6 +992,18 @@
                             <label for="verification">Verification Code</label>
                            <input type="text" di="verification" class="form-control" name="reset-verify-code" placeholder="Enter Verification Code">
                         </div>
+
+                        <!-- +++++++++++++++++++++++++++++++++++++ 
+                        Reset password form start - Form 4 - messages start -->
+                        <div class="form-group">
+                           <!--Success-->
+                           <!--No mesage for success, just a redirect-->
+                           <label class="f4-success" role="alert"></label>
+                           <!-- Failure -->
+                           <label class="f4-fail error" role="alert"></label>
+                        </div>
+                        <!--+++++++++++++++++++++++++++++++++++-->
+
                         <div class="signup_wrapper center">                          
                             <div>
                                <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Reset Password</button>
@@ -982,41 +1018,6 @@
                      <!--Reset password form end-->
                   </div>
                   <!-- Sign up / Login wrapper end -->
-                    <!-- +++++++++++++++++++++++++++++++++++++++++++++
-                        Register/Signup form - Form 1 - messages start 
-                        +++++++++++++++++++++++++++++++++++++++++++ -->
-                     <!--Success-->
-                     <div class="f1-success" role="alert">
-                        <span class="check">
-                           <svg class="icon-tick">
-                              <use href="#icon-tick" xlink:href="#icon-tick"></use>
-                           </svg>
-                     </span>
-                     </div>
-                     <!-- Failure -->
-                     <div class="f1-fail alert alert-danger" role="alert"></div>
-                     <!-- +++++++++++++++++++++++++++++++++++++
-                        Login form - Form 2 - messages start 
-                        +++++++++++++++++++++++++++++++++++-->
-                     <!--Success-->
-                     <!--No mesage for success, just a redirect-->
-                     <div class="f2-success" role="alert"></div>
-                     <!-- Failure -->
-                     <div class="f2-fail alert alert-danger" role="alert"></div>
-                     <!-- +++++++++++++++++++++++++++++++++++++++++++++
-                        ++++ Reset pwd form - Form 3 - messages start ++
-                        ++++++++++++++++++++++++++++++++++++++++++++++ -->
-                     <!--Success-->
-                     <div class="f3-success alert alert-success" role="alert"></div>
-                     <!-- Failure -->
-                     <div class="f3-fail alert alert-danger" role="alert"></div>
-                     <!-- +++++++++++++++++++++++++++++++++++++++++++++
-                        ++++ Forgot pwd form - Form 4 - messages start ++
-                        ++++++++++++++++++++++++++++++++++++++++++++++ -->
-                     <!--Success-->
-                     <div class="f4-success alert alert-success" role="alert"></div>
-                     <!-- Failure -->
-                     <div class="f4-fail alert alert-danger" role="alert"></div>
                </div>
             </div>
          </div>
