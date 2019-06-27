@@ -232,7 +232,7 @@ console.log("Select clicked");
           }
           // ----- Render function
           function render_cards(render_data) {
-            $(".eventcard").show();
+            $(".eventcard").remove();
             $(".no-events-selected").hide();
           render_data.forEach(function (evt) {
           let template_planner = planner_template({

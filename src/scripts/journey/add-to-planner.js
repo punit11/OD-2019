@@ -3,17 +3,14 @@ import {getCookieValue} from "./get-cookies";
 import {show_hide_modal} from "./show-hide-modal";
 
  var add_to_planner = (function(){
+  var logged_in = getCookieValue('od-token');
+
+
     var clickedEventID = '';
     
     var od_saved_events = [];
-
-    //  $('.owl-carousel .selected').each(function() {
-    //       course_arr.push($(this).data("eventid"));
-    //     }); 
-    //     console.log('Initial course_arr',course_arr);
-
       $(".owl-carousel").on("click", "span.add", function() {
-      let logged_in = getCookieValue('od-token');
+      
       if (logged_in) {
  // Get all the selected courses
       // var course_arr = [];
@@ -33,12 +30,12 @@ import {show_hide_modal} from "./show-hide-modal";
       // Push the item to localStorage saved events
       let storedData = localStorage.getItem("od_saved_events");
 
-          if (storedData) {
+          if (storedData) { // Append to existing arr if there are events present already
             let od_saved_events = JSON.parse(storedData);
             od_saved_events.push(clickedEventID);
             localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
           }
-          else {
+          else { // Populate a new arr if no events selected already
             od_saved_events.push(clickedEventID);
             localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
           }
@@ -49,13 +46,12 @@ import {show_hide_modal} from "./show-hide-modal";
         // Remove event from local storage
         let storedData = localStorage.getItem("od_saved_events");
 
-        if (storedData) {
+        if (storedData) { // Remove events from existing arr if there are events present already
           let od_saved_events = JSON.parse(storedData);
-
           od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
-          // console.log('Inside else', od_saved_events);
           localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
       }
+         else ; // Do nothing
     }
     
       $('.js-sessions-added').text(course_count);
@@ -67,9 +63,9 @@ import {show_hide_modal} from "./show-hide-modal";
     // Add events to planner
     // ---------------------
 
-    $('.add-to-planner, .js-journey').on('click', function () {
+    $('.add-to-planner').on('click', function () {
      
-    let logged_in = getCookieValue('od-token');
+    // let logged_in = getCookieValue('od-token');
     // console.log("logged_in", logged_in);
     // console.log("original_events_arr ", original_events_arr);
     if (logged_in) {
@@ -123,6 +119,21 @@ import {show_hide_modal} from "./show-hide-modal";
     }
     else show_hide_modal();
 }); // Add to planner end
+
+    // ---------------------
+    // Handle My Plan click
+    // ---------------------
+
+    $('.js-journey').on('click', function (e) {
+       if (logged_in) {
+         e.preventDefault();
+        console.log("Logged in");
+        window.location.href = "/planner"; // ***  Redirect to planner
+       }
+       else{
+        show_hide_modal();
+       }
+    });
 
 }());
 
