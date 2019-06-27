@@ -1,18 +1,18 @@
 import {navbar_toggle, accordion_click, navbar_click, what_os} from "./home";
-import {secondaryNavbar_scroll} from "./location";
-// import {journey} from "./journey/journey";
-// import {modifySelect, fancy_scrollbar} from "./select2";
 import {modifySelect} from "./select2";
-import {populate_cards} from "./populate-cards";
 import {baf_form_validation} from "./form-validation-baf";
-import {baf_form} from "./baf-form";
 import {filters} from "./filters";
-import {youtubeApi} from "./you-tube-api";
 import {reg_form_validation} from "./journey/register";
 import {signin} from "./journey/signin";
 import {modal_toggler} from "./journey/modal-toggler";
 import {add_to_planner} from "./journey/add-to-planner";
+
+
+import {secondaryNavbar_scroll} from "./location";
+import {youtubeApi} from "./you-tube-api";
+import {baf_form} from "./baf-form";
 import {destyleMktoForm} from "./destyle-mkt-forms";
+import {populate_cards} from "./populate-cards";
 
 
 // Homepage/Generic CSS

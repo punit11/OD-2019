@@ -100,7 +100,7 @@
                                 line-height: 3.1rem;
                             }
                             &__arrow {
-                                background: url(http://localhost:8080/src/images/yellow-downarrow.svg) no-repeat center !important;
+                                background: url(//www.deakin.edu.au/openday/design-files/images/yellow-downarrow.svg) no-repeat center !important;
                             }
                         }
                     }
@@ -164,7 +164,7 @@
 
             .add {
                 &.selected {
-                    background: $green url("../images/tick.svg") no-repeat center center;
+                    background: $green url("../images/tick-new.svg") no-repeat center center;
                     color: $white;
                     border: $green;
                 }
@@ -260,7 +260,9 @@
     .tiles {
         padding-right: 0;
         padding-left: 0;
-
+        max-width: 100%;
+        margin: 0 auto!important;
+        
         @include md {
             padding-right: 1rem;
             padding-left: 1rem;
@@ -287,9 +289,23 @@
     .module-with-carousel .owl-carousel .owl-stage {
         left: 0;
     }
+
+    .step-container.module-with-carousel {
+        display: none;
+    }
     @include md {
         .module-with-carousel .owl-carousel .owl-stage {
             left: -20rem;
+        }
+    }
+
+    &.not-logged {
+        #not-logged-in-msg {
+            align-items: center;
+        }
+
+        .step-container.module-with-carousel {
+            display: none;
         }
     }
 }
