@@ -67,7 +67,7 @@ import {show_hide_modal} from "./show-hide-modal";
     // Add events to planner
     // ---------------------
 
-    $('.add-to-planner').on('click', function () {
+    $('.add-to-planner, .js-journey').on('click', function () {
      
     let logged_in = getCookieValue('od-token');
     // console.log("logged_in", logged_in);

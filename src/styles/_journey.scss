@@ -130,9 +130,8 @@ nav {
     
     .modal-content {
         padding: 4.5rem 2rem 0;
-        min-height: 500px;
+        min-height: 400px;
         overflow: auto;
-        // top: 200px;
         height: 100%;
 
         @include md {
@@ -147,19 +146,23 @@ nav {
     .modal-footer {
         border: none;
         background: $light-grey;
+        box-sizing: border-box;
         display: flex;
         flex: 1;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: relative;
-        left: -2rem;
-        width: calc(100% + 1rem);
+        left: 0;
+        width: calc(100% + 4rem);
         
 
         @include md {
-            left: -6rem;
-            width: calc(100% + 9rem);
+            width: calc(100% + 12rem);
+            // left: -6rem;
+            // width: calc(100% + 9rem);
+            // left: 0;
+            // width: 100%;
         }
         
         p {
@@ -234,7 +237,7 @@ nav {
 
 #register-form {
     @media (max-width: #{$screen-xs-min}){
-        padding-bottom: 4.9rem;
+        // padding-bottom: 4.9rem;
     }
 }
 
@@ -245,7 +248,7 @@ nav {
 }
 
 #forgot-pwd-form {
-    padding-bottom: 4rem;
+    // padding-bottom: 4rem;
 
     button {
         display: block;
@@ -308,3 +311,16 @@ nav {
 div[class$="success"], div[class$="fail"], .aws-error {
     display:none;
   }
+
+// #register-form {
+    .signup {
+        &_wrapper {
+            &.center {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }    
+// }
