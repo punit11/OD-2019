@@ -322,8 +322,8 @@
             </div><!-- step-container -->
 
             <div class="col-xs-12 sticky-bar sessions-added">
-            <span class="sessions"><span class="js-sessions-added">0</span> sessions selected</span>
-            <button class="btn btn-inverse add-to-planner">Add to my planner</button>
+            <span class="sessions js-magic"><span class="js-sessions-added">0</span> sessions selected</span>
+            <button class="btn btn-inverse add-to-planner js-magic">Add to my planner</button>
             <p class="planner-add-success"></p>
          <!-- </div>   -->
             </div><!-- planyrday-wrapper -->
@@ -886,9 +886,6 @@
                         <!-- +++++++++++++++++++++++++++++++++++++ 
                         Login form - Form 2 - messages start -->
                         <div class="form-group">
-                           <!--Success-->
-                           <!--No mesage for success, just a redirect-->
-                           <label class="f2-success" role="alert"></label>
                            <!-- Failure -->
                            <label class="f2-fail error" role="alert"></label>
                         </div>
@@ -926,9 +923,6 @@
                         <!-- +++++++++++++++++++++++++++++++++++++ 
                         Forgot password form start - Form 3 - messages start -->
                         <div class="form-group">
-                           <!--Success-->
-                           <!--No mesage for success, just a redirect-->
-                           <label class="f3-success" role="alert"></label>
                            <!-- Failure -->
                            <label class="f3-fail error" role="alert"></label>
                         </div>
@@ -996,9 +990,6 @@
                         <!-- +++++++++++++++++++++++++++++++++++++ 
                         Reset password form start - Form 4 - messages start -->
                         <div class="form-group">
-                           <!--Success-->
-                           <!--No mesage for success, just a redirect-->
-                           <label class="f4-success" role="alert"></label>
                            <!-- Failure -->
                            <label class="f4-fail error" role="alert"></label>
                         </div>
@@ -1018,6 +1009,19 @@
                      <!--Reset password form end-->
                   </div>
                   <!-- Sign up / Login wrapper end -->
+                  <div class="form-group">
+                        <!--Success-->
+                        <div class="f1-success" role="alert">
+                            <span class="check">
+                                <svg class="icon-tick">
+                                    <use href="#icon-tick" xlink:href="#icon-tick"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="f2-success" role="alert"></div>
+                        <div class="f3-success alert alert-success" role="alert"></div>
+                        <div class="f4-success alert alert-success" role="alert"></div>
+                  </div>
                </div>
             </div>
          </div>
