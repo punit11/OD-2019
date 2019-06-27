@@ -1,6 +1,6 @@
 import {navbar_toggle, accordion_click, navbar_click, what_os} from "./home";
 import {secondaryNavbar_scroll} from "./location";
-import {journey} from "./journey/journey";
+// import {journey} from "./journey/journey";
 // import {modifySelect, fancy_scrollbar} from "./select2";
 import {modifySelect} from "./select2";
 import {populate_cards} from "./populate-cards";
