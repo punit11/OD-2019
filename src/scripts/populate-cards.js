@@ -11,25 +11,25 @@ function populate_cards(session,selected_ia,caller) {
        selected_ia = selected_ia || ''; //set default to all
        caller = caller || ''; //set default to all
 
-       console.log("session ", session);
-       console.log("selected_ia ", selected_ia);
+      //  console.log("session ", session);
+      //  console.log("selected_ia ", selected_ia);
      
-       var URL = "src/data/Waterfront.json";
+      //  var URL = "src/data/Burwood.json";
 
-      // if (window.location.href.indexOf("burwood") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
-      //       }
-      //   else if (window.location.href.indexOf("warrnambool") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
-      //       }
-      //   else if (window.location.href.indexOf("waterfront") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
-      //       }
-      //   else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
+      if (window.location.href.indexOf("burwood") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
+            }
+        else if (window.location.href.indexOf("warrnambool") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
+            }
+        else if (window.location.href.indexOf("waterfront") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
+            }
+        else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
 
        makeAjaxCall(URL)
       .done(function (result) {
-        console.log("data loading done");
+        // console.log("data loading done");
         // courseFinder2(data);
         let dd_arr= result;
         dd_arr.sort(function (a, b) {
@@ -40,7 +40,7 @@ function populate_cards(session,selected_ia,caller) {
         let session_type = 'Course information session';
         let dd_arr_cleaned = [...new Set(dd_arr.filter(o => o.Session_type === session_type && o.Interest_area.trim() !== '').reduce((c, v) => c.concat(v.Interest_area.split(';')), []).map(o => o.trim()))];
         dd_arr_cleaned.sort();
-        console.log('dd_arr_cleaned ', dd_arr_cleaned);
+        // console.log('dd_arr_cleaned ', dd_arr_cleaned);
 
         if ($("#course-area option").length < 1) {
         $("#course-area").empty();
@@ -59,7 +59,7 @@ function populate_cards(session,selected_ia,caller) {
         else {
           var course_info_arr = my_course_data.filter(o => o.Session_type === 'Course information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session)  && o.Interest_area.includes(selected_ia));
         }
-        console.log('course_info_arr ', course_info_arr.length);
+        // console.log('course_info_arr ', course_info_arr.length);
         render_cards(course_info_arr, '.course-info-carousel');
 
         // Bind drop-down template for -- Tour & Exp Info Sessions --
@@ -74,13 +74,13 @@ function populate_cards(session,selected_ia,caller) {
 
         // Bind drop-down template for -- General Info Sessions --
         
-        if ((caller =="courses")) {
+        if (caller =="courses") {
           var gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session) && o.Pre_selected.includes(selected_ia));
           }
         else {
         var gen_info_arr = my_course_data.filter(o => o.Session_type === 'General information session' && o.Session_type.trim() !== '' && o.Session_start.includes(session));
         }
-        console.log('gen_info_arr ', gen_info_arr.length);
+        // console.log('gen_info_arr ', gen_info_arr.length);
         render_cards(gen_info_arr, '.gen-info-carousel');
         $("#gen_evt_count").text(gen_info_arr.length);
         

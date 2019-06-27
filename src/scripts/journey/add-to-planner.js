@@ -3,14 +3,14 @@ import {getCookieValue} from "./get-cookies";
 import {show_hide_modal} from "./show-hide-modal";
 
  var add_to_planner = (function(){
-  var logged_in = getCookieValue('od-token');
+  
 
 
     var clickedEventID = '';
     
     var od_saved_events = [];
       $(".owl-carousel").on("click", "span.add", function() {
-      
+      let logged_in = getCookieValue('od-token');
       if (logged_in) {
  // Get all the selected courses
       // var course_arr = [];
@@ -65,7 +65,7 @@ import {show_hide_modal} from "./show-hide-modal";
 
     $('.add-to-planner').on('click', function () {
      
-    // let logged_in = getCookieValue('od-token');
+    let logged_in = getCookieValue('od-token');
     // console.log("logged_in", logged_in);
     // console.log("original_events_arr ", original_events_arr);
     if (logged_in) {
@@ -125,6 +125,7 @@ import {show_hide_modal} from "./show-hide-modal";
     // ---------------------
 
     $('.js-journey').on('click', function (e) {
+      let logged_in = getCookieValue('od-token');
        if (logged_in) {
          e.preventDefault();
         console.log("Logged in");
