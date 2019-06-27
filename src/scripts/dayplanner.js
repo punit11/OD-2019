@@ -17,5 +17,12 @@ $(window).on('resize', function(){
     }
 });
 
+var whats_on = (function(){
+    var test = $("#select2-campus-location-container").attr('title');
+    console.log("=========>  Title attribute = " + test);
+    if(!$(".planyrday-wrapper.not-logged")) {
+
+    }
+}());
 
 export {show_sessioninfo};

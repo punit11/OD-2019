@@ -60,6 +60,27 @@ body {
     }
   }
 
+  &.yellow {
+    background: $yellow;
+    border: 1px solid $yellow;
+    color: $black;
+
+    &-inverse {
+      background: $white;
+      color: $black;
+    }
+  }
+
+  &.blue {
+    background: $blue;
+    border: 1px solid $blue;
+
+    &-inverse {
+      background: $white;
+      color: $blue;
+    }
+  }
+
   @include md {
     max-width: 400px;
     max-width: -moz-fit-content;

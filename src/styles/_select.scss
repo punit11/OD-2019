@@ -35,11 +35,13 @@
             line-height: 1em;
             padding-left: 0!important;
             padding-right: 1rem!important;
+            min-width: 13.6rem;
 
             @include md {
                 font-size: 1.6rem;
                 padding-left: 0.8rem!important;
                 padding-right: 2rem!important;
+                min-width: 18.5rem;
             }
         }
     }
@@ -47,9 +49,13 @@
         background: $charcoal;
         color: $white;
         font-family: $font-stack-os-regular;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         line-height: 2.63em;
         padding: 0.6rem 2rem;
+
+        @include md {
+            font-size: 1.6rem;
+        }
 
         &--highlighted {
             &[aria-selected] {
