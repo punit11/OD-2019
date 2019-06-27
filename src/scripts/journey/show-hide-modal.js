@@ -1,7 +1,9 @@
         
         function show_hide_modal() {
         // console.log("Working");
-       
+        // callback = callback || ''; //set default to all
+        // console.log('callback',callback);
+
         if($('.modal.fade').hasClass('out')) {
             $('.modal.fade').removeClass('out').addClass('in').show();
             $("body").addClass('noscroll');
@@ -22,6 +24,7 @@
             $("body").removeClass('noscroll');
         $('#SignupModal').removeClass('in').addClass('out').hide();
     });
+   
        }
 
         export {show_hide_modal};

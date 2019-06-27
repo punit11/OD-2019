@@ -2,9 +2,12 @@ import { CognitoUserPool, CognitoUserAttribute, CognitoUser } from 'amazon-cogni
 import * as AmazonCognitoIdentity from 'amazon-cognito-identity-js';
 import render_ticks from "./render-ticks";
 import getOdEvents from "./get-events-for-planner";
+import login_check from "../planner/planner";
 
 var signin = (function(callback_func1,callback_func2) {
 
+    // callback_func3 = callback_func3 || ''; //set default to all
+    // console.log('callback_func3',callback_func3);
      $("#login-form").submit(function (e) {
     //console.log('e', e);
     $(".f2-success,.f2-fail").hide();
@@ -79,6 +82,10 @@ var signin = (function(callback_func1,callback_func2) {
             }
             callback_func1();
             callback_func2();
+            // if (callback_func3) {
+            //     console.log("callback_func3 executed");
+            // callback_func3();
+            // }
         },
 
         onFailure: function (err) {
