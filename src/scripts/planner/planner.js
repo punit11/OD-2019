@@ -41,25 +41,40 @@ console.log("Select clicked");
           if (global_myODEvents) {
               var campus_check = args.map(arg => global_myODEvents.find(e => e.includes(arg)) ? true : false);
               console.log('campus_check', campus_check);
-              if (campus_check[0]) {
-                  console.log('Fetch Waranbool JSON');
-                  fetchJSONfile('src/data/Warrnambool.json', 'wb-wrapper');
-              }
+            //   if (campus_check[0]) {
+            //       console.log('Fetch Waranbool JSON');
+            //       fetchJSONfile('src/data/Warrnambool.json', 'wb-wrapper');
+            //   }
       
-              if (campus_check[1]) {
-                  console.log('Fetch WaranPonds JSON');
-                  fetchJSONfile('src/data/Waurn-ponds.json', 'wp-wrapper');
-              }
+            //   if (campus_check[1]) {
+            //       console.log('Fetch WaranPonds JSON');
+            //       fetchJSONfile('src/data/Waurn-ponds.json', 'wp-wrapper');
+            //   }
       
-              if (campus_check[2]) {
-                  console.log('Fetch WaterFront JSON');
-                  fetchJSONfile('src/data/Waterfront.json', 'wf-wrapper');
-              }
+            //   if (campus_check[2]) {
+            //       console.log('Fetch WaterFront JSON');
+            //       fetchJSONfile('src/data/Waterfront.json', 'wf-wrapper');
+            //   }
       
-              if (campus_check[3]) {
-                  console.log('Fetch Burwood JSON');
-                  fetchJSONfile('src/data/Burwood.json', 'bw-wrapper');
-              }
+            //   if (campus_check[3]) {
+            //       console.log('Fetch Burwood JSON');
+            //       fetchJSONfile('src/data/Burwood.json', 'bw-wrapper');
+            //   }
+            if (campus_check[0]) {
+                fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json', 'wb-wrapper');
+            }
+    
+            if (campus_check[1]) {
+               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json', 'wp-wrapper');
+            }
+    
+            if (campus_check[2]) {
+               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json', 'wf-wrapper');
+            }
+    
+            if (campus_check[3]) {
+               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json', 'bw-wrapper');
+            }
       
           } else return false;
       }
