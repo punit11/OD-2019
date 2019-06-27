@@ -308,7 +308,7 @@
     }
 
     span:not(.desktop-version) {
-      display: inline-flex;
+      display: inline-flex!important;
       // display: inline-block;
 
       &.button {
