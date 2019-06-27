@@ -1,6 +1,9 @@
 # dependencies
 node_modules
 src/data/*
+src/style/main.css
+src/style/main.css.map
+
 # production
 build
 

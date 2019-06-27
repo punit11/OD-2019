@@ -100,7 +100,7 @@
                                 line-height: 3.1rem;
                             }
                             &__arrow {
-                                background: url(http://localhost:8080/src/images/yellow-downarrow.svg) no-repeat center !important;
+                                background: url(//www.deakin.edu.au/openday/design-files/images/yellow-downarrow.svg) no-repeat center !important;
                             }
                         }
                     }
@@ -288,6 +288,10 @@
 
     .module-with-carousel .owl-carousel .owl-stage {
         left: 0;
+    }
+
+    .step-container.module-with-carousel {
+        display: none;
     }
     @include md {
         .module-with-carousel .owl-carousel .owl-stage {
