@@ -21,16 +21,36 @@ function show_hide_modal() {
     $("#SignupModal").removeClass("in").addClass("out").hide();
   });
 
-  //calculate the height of the window and make sure the popup modal fits
-  var contentHeight = $(".modal-content").height(),
-    pageHeight = $(window).outerHeight(),
-    maxContentHeight = pageHeight - 100;
+  modalHeight();
 
-    if($(window).height() > 550) {
-        $(".modal-content").css('max-height', maxContentHeight + 'px');
+    $("[data-showform]").on('click', function(){
+        console.log('*+*+*+*+*+*+*+*+ login toggle clicked');
+        modalHeight();
+    });
+}
+
+//calculate the height of the window and make sure the popup modal fits
+
+function modalHeight() {
+    console.log('*+*+*+*+*+*+*+*+ MODAL HEIGHT FUNCTION EXECUTED');
+    var contentHeight = $(".modal-content form:visible").height(),
+        pageHeight = $(window).outerHeight(),
+        maxContentHeight = pageHeight - 100;
+
+    console.log('content height ===========>' + contentHeight);
+ 
+
+    if($(window).height() > contentHeight) {
+        $(".modal-content").css({
+            'max-height' : maxContentHeight + 'px',
+            'min-height' : contentHeight + 'px'
+        });
     } else {
-        $(".modal-content").css('max-height', '500px');
+        $(".modal-content").css({
+            'max-height' : '500px',
+            'min-height' : maxContentHeight + 'px'
+        });
     }
 }
 
-export { show_hide_modal };
+export { show_hide_modal, modalHeight };

@@ -56,8 +56,9 @@ nav {
                     color: $red!important;
                     font-size: 1.25em!important;
                     order: 2;
-                    margin-top: -25px;
+                    margin-top: -1rem;
                     margin-bottom: 1.5rem!important;
+                    z-index: 1;
                 }
             }
     
@@ -218,6 +219,7 @@ nav {
 
         @include md {
             width: 50%;
+            margin-top: 2rem;
         }
     }
 
@@ -230,7 +232,7 @@ nav {
     .button--primary {
         margin: 4rem auto 0;
         @include md {
-            
+
         }
     }
 }
