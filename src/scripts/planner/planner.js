@@ -183,9 +183,12 @@ console.log("Select clicked");
         let msg = "Sorry, you have not selected any events for this campus.";
           console.log('Inside displayPlannerData', campus_value);
           
+          
           if (campus_value == 'Warrnambool') {
-            
-            if (globals_wb_wrapper) {
+            var opdate = $('.tiles-wrapper .warrnambool .date p').text(),
+                optime = $('.tiles-wrapper .warrnambool .first-md p:last-child').text().split('–'),
+                usetime = optime[0];
+                if (globals_wb_wrapper) {
             render_cards(globals_wb_wrapper);
             console.log('Warrnambool', globals_wb_wrapper);
             }
@@ -198,6 +201,11 @@ console.log("Select clicked");
           else if (campus_value == 'Geelong Waurn Ponds') {
 
             if (globals_wp_wrapper) {
+
+                var opdate = $('.tiles-wrapper .waurn-ponds .date p').text(),
+                    optime = $('.tiles-wrapper .waurn-ponds .first-md p:last-child').text().split('–'),
+                    usetime = optime[0];
+
             render_cards(globals_wp_wrapper);
             console.log('Geelong Waurn Ponds', globals_wp_wrapper);
             }
@@ -210,6 +218,11 @@ console.log("Select clicked");
           else if (campus_value == 'Geelong Waterfront') {
 
             if (globals_wf_wrapper) {
+
+                var opdate = $('.tiles-wrapper .waterfront .date p').text(),
+                optime = $('.tiles-wrapper .waterfront .first-md p:last-child').text().split('–'),
+                usetime = optime[0];
+
             render_cards(globals_wf_wrapper);
             console.log('Geelong Waterfront', globals_wf_wrapper);
             }
@@ -220,7 +233,9 @@ console.log("Select clicked");
 
           }
           else {
-
+            var opdate = $('.tiles-wrapper .burwood .date p').text(),
+                optime = $('.tiles-wrapper .burwood .first-md p:last-child').text().split('–'),
+                usetime = optime[0];
             if (globals_bw_wrapper) {
                 render_cards(globals_bw_wrapper);
                 console.log('Burwood', globals_bw_wrapper);
@@ -230,6 +245,10 @@ console.log("Select clicked");
                     $(".no-events-selected").show();
                 }
           }
+
+          // Dynamically add the date and time depending on campus
+            $('.strong-date').text(opdate + ' August');
+            $('.strong-time').text(usetime);
           // ----- Render function
           function render_cards(render_data) {
             $(".eventcard").remove();
