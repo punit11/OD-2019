@@ -179,23 +179,61 @@ console.log("Select clicked");
       
       // Get events on campus drop-down change
       function displayPlannerData(campus_value = 'Melbourne Burwood') {
+
+        let msg = "Sorry, you have not selected any events for this campus.";
           console.log('Inside displayPlannerData', campus_value);
           
           if (campus_value == 'Warrnambool') {
+            
+            if (globals_wb_wrapper) {
             render_cards(globals_wb_wrapper);
+            console.log('Warrnambool', globals_wb_wrapper);
+            }
+            else {
+                $(".eventcard").hide();
+                $(".no-events-selected").show();
+            }
+            
           }
           else if (campus_value == 'Geelong Waurn Ponds') {
+
+            if (globals_wp_wrapper) {
             render_cards(globals_wp_wrapper);
+            console.log('Geelong Waurn Ponds', globals_wp_wrapper);
+            }
+            else {
+                $(".eventcard").hide();
+                $(".no-events-selected").show();
+            }
+
           }
           else if (campus_value == 'Geelong Waterfront') {
+
+            if (globals_wf_wrapper) {
             render_cards(globals_wf_wrapper);
+            console.log('Geelong Waterfront', globals_wf_wrapper);
+            }
+            else {
+                $(".eventcard").hide();
+                $(".no-events-selected").show();
+            }
+
           }
           else {
-            render_cards(globals_bw_wrapper);
-          }
 
+            if (globals_bw_wrapper) {
+                render_cards(globals_bw_wrapper);
+                console.log('Burwood', globals_bw_wrapper);
+                }
+                else {
+                    $(".eventcard").hide();
+                    $(".no-events-selected").show();
+                }
+          }
           // ----- Render function
           function render_cards(render_data) {
+            $(".eventcard").show();
+            $(".no-events-selected").hide();
           render_data.forEach(function (evt) {
           let template_planner = planner_template({
             'evt_code': evt.Event_code,
@@ -271,14 +309,13 @@ console.log("Select clicked");
       
       
           if ((campus_value) && (cookie_value) && (sub_value)) {
-              if (!$('#not-logged-in-msg:contains("Please Login To View")').length) {
-                  console.log('HTML present');
-                  $('#not-logged-in-msg').hide();
-              }
+                if ($("#not-logged-in-msg h2").text().trim().length) {
+                $('#no-events-in-planner').hide();
+                }
+     
               console.log('Inside planner - cookie_value', cookie_value);
               console.log('Inside planner - campus_value', campus_value);
-              console.log('Inside planner - sub_value', sub_value);
-      
+              console.log('Inside planner - sub_value', sub_value);      
       
               getEventsfromDB();
               //$.when(deferred_EFDB).done(function(){displayPlannerData(campus_value);});
@@ -286,15 +323,17 @@ console.log("Select clicked");
               if (storedData !== "undefined") {
               displayPlannerData(campus_value);
               }
-              else $('#no-events-in-planner').show();
+            //   else $('#no-events-in-planner').show();
       
           } else {
-            $( ".not-logged-in a" ).click(function(e) {
+            $( "#not-logged-in-msg a" ).click(function(e) {
                     e.preventDefault();
                     show_hide_modal();
                   });
+                  
+                  $(".planyrday-wrapper").addClass('not-logged');
                   $(".planner-results").hide();
-                  $(".not-logged-in").show();
+                  $("#not-logged-in-msg").show();
           }
       // }
       // $(function () {
@@ -304,4 +343,4 @@ console.log("Select clicked");
     
 }());
 
-export {login_check};
+export default login_check;
