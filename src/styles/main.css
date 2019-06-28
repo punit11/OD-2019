@@ -2845,7 +2845,6 @@ body.warrnambool .hero-banner.location-page .hero-pic:after {
   display: none;
   margin-bottom: 10rem;
   margin-top: 4.0rem;
-  overflow-x: hidden;
 }
 
 @media (min-width: 576px) {
@@ -3060,6 +3059,13 @@ body.warrnambool .hero-banner.location-page .hero-pic:after {
   position: absolute;
   bottom: -70px;
   right: 0px;
+}
+
+@media only screen and (max-device-width: 366px) {
+  .comps-form #feildset2 .btn, .baf-form #feildset2 .btn {
+    min-width: 10.5rem;
+    font-size: 1.3rem !important;
+  }
 }
 
 .thankyou-msg {

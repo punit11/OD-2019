@@ -2,7 +2,7 @@
     display: none;
     margin-bottom: 10rem;
     margin-top: 4.0rem;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     @include sm {
         margin-bottom: 8rem;
@@ -187,6 +187,17 @@
             bottom: -70px;
             right: 0px;
         }
+    }
+
+    @media only screen and (max-device-width: 366px) {
+        #feildset2 {
+
+            .btn {
+                min-width: 10.5rem;
+                font-size: 1.3rem!important;
+            }
+        }
+        
     }
 }
 .thankyou-msg {
