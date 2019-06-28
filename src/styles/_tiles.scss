@@ -308,7 +308,8 @@
     }
 
     span:not(.desktop-version) {
-      display: inline-block;
+      display: inline-flex!important;
+      // display: inline-block;
 
       &.button {
         padding: 1rem 1.7rem;

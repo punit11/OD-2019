@@ -3,7 +3,7 @@
     color: $white;
     position: relative;
     overflow-x: hidden;
-    
+    padding: 0;
 
     @include md {
         padding: 7rem 7rem 0 7rem;
@@ -56,10 +56,15 @@
     h2 {
         text-transform: uppercase;
         font-family: $font-stack-xl;
-        // font-size: 4.8rem;
         line-height: 1.08em;
         max-width: 81rem;
         letter-spacing: -0.8px;
+        padding: 0 1rem;
+
+        @include md {
+            padding: 0;
+            margin-bottom: 6.5rem;
+        }
     }
 
     .video-container {
@@ -94,6 +99,11 @@
     }
 
     .video-text {
+        overflow-y: hidden;
+
+        @include md {
+            overflow-y: initial;
+        }
 
         .video {
             margin-top: 6rem;
@@ -103,6 +113,35 @@
                 margin-right: 2.05vw;
             }
         }
+        a {
+            order: 2;
+            position: relative;
+
+            @include md {
+                order: 1;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 69px 32px 0 32px;
+                border-color: $blue transparent transparent transparent;
+                top: -4rem;
+                right: 1.2rem;
+
+                @include md {
+                    right: auto;
+                }
+            }
+
+            img {
+                display: block;
+            }
+        }
         .p48 {
             color: $blue;
             font-family:  $font-stack-xl;
@@ -110,11 +149,15 @@
             width: 100%;
             order: 1;
             overflow: hidden;
+            padding: 0 1rem;
+            margin-bottom: 6.5rem;
 
             @include md {
                 order: 2;
                 max-width: 25.8rem;
                 margin-left: 3.4vw;
+                padding: 0;
+                margin-bottom: initial;
             }
 
             @include lg {
@@ -146,17 +189,11 @@ body {
 
         a {
             &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 69px 32px 0 32px;
                 border-color: $blue transparent transparent transparent;
-                top: -4rem;
+
             }
         }
+
       }
       
 
@@ -174,15 +211,8 @@ body {
 
         a {
             &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 69px 32px 0 32px;
                 border-color: $teal transparent transparent transparent;
-                top: -4rem;
+
             }
         }
 
@@ -201,15 +231,8 @@ body {
 
         a {
             &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 69px 32px 0 32px;
                 border-color: $yellow transparent transparent transparent;
-                top: -4rem;
+
             }
         }
 
@@ -229,15 +252,8 @@ body {
 
           a {
             &:before {
-                content: "";
-                display: block;
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 69px 32px 0 32px;
                 border-color: $magenta transparent transparent transparent;
-                top: -4rem;
+
             }
         }
       }

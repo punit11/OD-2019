@@ -44,7 +44,8 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
+  border-radius: 2.5rem;
+  
   &-inverse {
     background: $white;
     color: $teal;
