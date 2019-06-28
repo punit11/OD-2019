@@ -13,7 +13,8 @@ import {youtubeApi} from "./you-tube-api";
 import {baf_form} from "./baf-form";
 import {destyleMktoForm} from "./destyle-mkt-forms";
 import {populate_cards} from "./populate-cards";
-
+import {forgot_pwd} from "./journey/forgot-pwd";
+import {reset_pwd} from "./journey/reset-pwd";
 
 // Homepage/Generic CSS
 // import "../styles/_base.scss";
