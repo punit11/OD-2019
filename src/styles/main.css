@@ -1043,6 +1043,11 @@ body p {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.mktoForm[data-styles-ready="true"] {
+  visibility: hidden;
+  display: none;
+}
+
 .button, .btn {
   border-radius: 2.5rem;
   padding: 1rem 2rem;
@@ -1070,6 +1075,7 @@ body p {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 2.5rem;
 }
 
 .button-inverse, .btn-inverse {
@@ -1087,12 +1093,34 @@ body p {
   color: #c74298;
 }
 
+.button.yellow, .btn.yellow {
+  background: #ffd923;
+  border: 1px solid #ffd923;
+  color: #000000;
+}
+
+.button.yellow-inverse, .btn.yellow-inverse {
+  background: #ffffff;
+  color: #000000;
+}
+
+.button.blue, .btn.blue {
+  background: #007d9b;
+  border: 1px solid #007d9b;
+}
+
+.button.blue-inverse, .btn.blue-inverse {
+  background: #ffffff;
+  color: #007d9b;
+}
+
 @media (min-width: 768px) {
   .button, .btn {
     max-width: 400px;
     max-width: -moz-fit-content;
     max-width: -webkit-fit-content;
     max-width: fit-content;
+    min-width: 20rem;
   }
 }
 
@@ -2645,7 +2673,9 @@ body.warrnambool .hero-banner.location-page .hero-pic:after {
 }
 
 .tiles-wrapper .tile span:not(.desktop-version) {
-  display: inline-block;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
 }
 
 .tiles-wrapper .tile span:not(.desktop-version).button {
@@ -2820,7 +2850,8 @@ body.warrnambool .hero-banner.location-page .hero-pic:after {
 
 @media (min-width: 576px) {
   .comps-form, .baf-form {
-    margin-bottom: 16rem;
+    margin-bottom: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -3417,6 +3448,13 @@ body[class^='Win'] .manifesto span {
   .explore-campus img {
     width: auto;
   }
+}
+
+.button {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  border-radius: 2.5rem;
 }
 
 .custom-heading h2 {

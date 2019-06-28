@@ -90,9 +90,10 @@
     display: block;
     height: 100%;
     // height: calc(100% - 15px);
-    left: 0;
+    left: 2px;
     top: 0;
-    width: 100%;
+    // width: 100%;
+    width: 6px;
 }
  
 .scrollbar-outer > .scroll-element.scroll-x {
