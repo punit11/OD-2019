@@ -3,13 +3,11 @@ import {getCookieValue} from "./get-cookies";
 import {show_hide_modal} from "./show-hide-modal";
 
  var add_to_planner = (function(){
-  
-
-
     var clickedEventID = '';
-    
     var od_saved_events = [];
+
       $(".owl-carousel").on("click", "span.add", function() {
+
       let logged_in = getCookieValue('od-token');
       if (logged_in) {
  // Get all the selected courses
@@ -22,7 +20,16 @@ import {show_hide_modal} from "./show-hide-modal";
       let course_count = parseInt($(".js-sessions-added").text());
       console.log('course_count ', course_count);  
       // console.log("event added");
+      // let clicked_evt = this; // for clone
+      // clickedEventID = $(this).data("eventid");  // for clone
+
       $(this).toggleClass("selected");
+
+      // let clicked_parent = $(this).parent();
+      // if ($(clicked_parent.hasClass('.cloned'))) {
+      // $('.cloned span[data-eventid =' + clickedEventID + ']').toggleClass("selected"); // for clone
+      // }
+
       if ($(this).hasClass("selected")) {
       course_count += 1;
       clickedEventID = $(this).data("eventid");
@@ -90,9 +97,11 @@ import {show_hide_modal} from "./show-hide-modal";
       // var arr_diff = original_events_arr.filter(function(obj) { return course_arr.indexOf(obj) == -1; });
       console.log('od_saved_events ', od_saved_events);
 
+      const uniArr = [...(new Set(od_saved_events))]; // Sanity check for duplicates elements in array before sending to AWS
+
       var dataset = {
         sub: sub_value,
-        EventID: od_saved_events
+        EventID: uniArr
         
     };
     //var JSONObject= {"uname":uname, "password":password };

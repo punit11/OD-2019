@@ -7,7 +7,7 @@
     flex-direction: column;
     text-align: left;
 
-    &__header {
+     &__header {
         display: flex;
         flex: 0 0 100%;
         flex-wrap: nowrap;
@@ -227,3 +227,7 @@
         padding: 0;
     }
 }
+
+// .course-info-carousel .owl-item.active:last-child(1n) {
+//     opacity: 0.2!important;
+//   }

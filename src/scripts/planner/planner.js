@@ -60,6 +60,7 @@ console.log("Select clicked");
             //       console.log('Fetch Burwood JSON');
             //       fetchJSONfile('src/data/Burwood.json', 'bw-wrapper');
             //   }
+          
             if (campus_check[0]) {
                 fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json', 'wb-wrapper');
             }
