@@ -146,10 +146,16 @@ $("#baf-form").validate({
         $(".baf-form, #baf-form-button").fadeOut();
         $(".baf-msg").empty().append("<p class='thankyou-msg'>Great, you are now registered for the competition.</p>").fadeIn();
         
-        // Scroll to succesful message text
-        let comps_offset = $( ".row.comps" );
-        $("html").animate({ scrollTop: comps_offset.offset().top }, 500);
-      }); // Market form end
+         // Scroll to succesful message text
+         let comps_offset = $( ".comp-info" );
+         // $("html,body").animate({ scrollTop: comps_offset.offset().top }, 500);
+         if (navigator.userAgent.toLowerCase().match(/(ipad|iphone)/)) {
+           $("body").animate({ scrollTop: comps_offset.offset().top }, 500);
+           // let elmnt = document.getElementById("content");
+           // elmnt.scrollIntoView();
+           }
+           else $("html,body").animate({ scrollTop: comps_offset.offset().top }, 500);
+       }); // Market form end
     }
 }
 });

@@ -37,7 +37,7 @@ import {show_hide_modal} from "./show-hide-modal";
       // Push the item to localStorage saved events
       let storedData = localStorage.getItem("od_saved_events");
 
-          if (storedData) { // Append to existing arr if there are events present already
+      if (storedData !== "undefined") { // Append to existing arr if there are events present already
             let od_saved_events = JSON.parse(storedData);
             od_saved_events.push(clickedEventID);
             localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
@@ -53,7 +53,7 @@ import {show_hide_modal} from "./show-hide-modal";
         // Remove event from local storage
         let storedData = localStorage.getItem("od_saved_events");
 
-        if (storedData) { // Remove events from existing arr if there are events present already
+        if (storedData !== "undefined") { // Remove events from existing arr if there are events present already
           let od_saved_events = JSON.parse(storedData);
           od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
           localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
@@ -89,7 +89,7 @@ import {show_hide_modal} from "./show-hide-modal";
       // console.log('Altered array ', course_arr);
 
       let storedData = localStorage.getItem("od_saved_events");
-      if (storedData) {
+      if (storedData !== "undefined") {
         var od_saved_events = JSON.parse(storedData);
       }
 
@@ -142,7 +142,7 @@ import {show_hide_modal} from "./show-hide-modal";
        if (logged_in) {
          e.preventDefault();
         console.log("Logged in");
-        window.location.href = "/planner"; // ***  Redirect to planner
+        window.location.href = "/openday/myplanner"; // ***  Redirect to planner
        }
        else{
         show_hide_modal();
