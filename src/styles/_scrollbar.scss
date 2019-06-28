@@ -88,7 +88,8 @@
  
 .scrollbar-outer > .scroll-element div {
     display: block;
-    height: calc(100% - 15px);
+    height: 100%;
+    // height: calc(100% - 15px);
     left: 0;
     top: 0;
     width: 100%;
@@ -114,7 +115,7 @@
 .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { 
     right: 8px;
     width: 8px; 
-    margin-top: 1.5rem;
+    // margin-top: 1.5rem;
 }
  
 .scrollbar-outer > .scroll-element .scroll-element_outer { overflow: hidden; }
