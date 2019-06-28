@@ -298,6 +298,10 @@
 .sticky-bar {
   position: sticky;
   bottom: 0; /* required */
+
+  .btn-inverse {
+    max-width: 350px;
+  }
 }
 
 
