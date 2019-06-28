@@ -4304,7 +4304,7 @@ body[class^='Win'] .manifesto span {
 /** videoModal **/
 #videoModal {
   border-radius: 0;
-  width: 870px;
+  max-width: 870px;
   margin: auto;
 }
 
