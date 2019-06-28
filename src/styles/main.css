@@ -1801,7 +1801,7 @@ article {
 .nav-right {
   position: absolute;
   right: 7.5rem;
-  top: 1.8rem;
+  top: 1rem;
 }
 
 .nav-right svg {
@@ -1811,7 +1811,6 @@ article {
 @media (min-width: 768px) {
   .nav-right {
     right: 1.5rem;
-    top: 1.5rem;
   }
   .nav-right svg {
     display: inline-block;
@@ -1846,6 +1845,16 @@ article {
 
 .burwood .no-burwood {
   display: none;
+}
+
+.myplanner .nav-list, .myplanner #nav-toggle {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .myplanner .nav-container {
+    height: 70px;
+  }
 }
 
 .hero-banner {
@@ -3065,6 +3074,17 @@ body.warrnambool .hero-banner.location-page .hero-pic:after {
   .comps-form #feildset2 .btn, .baf-form #feildset2 .btn {
     min-width: 10.5rem;
     font-size: 1.3rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .comps-form #feildset2 .checkbox-button, .baf-form #feildset2 .checkbox-button {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .comps-form #feildset2 .checkbox-button .error, .baf-form #feildset2 .checkbox-button .error {
+    margin-left: 1rem;
   }
 }
 

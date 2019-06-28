@@ -196,8 +196,19 @@
                 min-width: 10.5rem;
                 font-size: 1.3rem!important;
             }
+        }  
+    }
+
+    #feildset2 {
+        @include md {
+            .checkbox-button {
+                align-items: baseline;
+
+                .error {
+                    margin-left: 1rem;
+                }
+            }
         }
-        
     }
 }
 .thankyou-msg {
