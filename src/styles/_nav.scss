@@ -367,12 +367,12 @@ article {
             border-color: $yellow;
         }
     }
-  }
+}
 
 .nav-right {
     position: absolute;
     right: 7.5rem;
-    top: 1.8rem;
+    top: 1rem;
 
     svg {
         display: none;
@@ -380,7 +380,6 @@ article {
 
     @include md {
         right: 1.5rem;
-        top: 1.5rem;
 
         svg {
             display: inline-block;
@@ -406,4 +405,16 @@ article {
 
 .burwood .no-burwood {
     display: none;
+}
+
+.myplanner {
+    .nav-list, #nav-toggle {
+        display: none;
+    }
+
+    @include md {
+        .nav-container {
+            height: 70px;
+        }
+    }
 }
