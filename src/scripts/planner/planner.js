@@ -80,7 +80,7 @@ console.log("Select clicked");
           } else return false;
       }
       
-      console.log("CheckPoint 3");
+    //   console.log("CheckPoint 3");
 
       function getEventsfromDB() {
           
@@ -96,7 +96,7 @@ console.log("Select clicked");
 
         
       
-        console.log("CheckPoint 4");
+        // console.log("CheckPoint 4");
       }
       // AJAX call sent only for campuses present in user's account.
       function fetchJSONfile(dataURL, selector) {
@@ -195,54 +195,57 @@ console.log("Select clicked");
       
       // Get events on campus drop-down change
       function displayPlannerData(campus_value = 'Melbourne Burwood') {
-
         let msg = "Sorry, you have not selected any events for this campus.";
-          console.log('Inside displayPlannerData', campus_value);
-          
-          
-          if (campus_value == 'Warrnambool') {
+        //   console.log('Inside displayPlannerData', campus_value);
+          if (campus_value == 'Warrnambool') {  
             var opdate = $('.tiles-wrapper .warrnambool .date p').text(),
                 optime = $('.tiles-wrapper .warrnambool .first-md p:last-child').text().split('–'),
                 usetime = optime[0];
-                if (globals_wb_wrapper) {
+            
+            if (globals_wb_wrapper) {
+            $(".bg--round-pink").empty().text(globals_wb_wrapper.length);
             render_cards(globals_wb_wrapper);
             console.log('Warrnambool', globals_wb_wrapper);
             }
+
             else {
+                $(".bg--round-pink").empty().text('0');
                 $(".eventcard").hide();
                 $(".no-events-selected").show();
             }
             
           }
           else if (campus_value == 'Geelong Waurn Ponds') {
+            
+            var opdate = $('.tiles-wrapper .waurn-ponds .date p').text(),
+            optime = $('.tiles-wrapper .waurn-ponds .first-md p:last-child').text().split('–'),
+            usetime = optime[0];
 
             if (globals_wp_wrapper) {
-
-                var opdate = $('.tiles-wrapper .waurn-ponds .date p').text(),
-                    optime = $('.tiles-wrapper .waurn-ponds .first-md p:last-child').text().split('–'),
-                    usetime = optime[0];
-
-            render_cards(globals_wp_wrapper);
-            console.log('Geelong Waurn Ponds', globals_wp_wrapper);
+                $(".bg--round-pink").empty().text(globals_wp_wrapper.length);
+                render_cards(globals_wp_wrapper);
+                console.log('Geelong Waurn Ponds', globals_wp_wrapper);
             }
             else {
+                $(".bg--round-pink").empty().text('0');
                 $(".eventcard").hide();
                 $(".no-events-selected").show();
             }
 
           }
           else if (campus_value == 'Geelong Waterfront') {
+            
+            var opdate = $('.tiles-wrapper .waterfront .date p').text(),
+            optime = $('.tiles-wrapper .waterfront .first-md p:last-child').text().split('–'),
+            usetime = optime[0];
 
             if (globals_wf_wrapper) {
-
-                var opdate = $('.tiles-wrapper .waterfront .date p').text(),
-                optime = $('.tiles-wrapper .waterfront .first-md p:last-child').text().split('–'),
-                usetime = optime[0];
-
-            render_cards(globals_wf_wrapper);
-            console.log('Geelong Waterfront', globals_wf_wrapper);
+                $(".bg--round-pink").empty().text(globals_wf_wrapper.length);
+                render_cards(globals_wf_wrapper);
+                console.log('Geelong Waterfront', globals_wf_wrapper);
             }
             else {
+                $(".bg--round-pink").empty().text('0');
                 $(".eventcard").hide();
                 $(".no-events-selected").show();
             }
@@ -252,11 +255,14 @@ console.log("Select clicked");
             var opdate = $('.tiles-wrapper .burwood .date p').text(),
                 optime = $('.tiles-wrapper .burwood .first-md p:last-child').text().split('–'),
                 usetime = optime[0];
+
             if (globals_bw_wrapper) {
+                $(".bg--round-pink").empty().text(globals_bw_wrapper.length);
                 render_cards(globals_bw_wrapper);
                 console.log('Burwood', globals_bw_wrapper);
                 }
                 else {
+                    $(".bg--round-pink").empty().text('0');
                     $(".eventcard").hide();
                     $(".no-events-selected").show();
                 }
@@ -284,39 +290,6 @@ console.log("Select clicked");
         }
            // ----- Render function end
 
-          // Render Dropdowns using template 'dd'
-          // let template_dd = Handlebars.templates['myplan'];
-          // if (campus_value == 'Warrnambool') {
-          //     //displayPlannerData('globals_wb_wrapper');
-          //     let wrapper_dd = {
-          //         cards: globals_wb_wrapper
-          //     };
-          //     $("#myplan-wrapper").html(template_dd(wrapper_dd)); // Bind template to HTML
-          //     //console.log('Inside dd click', campus_value);
-          // } else if (campus_value == 'Geelong Waurn Ponds') {
-          //     //displayPlannerData('globals_wp_wrapper');
-          //     let wrapper_dd = {
-          //         cards: globals_wp_wrapper
-          //     };
-          //     $("#myplan-wrapper").html(template_dd(wrapper_dd)); // Bind template to HTML
-          // } else if (campus_value == 'Geelong Waterfront') {
-          //     //displayPlannerData('globals_wf_wrapper');
-          //     let wrapper_dd = {
-          //         cards: globals_wf_wrapper
-          //     };
-          //     $("#myplan-wrapper").html(template_dd(wrapper_dd)); // Bind template to HTML
-          // } else {
-          //     //console.log('displayPlannerData',globals_bw_wrapper);
-          //     let wrapper_dd = {
-          //         cards: globals_bw_wrapper
-          //     };
-          //     $("#myplan-wrapper").html(template_dd(wrapper_dd)); // Bind template to HTML
-          // }
-          //$("#myplan-wrapper").html(template_dd(wrapper_dd)); // Bind template to HTML
-
-
-
-          
       }
       
       $("#campus-location").on('change', function () {
@@ -324,22 +297,15 @@ console.log("Select clicked");
           console.log('campus_value is ',campus_value);
           displayPlannerData(campus_value);
       });
-      
-      
-      // function check_user_loggedin() {
-          // var cookie_value = /^(.*;)?\s*od-token\s*=\s*[^;]/.test(document.cookie);
-          // var campus_value = /^(.*;)?\s*od-sub\s*=\s*[^;]/.test(document.cookie);
-          // var sub_value = /^(.*;)?\s*od-campus\s*=\s*[^;]/.test(document.cookie);
           
-          console.log("Processing started");
-
           var cookie_value = getCookieValue('od-token');
           var sub_value = getCookieValue('od-sub');
           var campus_value = getCookieValue('od-campus');
       
           // Set Dropdown value
           if (campus_value) {
-              $("#campus-location").val(campus_value);
+            console.log('pre-selected campus_value', campus_value);
+              $("#campus-location").val(campus_value).trigger('change');
           }
       
       

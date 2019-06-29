@@ -34,7 +34,7 @@ import {show_hide_modal} from "./show-hide-modal";
       // Push the item to localStorage saved events
       let storedData = localStorage.getItem("od_saved_events");
 
-      if (storedData !== "undefined") { // Append to existing arr if there are events present already
+      if ((storedData !== "undefined") && (storedData !== null)) { // Append to existing arr if there are events present already
             let od_saved_events = JSON.parse(storedData);
             od_saved_events.push(clickedEventID);
             localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
@@ -50,7 +50,7 @@ import {show_hide_modal} from "./show-hide-modal";
         // Remove event from local storage
         let storedData = localStorage.getItem("od_saved_events");
 
-        if (storedData !== "undefined") { // Remove events from existing arr if there are events present already
+        if ((storedData !== "undefined") && (storedData !== null)) { // Remove events from existing arr if there are events present already
           let od_saved_events = JSON.parse(storedData);
           od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
           localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
@@ -83,7 +83,7 @@ import {show_hide_modal} from "./show-hide-modal";
       let campus_value = getCookieValue('od-campus');
 
       let storedData = localStorage.getItem("od_saved_events");
-      if (storedData !== "undefined") {
+      if ((storedData !== "undefined") && (storedData !== null)) {
         var od_saved_events = JSON.parse(storedData);
       }
 
