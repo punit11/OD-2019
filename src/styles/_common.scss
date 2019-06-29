@@ -25,6 +25,9 @@ body {
   visibility: hidden;
   display: none;
 }
+button {
+  cursor: pointer;
+}
 
 .button, .btn {
   border-radius: 2.5rem;
@@ -35,6 +38,7 @@ body {
   font-family: $font-stack-os-bold;
   background: $teal;
   color: #fff;
+  cursor: pointer;
   font-weight: 600;
   font-style: normal;
   text-decoration: none;

@@ -3,6 +3,7 @@ import * as AmazonCognitoIdentity from 'amazon-cognito-identity-js';
 import render_ticks from "./render-ticks";
 import getOdEvents from "./get-events-for-planner";
 import login_check from "../planner/planner";
+import {modalHeight} from "./show-hide-modal";
 
 var signin = (function(callback_func1,callback_func2) {
 
@@ -78,6 +79,10 @@ var signin = (function(callback_func1,callback_func2) {
                         $("#SignupModal .loader").fadeOut("slow");
                         $("#login-form").toggle();
                         $(".f2-success").toggle().html("<h2>You have successfuly signed-in!</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc + "</p>");
+                        
+                        // set the height of the modal based on success message height
+                        var successHeight = $('.f2-success').height() + 75;
+                        $('.modal-content').css('min-height', successHeight);
                         
                     }
                 });
