@@ -20,16 +20,11 @@ function getOdEvents() {
             },
             success: function (data) {
                 console.log("success");
-                getODresults = data;
-                
+                getODresults = data; 
                 let original_events_arr = getODresults["EventID"];
-
                 console.log('getODresults ', original_events_arr);
-
                 // store array to localstorage
                 localStorage.setItem("od_saved_events",  JSON.stringify(original_events_arr));
-                // retrieve stored data (JSON stringified) and convert
-
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log(textStatus, errorThrown);

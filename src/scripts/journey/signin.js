@@ -75,8 +75,10 @@ var signin = (function(callback_func1,callback_func2) {
                 cognitoGetUser.getSession(function (err, result) {
                     if (result) {
                         console.log("User Successfuly Authenticated!");
+                        $("#SignupModal .loader").fadeOut("slow");
                         $("#login-form").toggle();
                         $(".f2-success").toggle().html("<h2>You have successfuly signed-in!</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc + "</p>");
+                        
                     }
                 });
             }
@@ -89,17 +91,22 @@ var signin = (function(callback_func1,callback_func2) {
         },
 
         onFailure: function (err) {
-            // $("#SignupModal .loader").fadeOut("slow");
+            $("#SignupModal .loader").fadeOut("slow");
             // console.log(err.message);
             if (err.code == 'UserNotConfirmedException') {
                 $(".f2-fail").toggle().html("Your email address is not yet verified. Please check your inbox to verify your email address.");
             } else if (err.code == 'PasswordResetRequiredException') {
                 $(".f2-fail").toggle().html("You need to reset your password.");
             } else if (err.code == 'NotAuthorizedException') {
-                $(".f2-fail").toggle().html("Your username or login is incorrect. Please try again or reset your password.");
+                $(".f2-fail").toggle().html("Your username or password is incorrect. Please try again or reset your password.");
             } else if (err.code == 'ResourceNotFoundException') {
                 $(".f2-fail").toggle().html("There are some technical problems with the server. Please try again later.");
-            } else {
+            } else if (err.code == 'InvalidParameterException') {
+                $(".f2-fail").toggle().html("Please enter your email address");
+            } else if (err.code == 'UserNotFoundException') {
+                $(".f2-fail").toggle().html("Sorry, We couldn't find an account with that email address in our system.");
+            } 
+            else {
                 $(".f2-fail").toggle().html(err.message);
             }
         },

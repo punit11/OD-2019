@@ -113,7 +113,7 @@ $("#register-form").submit(function (e) {
         // console.log('studyLevel: ', studyLevel);
         var campusLocation = $("select[name=campus]").val();
         // console.log('campusLocation: ', campusLocation);
-        var emailOptIn = $('#gridCheck1').is(':checked');
+        var emailOptIn = $('#Email_Opt_In').is(':checked');
         
         // var poolData = {
         // UserPoolId: 'ap-southeast-2_lM6HirBLN',
