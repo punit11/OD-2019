@@ -11,12 +11,13 @@ var modal_toggler = (function() {
         $(".f1-success,.f1-fail,.f2-success,.f2-fail").hide();
     });
 
-    $("#SignupModal .forgot-login-toggle").click(function () {
+    // $("#SignupModal .forgot-login-toggle").click(function () {
+        $("#SignupModal .f3-success").on("click", ".forgot-login-toggle", function(event){
         let currentfrmID = $(this).closest('form').attr('id');
         let showformID = $(this).data("showform");
         $('#'+currentfrmID).toggle();
         $('#'+showformID).toggle();
-        //$("#login-form,#forgot-pwd-form").toggle();
+        $(".f3-success").toggle();
         $(".f2-success,.f2-fail").hide();
     });
 

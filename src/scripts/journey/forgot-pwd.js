@@ -28,13 +28,19 @@ var forgot_pwd = (function() {
         // call forgotPassword on cognitoUser
         cognitoUser.forgotPassword({
             onSuccess: function (result) {
+                $("#forgot-pwd-form").fadeOut();
                 console.log('call result: ' + result);
-                var custom_message ="<p>A verification code has been sent to your email address. Please check your inbox.<br><a class='forgot-login' href='#'>Click here</a> to change your password.</p>";
+                var custom_message ="<p>A verification code has been sent to your email address. Please check your inbox.<br><a data-showform='reset-pwd-form' class='forgot-login-toggle' href='#'>Click here</a> to change your password.</p>";
                 $(".f3-success").toggle().html(custom_message);
             },
             onFailure: function (err) {
                 console.log(err);
-                 $(".f3-fail").toggle().html(err.message);
+                if (err.code == 'InvalidParameterException') {
+                    $(".f3-fail").toggle().html("Please enter a valid email address to proceed.");
+                } else {
+                    $(".f3-fail").toggle().html(err.message);
+                }
+                //  $(".f3-fail").toggle().html(err.message);
                  }
         });
     });

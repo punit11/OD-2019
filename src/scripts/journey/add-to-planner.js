@@ -8,14 +8,11 @@ import {show_hide_modal} from "./show-hide-modal";
 
       $(".owl-carousel").on("click", "span.add", function() {
 
-      let logged_in = getCookieValue('od-token');
+      if (!logged_in) {
+      var logged_in = getCookieValue('od-token');
+        }
       if (logged_in) {
- // Get all the selected courses
-      // var course_arr = [];
-      //   $('.owl-carousel .selected').each(function() {
-      //     course_arr.push($(this).data("eventid"));
-      //   }); 
-      //   console.log('Initial course_arr',course_arr);
+      // Get all the selected courses
 
       let course_count = parseInt($(".js-sessions-added").text());
       console.log('course_count ', course_count);  
@@ -61,7 +58,8 @@ import {show_hide_modal} from "./show-hide-modal";
          else ; // Do nothing
     }
     
-      $('.js-sessions-added').text(course_count);
+      $('.js-sessions-added, .num--pink--circle').text(course_count);
+      // $('.num--pink--circle').text(course_count);
     }
     else  show_hide_modal();
   });
@@ -71,22 +69,18 @@ import {show_hide_modal} from "./show-hide-modal";
     // ---------------------
 
     $('.add-to-planner').on('click', function () {
-     
-    let logged_in = getCookieValue('od-token');
-    // console.log("logged_in", logged_in);
-    // console.log("original_events_arr ", original_events_arr);
+      $(".events-loader").show();
+
+    // let logged_in = getCookieValue('od-token');
+    if (!logged_in) {
+      var logged_in = getCookieValue('od-token');
+    }
+
     if (logged_in) {
     // Get the values of all 3 cookies
       let cookie_value = getCookieValue('od-token');
       let sub_value = getCookieValue('od-sub');
       let campus_value = getCookieValue('od-campus');
-
-      // Get all the selected courses
-      // var course_arr = [];
-      // $('.owl-carousel .selected').each(function() {
-      //   course_arr.push($(this).data("eventid"));
-      // }); 
-      // console.log('Altered array ', course_arr);
 
       let storedData = localStorage.getItem("od_saved_events");
       if (storedData !== "undefined") {
@@ -118,10 +112,12 @@ import {show_hide_modal} from "./show-hide-modal";
         dataType: 'json',
         async: false,
         success: function (data) {
+          
             console.log("success");
-            $('.js-magic').fadeOut(500).delay(4250).fadeIn('slow');
+            $('.js-magic').fadeOut(500).delay(2000).fadeIn('slow');
             setTimeout(function(){
-              $(".planner-add-success").text("Events were sucessfully added to your planner.").fadeIn(500).delay(3000).fadeOut('slow');
+              $(".planner-add-success").text("Events were sucessfully added to your planner.").fadeIn(500).delay(1000).fadeOut('slow');
+              $(".events-loader").delay(1000).fadeOut("slow");
             },500);
             
         },

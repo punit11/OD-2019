@@ -8,11 +8,12 @@
       name="viewport"
       content="width=device-width,initial-scale=1,shrink-to-fit=no"
     />
+
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
-  <body class="warrnambool location-page"> <!-- location classes to be added to body depending on campus -->
+  <body class="location-page"> <!-- location classes to be added to body depending on campus -->
 
     <!-- SVG Symbols -->
       <div class="hidden">
@@ -320,8 +321,9 @@
             <!-- </div> -->
 
             </div><!-- step-container -->
-
+            
             <div class="col-xs-12 sticky-bar sessions-added">
+            <div class="events-loader" style="display: none;"></div>
             <span class="sessions js-magic"><span class="js-sessions-added">0</span> sessions selected</span>
             <button class="btn btn-inverse add-to-planner js-magic">Add to my planner</button>
             <p class="planner-add-success"></p>
@@ -792,7 +794,7 @@
                                     <option value="University Student">A university student</option>
                                     <option value="Employed">In the workforce</option>
                                     <option value="Parent">Parent or guardian</option>
-                                    <option value="Career Practitioner">Careers Practitioner</option>
+                                    <option value="Other">Other</option>
                                  </select>
                               </div>
                               <div class="form-group iYL" style="display: none;">
@@ -838,8 +840,8 @@
                               <div class="signup_wrapper center">
                                  <div class="form-group">
                                     <div class="checkbox-button">
-                                          <input class="form-check-input" type="checkbox" id="Email_Opt_In__c">
-                                          <label class="form-check-label" for="Email_Opt_In__c">Stay up to date with Deakin</label>
+                                          <input class="form-check-input" type="checkbox" id="Email_Opt_In">
+                                          <label class="form-check-label" for="Email_Opt_In">Stay up to date with Deakin</label>
                                     </div>
                                  </div>      
                                  <div class="aws-error"></div>       
@@ -875,11 +877,11 @@
                              <h2 class="modal-title" id="myModalLabel">Log in</h2>  
                          </div>                         
                          <div class="form-group">
-                             <label for="log_email">Email</label>
+                             <!-- <label for="log_email">Email</label> -->
                              <input type="text" id="log_email" class="form-control" name="sign-in-email" placeholder="Email Address">
                          </div>
                          <div class="form-group">
-                             <label for="log_password">Password</label>
+                             <!-- <label for="log_password">Password</label> -->
                              <input type="password" id="log_password" class="form-control" name="sign-in-pass" placeholder="Password">
                          </div>
 
@@ -1120,5 +1122,6 @@
          mktoFormChain(mktoFormConfig);
       </script>
          <!-- Marketo form initilisation end -->
+        
   </body>
 </html>
