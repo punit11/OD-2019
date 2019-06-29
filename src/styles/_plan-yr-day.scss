@@ -296,6 +296,7 @@
 }
 
 .sticky-bar {
+  position: -webkit-sticky;
   position: sticky;
   bottom: 0; /* required */
 
