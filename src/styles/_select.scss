@@ -11,7 +11,8 @@
     }
 }
 .select2-container--default  {
-    max-width: 33.4rem;
+    // max-width: 33.4rem;
+    max-width: 100%;
 
     @include md {
         max-width: initial;

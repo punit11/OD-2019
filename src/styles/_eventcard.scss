@@ -34,7 +34,7 @@
 
         .selected:after {
             content: "";
-            background: #128774 url(//www.deakin.edu.au/openday/design-files/images/tick-new.svg) no-repeat center center;
+            background: #128774 url(//www.deakin.edu.au/__data/assets/file/0007/1924927/tick-new.svg) no-repeat center center;
             color: white;
             border-radius: 50%;
             font-size: 2.5rem;
@@ -65,6 +65,7 @@
         margin-bottom: 0.5rem;
         flex: 1 1 auto;
         align-items: center;
+        overflow-y: hidden;
 
         &.where {
             height: 5rem;
@@ -75,6 +76,7 @@
     .icon-pin,
     .icon-clock {
         width: 1.5rem;
+        min-width: 1.5rem;
         height: 1.7rem;
         margin-right: 1rem;
 
