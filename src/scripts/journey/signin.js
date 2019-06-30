@@ -79,6 +79,10 @@ var signin = (function(callback_func1,callback_func2) {
                         $("#login-form").toggle();
                         $(".f2-success").toggle().html("<h2>You have successfuly signed-in!</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc + "</p>");
                         
+                        // set the height of the modal based on success message height
+                        var successHeight = $('.f2-success').height();
+                        $('.modal-content').css('min-height', successHeight);
+                        
                     }
                 });
             }

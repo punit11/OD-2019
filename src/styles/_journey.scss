@@ -266,9 +266,9 @@ nav {
     }
 }
 
-#form-success, .f1-success {
+#form-success {
     text-align: center;
-    padding: 0 0 4rem;
+    padding: 0 0 4.5rem;
 
     @include md {
         padding: 0 8rem 9rem;

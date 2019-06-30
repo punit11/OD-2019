@@ -41,6 +41,15 @@
   border-radius: 0;
   max-width: 870px;
   margin: auto;
+  overflow: visible;
+
+  @include md {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-65%) translateX(-50%);
+    -ms-transform: translateY(-65%) translate(-50%);
+    transform: translateY(-65%) translate(-50%);
+  }
 }
 #videoModal .modal-header {
   // background: #000;

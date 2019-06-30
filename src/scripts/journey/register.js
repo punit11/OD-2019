@@ -252,6 +252,11 @@ $("#register-form").submit(function (e) {
                                  $("#register-form").toggle();
                                  $("#SignupModal .loader").fadeOut("slow");
                                  $(".f1-success").toggle().html("<h2>Account Created</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc +"</p>");
+
+                                 
+                                 // set the height of the modal based on success message height
+                                var successHeight = $('.f1-success').height() + 75;
+                                $('.modal-content').css('min-height', successHeight);
                              }
                          });
                      }

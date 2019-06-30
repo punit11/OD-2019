@@ -37,9 +37,6 @@ function modalHeight() {
         pageHeight = $(window).outerHeight(),
         maxContentHeight = pageHeight - 100;
 
-    console.log('content height ===========>' + contentHeight);
- 
-
     if($(window).height() > contentHeight) {
         $(".modal-content").css({
             'max-height' : maxContentHeight + 'px',
