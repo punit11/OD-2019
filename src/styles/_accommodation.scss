@@ -18,7 +18,7 @@
         display: none;
         position: absolute;
         content: "";
-        background: url("/src/images/circle-triangle.png") no-repeat 0 0;
+        // background: url("/src/images/circle-triangle.png") no-repeat 0 0;
         background-size: contain;
         width: 18.2rem;
         height: 19rem;
@@ -64,7 +64,7 @@
         }
 
         &:after {
-            background: url("/src/images/black-triangle-outline.svg") no-repeat -200px 0;
+            background: url("//www.deakin.edu.au/__data/assets/file/0011/1918082/black-triangle-outline.svg") no-repeat -200px 0;
             content: "";
             display: none;
             width: 0;
