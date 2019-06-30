@@ -1,7 +1,6 @@
 
 import { CognitoUserPool, CognitoUserAttribute, CognitoUser } from 'amazon-cognito-identity-js';
 import * as AmazonCognitoIdentity from 'amazon-cognito-identity-js';
-// import {modalHeight} from "./show-hide-modal";
 
 var forgot_pwd = (function() {
     $("#forgot-pwd-form").submit(function (e) {
