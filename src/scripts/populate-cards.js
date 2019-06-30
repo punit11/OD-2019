@@ -1,35 +1,39 @@
 
 import makeAjaxCall from "./model";
 import "../data/Burwood.json";
+import "../data/Waurn-ponds.json";
 import {dd_template, card_template} from './templates';
 // import {owlCarousel} from "owl.carousel";
 import bind_owl from "./owl-carousel";
 import render_ticks from "./journey/render-ticks";
 
 function populate_cards(session,selected_ia,caller) {
+  
        session = session || ''; //set default to all
        selected_ia = selected_ia || ''; //set default to all
        caller = caller || ''; //set default to all
 
       //  console.log("session ", session);
       //  console.log("selected_ia ", selected_ia);
-       var URL = "src/data/Burwood.json";
+          //  URL = "src/data/Burwood.json";
+   
 
-      // if (window.location.href.indexOf("burwood") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
-      //       }
-      //   else if (window.location.href.indexOf("warrnambool") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
-      //       }
-      //   else if (window.location.href.indexOf("waterfront") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
-      //       }
-      //   else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
+      if (window.location.href.indexOf("burwood") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
+            }
+        else if (window.location.href.indexOf("warrnambool") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
+            }
+        else if (window.location.href.indexOf("waterfront") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
+            }
+        else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
 
        makeAjaxCall(URL)
       .done(function (result) {
-        // console.log("data loading done");
-        // courseFinder2(data);
+        console.log("Populate Cards called 1");
+        console.log("data loading done");
+        console.log("DataSet ", result);
         let dd_arr= result;
         dd_arr.sort(function (a, b) {
           return new Date('1970/01/01 ' + a.Start_time) - new Date('1970/01/01 ' + b.Start_time);
@@ -86,6 +90,7 @@ function populate_cards(session,selected_ia,caller) {
 
         // ----- Render function
         function render_cards(render_data, render_loc) {
+          console.log("Populate Cards render func called 2");
         render_data.forEach(function (evt) {
         let template_dd = card_template({
           'evt_code': evt.Event_code,
@@ -104,6 +109,16 @@ function populate_cards(session,selected_ia,caller) {
     //  callback();
 
     $(function() {
+      // if $(".owl-stage") {
+        let browser = navigator.userAgent.toLowerCase(); // Firefox hack
+        if (browser.indexOf('firefox') > -1) {
+        if($.trim($(".owl-stage").html())=='') {
+          populate_cards();
+          bind_owl();
+          render_ticks();
+          return false;
+      }
+    }
         bind_owl();
         // Populate counters
         $("#course_evt_count").text(course_info_arr.length);
