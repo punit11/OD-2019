@@ -7,7 +7,7 @@ import {signin} from "./journey/signin";
 import {add_to_planner} from "./journey/add-to-planner";
 
 import {owl} from "./owl-carousel";
-import {show_sessioninfo} from "./dayplanner"; 
+// import {show_sessioninfo} from "./dayplanner"; 
 import {login_check} from "./planner/planner";
 
 

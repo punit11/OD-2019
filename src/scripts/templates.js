@@ -50,7 +50,7 @@ let planner_template = ( { evt_code, evt_title, evt_location, evt_start_time, ev
                             `:`
                              `}
                             </p>
-                            <span data-eventId="${evt_code}" class="add selected"></span>
+                            <a href="#" data-eventId="${evt_code}" class="remove-from-planner">Remove from planner</a>
                         </div>
                         <div class="eventcard__body row">
                             <div class="flexContainer--qtr">
