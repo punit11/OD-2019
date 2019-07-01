@@ -290,9 +290,9 @@
     text-align: left;
   }
 
-  .sessions {
-    margin-right: 1rem;
-  }
+  // .sessions {
+  //   margin-right: 1rem;
+  // }
 }
 
 .sticky-bar {
@@ -300,8 +300,63 @@
   position: sticky;
   bottom: 0; /* required */
 
-  .btn-inverse {
-    max-width: 350px;
+  .container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: $white;
+    }
+
+    .sessions.btn {
+      min-width: initial;
+      max-width: auto;
+
+      @media only screen and (max-width: $screen-xs-min) {
+        font-size: 1.1rem;
+        padding: 0;
+        height: 4rem;
+      }
+
+      span {
+        margin: 0 0.4rem;
+      }
+    }
+
+    .button,
+    .btn {
+      min-width: auto;
+    }
+  }
+
+  button {
+    padding: 8px;
+    margin: 0;
+    min-width: 0;
+    height: 4rem;
+    flex: 0 0 auto;
+    
+    @include md {
+      padding: 1rem 2rem;
+      height: 5rem;
+    }
+    span {
+      display: none;
+
+      @include md {
+        display: initial;
+      }
+    }
+
+    .icon-calendar {
+      margin-right: 0;
+
+      @include md {
+        margin-right: 1.3rem
+      }
+    }
   }
 }
 

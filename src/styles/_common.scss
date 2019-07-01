@@ -86,6 +86,16 @@ button {
     }
   }
 
+  &.charcoal {
+    background: $charcoal;
+    border: 1px solid $charcoal;
+
+    &-inverse {
+      background: $white;
+      color: $charcoal;
+    }
+  }
+
   @include md {
     max-width: 400px;
     max-width: -moz-fit-content;
