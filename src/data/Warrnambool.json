@@ -61,7 +61,7 @@
     "End_time": "2:00 PM",
     "Session_type": "Tour",
     "Tour_notes": "Tours available on request.",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
@@ -81,7 +81,7 @@
     "Event_code": "WB-007",
     "Interest_area": "Business",
     "Title": "Commerce",
-    "Description": "Discover what it�s like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
+    "Description": "Discover what it's like to study our internationally recognised and EPAS accredited commerce degree. Combine a solid foundation in business with your choice of professional majors including marketing, HR management, economics, financial planning and accounting.",
     "Location": "Bldg B, Room B3.03",
     "Start_time": "11:30 AM",
     "End_time": "12:00 PM",
@@ -94,7 +94,7 @@
     "Event_code": "WB-008",
     "Interest_area": "",
     "Title": "Pathways to Deakin",
-    "Description": "The traditional path from Year 12 to university isn�t the only way to Deakin. Learn more about our alternate pathways to starting your dream degree at Deakin, either through courses at Deakin, with our partner Deakin College or our TAFE partners across Victoria.",
+    "Description": "The traditional path from Year 12 to university isn't the only way to Deakin. Learn more about our alternate pathways to starting your dream degree at Deakin, either through courses at Deakin, with our partner Deakin College or our TAFE partners across Victoria.",
     "Location": "Bldg B, Room B3.03",
     "Start_time": "12:00 PM",
     "End_time": "12:30 PM",
@@ -146,7 +146,7 @@
     "Event_code": "WB-012",
     "Interest_area": "",
     "Title": "Understanding VTAC's SEAS",
-    "Description": "Find out all you need to know about VTAC�s Special Entry and Access Scheme (SEAS) from our specialists, including the application process, different SEAS categories and how SEAS impacts university selection.",
+    "Description": "Find out all you need to know about VTAC's Special Entry and Access Scheme (SEAS) from our specialists, including the application process, different SEAS categories and how SEAS impacts university selection.",
     "Location": "Bldg B, Room B3.05",
     "Start_time": "12:30 PM",
     "End_time": "1:00 PM",
@@ -165,20 +165,20 @@
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
     "Event_code": "WB-014",
     "Interest_area": "",
     "Title": "Campus tours",
-    "Description": "Join one of our tours to discover more of the Warrnambool campus. Led by our Student Ambassadors who know all the ins and outs of Deakin, you�ll get a feel for campus life while learning more about our study areas, state-of-the-art facilities, and how to make the best transition into university.",
+    "Description": "Join one of our tours to discover more of the Warrnambool campus. Led by our Student Ambassadors who know all the ins and outs of Deakin, you'll get a feel for campus life while learning more about our study areas, state-of-the-art facilities, and how to make the best transition into university.",
     "Location": "Bldg H (outside)",
     "Start_time": "10:30 AM",
     "End_time": "1:30 PM",
     "Session_type": "Tour",
     "Tour_notes": "Every 30 mins from 10.30am.",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
@@ -191,7 +191,7 @@
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
@@ -204,7 +204,7 @@
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
@@ -224,7 +224,7 @@
     "Event_code": "WB-018",
     "Interest_area": "Health sciences and allied health; Psychology",
     "Title": "Psychology and health sciences",
-    "Description": "Interested in studying psychology or health sciences? Join us to learn how our psychology courses expose you to the biological, developmental, social and cognitive factors that affect how humans think, feel and behave, and the countless career pathways available. You�ll also discover how our Bachelor of Health Sciences focuses on getting you ready to tackle the biggest issues in health - and prepares you for career opportunities which will allow you to make a difference in the largest growing employment industry in Australia.",
+    "Description": "Interested in studying psychology or health sciences? Join us to learn how our psychology courses expose you to the biological, developmental, social and cognitive factors that affect how humans think, feel and behave, and the countless career pathways available. You'll also discover how our Bachelor of Health Sciences focuses on getting you ready to tackle the biggest issues in health - and prepares you for career opportunities which will allow you to make a difference in the largest growing employment industry in Australia.",
     "Location": "Bldg J, Room J2.01, Alfred Deakin Lecture Theatre",
     "Start_time": "11:30 AM",
     "End_time": "12:30 PM",
@@ -256,7 +256,7 @@
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
@@ -269,20 +269,20 @@
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
     "Event_code": "WB-022",
     "Interest_area": "",
-    "Title": "STEM camp experience",
+    "Title": "Test your robotics skills",
     "Description": "Come and experience first-hand what it is like to attend a Deakin Warrnambool STEM Camp. Test your 21st century skills by exploring digital technologies with some hands-on robotics using our Sphero robots.",
     "Location": "Career and Course Information Centre",
     "Start_time": "10:00 AM",
     "End_time": "2:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
@@ -295,33 +295,33 @@
     "End_time": "1:00 PM",
     "Session_type": "Tour",
     "Tour_notes": "Every 60 mins from 11am.",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
     "Event_code": "WB-024",
     "Interest_area": "",
     "Title": "Deakin residences tours",
-    "Description": "Join in on one of our residence tours and discover the different types of accommodation available at our Warrnambool Campus. Learn from the experts just what it�s like to live near campus and how you can become part of our close-knit resident community.",
+    "Description": "Join in on one of our residence tours and discover the different types of accommodation available at our Warrnambool Campus. Learn from the experts just what it's like to live near campus and how you can become part of our close-knit resident community.",
     "Location": "Departing from the Accommodation booth, Career and Course Information Centre",
     "Start_time": "10:00 AM",
     "End_time": "2:00 PM",
-    "Session_type": "Tour",
+    "Session_type": "General information session",
     "Tour_notes": "Tours departing on demand.",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   },
   {
     "Event_code": "WB-025",
     "Interest_area": "",
-    "Title": "Deakin University Female Football League round robin",
+    "Title": "Football round robin",
     "Description": "Watch brilliance in the making as the rising stars of the Deakin University Female Football League show off their skills in an exhibition round robin. Teams from around the region will battle it out for the Deakin Warrnambool Open Day Pennant Flag.",
     "Location": "Sports oval",
     "Start_time": "10:00 AM",
     "End_time": "1:00 PM",
     "Session_type": "Experience",
     "Tour_notes": "",
-    "Session_start": "All day",
+    "Session_start": "All day; Morning; Afternoon",
     "Active": "T"
   }
 ]

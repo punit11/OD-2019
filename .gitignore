@@ -4,6 +4,7 @@ src/data/*
 src/style/main.css
 src/style/main.css.map
 webpack/webpack.common.js
+backups
 
 # production
 build
