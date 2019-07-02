@@ -169,6 +169,13 @@
                     border: $green;
                 }
             }
+
+            .remove-from-planner {
+                font-family: $font-stack-os-bold;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                color: $teal;
+            }
         }
         &__body {
             align-items: baseline;
