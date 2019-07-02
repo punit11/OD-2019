@@ -340,7 +340,7 @@ var login_check = (function() {
         console.log("Clicked 21");
         var get_count = parseInt($(".bg--round-pink").text());
         // var clickedEventID_delete = [$(this).attr('data-eventid')];
-        var clickedEventID_delete = $(this).data("eventid");
+        var clickedEventID_delete = [$(this).data("eventid")];
         console.log('clickedEventID_delete', clickedEventID_delete);
         var event_to_remove = $(this).closest('.eventcard');
         var dataset_post = {
@@ -349,6 +349,8 @@ var login_check = (function() {
         };
         //var JSONObject= {"uname":uname, "password":password };
         var jsonData_post = JSON.stringify(dataset_post);
+        // console.log('jsonData_post nefore AJAX call ', jsonData_post);
+        // console.log('cookie_value nefore AJAX call ', cookie_value);
         $.ajax({
             url: 'https://33i3l7ehy8.execute-api.ap-southeast-2.amazonaws.com/production/od-2019',
             type: 'DELETE',
@@ -359,7 +361,7 @@ var login_check = (function() {
                 'cog-token': cookie_value
             },
             success: function(data) {
-                console.log("success");
+                console.log("data", data);
                 console.log('Event removed from myPlan page');
                 $(event_to_remove).fadeOut(1500);
                 if (get_count > 0) {
