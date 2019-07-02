@@ -415,11 +415,20 @@
     min-width: 0;
     height: 4rem;
     flex: 0 0 auto;
+    transition: all 0.3s ease;
     
     @include md {
       padding: 1rem 2rem;
       height: 5rem;
     }
+
+    &:disabled {
+      color: #8d8d8d;
+      background: #e1e1e1;
+      cursor: not-allowed;
+      transition: all 0.3s ease;
+    }
+
     span {
       display: none;
 
