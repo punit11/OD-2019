@@ -302,11 +302,12 @@ input[type="date"] {
   width: 100px;
   height: 100px;
   position: absolute;
-   left: 45%;
+  left: 45%;
 }
 
 .loader {
-  top: 5%;
+  top: calc(50% - 120px);
+  left: calc(50% - 60px);
 }
 
 .events-loader {
