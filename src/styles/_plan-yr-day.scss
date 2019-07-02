@@ -114,16 +114,28 @@
 
   .step-container {
     background: $charcoal;
-    padding: 0 1rem;
+    padding: 0;
     position: relative;
+    margin-bottom: 6rem;
 
+    @include md {
+      margin-bottom: initial;
+    }
     @include lg {
       padding: 0 4rem 4rem;
     }
 
     &.flexContainer.flexContainer-mobile-wrap {
       @include md {
-        padding: 0 4rem;
+        padding: 0;
+        // padding: 0 4rem;
+        flex-direction: column;
+
+        .options-container {
+          display: flex;
+          flex-direction: row;
+          flex: 1 1 100%;
+        }
       }
       
     }
@@ -134,24 +146,29 @@
     }
 
     .option-container {
-      padding: 1.5rem 0 4.3rem;
+      // padding: 1.5rem 0 4.3rem;
 
       &:first-child {
-        // border-bottom: 1px solid $black;
+        border-bottom: 2px solid $black;
       }
 
       &:last-child {
         border-top: 1px solid $black;
+        border-bottom: 2px solid $black;
         padding-top: 4.3rem;
+
+        @include md {
+          // border-bottom:
+        }
       }
 
-      @include lg {
-        padding: 3rem 0;
+      @include md {
+        padding: 3rem 4rem;
 
         &:first-child {
           border-right: 1px solid $black;
-          padding-right: 5%;
-          min-width: 45%;
+          border-bottom: none;
+          // min-width: 45%;
 
           p {
             max-width: 40rem;
@@ -160,8 +177,8 @@
 
         &:last-child {
           border-left: 1px solid $black;
-          padding-left: 5%;
-          padding-top: 3rem;
+          border-bottom: none;
+          padding-top: 3rem 4rem;
         }
       }
 
@@ -179,13 +196,22 @@
       &.flexContainer--half {
         flex: 1 1 100%;
         min-height: 23.3rem;
+        position: relative;
+        padding: 0 1rem 4rem;
 
         @include md {
           min-height: initial;
+          padding: 0 4rem 4rem;
         }
 
         @include lg {
           flex: 1 1 50%;
+          padding: 0 4rem 4rem;
+        }
+
+        &.filter-highlight {
+          background: rgba(255,255,255,0.1);
+          transition: all 0.2s ease;
         }
       }
     }
@@ -201,16 +227,17 @@
         position: absolute;
         display: flex;
         flex: 0 0 auto;
-        top: calc(50% - 37px);
-        left: calc(50% - 23px);
+        top: calc(100% - 2.35rem);
+        left: calc(50% - 2.35rem);
+        z-index: 1;
 
         @media only screen and (min-width: 694px) {
-          top: calc(50% - 37px);
+          // top: calc(50% - 37px);
         }
 
-        @include lg {
-          top: calc(50% - 23px);
-          left: calc(50% - 23px);
+        @include md {
+          top: calc(50% - 2.35rem);
+          left: calc(100% - 2.35rem);
         }
 
         span {
@@ -232,16 +259,35 @@
       flex-direction: row;
       font-family: $font-worldly-bold;
       line-height: 1.86em;
-      padding: 2rem 0;
-      justify-content: center;
+      // padding: 2rem 0;
+      justify-content: space-between;
+      // justify-content: center;
       border-bottom: 2px solid #000;
       // margin-bottom: 3.2rem;
       margin-left: -1rem;
-      width: calc(100% + 2rem);
+      width: 100%;
+      // width: calc(100% + 2rem);
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem 0;
+      box-sizing: border-box;
+
+      @include md {
+        flex-wrap: nowrap;
+        margin-left: 0;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+        border-top:2px solid $black;
+      }
 
       @include lg {
-        margin-left: -4rem;
-        width: calc(100% + 8rem);
+        
+        padding: 2rem 4rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
       }
 
       ul {
@@ -264,6 +310,31 @@
           &.selected a {
             color: $magenta;
           }
+        }
+      }
+
+      &-items {
+        // background: brown;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        margin-bottom: 2rem;
+        width: 100%;
+        justify-content: center;
+
+        @include md {
+          margin-bottom: 0;
+          width: initial;
+          justify-content: initial;
+        }
+      }
+
+      .clear {
+        position: relative;
+        top: 1rem;
+
+        @include md {
+          top: 0;
         }
       }
     }
@@ -305,19 +376,26 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
     a {
       color: $white;
+      font-size: 1.2rem;
+
+      @include md {
+        font-size: 1.6rem;
+      }
     }
 
     .sessions.btn {
       min-width: initial;
-      max-width: auto;
+      max-width: fit-content;
 
       @media only screen and (max-width: $screen-xs-min) {
         font-size: 1.1rem;
-        padding: 0;
+        padding: 0 2rem;
         height: 4rem;
+        max-width: fit-content;
       }
 
       span {
@@ -379,5 +457,15 @@ body.warrnambool {
 body.myplanner {
   .planyrday-wrapper:before {
     display: none;
+  }
+}
+
+.clear {
+  color: $white;
+  text-transform: uppercase;
+  height: 0;
+
+  @include md {
+    height: initial;
   }
 }

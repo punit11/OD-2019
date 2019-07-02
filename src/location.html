@@ -246,40 +246,57 @@
           
             <h4>Step 1</h4>
             <div class="step-container flexContainer flexContainer-mobile-wrap ">
-               <div class="option-container flexContainer flexContainer--half flexContainer--column">
-                     <h5>Create your own Day Plan</h5>
-                     <p style="padding-right: 2rem;">Select a course area you're interested in to view related sessions.</p>
-                     
-                     <select name="course-area" id="course-area" class="od-select">
-                        <!-- Options added dynamically -->
-                     </select>
-               </div>
+               <div class="options-container">
+                     <div class="option-container flexContainer flexContainer--half flexContainer--column">
+                           <h5>Create your own Day Plan</h5>
+                           <p style="padding-right: 2rem;">Select a course area you're interested in to view related sessions.</p>
+                           
+                           <select name="course-area" id="course-area" class="od-select">
+                              <!-- Options added dynamically -->
+                           </select>
 
-               <div class="seperator-or">
-                  <span>or</span>
-               </div>
-
-               <div class="option-container flexContainer flexContainer--half flexContainer--column">
-                     <h5 class="orange">Choose a ready-made Day Plan</h5>
-                     <p><span class="orange">New for 2019!</span> Quickly and easily plan your day from ready-made itineries  based on popular courses.</p>
+                           <div class="seperator-or">
+                              <span>or</span>
+                           </div>
+                     </div>
+      
                      
-                     <select name="popular-courses" id="popular-courses" class="od-select">
-                        <option value="">Please select a course</option>
-                        <option value="Bachelor of Arts">Bachelor of Arts</option>
-                        <option value="Bachelor of Laws">Bachelor of Laws</option>
-                        <option value="Bachelor of SocialWork">Bachelor of SocialWork</option>
-                        <option value="Bachelor of Information Technology">Bachelor of Information Technology</option>
-                        <option value="Bachelor of Education">Bachelor of Education (Primary)</option>
-                        <option value="Bachelor of Commerce">Bachelor of Commerce</option>
-                        <option value="Bachelor of Health Sciences">Bachelor of Health Sciences</option>
-                        <option value="Bachelor of CyberSecurity">Bachelor of CyberSecurity</option>
-                     </select>
+      
+                     <div class="option-container flexContainer flexContainer--half flexContainer--column">
+                           <h5 class="orange">Choose a ready-made Day Plan</h5>
+                           <p><span class="orange">New for 2019!</span> Quickly and easily plan your day from ready-made itineries  based on popular courses.</p>
+                           
+                           <select name="popular-courses" id="popular-courses" class="od-select">
+                              <option value="">Please select a course</option>
+                              <option value="Bachelor of Arts">Bachelor of Arts</option>
+                              <option value="Bachelor of Laws">Bachelor of Laws</option>
+                              <option value="Bachelor of SocialWork">Bachelor of SocialWork</option>
+                              <option value="Bachelor of Information Technology">Bachelor of Information Technology</option>
+                              <option value="Bachelor of Education">Bachelor of Education (Primary)</option>
+                              <option value="Bachelor of Commerce">Bachelor of Commerce</option>
+                              <option value="Bachelor of Health Sciences">Bachelor of Health Sciences</option>
+                              <option value="Bachelor of CyberSecurity">Bachelor of CyberSecurity</option>
+                           </select>
+                     </div>
+               </div>
+               
+               <div class="refine">
+                  <div class="refine-items">
+                        Show sessions :
+                        <ul>
+                           <li class = "selected"><a href="#" class="filter-all">All</a></li>
+                           <li><a href="#" class="filter-allday">All day</a></li>
+                           <li><a href="#" class="filter-morning">Morning</a></li>
+                           <li><a href="#" class="filter-noon">Afternoon</a></li>
+                        </ul>
+                  </div>
+                  <a href="#" class="clear js-reset-filters">Reset filters</a>
                </div>
             </div><!-- /.step-container -->  
             
             <h4>Step 2</h4>
             <div class="step-container flexContainer flexContainer--column">
-               <div class="refine">
+               <!-- <div class="refine">
                   Show sessions :
                   <ul>
                      <li class = "selected"><a href="#" class="filter-all">All</a></li>
@@ -287,7 +304,7 @@
                      <li><a href="#" class="filter-morning">Morning</a></li>
                      <li><a href="#" class="filter-noon">Afternoon</a></li>
                   </ul>
-               </div>
+               </div> -->
 
                <!-- Module with course-info carousel -->
                <div class="module-with-carousel">
@@ -325,7 +342,7 @@
 
             <div class="col-xs-12 sticky-bar sessions-added">
                <div class="col-xs-12 col-sm-12 col-md-offset-0 col-md-10 col-lg-8 col-lg-offset-0 container">
-                     <a class="clear-evt-selection" href="#">Clear selected</a>
+                     <a class="clear-evt-selection clear" href="#">Clear selected</a>
                      <div class="events-loader" style="display: none;"></div>
                      <span class="sessions add-to-planner btn btn-inverse js-magic">Add <span class="js-sessions-added">0</span> sessions to planner</span>
                      <!-- <button class="btn btn-inverse add-to-planner js-magic">Add to my planner</button> -->
@@ -337,7 +354,7 @@
                         </button>
                </div>
             </div>
-            
+
          </div>
       </div><!-- /.planyrday-wrapper -->
 
