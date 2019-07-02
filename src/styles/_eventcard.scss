@@ -35,13 +35,29 @@
 
         .event-added {
            pointer-events: none;
+
+           background: #c9c9c9;
+           color: $teal;
         }
 
         .event-added:after {
             content: "Added";
+            background: url(//www.deakin.edu.au/__data/assets/file/0007/1924927/tick-new.svg) no-repeat center 24px;
             font-size: 1rem;
             pointer-events: none;
+            padding-top: 16px;
         }
+
+        // content: "";
+        
+        // color: white;
+        // border-radius: 50%;
+        // font-size: 2.5rem;
+        // height: 4rem;
+        // width: 4rem;
+        // justify-content: center;
+        // display: flex;
+        // align-items: center;
 
         .selected:after {
             content: "";
