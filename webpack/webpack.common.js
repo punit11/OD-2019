@@ -8,8 +8,8 @@ module.exports = {
   entry: {
     base: Path.resolve(__dirname, '../src/styles/_base.scss'),
     // home: Path.resolve(__dirname, '../src/scripts/home-entry.js'),
-    // location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
-    dayplanner: Path.resolve(__dirname, '../src/scripts/dayplanner-entry.js')
+    location: Path.resolve(__dirname, '../src/scripts/location-entry.js')
+    // dayplanner: Path.resolve(__dirname, '../src/scripts/dayplanner-entry.js')
     // journey: Path.resolve(__dirname, '../src/scripts/journey-entry.js')
   },
   output: {
@@ -28,9 +28,9 @@ module.exports = {
       { from: Path.resolve(__dirname, '../public'), to: 'public' }
     ]),
     new HtmlWebpackPlugin({
-      // template: Path.resolve(__dirname, '../src/location.html'),
+      template: Path.resolve(__dirname, '../src/location.html'),
       // template: Path.resolve(__dirname, '../src/index.html'),
-      template: Path.resolve(__dirname, '../src/dayplanner.html'),
+      // template: Path.resolve(__dirname, '../src/dayplanner.html'),
       // chunks:['base','location']
      }),
 
