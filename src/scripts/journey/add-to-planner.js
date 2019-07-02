@@ -5,6 +5,7 @@ import {show_hide_modal} from "./show-hide-modal";
  var add_to_planner = (function(){
     var clickedEventID = '';
     var od_saved_events = [];
+    $('.add-to-planner').attr('disabled','disabled');
 
       $(".owl-carousel").on("click", "span:not('.event-added')", function() {
       
@@ -60,7 +61,12 @@ import {show_hide_modal} from "./show-hide-modal";
          else ; // Do nothing
     }
     
-      $('.js-sessions-added, .num--pink--circle').text(course_count);
+      if (course_count > 0) {
+        $('.js-sessions-added').text(course_count);
+        $('.add-to-planner').prop('disabled', false); 
+      }
+      else $('.add-to-planner').attr('disabled','disabled');
+
       // $('.num--pink--circle').text(course_count);
     }
     else  show_hide_modal();
@@ -115,14 +121,17 @@ import {show_hide_modal} from "./show-hide-modal";
         async: false,
         success: function (data) {
             console.log("success");
-            $('.js-magic').fadeOut(500).delay(2000).fadeIn('slow');
-            $(".events-loader").delay(2000).fadeOut("slow");
-            // setTimeout(function(){
-            //   $(".planner-add-success").text("Events were sucessfully added to your planner.").fadeIn(500).delay(1000).fadeOut('slow');
-            //   $(".events-loader").delay(1000).fadeOut("slow");
-            // },500);
+            
+            // $(".events-loader").delay(2000).fadeOut("slow");
+            
+              $('.js-magic').fadeOut(500).delay(2200).fadeIn('slow');
+              $(".planner-add-success").text("Events were sucessfully added to your planner.").delay(500).fadeIn('slow').delay(1000).fadeOut('slow');
+              $(".events-loader").delay(1500).fadeOut("slow");
+            
+            
             $('.owl-carousel span.selected').toggleClass("event-added selected");
             $('.js-sessions-added').text(0);
+            $('.add-to-planner').attr('disabled','disabled');
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(textStatus, errorThrown);
@@ -156,6 +165,7 @@ import {show_hide_modal} from "./show-hide-modal";
       e.preventDefault();
       $('.owl-carousel span.add.selected').toggleClass("selected");
       $('.js-sessions-added').text(0);
+      $('.add-to-planner').attr('disabled','disabled');
     });
 
 }());

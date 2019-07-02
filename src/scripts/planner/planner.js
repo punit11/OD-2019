@@ -1,12 +1,6 @@
-import {
-    getCookieValue
-} from "../journey/get-cookies";
-import {
-    show_hide_modal
-} from "../journey/show-hide-modal";
-import {
-    planner_template
-} from '../templates';
+import {getCookieValue} from "../journey/get-cookies";
+import {show_hide_modal} from "../journey/show-hide-modal";
+import {planner_template} from '../templates';
 
 var login_check = (function() {
     console.log("CheckPoint 1");
@@ -47,41 +41,41 @@ var login_check = (function() {
         if (global_myODEvents) {
             var campus_check = args.map(arg => global_myODEvents.find(e => e.includes(arg)) ? true : false);
             console.log('campus_check', campus_check);
-            // if (campus_check[0]) {
-            //     console.log('Fetch Waranbool JSON');
-            //     fetchJSONfile('src/data/Warrnambool.json', 'wb-wrapper');
-            // }
-
-            // if (campus_check[1]) {
-            //     console.log('Fetch WaranPonds JSON');
-            //     fetchJSONfile('src/data/Waurn-ponds.json', 'wp-wrapper');
-            // }
-
-            // if (campus_check[2]) {
-            //     console.log('Fetch WaterFront JSON');
-            //     fetchJSONfile('src/data/Waterfront.json', 'wf-wrapper');
-            // }
-
-            // if (campus_check[3]) {
-            //     console.log('Fetch Burwood JSON');
-            //     fetchJSONfile('src/data/Burwood.json', 'bw-wrapper');
-            // }
-
             if (campus_check[0]) {
-                fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json', 'wb-wrapper');
+                console.log('Fetch Waranbool JSON');
+                fetchJSONfile('src/data/Warrnambool.json', 'wb-wrapper');
             }
 
             if (campus_check[1]) {
-               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json', 'wp-wrapper');
+                console.log('Fetch WaranPonds JSON');
+                fetchJSONfile('src/data/Waurn-ponds.json', 'wp-wrapper');
             }
 
             if (campus_check[2]) {
-               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json', 'wf-wrapper');
+                console.log('Fetch WaterFront JSON');
+                fetchJSONfile('src/data/Waterfront.json', 'wf-wrapper');
             }
 
             if (campus_check[3]) {
-               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json', 'bw-wrapper');
+                console.log('Fetch Burwood JSON');
+                fetchJSONfile('src/data/Burwood.json', 'bw-wrapper');
             }
+
+            // if (campus_check[0]) {
+            //     fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json', 'wb-wrapper');
+            // }
+
+            // if (campus_check[1]) {
+            //    fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json', 'wp-wrapper');
+            // }
+
+            // if (campus_check[2]) {
+            //    fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json', 'wf-wrapper');
+            // }
+
+            // if (campus_check[3]) {
+            //    fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json', 'bw-wrapper');
+            // }
 
         } else return false;
 
@@ -346,7 +340,7 @@ var login_check = (function() {
         console.log("Clicked 21");
         var get_count = parseInt($(".bg--round-pink").text());
         // var clickedEventID_delete = [$(this).attr('data-eventid')];
-        var clickedEventID_delete = $(this).data("eventid");
+        var clickedEventID_delete = [$(this).data("eventid")];
         console.log('clickedEventID_delete', clickedEventID_delete);
         var event_to_remove = $(this).closest('.eventcard');
         var dataset_post = {
@@ -355,6 +349,8 @@ var login_check = (function() {
         };
         //var JSONObject= {"uname":uname, "password":password };
         var jsonData_post = JSON.stringify(dataset_post);
+        // console.log('jsonData_post nefore AJAX call ', jsonData_post);
+        // console.log('cookie_value nefore AJAX call ', cookie_value);
         $.ajax({
             url: 'https://33i3l7ehy8.execute-api.ap-southeast-2.amazonaws.com/production/od-2019',
             type: 'DELETE',
@@ -365,7 +361,7 @@ var login_check = (function() {
                 'cog-token': cookie_value
             },
             success: function(data) {
-                console.log("success");
+                console.log("data", data);
                 console.log('Event removed from myPlan page');
                 $(event_to_remove).fadeOut(1500);
                 if (get_count > 0) {
