@@ -7,7 +7,6 @@ import {signin} from "./journey/signin";
 import {modal_toggler} from "./journey/modal-toggler";
 import {add_to_planner} from "./journey/add-to-planner";
 
-
 import {secondaryNavbar_scroll} from "./location";
 import {youtubeApi} from "./you-tube-api";
 import {baf_form} from "./baf-form";

@@ -12,17 +12,15 @@ var render_ticks = function () {
         let od_saved_events = JSON.parse(storedData);
         console.log("Fetched from lcoal storage", od_saved_events);
         let original_events_len = od_saved_events.length;
-        $(".num--pink--circle").text(original_events_len);
+        // $(".num--pink--circle").text(original_events_len);
 
     od_saved_events.forEach(function (evt_val) {
     // console.log('evt_val ', evt_val);
-    $("span[data-eventid='"+evt_val+"']").addClass("selected");
+    $("span[data-eventid='"+evt_val+"']").addClass("event-added");
     });
-    $('.js-sessions-added').text(original_events_len);
-    $('.btn.add-to-planner').html('Update Planner');
+    // $('.js-sessions-added').text(original_events_len);
+    // $('.btn.add-to-planner').html('Update Planner');
     }
-    
-
 };
 
 export default render_ticks;

@@ -6,11 +6,13 @@ import {show_hide_modal} from "./show-hide-modal";
     var clickedEventID = '';
     var od_saved_events = [];
 
-      $(".owl-carousel").on("click", "span.add", function() {
-
+      $(".owl-carousel").on("click", "span:not('.event-added')", function() {
+      
+      // let logged_in = getCookieValue('od-token');
       if (!logged_in) {
       var logged_in = getCookieValue('od-token');
         }
+        // console.log("logged_in 123", logged_in);
       if (logged_in) {
       // Get all the selected courses
 
@@ -71,11 +73,11 @@ import {show_hide_modal} from "./show-hide-modal";
     $('.add-to-planner').on('click', function () {
       $(".events-loader").show();
 
-    // let logged_in = getCookieValue('od-token');
-    if (!logged_in) {
-      var logged_in = getCookieValue('od-token');
-    }
-
+    let logged_in = getCookieValue('od-token');
+    // if (!logged_in) {
+    //   var jogged_in = getCookieValue('od-token');
+    // }
+    // console.log("jogged_in", jogged_in);
     if (logged_in) {
     // Get the values of all 3 cookies
       let cookie_value = getCookieValue('od-token');
@@ -112,14 +114,15 @@ import {show_hide_modal} from "./show-hide-modal";
         dataType: 'json',
         async: false,
         success: function (data) {
-          
             console.log("success");
             $('.js-magic').fadeOut(500).delay(2000).fadeIn('slow');
-            setTimeout(function(){
-              $(".planner-add-success").text("Events were sucessfully added to your planner.").fadeIn(500).delay(1000).fadeOut('slow');
-              $(".events-loader").delay(1000).fadeOut("slow");
-            },500);
-            
+            $(".events-loader").delay(2000).fadeOut("slow");
+            // setTimeout(function(){
+            //   $(".planner-add-success").text("Events were sucessfully added to your planner.").fadeIn(500).delay(1000).fadeOut('slow');
+            //   $(".events-loader").delay(1000).fadeOut("slow");
+            // },500);
+            $('.owl-carousel span.selected').toggleClass("event-added selected");
+            $('.js-sessions-added').text(0);
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(textStatus, errorThrown);
@@ -143,6 +146,16 @@ import {show_hide_modal} from "./show-hide-modal";
        else{
         show_hide_modal();
        }
+    });
+
+    // ---------------------
+    // Clear selected events
+    // ---------------------
+
+    $('.clear-evt-selection').on('click', function (e) {
+      e.preventDefault();
+      $('.owl-carousel span.add.selected').toggleClass("selected");
+      $('.js-sessions-added').text(0);
     });
 
 }());

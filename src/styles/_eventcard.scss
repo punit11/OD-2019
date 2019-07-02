@@ -33,6 +33,16 @@
             }
         }
 
+        .event-added {
+           pointer-events: none;
+        }
+
+        .event-added:after {
+            content: "Added";
+            font-size: 1rem;
+            pointer-events: none;
+        }
+
         .selected:after {
             content: "";
             background: #128774 url(//www.deakin.edu.au/__data/assets/file/0007/1924927/tick-new.svg) no-repeat center center;
