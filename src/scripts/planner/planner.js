@@ -281,6 +281,7 @@ var login_check = (function() {
     $("#campus-location").on('change', function() {
         var campus_value = $('#campus-location').val();
         console.log('campus_value is ', campus_value);
+        getEventsfromDB();
         displayPlannerData(campus_value);
     });
 
@@ -340,6 +341,7 @@ var login_check = (function() {
         console.log("Clicked 21");
         var get_count = parseInt($(".bg--round-pink").text());
         // var clickedEventID_delete = [$(this).attr('data-eventid')];
+        var clickedEventID_delete_local = $(this).data("eventid");
         var clickedEventID_delete = [$(this).data("eventid")];
         console.log('clickedEventID_delete', clickedEventID_delete);
         var event_to_remove = $(this).closest('.eventcard');
@@ -363,7 +365,7 @@ var login_check = (function() {
             success: function(data) {
                 console.log("data", data);
                 console.log('Event removed from myPlan page');
-                $(event_to_remove).fadeOut(1500);
+                $(event_to_remove).fadeOut(1000);
                 if (get_count > 0) {
                     get_count -= 1;
                     $(".bg--round-pink").text(get_count);
@@ -373,7 +375,7 @@ var login_check = (function() {
                 if ((storedData !== "undefined") && (storedData !== null)) { // Remove events from existing arr if there are events present already
                     // console.log("clickedEventID_delete ", clickedEventID_delete);
                     let od_saved_events = JSON.parse(storedData);
-                    od_saved_events = od_saved_events.filter(item => item !== clickedEventID_delete); // Remove unclicked event from arr 
+                    od_saved_events = od_saved_events.filter(item => item !== clickedEventID_delete_local); // Remove unclicked event from arr 
                     localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
                 }
             },

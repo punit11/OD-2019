@@ -5,6 +5,8 @@ import {show_hide_modal} from "./show-hide-modal";
  var add_to_planner = (function(){
     var clickedEventID = '';
     var od_saved_events = [];
+
+
     $('.add-to-planner').attr('disabled','disabled');
 
       $(".owl-carousel").on("click", "span:not('.event-added')", function() {
@@ -35,30 +37,39 @@ import {show_hide_modal} from "./show-hide-modal";
       clickedEventID = $(this).data("eventid");
 
       // Push the item to localStorage saved events
+      
+      // MOVE INSIDE AJAX SUCESS
       let storedData = localStorage.getItem("od_saved_events");
-
       if ((storedData !== "undefined") && (storedData !== null)) { // Append to existing arr if there are events present already
             let od_saved_events = JSON.parse(storedData);
             od_saved_events.push(clickedEventID);
             localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
           }
           else { // Populate a new arr if no events selected already
+            if (clickedEventID !== null) {
             od_saved_events.push(clickedEventID);
             localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
+            }
           }
-        }
+        } // Parent If end
+        // MOVE INSIDE AJAX SUCESS END
+
       else {
         course_count -= 1;
         clickedEventID = $(this).data("eventid");
+
+        // MOVE INSIDE AJAX SUCESS
         // Remove event from local storage
         let storedData = localStorage.getItem("od_saved_events");
-
         if ((storedData !== "undefined") && (storedData !== null)) { // Remove events from existing arr if there are events present already
           let od_saved_events = JSON.parse(storedData);
           od_saved_events = od_saved_events.filter(item => item !== clickedEventID); // Remove unclicked event from arr 
           localStorage.setItem('od_saved_events', JSON.stringify(od_saved_events));
       }
          else ; // Do nothing
+      // MOVE INSIDE AJAX SUCESS END
+
+
     }
     
       if (course_count > 0) {

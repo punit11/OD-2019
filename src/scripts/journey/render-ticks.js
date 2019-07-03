@@ -1,5 +1,12 @@
+
+import getOdEvents from "./get-events-for-planner";
+import {getCookieValue} from "./get-cookies";
 var render_ticks = function () {
     "use strict";
+    var logged_in = getCookieValue('od-token');
+    if (logged_in) {
+    getOdEvents();
+    }
     // retrieve stored data (JSON stringified) and convert
     // let saved_events = getOdEvents();
     console.log("Inside tick-cards", "Comma works");

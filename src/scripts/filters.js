@@ -50,12 +50,10 @@ $("#course-area").on('change', function () {
 
 $("#popular-courses").on('change', function () {
     // $("#course-area").val('-1').trigger('change'); 
-  
     let x = $('#course-area').val();
     if(x) {
     $('#course-area').val('').trigger('change.select2');
     }
-
     $('.owl-carousel').empty(); // Clear old carousel data
     // $('.owl-carousel').owlCarousel('destroy');
      // selected_dd_value = $('#course-area').val();
@@ -65,6 +63,15 @@ $("#popular-courses").on('change', function () {
     console.log('selected_dd_value ', selected_dd_value);
 	populate_cards(session_clicked, selected_dd_value, 'courses');
 });
+
+    // Session time filters
+    $(".js-reset-filters").click(function(e) {
+        e.preventDefault();
+        $('.filter-all').parent().addClass('selected').siblings().removeClass('selected');
+        $('#popular-courses, #course-area').val('').trigger('change.select2');
+        // $('#course-area').val('').trigger('change.select2');
+        populate_cards();
+    });
 
 }());
 

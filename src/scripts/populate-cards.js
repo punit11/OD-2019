@@ -83,7 +83,6 @@ function populate_cards(session,selected_ia,caller) {
         // console.log('gen_info_arr ', gen_info_arr.length);
         render_cards(gen_info_arr, '.gen-info-carousel');
         $("#gen_evt_count").text(gen_info_arr.length);
-        
 
         // ----- Render function
         function render_cards(render_data, render_loc) {
@@ -97,7 +96,6 @@ function populate_cards(session,selected_ia,caller) {
           'evt_desc': evt.Description
         });
         $(render_loc).append(template_dd).hide(); // Hide the cards initially to prevent ugly resizing
-        
         });
       }
     //  console.log("template loading done");
