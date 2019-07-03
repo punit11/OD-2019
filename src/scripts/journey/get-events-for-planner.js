@@ -34,8 +34,6 @@ function getOdEvents() {
         });
         // return getODresults; Instead of returning results, store data in local storage
 
-
-
     } else {
         console.log('User is not logged in');
         return;
