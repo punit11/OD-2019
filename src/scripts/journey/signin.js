@@ -77,7 +77,7 @@ var signin = (function(callback_func1,callback_func2) {
                         console.log("User Successfuly Authenticated!");
                         $("#SignupModal .loader").fadeOut("slow");
                         $("#login-form").toggle();
-                        $(".f2-success").toggle().html("<h2>You have successfuly signed in!</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc + "</p>");
+                        $(".f2-success").toggle().html("<h2>You have successfully signed in!</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc + "</p>");
                         
                         // set the height of the modal based on success message height
                         var successHeight = $('.f2-success').height() + 40;
