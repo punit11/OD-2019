@@ -6,9 +6,9 @@
     padding: 0;
 
     @include md {
-        padding: 7rem 7rem 0 7rem;
+        padding: 17rem 7rem 0 7rem;
         z-index: 0;
-        // overflow: initial;
+        overflow: hidden;
         // z-index: -1;
     }
 
@@ -21,7 +21,8 @@
         text-transform: uppercase;
         -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg);
-        top: 42rem;
+        top: 30rem;
+        // top: 42rem;
         left: -16rem;
         font-family: $font-stack-xl;
         color: $black;
