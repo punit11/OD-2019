@@ -39,7 +39,8 @@ $("#reset-pwd-form").submit(function (e) {
         },
         onSuccess() {
             console.log("Success");
-            $(".f4-success").toggle().html("<p>Your password has been changed sucessfully. <br><a class='login-after-success-pwd-change' href='#'>Click here</a> to login.</p>");
+            $('#reset-pwd-form').hide();
+            $(".f4-success").toggle().html("<p>Your password has been changed sucessfully. <br><br><button class='button button--primary teal login-after-success-pwd-change' href='#'>Login</button></p>");
 
             // set the height of the modal based on success message height
             var successHeight = $('.f4-success').height() + 75;
