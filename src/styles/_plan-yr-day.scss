@@ -476,7 +476,7 @@ body.myplanner {
 .clear {
   color: $white;
   text-transform: uppercase;
-  height: 0;
+  // height: 0;
 
   @include md {
     height: initial;

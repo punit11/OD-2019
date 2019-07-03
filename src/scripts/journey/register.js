@@ -55,7 +55,7 @@ $("#register-form").validate({
         },
         pass: {
             required: "(Please choose a password)",
-            minlength: "(Password should be atleast 6 chars long)"
+            minlength: "(Password should be at least 6 chars long)"
         },
         mobile: {
             required: "(Please enter your phone number)",
