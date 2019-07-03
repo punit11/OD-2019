@@ -251,7 +251,7 @@ $("#register-form").submit(function (e) {
                                  console.log("User Successfuly Authenticated!");
                                  $("#register-form").toggle();
                                  $("#SignupModal .loader").fadeOut("slow");
-                                 $(".f1-success").toggle().html("<h2>Account Created</h2><p>You are ready to start planning your day at</p>");
+                                 $(".f1-success").toggle().html("<h2>Account Created</h2><p>You are ready to start planning your day</p>");
                                 //  $(".f1-success").toggle().html("<h2>Account Created</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc +"</p>");
 
                                  

@@ -1,6 +1,7 @@
 import {getCookieValue} from "../journey/get-cookies";
 import {show_hide_modal} from "../journey/show-hide-modal";
 import {planner_template} from '../templates';
+import {getOdEvents} from '../journey/get-events-for-planner';
 
 var login_check = (function() {
     console.log("CheckPoint 1");
@@ -36,46 +37,48 @@ var login_check = (function() {
     var globals_bw_wrapper;
     console.log("CheckPoint 2");
 
+    // var global_myODEvents = getOdEvents();
+
     // Check which campuses are present in users account
     function campus_present(...args) {
         if (global_myODEvents) {
             var campus_check = args.map(arg => global_myODEvents.find(e => e.includes(arg)) ? true : false);
             console.log('campus_check', campus_check);
-            if (campus_check[0]) {
-                console.log('Fetch Waranbool JSON');
-                fetchJSONfile('src/data/Warrnambool.json', 'wb-wrapper');
-            }
-
-            if (campus_check[1]) {
-                console.log('Fetch WaranPonds JSON');
-                fetchJSONfile('src/data/Waurn-ponds.json', 'wp-wrapper');
-            }
-
-            if (campus_check[2]) {
-                console.log('Fetch WaterFront JSON');
-                fetchJSONfile('src/data/Waterfront.json', 'wf-wrapper');
-            }
-
-            if (campus_check[3]) {
-                console.log('Fetch Burwood JSON');
-                fetchJSONfile('src/data/Burwood.json', 'bw-wrapper');
-            }
-
             // if (campus_check[0]) {
-            //     fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json', 'wb-wrapper');
+            //     console.log('Fetch Waranbool JSON');
+            //     fetchJSONfile('src/data/Warrnambool.json', 'wb-wrapper');
             // }
 
             // if (campus_check[1]) {
-            //    fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json', 'wp-wrapper');
+            //     console.log('Fetch WaranPonds JSON');
+            //     fetchJSONfile('src/data/Waurn-ponds.json', 'wp-wrapper');
             // }
 
             // if (campus_check[2]) {
-            //    fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json', 'wf-wrapper');
+            //     console.log('Fetch WaterFront JSON');
+            //     fetchJSONfile('src/data/Waterfront.json', 'wf-wrapper');
             // }
 
             // if (campus_check[3]) {
-            //    fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json', 'bw-wrapper');
+            //     console.log('Fetch Burwood JSON');
+            //     fetchJSONfile('src/data/Burwood.json', 'bw-wrapper');
             // }
+
+            if (campus_check[0]) {
+                fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json', 'wb-wrapper');
+            }
+
+            if (campus_check[1]) {
+               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json', 'wp-wrapper');
+            }
+
+            if (campus_check[2]) {
+               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json', 'wf-wrapper');
+            }
+
+            if (campus_check[3]) {
+               fetchJSONfile('//www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json', 'bw-wrapper');
+            }
 
         } else return false;
 
@@ -86,6 +89,8 @@ var login_check = (function() {
     function getEventsfromDB() {
 
         // global_myODEvents = getOdEvents();
+
+        // campus_present('WB', 'WP', 'WF', 'BW');
 
         let storedData = localStorage.getItem("od_saved_events");
         if (storedData !== "undefined") {
@@ -312,7 +317,8 @@ var login_check = (function() {
         console.log('Inside planner - cookie_value', cookie_value);
         console.log('Inside planner - campus_value', campus_value);
         console.log('Inside planner - sub_value', sub_value);
-
+        
+        getOdEvents();
         getEventsfromDB();
         //$.when(deferred_EFDB).done(function(){displayPlannerData(campus_value);});
         let storedData = localStorage.getItem("od_saved_events");

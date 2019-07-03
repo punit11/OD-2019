@@ -28,12 +28,9 @@ var forgot_pwd = (function() {
         // call forgotPassword on cognitoUser
         cognitoUser.forgotPassword({
             onSuccess: function (result) {
-                $("#forgot-pwd-form").fadeOut();
-                
-                var custom_message ="<p>A verification code has been sent to your email address. Please check your inbox.<br><br><div class='signup_wrapper center'><a data-showform='reset-pwd-form' class='forgot-login-toggle button button--primary' href='#'>change your password</a></div></p>";
-                
+                $("#forgot-pwd-form").fadeOut();        
+                var custom_message ="<p>A verification code has been sent to your email address. Please check your inbox.<br><br><div class='signup_wrapper center'><a data-showform='reset-pwd-form' class='forgot-login-toggle button button--primary' href='#'>change your password</a></div></p>";   
                 $(".f3-success").toggle().html(custom_message);
-                
                 // set the height of the modal based on success message height
                 var successHeight = $('.f3-success').height() + 75;
                 $('.modal-content').css('min-height', successHeight);
@@ -45,8 +42,7 @@ var forgot_pwd = (function() {
                 } else {
                     $(".f3-fail").toggle().html(err.message);
                 }
-                //  $(".f3-fail").toggle().html(err.message);
-                 }
+                }
         });
     });
 }());
