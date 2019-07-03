@@ -4,7 +4,18 @@ let dd_template = ( { val } ) => `
 `;
 
 // --------- Event-cards template
-let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc  } ) => `
+let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc  } ) => {
+    var st = evt_start_time.replace(/\s+/g, '');
+    if (st.indexOf(":00") !== -1)
+    {
+        st = st.replace(":00", "");
+    }
+    var et = evt_end_time.replace(/\s+/g, '');
+    if (et.indexOf(":00") !== -1)
+    {
+        et = et.replace(":00", "");
+    }
+    return `
                     <div class="eventcard">
                         <div class="eventcard__header">
                            <h3>${evt_title}</h3>
@@ -20,7 +31,7 @@ let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_e
                            <svg class="icon-clock">
                               <use href="#icon-clock" xlink:href="#icon-clock"></use>
                            </svg>
-                           ${evt_start_time} - ${evt_end_time}
+                           ${st}-${et}
                         </span>
                         <div>
                            <button class="accordion">
@@ -36,6 +47,7 @@ let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_e
                            </div>
                         </div>
                      </div>`;
+                    };
 
 // --------- Event-cards template
 let planner_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc, evt_clash  } ) => `

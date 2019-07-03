@@ -31,16 +31,14 @@ $(".refine ul li a").click(function(e) {
     // IA filters
     
 $("#course-area").on('change', function () {
-    // $("#popular-courses").val('-1').trigger('change');
+    $("#popular-courses").parents( ".option-container" ).removeClass("filter-highlight");
+    $(this).parents( ".option-container" ).addClass("filter-highlight");
     let x = $('#popular-courses').val();
     if(x){
     $('#popular-courses').val('').trigger('change.select2');
     }
     $('.owl-carousel').empty(); // Clear old carousel data
-    // $('.owl-carousel').owlCarousel('destroy');
-     // selected_dd_value = $('#course-area').val();
     console.log("IA clicked");
-    // let selected_dd_value = $('#course-area').find(':selected');
     selected_dd_value = $('#course-area').val();
     console.log('selected_dd_value ', selected_dd_value);
 	populate_cards(session_clicked, selected_dd_value, 'int_areas');
@@ -49,16 +47,15 @@ $("#course-area").on('change', function () {
 // Pre-selected course event filters
 
 $("#popular-courses").on('change', function () {
+    $("#course-area").parents( ".option-container" ).removeClass("filter-highlight");
+    $(this).parents( ".option-container" ).addClass("filter-highlight");
     // $("#course-area").val('-1').trigger('change'); 
     let x = $('#course-area').val();
     if(x) {
     $('#course-area').val('').trigger('change.select2');
     }
     $('.owl-carousel').empty(); // Clear old carousel data
-    // $('.owl-carousel').owlCarousel('destroy');
-     // selected_dd_value = $('#course-area').val();
     console.log("Pre-selected course clicked");
-    // let selected_dd_value = $('#course-area').find(':selected');
     selected_dd_value = $('#popular-courses').val();
     console.log('selected_dd_value ', selected_dd_value);
 	populate_cards(session_clicked, selected_dd_value, 'courses');
@@ -69,7 +66,6 @@ $("#popular-courses").on('change', function () {
         e.preventDefault();
         $('.filter-all').parent().addClass('selected').siblings().removeClass('selected');
         $('#popular-courses, #course-area').val('').trigger('change.select2');
-        // $('#course-area').val('').trigger('change.select2');
         populate_cards();
     });
 

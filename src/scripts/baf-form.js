@@ -47,6 +47,13 @@ var baf_form = $(function() {
           .prev()
           .fadeIn();
       });
+      console.log("Offset applied");
+      let comps_offset = $( "#baf-form" );
+      console.log("comps_offset --- ", comps_offset);
+         if (navigator.userAgent.toLowerCase().match(/(ipad|iphone)/)) {
+           $("body").animate({ scrollTop: comps_offset.offset().top }, 500).delay(400);
+            }
+           else $("html,body").animate({ scrollTop: comps_offset.offset().top }, 500).delay(400);
   });
 }); // ready funtion end
 

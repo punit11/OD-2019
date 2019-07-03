@@ -147,13 +147,11 @@ $("#baf-form").validate({
         $(".baf-msg").empty().append("<p class='thankyou-msg'>Great, you are now registered for the competition.</p>").fadeIn();
         
          // Scroll to succesful message text
+          // $("html,body").animate({ scrollTop: comps_offset.offset().top }, 500);
          let comps_offset = $( ".comp-info" );
-         // $("html,body").animate({ scrollTop: comps_offset.offset().top }, 500);
          if (navigator.userAgent.toLowerCase().match(/(ipad|iphone)/)) {
            $("body").animate({ scrollTop: comps_offset.offset().top }, 500);
-           // let elmnt = document.getElementById("content");
-           // elmnt.scrollIntoView();
-           }
+            }
            else $("html,body").animate({ scrollTop: comps_offset.offset().top }, 500);
        }); // Market form end
     }
