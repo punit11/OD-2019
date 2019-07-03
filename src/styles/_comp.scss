@@ -99,7 +99,11 @@
       @include md {
         // margin-left: 3.4rem;
         padding-right: 2rem;
-        padding-top: 6.5rem;
+        // padding-top: 6.5rem;
+      }
+
+      @include xxl {
+        padding-top: 5rem;
       }
 
       ul, ol, li {
