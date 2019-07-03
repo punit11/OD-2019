@@ -84,6 +84,7 @@ nav {
                 order: 1;
             }
         }
+
     }
 
     .checkbox-button {
@@ -105,6 +106,10 @@ nav {
     .button--primary {
         margin-bottom: 2rem;
     }
+}
+
+.forgot-password a {
+    font-family: $font-stack-os-regular;
 }
 
 #SignupModal {
