@@ -66,6 +66,7 @@ $("#popular-courses").on('change', function () {
         e.preventDefault();
         $('.filter-all').parent().addClass('selected').siblings().removeClass('selected');
         $('#popular-courses, #course-area').val('').trigger('change.select2');
+        $('#popular-courses, #course-area').parents( ".option-container" ).removeClass("filter-highlight");;
         populate_cards();
     });
 
