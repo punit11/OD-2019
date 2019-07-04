@@ -10,11 +10,13 @@ let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_e
     {
         st = st.replace(":00", "");
     }
+    else st = st.replace(":", ".");
     var et = evt_end_time.replace(/\s+/g, '');
     if (et.indexOf(":00") !== -1)
     {
         et = et.replace(":00", "");
     }
+    else et = et.replace(":", ".");
     return `
                     <div class="eventcard">
                         <div class="eventcard__header">

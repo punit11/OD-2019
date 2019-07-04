@@ -37,7 +37,7 @@ var modal_toggler = (function() {
     });
 
       $(".f4-success").on("click", ".login-after-success-pwd-change", function(event){
-        $("#reset-pwd-form,#login-form").toggle();
+        $("#login-form").toggle();
         $(".f4-success,.f4-fail").hide();
     });
 }());
