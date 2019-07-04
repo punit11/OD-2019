@@ -60,7 +60,7 @@ $("#register-form").validate({
         mobile: {
             required: "(Please enter your phone number)",
             number: "(Please enter numbers only)",
-            minlength: "(Phone number should be 10 digit long)",
+            minlength: "(Phone number should be 10 digits long)",
             maxlength: "(Phone number should not be more than 10 digits)"
         },
         Iama: "(Please select your status)",

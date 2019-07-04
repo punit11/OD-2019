@@ -303,7 +303,12 @@ var login_check = (function() {
 
     $(function() {
         if (campus_value) {
-            $('#select2-campus-location-container').text(campus_value);
+            if (campus_value == 'Geelong Waurn Ponds') {
+                $('#select2-campus-location-container').text('Waurn Ponds');
+            } else {
+                $('#select2-campus-location-container').text(campus_value);
+            }
+            
         } else {
             console.log('No campus value');
         }
@@ -314,9 +319,9 @@ var login_check = (function() {
             $('#no-events-in-planner').hide();
         }
 
-        console.log('Inside planner - cookie_value', cookie_value);
-        console.log('Inside planner - campus_value', campus_value);
-        console.log('Inside planner - sub_value', sub_value);
+        // console.log('Inside planner - cookie_value', cookie_value);
+        // console.log('Inside planner - campus_value', campus_value);
+        // console.log('Inside planner - sub_value', sub_value);
         
         getOdEvents();
         getEventsfromDB();
