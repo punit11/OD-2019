@@ -68,10 +68,7 @@ import {show_hide_modal} from "./show-hide-modal";
       }
          else ; // Do nothing
       // MOVE INSIDE AJAX SUCESS END
-
-
     }
-    
       if (course_count > 0) {
         $('.js-sessions-added').text(course_count);
         $('.add-to-planner').prop('disabled', false); 

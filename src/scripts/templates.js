@@ -4,7 +4,7 @@ let dd_template = ( { val } ) => `
 `;
 
 // --------- Event-cards template
-let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc  } ) => {
+let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc, evt_notes  } ) => {
     var st = evt_start_time.replace(/\s+/g, '');
     if (st.indexOf(":00") !== -1)
     {
@@ -44,7 +44,7 @@ let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_e
                            </button>
                            <div class="panel">
                               <p class="body">
-                              ${evt_desc}
+                              ${evt_desc} ${evt_notes}
                               </p>
                            </div>
                         </div>
@@ -52,10 +52,23 @@ let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_e
                     };
 
 // --------- Event-cards template
-let planner_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc, evt_clash  } ) => `
-<div class="eventcard">
+let planner_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_end_time, evt_desc, evt_clash  } ) => {
+            var st = evt_start_time.replace(/\s+/g, '');
+            if (st.indexOf(":00") !== -1)
+            {
+                st = st.replace(":00", "");
+            }
+            else st = st.replace(":", ".");
+            var et = evt_end_time.replace(/\s+/g, '');
+            if (et.indexOf(":00") !== -1)
+            {
+                et = et.replace(":00", "");
+            }
+            else et = et.replace(":", ".");
+            return `
+                        <div class="eventcard">
                         <div class="eventcard__header">
-                            <p class="time">${evt_start_time} - ${evt_end_time}
+                            <p class="time">${st}-${et}</p>
                        ${evt_clash ? `<span class="alert"><svg class="icon-alert">
                        <use href="#icon-alert" xlink:href="#icon-alert"></use>                           
                        </svg>
@@ -63,7 +76,7 @@ let planner_template = ( { evt_code, evt_title, evt_location, evt_start_time, ev
                             </span> 
                             `:`
                              `}
-                            </p>
+                            
                             <a href="#" data-eventId="${evt_code}" class="remove-from-planner">Remove</a>
                         </div>
                         <div class="eventcard__body row">
@@ -93,5 +106,5 @@ let planner_template = ( { evt_code, evt_title, evt_location, evt_start_time, ev
                             </div>
                         </div>
                     </div>`;
-
+                };
 export {dd_template, card_template, planner_template};
