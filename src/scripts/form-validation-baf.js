@@ -130,7 +130,19 @@ $("#baf-form").validate({
           console.log("vals-", vals);
           return false;
         });
-        form.addHiddenFields({
+
+        // MktoForms2.whenRendered(function(form){  
+        //   var formEl = form.getFormElem()[0],  
+        //       rando = '_' + Math.random();  
+          
+        //   [].slice.call(formEl.querySelectorAll('label[for]')).forEach(  
+        //     function(labelEl){  
+        //       var forEl = formEl.querySelector('[id="'+ labelEl.htmlFor + '"]');  
+        //       labelEl.htmlFor = forEl.id = forEl.id + rando;  
+        //     });  
+        // }); 
+        let myForm = MktoForms2.getForm(3590);
+        myForm.addHiddenFields({
           // These are the values which are submitted to Marketo
           FirstName: firstName,
           LastName: lastName,
@@ -140,7 +152,7 @@ $("#baf-form").validate({
           Email_Opt_In__c: OptInc,
           openDayChoice4: odChoice
         });
-        form.submit();
+        myForm.submit();
 
         // Show sucessful form submission acknowledgement
         $(".baf-form, #baf-form-button").fadeOut();

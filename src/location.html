@@ -1099,55 +1099,55 @@
         <script>
          /* config area - replace with your instance values */
    
-         var mktoFormConfig = {
-               podId : "//app-sn01.marketo.com",
-               munchkinId : "209-INQ-367",
-               formIds : [3590, 3610]
-         };
+         // var mktoFormConfig = {
+         //       podId : "//app-sn01.marketo.com",
+         //       munchkinId : "209-INQ-367",
+         //       formIds : [3590, 3610]
+         // };
          
-         /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
+         // /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
          
-         function mktoFormChain(config) {
+         // function mktoFormChain(config) {
          
-            /* util */
-            var arrayFrom = Function.prototype.call.bind(Array.prototype.slice);
+         //    /* util */
+         //    var arrayFrom = Function.prototype.call.bind(Array.prototype.slice);
          
-            /* const */
-            var MKTOFORM_ID_ATTRNAME = "data-formId";
+         //    /* const */
+         //    var MKTOFORM_ID_ATTRNAME = "data-formId";
             
-            /* fix inter-form label bug! */
-            MktoForms2.whenRendered(function(form) {
-               var formEl = form.getFormElem()[0],
-                  rando = "_" + new Date().getTime() + Math.random();
+         //    /* fix inter-form label bug! */
+         //    MktoForms2.whenRendered(function(form) {
+         //       var formEl = form.getFormElem()[0],
+         //          rando = "_" + new Date().getTime() + Math.random();
          
-               arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
-                  var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
-                  if (forEl) {
-                     labelEl.htmlFor = forEl.id = forEl.id + rando;
-                  }
-               });
-            });
+         //       arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
+         //          var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
+         //          if (forEl) {
+         //             labelEl.htmlFor = forEl.id = forEl.id + rando;
+         //          }
+         //       });
+         //    });
          
-            /* chain, ensuring only one #mktoForm_nnn exists at a time */
-            arrayFrom(config.formIds).forEach(function(formId) {
-               var loadForm = MktoForms2.loadForm.bind(MktoForms2,config.podId,config.munchkinId,formId),
-                  formEls = arrayFrom(document.querySelectorAll("[" + MKTOFORM_ID_ATTRNAME + '="' + formId + '"]'));
+         //    /* chain, ensuring only one #mktoForm_nnn exists at a time */
+         //    arrayFrom(config.formIds).forEach(function(formId) {
+         //       var loadForm = MktoForms2.loadForm.bind(MktoForms2,config.podId,config.munchkinId,formId),
+         //          formEls = arrayFrom(document.querySelectorAll("[" + MKTOFORM_ID_ATTRNAME + '="' + formId + '"]'));
          
-               (function loadFormCb(formEls) {
-                  var formEl = formEls.shift();
-                  formEl.id = "mktoForm_" + formId;
+         //       (function loadFormCb(formEls) {
+         //          var formEl = formEls.shift();
+         //          formEl.id = "mktoForm_" + formId;
          
-                  loadForm(function(form) {
-                     formEl.id = "";
-                     if (formEls.length) {
-                        loadFormCb(formEls);
-                     }
-                  });
-               })(formEls);
-            });
-         }
+         //          loadForm(function(form) {
+         //             formEl.id = "";
+         //             if (formEls.length) {
+         //                loadFormCb(formEls);
+         //             }
+         //          });
+         //       })(formEls);
+         //    });
+         // }
          
-         mktoFormChain(mktoFormConfig);
+         // mktoFormChain(mktoFormConfig);
       </script>
          <!-- Marketo form initilisation end -->
         

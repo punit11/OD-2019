@@ -311,7 +311,8 @@ function marketoSubmit(successPost, fname, useremail, mobile, year, studentType,
                 console.log('vals-', vals);
                 return false;
             });
-            form.addHiddenFields({
+            let myForm = MktoForms2.getForm(3610);
+            myForm.addHiddenFields({
                 //These are the values which are submitted to Marketo
                 "FirstName": fname,
                 "Email": useremail,
@@ -322,7 +323,7 @@ function marketoSubmit(successPost, fname, useremail, mobile, year, studentType,
                 "Level_of_Study__c": studyLevel,
                 "Email_Opt_In__c": emailOptIn
             });
-            form.submit();
+            myForm.submit();
         }); // Market form end
     } // if statment end
 }
