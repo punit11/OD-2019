@@ -136,7 +136,7 @@ import {show_hide_modal} from "./show-hide-modal";
             // $(".events-loader").delay(2000).fadeOut("slow");
             
               $('.js-magic').fadeOut(500).delay(2200).fadeIn('slow');
-              $(".planner-add-success").text("Events were sucessfully added to your planner.").delay(500).fadeIn('slow').delay(1000).fadeOut('slow');
+              $(".planner-add-success").text("Events were successfully added to your planner.").delay(500).fadeIn('slow').delay(1000).fadeOut('slow');
               $(".events-loader").delay(1500).fadeOut("slow");
             
             

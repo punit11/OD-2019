@@ -307,7 +307,7 @@ function marketoSubmit(successPost, fname, useremail, mobile, year, studentType,
         MktoForms2.whenReady(function (form) {
             //console.log('Form ID- ', form);
             form.onSuccess(function (vals, tyURL) {
-                console.log('Form sucessfully submitted');
+                console.log('Form  submitted');
                 console.log('vals-', vals);
                 return false;
             });
