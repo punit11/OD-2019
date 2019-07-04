@@ -13,18 +13,18 @@ function populate_cards(session,selected_ia,caller) {
 
       //  console.log("session ", session);
       //  console.log("selected_ia ", selected_ia);
-       var URL = "src/data/Burwood.json";
+      //  var URL = "src/data/Burwood.json";
 
-      // if (window.location.href.indexOf("burwood") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
-      //       }
-      //   else if (window.location.href.indexOf("warrnambool") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
-      //       }
-      //   else if (window.location.href.indexOf("waterfront") > -1) {
-      //   URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
-      //       }
-      //   else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
+      if (window.location.href.indexOf("burwood") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0008/1917710/Burwood.json";
+            }
+        else if (window.location.href.indexOf("warrnambool") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0004/1919173/Warrnambool.json";
+            }
+        else if (window.location.href.indexOf("waterfront") > -1) {
+        URL = "https://www.deakin.edu.au/__data/assets/file/0005/1919174/Waterfront.json";
+            }
+        else URL = "https://www.deakin.edu.au/__data/assets/file/0006/1919175/Waurn-ponds.json";
     
 
        makeAjaxCall(URL)
@@ -96,7 +96,8 @@ function populate_cards(session,selected_ia,caller) {
           'evt_location': evt.Location,
           'evt_start_time': evt.Start_time,
           'evt_end_time': evt.End_time,
-          'evt_desc': evt.Description
+          'evt_desc': evt.Description,
+          'evt_notes': evt.Tour_notes
         });
         $(render_loc).append(template_dd).hide(); // Hide the cards initially to prevent ugly resizing
         });

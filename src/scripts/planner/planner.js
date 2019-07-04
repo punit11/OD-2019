@@ -1,7 +1,7 @@
 import {getCookieValue} from "../journey/get-cookies";
 import {show_hide_modal} from "../journey/show-hide-modal";
 import {planner_template} from '../templates';
-import {getOdEvents} from '../journey/get-events-for-planner';
+import getOdEvents from '../journey/get-events-for-planner';
 
 var login_check = (function() {
     console.log("CheckPoint 1");
@@ -318,8 +318,8 @@ var login_check = (function() {
         console.log('Inside planner - campus_value', campus_value);
         console.log('Inside planner - sub_value', sub_value);
         
-        getOdEvents();
-        getEventsfromDB();
+        $.when(getOdEvents()).then(getEventsfromDB());
+
         //$.when(deferred_EFDB).done(function(){displayPlannerData(campus_value);});
         let storedData = localStorage.getItem("od_saved_events");
         if (storedData !== "undefined") {

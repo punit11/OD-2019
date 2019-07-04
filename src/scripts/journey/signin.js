@@ -2,7 +2,7 @@ import { CognitoUserPool, CognitoUserAttribute, CognitoUser } from 'amazon-cogni
 import * as AmazonCognitoIdentity from 'amazon-cognito-identity-js';
 import render_ticks from "./render-ticks";
 import getOdEvents from "./get-events-for-planner";
-import login_check from "../planner/planner";
+// import login_check from "../planner/planner";
 
 var signin = (function(callback_func1,callback_func2) {
 
