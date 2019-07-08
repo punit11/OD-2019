@@ -315,6 +315,15 @@
         padding: 1rem 1.7rem;
       }
     }
+
+    .button {
+      min-width: -webkit-fill-available;
+      min-width: fill-available;
+
+      @include xxl {
+        min-width: 20rem;
+      }
+    }
   }
 
   .tri-outline.face-left {
