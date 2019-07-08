@@ -73,6 +73,7 @@ $("#baf-form").validate({
 // submit
 //   $("#comps-form").submit(function(e) {
     submitHandler: function (form) {
+      // $("#mktoForm_3610, #register-form").hide(); // Hide rego form
       console.log("Form is valid");
       let firstName = $.trim($("input[name='firstName']").val());
       let lastName = $.trim($("input[name='lastName']").val());
@@ -121,28 +122,36 @@ $("#baf-form").validate({
     ) {
       // Marketo form submission
 
-      MktoForms2.loadForm("//app-sn01.marketo.com", "209-INQ-367", 3590);
-      MktoForms2.whenReady(function(form) {
-        console.log("Form ID- ", form);
-        console.log('lastName ',lastName);
-        form.onSuccess(function(vals, tyURL) {
-          console.log("Form sucessfully submitted");
-          console.log("vals-", vals);
-          return false;
-        });
+      // MktoForms2.loadForm("//app-sn01.marketo.com", "209-INQ-367", 3590);
+      // MktoForms2.whenReady(function(form) {
+      //   console.log("Form ID- ", form);
+      //   console.log('lastName ',lastName);
+      //   form.onSuccess(function(vals, tyURL) {
+      //     $("#register-form").toggle();
+      //     console.log("Form sucessfully submitted");
+      //     console.log("vals-", vals);
+      //     return false;
+      //   });
 
-        // MktoForms2.whenRendered(function(form){  
-        //   var formEl = form.getFormElem()[0],  
-        //       rando = '_' + Math.random();  
-          
-        //   [].slice.call(formEl.querySelectorAll('label[for]')).forEach(  
-        //     function(labelEl){  
-        //       var forEl = formEl.querySelector('[id="'+ labelEl.htmlFor + '"]');  
-        //       labelEl.htmlFor = forEl.id = forEl.id + rando;  
-        //     });  
-        // }); 
-        let myForm = MktoForms2.getForm(3590);
-        myForm.addHiddenFields({
+      //   let myForm = MktoForms2.getForm(3590);
+      //   myForm.addHiddenFields({
+      //     // These are the values which are submitted to Marketo
+      //     FirstName: firstName,
+      //     LastName: lastName,
+      //     Email: Email,
+      //     MobilePhone: mobilePhone,
+      //     Campus__c: Campus__c,
+      //     Email_Opt_In__c: OptInc,
+      //     openDayChoice4: odChoice
+      //   });
+      //   myForm.submit();
+
+
+      // Whitford suggestion
+
+
+      MktoForms2.loadForm("//app-sn01.marketo.com", "209-INQ-367", 3590, function(form) {
+          form.addHiddenFields({
           // These are the values which are submitted to Marketo
           FirstName: firstName,
           LastName: lastName,
@@ -152,7 +161,14 @@ $("#baf-form").validate({
           Email_Opt_In__c: OptInc,
           openDayChoice4: odChoice
         });
-        myForm.submit();
+          form.onSuccess(function(vals) {
+          console.log("BAF form sucessfully submitted");
+          console.log("vals-", vals);
+          return false;
+          });
+          form.submit();
+      });
+
 
         // Show sucessful form submission acknowledgement
         $(".baf-form, #baf-form-button").fadeOut();
@@ -165,7 +181,7 @@ $("#baf-form").validate({
            $("body").animate({ scrollTop: comps_offset.offset().top }, 500);
             }
            else $("html,body").animate({ scrollTop: comps_offset.offset().top }, 500);
-       }); // Market form end
+      //  }); // Market form end
     }
 }
 });

@@ -16,13 +16,17 @@ $('#Iama').on('change', function () {
         $('.iYL,.study-level').hide();
     }
 });
+// Custom email validation rule
+
+
 
 $("#register-form").validate({
     rules: {
         fname: "required",
         "sign-up-email": {
             required: true,
-            email: true
+            // email: true
+            myEmail: true
         },
         pass: {
             required: true,
@@ -51,7 +55,7 @@ $("#register-form").validate({
         fname: "(Please enter your name)",
         "sign-up-email": {
             required: "(Please enter your email)",
-            email: "(Please enter a valid email)"
+            myEmail: "(Please enter a valid email address)"
         },
         pass: {
             required: "(Please choose a password)",
@@ -90,10 +94,16 @@ $("#register-form").validate({
             error.insertAfter(element);
     }
 });
+// Custome email validation
+$.validator.addMethod("myEmail", function(value, element) {
+    return this.optional(element) || /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/.test(value);
+  }, "(Please enter a valid email address)");
 //   Validation end 
 
 $("#register-form").submit(function (e) {
     e.preventDefault();
+    // $("#mktoForm_3590, #baf-form").hide(); // Hide BAF form
+ 
     $(".f1-success,.f1-fail").hide();
     if ($('#register-form').valid()) {
         $("#SignupModal .loader").show();
@@ -253,8 +263,6 @@ $("#register-form").submit(function (e) {
                                  $("#SignupModal .loader").fadeOut("slow");
                                  $(".f1-success").toggle().html("<h2>Account Created</h2><p>You are ready to start planning your day</p>");
                                 //  $(".f1-success").toggle().html("<h2>Account Created</h2><p>You are ready to start planning your day at</p><p>" + user_selected_loc +"</p>");
-
-                                 
                                  // set the height of the modal based on success message height
                                 var successHeight = $('.f1-success').height() + 75;
                                 $('.modal-content').css('min-height', successHeight);
@@ -303,17 +311,38 @@ $("#register-form").submit(function (e) {
 function marketoSubmit(successPost, fname, useremail, mobile, year, studentType, studyLevel, campusLocation, emailOptIn) {
     // Marketo form submission
     if (successPost) {
-        MktoForms2.loadForm("//app-sn01.marketo.com", "209-INQ-367", 3610);
-        MktoForms2.whenReady(function (form) {
-            //console.log('Form ID- ', form);
-            form.onSuccess(function (vals, tyURL) {
-                console.log('Form  submitted');
-                console.log('vals-', vals);
-                return false;
-            });
-            let myForm = MktoForms2.getForm(3610);
-            myForm.addHiddenFields({
-                //These are the values which are submitted to Marketo
+
+        // MktoForms2.loadForm("//app-sn01.marketo.com", "209-INQ-367", 3610);
+        // MktoForms2.whenReady(function (form) {
+        //     //console.log('Form ID- ', form);
+        //     let formId = form.getId(); 
+        //     console.log('Ready Form Id - ',formId);
+        //     form.onSuccess(function (vals, tyURL) {
+               
+        //         console.log('Form  submitted');
+        //         console.log('vals-', vals);
+        //         return false;
+        //     });
+        //     let myForm = MktoForms2.getForm(3610);
+        //     myForm.addHiddenFields({
+        //         //These are the values which are submitted to Marketo
+        //         "FirstName": fname,
+        //         "Email": useremail,
+        //         "MobilePhone": mobile,
+        //         "Year_Level__c": year,
+        //         "Lead_Type__c": studentType,
+        //         "Campus__c": campusLocation,
+        //         "Level_of_Study__c": studyLevel,
+        //         "Email_Opt_In__c": emailOptIn
+        //     });
+        //     myForm.submit();
+        // }); // Market form end
+
+        // Sanford Suggestion
+
+        MktoForms2.loadForm("//app-sn01.marketo.com", "209-INQ-367", 3610, function(form) {
+          form.addHiddenFields({
+          // These are the values which are submitted to Marketo
                 "FirstName": fname,
                 "Email": useremail,
                 "MobilePhone": mobile,
@@ -322,9 +351,15 @@ function marketoSubmit(successPost, fname, useremail, mobile, year, studentType,
                 "Campus__c": campusLocation,
                 "Level_of_Study__c": studyLevel,
                 "Email_Opt_In__c": emailOptIn
-            });
-            myForm.submit();
-        }); // Market form end
+        });
+          form.onSuccess(function(vals) {
+          console.log("Rego Form sucessfully submitted");
+          console.log("vals-", vals);
+          return false;
+          });
+          form.submit();
+      });
+      
     } // if statment end
 }
 }());

@@ -65,8 +65,10 @@ $("#popular-courses").on('change', function () {
     $(".js-reset-filters").click(function(e) {
         e.preventDefault();
         $('.filter-all').parent().addClass('selected').siblings().removeClass('selected');
-        $('#popular-courses, #course-area').val('').trigger('change.select2');
-        $('#popular-courses, #course-area').parents( ".option-container" ).removeClass("filter-highlight");;
+        $('#popular-courses').val('').trigger('change');
+        $('#course-area').val('').trigger('change');
+        $('#popular-courses').parents( ".option-container" ).removeClass("filter-highlight");
+        $('#course-area').parents( ".option-container" ).removeClass("filter-highlight");
         populate_cards();
     });
 

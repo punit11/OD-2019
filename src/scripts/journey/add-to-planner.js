@@ -129,8 +129,10 @@ import {show_hide_modal} from "./show-hide-modal";
         async: false,
         success: function (data) {
             console.log("success");
-            
-            // $(".events-loader").delay(2000).fadeOut("slow");
+
+            // For Adobe Tracking only
+            _satellite.setVar('KeyLinkDetailsOpenday', 'Openday_2019_Create_Account_Submit_hc');
+            _satellite.track('keyLinkOpenday');
             
               $('.js-magic').fadeOut(500).delay(2200).fadeIn('slow');
               $(".planner-add-success").text("Events were successfully added to your planner.").delay(500).fadeIn('slow').delay(1000).fadeOut('slow');
@@ -158,7 +160,7 @@ import {show_hide_modal} from "./show-hide-modal";
        if (logged_in) {
          e.preventDefault();
         console.log("Logged in");
-        window.location.href = "/openday/myplanner"; // ***  Redirect to planner
+        window.location.href = "/openday/myplan"; // ***  Redirect to planner
        }
        else{
         show_hide_modal();
