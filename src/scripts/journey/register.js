@@ -219,6 +219,11 @@ $("#register-form").submit(function (e) {
              var cognitoUser = new AmazonCognitoIdentity.CognitoUser(userData);
              cognitoUser.authenticateUser(authenticationDetails, {
                  onSuccess: function (result) {
+
+                     // For Adobe Tracking only
+                    _satellite.setVar('KeyLinkDetailsOpenday', 'Openday_2019_Create_Account_Submit_hc');
+                    _satellite.track('keyLinkOpenday');
+
                      //console.log('access token + ' + result.getAccessToken().getJwtToken());
                      //console.log('idToken + ' + result.idToken.jwtToken);
                      console.log('Sub : ' + result.idToken.payload.sub);

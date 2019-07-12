@@ -130,10 +130,7 @@ import {show_hide_modal} from "./show-hide-modal";
         success: function (data) {
             console.log("success");
 
-            // For Adobe Tracking only
-            _satellite.setVar('KeyLinkDetailsOpenday', 'Openday_2019_Create_Account_Submit_hc');
-            _satellite.track('keyLinkOpenday');
-            
+                    
               $('.js-magic').fadeOut(500).delay(2200).fadeIn('slow');
               $(".planner-add-success").text("Events were successfully added to your planner.").delay(500).fadeIn('slow').delay(1000).fadeOut('slow');
               $(".events-loader").delay(1500).fadeOut("slow");
