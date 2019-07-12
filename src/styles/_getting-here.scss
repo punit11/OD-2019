@@ -249,3 +249,10 @@
         width: 682px;	
     }
 }
+
+@include lg {
+    .iPad .flexContainer.flexContainer--half.campus-map {
+        max-width: 40vw!important;
+        left: 60%;
+    }
+}

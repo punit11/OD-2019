@@ -51,18 +51,11 @@
             left: -5rem;
             top: 0;
             z-index: -1;
+            display: none!important;
 
-            // @include md {
-            //     left: -4rem
-            // }
-
-            // @include lg {
-            //     left: -3rem;
-            // }
-
-            // @include xl {
-            //     left: -2rem;
-            // }
+            @include lg {
+                display: inline-block!important;
+            }
         }
     }
 
