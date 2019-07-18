@@ -418,3 +418,13 @@ article {
         }
     }
 }
+
+.myplan {
+    nav ul.nav-list>li:nth-child(2) {
+        display: none;
+    }
+
+    nav ul.nav-list>li:last-child() {
+        display: none;
+    }
+}

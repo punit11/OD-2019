@@ -49,7 +49,15 @@ button {
   align-items: center;
   box-sizing: border-box;
   border-radius: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
   
+  &:hover {
+    color: $teal;
+    background: $white;
+    transition: all 0.3s ease;
+  }
+
   &-inverse {
     background: $white;
     color: $teal;
@@ -58,6 +66,12 @@ button {
   &.magenta {
     background: $magenta;
     border: 1px solid $magenta;
+
+    &:hover {
+      color: $magenta;
+      background: $white;
+      transition: all 0.3s ease;
+    }
 
     &-inverse {
       background: $white;
@@ -70,6 +84,13 @@ button {
     border: 1px solid $yellow;
     color: $black;
 
+    &:hover {
+      color: $charcoal;
+      background: $white;
+      border-color: $charcoal;
+      transition: all 0.3s ease;
+    }
+
     &-inverse {
       background: $white;
       color: $black;
@@ -80,6 +101,12 @@ button {
     background: $blue;
     border: 1px solid $blue;
 
+    &:hover {
+      color: $blue;
+      background: $white;
+      transition: all 0.3s ease;
+    }
+
     &-inverse {
       background: $white;
       color: $blue;
@@ -89,6 +116,19 @@ button {
   &.charcoal {
     background: $charcoal;
     border: 1px solid $charcoal;
+
+    &:hover {
+      color: $charcoal;
+      background: $white;
+      transition: all 0.3s ease;
+
+      svg {
+          fill: $charcoal;
+          fill-opacity: 1;
+          transition: 0.3s all ease;
+        }
+
+    }
 
     &-inverse {
       background: $white;

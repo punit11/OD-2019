@@ -9,8 +9,8 @@ import {show_hide_modal} from "./show-hide-modal";
 
     $('.add-to-planner').attr('disabled','disabled');
 
-      $(".owl-carousel").on("click", "span:not('.event-added')", function() {
-      
+      $(".owl-carousel").on("click", "span:not('.event-added, .js-no-modal')", function() {
+      console.log('*****************clicky clicky');
       // let logged_in = getCookieValue('od-token');
       if (!logged_in) {
       var logged_in = getCookieValue('od-token');

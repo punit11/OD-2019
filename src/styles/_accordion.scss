@@ -26,6 +26,7 @@
             margin-left: 5px;
             border-radius: 20px;
             background-color: #0c8573;
+            border: 1px solid $teal;
             padding: .65rem .65rem .65rem .5rem;
             text-transform: uppercase;
             color: transparent;
@@ -35,6 +36,13 @@
             font-size: 0;
             height: 26px;
             width: 26px;
+
+            &:hover {
+                background-color: $white;
+                border: 1px solid $teal;
+                color: $teal;
+                transition: 0.3s all ease;
+            }
 
             @media (max-width: #{$screen-sm-min}){
                 border-radius: 50%;
@@ -95,6 +103,15 @@
             &:first-child {
                 color: $magenta;
             }
+        }
+
+        &:hover {
+            span {
+                background-color: $white;
+                color: $teal;
+                transition: 0.3s all ease;
+            }
+            
         }
     }
 }

@@ -37,7 +37,7 @@ let card_template = ( { evt_code, evt_title, evt_location, evt_start_time, evt_e
                         </span>
                         <div>
                            <button class="accordion">
-                              <span>Show more</span>
+                              <span class="js-no-modal">Show more</span>
                               <svg class="icon-arrow">
                                  <use href="#icon-arrow" xlink:href="#icon-arrow"></use>
                               </svg>
