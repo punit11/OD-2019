@@ -183,8 +183,22 @@
                     
                     @include lg {
                         order: 3;
+                        margin-top: 4rem;
                     }
-                }  
+                } 
+                
+                .campus-accessibility {
+                    order: 4;
+                    margin-top: 4rem;
+
+                    @include lg {
+                        order: 4;
+                    }
+
+                    .button {
+                        max-width: 20.8rem;
+                    }
+                }
 
             }
             &-map {

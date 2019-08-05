@@ -13,7 +13,7 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
-  <body class="burwood location-page"> <!-- location classes to be added to body depending on campus -->
+  <body class="warrnambool location-page"> <!-- location classes to be added to body depending on campus -->
 
     <!-- SVG Symbols -->
       <div class="hidden">
@@ -150,7 +150,7 @@
          <!-- <div class="container-wrapper"> -->
                <!-- <h2 class="col-md-8 col-md-offset-3 p48">A day that's all about tomorrow. Experience practical Learning through Innovation</h2> -->
                <div class="row flexContainer video-text col-md-offset-2">
-                     <a href="#campus-video" class="js-video-popup"><center> <img src="src/images/campus-video-video.jpg" srcset="src/images/campus-video-video@2x.jpg 2x, src/images/campus-video-video@3x.jpg 3x" alt="play video" data-video-id="AMQswk9yUR0"> </center></a>
+                     <a href="#campus-video" class="js-video-popup rotating-triangle"><center> <img src="src/images/campus-video-video.jpg" srcset="src/images/campus-video-video@2x.jpg 2x, src/images/campus-video-video@3x.jpg 3x" alt="play video" data-video-id="AMQswk9yUR0"> </center></a>
                      <p class="p48">See how we blend cutting-edge technology with practical skills to prepare you for the future of work.</p>   
                </div>
                <!-- lightbox container hidden with CSS -->
@@ -236,7 +236,7 @@
 
       <!-- Plan your day -->
       <a name="planyrday">&nbsp;</a>
-      <div class="row planyrday-wrapper">
+      <div class="row planyrday-wrapper rotating-triangle">
          <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-8 col-lg-offset-2">
             <div class="col-xs-12 col-md-10 intro">
                   <h2>Plan your day</h2>
@@ -435,20 +435,20 @@
                </div>
                <div class="form-bottom direction-col">
                   <div class="form-group">
-                     <div class="radio-option">
-                        <input type="radio" id="warrnambool" name="Campus__c" value="Warrnambool" class="form-email form-control" /> 
+                     <div class="checkbox-button">
+                        <input type="checkbox" id="warrnambool" name="Campus__c" value="Warrnambool" class="form-email form-control" /> 
                         <label class="sr-only" for="warrnambool">Warrnambool</label>
                      </div>
-                     <div class="radio-option">
-                        <input type="radio" id="geelong-waurnponds" name="Campus__c" value="Geelong Waurn Ponds" class="form-email form-control" /> 
+                     <div class="checkbox-button">
+                        <input type="checkbox" id="geelong-waurnponds" name="Campus__c" value="Geelong Waurn Ponds" class="form-email form-control" /> 
                         <label class="sr-only" for="geelong-waurnponds">Geelong Waurn Ponds</label>
                      </div>
-                     <div class="radio-option">
-                        <input type="radio" id="geelong-waterfront" name="Campus__c" value="Geelong Waterfront" class="form-email form-control" /> 
+                     <div class="checkbox-button">
+                        <input type="checkbox" id="geelong-waterfront" name="Campus__c" value="Geelong Waterfront" class="form-email form-control" /> 
                         <label class="sr-only" for="geelong-waterfront">Geelong Waterfront</label>
                      </div>
-                     <div class="radio-option">
-                        <input type="radio" id="burwood" name="Campus__c" value="Melbourne Burwood" class="form-email form-control" /> 
+                     <div class="checkbox-button">
+                        <input type="checkbox" id="burwood" name="Campus__c" value="Melbourne Burwood" class="form-email form-control" /> 
                         <label class="sr-only" for="burwood">Melbourne Burwood</label>
                      </div>
                   </div>
@@ -531,6 +531,13 @@
                            </svg>
                         </a>
                   </div><!-- /.getting-around-campus -->
+
+                  <div class="campus-accessibility">
+                     <h4>Campus accessibility</h4>
+                     <p>Deakin prides itself on fostering an inclusive and welcoming community. If you, or someone you care for, needs extra assistance on Open Day, please get in touch with our accessibility team.</p>
+
+                     <a href="https://www.deakin.edu.au/open-day-campus-accessibility" target="_blank" class="button teal">Request assistance</a>
+                  </div>
                </div><!-- /.campus-details -->
                
                <div class="flexContainer flexContainer--half campus-map">

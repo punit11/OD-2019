@@ -1,3 +1,5 @@
+$time: 60;
+
 .practicle-learning {
     background: $black;
     color: $white;
@@ -7,7 +9,7 @@
 
     @include md {
         padding: 17rem 7rem 0 7rem;
-        z-index: 0;
+        // z-index: 0;
         overflow: hidden;
         // z-index: -1;
     }
@@ -133,6 +135,7 @@
                 border-color: $blue transparent transparent transparent;
                 top: -4rem;
                 right: 1.2rem;
+                // animation: spin #{$time}s linear infinite;
 
                 @include md {
                     right: auto;
@@ -264,4 +267,3 @@ body {
         }
     }
   }
-

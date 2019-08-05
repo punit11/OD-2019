@@ -428,3 +428,9 @@ article {
         display: none;
     }
 }
+
+.warrnambool {
+    .Navbar__Link:first-child(), .Navbar__Link:nth-child(3), .Navbar__Link:nth-child(4), .Navbar__Link:nth-child(5)  {
+        display: none;
+    }
+}
