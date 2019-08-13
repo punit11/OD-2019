@@ -21,7 +21,12 @@ var secondaryNavbar_scroll = $(function() {
 
 jQuery(window).on('load',function(){
     $('head style').remove();
-    console.log('======= > head style removed');
+
+    $('#lightgallery').lightGallery({
+        thumbnail:true,
+        animateThumb: true,
+        showThumbByDefault: false
+    });
  });
 
 export {secondaryNavbar_scroll};

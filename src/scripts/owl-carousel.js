@@ -22,13 +22,15 @@ let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
     rewindNav:false,
     lazyLoad:true,
     lazyContent:true,
+    rtl: true,
 		responsive: {
 			0: {items: 1},
 			600: {items: 2},
 			1000: {items: 2.5,
             loop:(course_cards_len > 2) ? true : false,
             dotsEach: (course_cards_len > 2) ? 2: 1,
-            slideBy: (course_cards_len > 2) ? 2: 1
+            slideBy: (course_cards_len > 2) ? 2: 1,
+            rtl: (course_cards_len > 3) ? false : true
 			}
     },
     onDragged: courseInfo_removeClass
@@ -47,8 +49,8 @@ let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
 			1000: {items: 2.5,
             loop:(tours_cards_len > 2) ? true : false,
             dotsEach: (tours_cards_len > 2) ? 2: 1,
-            slideBy: (tours_cards_len > 2) ? 2: 1
-
+            slideBy: (tours_cards_len > 2) ? 2: 1,
+            rtl: (tours_cards_len > 3) ? false : true
 			}
     },
     // onDragged: toursExp_removeClass
@@ -61,13 +63,15 @@ let gen_info_cards_len = $(".gen-info-carousel .eventcard").length;
     rewindNav:false,
     lazyLoad:true,
     lazyContent:true,
+    rtl: true,
 		responsive: {
 			0: {items: 1},
 			600: {items: 2},
 			1000: {items: 2.5,
             loop:(gen_info_cards_len > 2) ? true : false,
             dotsEach: (gen_info_cards_len > 2) ? 2: 1,
-            slideBy: (gen_info_cards_len > 2) ? 2: 1
+            slideBy: (gen_info_cards_len > 2) ? 2: 1,
+            rtl: (gen_info_cards_len > 3) ? false : true
 			}
     },
     // onDragged: genInfo_removeClass

@@ -35,7 +35,6 @@
     .text__container {
         position: relative;
 
-        
         // &:before {
         //     display: none;
         //     position: absolute;
@@ -88,7 +87,7 @@
         $min_font: 32px;
         $max_font: 48px;
         @include fluid-type($min_width, $max_width, $min_font, $max_font);
-        // margin-top: 18rem;
+        line-height: 1.1em;
     }
 
     p {

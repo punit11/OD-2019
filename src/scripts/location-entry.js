@@ -15,6 +15,8 @@ import {populate_cards} from "./populate-cards";
 import {forgot_pwd} from "./journey/forgot-pwd";
 import {reset_pwd} from "./journey/reset-pwd";
 
+import lightgallery from "lightgallery";
+
 // Homepage/Generic CSS
 // import "../styles/_base.scss";
 
@@ -36,4 +38,6 @@ import "../styles/_getting-here.scss";
 import "../styles/_practicle-learning.scss";
 import "../styles/_owl.carousel.scss";
 import "../styles/_accommodation.scss";
+
+import "../styles/_lightGallery.scss";
 

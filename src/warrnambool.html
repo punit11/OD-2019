@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    
+      <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  </head>
+  <body class="warrnambool location-page"> <!-- location classes to be added to body depending on campus -->
+
+    <!-- SVG Symbols -->
+      <div class="hidden">
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-burger" viewBox="0 0 16 12">
+                  <path d="M8 12h7a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2zM1 2h14a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2zm0 5h14a1 1 0 0 0 0-2H1a1 1 0 0 0 0 2z" fill="#FFF"/>
+            </symbol>
+
+            <symbol id="icon-pin" viewBox="0 0 15 17">
+                  <ellipse cx="7.5" cy="7.412" rx="2.143" ry="2.118"/>
+                  <path d="M6.75 16.624c-.107-.106-4.5-3.918-4.5-4.024C.75 11.33 0 9.424 0 7.412 0 3.282 3.321 0 7.5 0S15 3.282 15 7.412c0 2.012-.75 3.917-2.25 5.294-.107.106-4.393 3.918-4.5 4.023a1.158 1.158 0 0 1-1.5-.105zm-2.893-5.295L7.5 14.506l3.643-3.177c1.071-1.058 1.714-2.329 1.714-3.811 0-2.965-2.357-5.294-5.357-5.294S2.143 4.447 2.143 7.412c0 1.482.643 2.859 1.714 3.917 0-.105 0-.105 0 0z"/>
+            </symbol>
+
+            <symbol id="icon-clock" viewBox="0 0 16 16">
+               <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"/>
+               <path d="M9 4H7v5h5V7H9z"/>
+            </symbol>
+
+            <symbol id="icon-arrow" viewBox="0 0 13 8">
+               <path d="M6.5 7a.62.62 0 0 1-.426-.172L1 2.084 1.851 1 6.5 5.347 11.149 1 12 2.084 6.926 6.828A.62.62 0 0 1 6.5 7z"/>
+             </symbol>
+
+             <symbol id="icon-triangle" viewBox="0 0 73 67">
+               <path fill="none" fill-rule="evenodd" stroke="#FFD923" stroke-width="2" d="M72 1.001L54.5 33 37 65 19.5 33 2 1h70z"/>
+             </symbol>
+
+            <symbol id="icon-download" viewBox="0 0 14 17">
+               <path d="M14 6h-4V0H4v6H0l7 7 7-7zM0 15v2h14v-2H0z"/>
+            </symbol>
+
+            <symbol id="icon-white-triangle" viewBox="0 0 47 50">
+               <path fill="none" stroke="#FFF" d="M1.129.5H.5v48.343L45.043 24.5 22.74 12.31 1.129.5z"/>
+            </symbol>
+
+            <symbol id="icon-calendar" viewBox="0 0 20 22">
+               <path fill-opacity=".5" d="M2 8h13a1 1 0 0 1 0 2H2v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-2v1a1 1 0 0 1-2 0V4H7v1a1 1 0 1 1-2 0V4H3a1 1 0 0 0-1 1v3zm5-6h6V1a1 1 0 0 1 2 0v1h2a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h2V1a1 1 0 1 1 2 0v1z"/>
+           </symbol>
+
+            <symbol id="icon-tick" viewBox="0 0 23 18">
+               <path fill="#0C8573" fill-rule="nonzero" d="M8.05 11.25l-4.6-4.5L0 10.125 8.05 18 23 3.375 19.55 0z"/>
+            </symbol>
+         </svg>
+
+      </div>
+      <!-- End SVG Symbols -->
+
+      <!-- navigation start -->
+      <div class="navigation-container">
+         <!-- New nav start -->
+      <section class="navigation">
+            <div class="nav-container">
+               <div class="brand">
+                  <a class="navbar-brand" href="//deakin.edu.au">
+                     <img src="//www.deakin.edu.au/__data/assets/image/0009/1813095/deakin-logo.png"/>
+                     </a>
+               </div>
+               <nav>
+                  <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                  <ul class="nav-list">
+                     <li>
+                        <a href="#!">RSVP</a>
+                     </li>
+                     <li>
+                        <a href="#!">FAQS</a>
+                     </li>
+                     <li>
+                        <a href="#!">Open day campuses</a>
+                        <ul class="nav-dropdown">
+                           <li>
+                              <a href="#!">Burwood</a>
+                           </li>
+                           <li>
+                              <a href="#!">Waterfront</a>
+                           </li>
+                           <li>
+                              <a href="#!">Waurn-Ponds</a>
+                           </li>
+                           <li>
+                              <a href="#!">Warnambool</a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <button class="button teal js-journey nav-right">
+                     <svg class="icon-calendar">
+                           <use href="#icon-calendar" xlink:href="#icon-calendar"></use>
+                     </svg>My day plan <span class="num--pink--circle">0</span>
+                  </button>
+               </nav>
+            </div>
+         </section>
+         <!-- New Nav end -->
+         <!-- Secondary Nav start -->
+         <div class="secondary__nav">
+            <div class="Navbar__Items">
+               <ul>
+                  <li class="Navbar__Link"><a href="#planyrday">Plan your day</a></li>
+                  <li class="Navbar__Link"><a href="#gettingthere">Getting here</a></li>
+                  <li class="Navbar__Link">
+                     <a href="#win" class="mobile-version">Win!</a>
+                     <a href="#win" class="desktop-version">Bring a friend and Win</a>
+                  </li>
+                  <li class="Navbar__Link no-burwood"><a href="#accommodation">Accommodation</a></li>
+                  <li class="Navbar__Link"><a href="#faq">FAQs</a></li> 
+               </ul>   
+            </div>
+         </div>
+         <!-- secondary nav end -->
+   
+      </div>
+      
+      <!-- banner start -->
+      <div class="row hero-banner location-page">
+         <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-lg-4 col-lg-offset-2 text">
+            <h1>Burwood
+               <span>
+                  <svg class="icon-white-triangle">
+                     <use href="#icon-white-triangle" xlink:href="#icon-white-triangle"></use>
+                  </svg>
+                  Open Day
+               </span>
+               highlights
+            </h1>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 hero-pic">
+            <img src="src/images/building@3x.jpg" srcset="src/images/building.jpg 1x, src/images/building@2x.jpg 2x, src/images/building@3x.jpg 3x" >
+            <img class="d" src="//www.deakin.edu.au/__data/assets/file/0004/1913062/shapre-dee-yellow.svg" alt="deakin">
+         </div>
+         
+      </div>
+      <!-- banner end -->
+
+      <!-- gallery start -->
+      <div class="row col-xs-12 day-gallery">
+         <ul id="lightgallery" class="list-unstyled row col-xs-10 col-xs-offset-2">
+            <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="images/1F4A7292.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                  <a href="">
+                     <img class="img-responsive" src="images/thumbs/1F4A7292.jpg">
+                  </a>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" data-src="images/1F4A7294.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                  <a href="">
+                     <img class="img-responsive" src="images/thumbs/1F4A7294.jpg">
+                  </a>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7297.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                  <a href="">
+                     <img class="img-responsive" src="images/thumbs/1F4A7297.jpg">
+                  </a>
+            </li>
+            <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7332.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+               <a href="">
+                  <img class="img-responsive" src="images/thumbs/1F4A7332.jpg">
+               </a>
+         </li>
+            <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7335.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+               <a href="">
+                  <img class="img-responsive" src="images/thumbs/1F4A7335.jpg">
+               </a>
+         </li>
+            <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7336.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+               <a href="">
+                  <img class="img-responsive" src="images/thumbs/1F4A7336.jpg">
+               </a>
+         </li>
+         
+      <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7292.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+         <a href="">
+            <img class="img-responsive" src="images/thumbs/1F4A7340.jpg">
+         </a>
+      </li>
+      <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7342.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+         <a href="">
+            <img class="img-responsive" src="images/thumbs/1F4A7342.jpg">
+         </a>
+      </li>
+      <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7350.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+         <a href="">
+            <img class="img-responsive" src="images/thumbs/1F4A7350.jpg">
+         </a>
+      </li>
+      <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7355.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+         <a href="">
+            <img class="img-responsive" src="images/thumbs/1F4A7355.jpg">
+         </a>
+      </li>
+      <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7356.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+         <a href="">
+            <img class="img-responsive" src="images/thumbs/1F4A7356.jpg">
+         </a>
+      </li>
+
+      <li class="col-xs-6 col-sm-4 col-md-3 col-lg-6" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/1F4A7356.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+         <a href="">
+            <img class="img-responsive" src="images/thumbs/1F4A7356.jpg">
+         </a>
+      </li>
+         </ul>
+      </div>
+      <!-- gallery end -->
+
+      <!-- accommodation start -->
+      <a name="accommodation"> </a>
+      <div class="accommodation">
+         <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-4 col-lg-offset-2 text__container">
+            <h2 class="desktop-version">
+               Start your journey with Deakin
+            </h2>
+            <p>
+               Your next chapter is going to be an exciting one. And we’re here to make sure the story ends with more than just a qualification.
+            </p>
+            <p>
+               Choose Deakin for a uni experience built around practical learning that prepares you to make your mark. You'll be ready for the world. But will the world be ready for you?
+            </p><a href="./?a=1918709" class="primary button btn">Visit our Year 12 hub</a>
+         </div>
+         <div class="col-xs-12 col-sm-12 col-md-6 image__container">
+            <h2 class="mobile-version">
+               Start your journey with Deakin
+            </h2><img src="./?a=1918081" width="489px" height="auto" alt="">
+         </div>
+      </div><!-- accommodation end -->
+
+      <!-- practicle learning -->
+      <div class="row practicle-learning col-xs-12 " id="video-start">
+         <!-- <div class="container-wrapper"> -->
+               <!-- <h2 class="col-md-8 col-md-offset-3 p48">A day that's all about tomorrow. Experience practical Learning through Innovation</h2> -->
+               <div class="row flexContainer video-text col-md-offset-2">
+                     <a href="#campus-video" class="js-video-popup rotating-triangle"><center> <img src="src/images/campus-video-video.jpg" srcset="src/images/campus-video-video@2x.jpg 2x, src/images/campus-video-video@3x.jpg 3x" alt="play video" data-video-id="AMQswk9yUR0"> </center></a>
+                     <p class="p48">See how we blend cutting-edge technology with practical skills to prepare you for the future of work.</p>   
+               </div>
+               <!-- lightbox container hidden with CSS -->
+               <a href="#video-start" class="lightbox" id="campus-video">
+                  <div id="videoModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="false" style="display: block;">
+                     <div class="modal-header">
+                        <button type="button" class="close full-height" data-dismiss="modal" aria-hidden="true">X</button>
+                     </div>
+                     <div class="modal-body">
+                        <div id="player"></div>
+                     </div>
+                  </div>
+               </a>
+         <!-- </div> -->
+         
+      </div>
+      <!-- practicle learning end-->
+
+
+      <!-- getting here start -->
+      <a name="gettingthere">&nbsp;</a>
+      <div class="row getting-here__wrapper">
+         <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-11 col-lg-8 col-lg-offset-2 center-xs">
+            <div class="custom-heading">
+                  <h2>Getting here</h2>
+                  <h2>Getting here</h2>
+                  <h2>Getting here</h2>
+            </div>
+            
+            <div class="getting-here__container flexContainer">
+               <div class="flexContainer flexContainer--half campus-details">
+                  <div class="address">
+                     <h4>Getting to campus</h4>
+                  
+                     <p>Deakin University Waurn Ponds <br>
+                     75 Pigdons Road <br>
+                     Waurn Ponds, Victoria</p>
+                     <a href="#" class="open-new-page">Get directions</a>
+                  </div>
+
+                  <div class="travel-reimbursment">
+                     <h4>Travel reimbursement</h4>
+                     <p>If you are travelling more than 100km we will reimburse your travel expenses. Simply complete the form and we will be in touch.</p>
+
+                     <button class="button teal">Request reimbursment</button>
+                  </div>
+
+                  <div class="getting-around-campus">
+                     <h4>Getting around campus</h4>
+                     <p>Download the map or use the Deakin Scout app to find your way around campus.</p>
+                     <a href="#" class="download">Download campus map (PDF)
+                           <svg class="icon-download">
+                              <use href="#icon-download" xlink:href="#icon-download"></use>
+                           </svg>
+                     </a>
+                     <a href="#" class="download">Download iPhone Deakin Scout app
+                        <svg class="icon-download">
+                           <use href="#icon-download" xlink:href="#icon-download"></use>
+                        </svg>
+                     </a>
+                     <a href="#" class="download">Download Android Deakin Scout app
+                           <svg class="icon-download">
+                              <use href="#icon-download" xlink:href="#icon-download"></use>
+                           </svg>
+                        </a>
+                  </div><!-- /.getting-around-campus -->
+
+                  <div class="campus-accessibility">
+                     <h4>Campus accessibility</h4>
+                     <p>Deakin prides itself on fostering an inclusive and welcoming community. If you, or someone you care for, needs extra assistance on Open Day, please get in touch with our accessibility team.</p>
+
+                     <a href="https://www.deakin.edu.au/open-day-campus-accessibility" target="_blank" class="button teal">Request assistance</a>
+                  </div>
+               </div><!-- /.campus-details -->
+               
+               <div class="flexContainer flexContainer--half campus-map">
+                  <!-- <img src="src/images/campus.jpg" alt="Deakin University Waurn Ponds,75 Pigdons Road, Waurn Ponds, Victoria" />
+                  <div id="map"></div> -->
+                  <div class="mapouter">
+                     <div class="gmap_canvas">
+                        <iframe width="100%" height="547" id="gmap_canvas" src="https://maps.google.com/maps?q=deakin%20university%20burwood&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                     </div>
+                  </div>
+               </div>
+               
+            </div><!-- /.etting-here__container -->
+         </div>
+      </div> <!-- /.getting-here__wrapper -->
+    
+      
+      
+      <!-- FAQs start -->
+      <a name="faq">&nbsp;</a>
+      <div class="faqs-wrapper row">
+         <div class="verticle-text desktop-version">
+            <h2>FAQs</h2>
+            <h2>FAQs</h2>
+            <h2>FAQs</h2>
+         </div>
+
+         <h2 class="mobile-version col-xs-12">Frequently asked questions</h2>
+        
+         <div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-3 faqs">
+          
+            <!-- accordion start -->
+            <!-- Panel 1 -->
+            <button class="accordion">
+               <span>Not in Year 12?</span>
+               <span class="button-text">Show</span>
+            </button>
+            <div class="panel">
+               <p class="body">
+               You can apply directly to Deakin for one course, provided you've
+               not already submitted any applications through VTAC. But if you're
+               applying for more than one course, you must apply through VTAC.
+               <a
+                  data-analytics="cop_find_how_to_apply_direct"
+                  href="//www.deakin.edu.au/courses/how-to-apply"
+                  target="_blank"
+               >
+                  <u>Find out how to apply direct</u>
+               </a>
+               </p>
+            </div>
+
+            <!-- Panel 2 -->
+            <button class="accordion">
+            <span>Not in Year 12?</span>
+            <span class="button-text">Show</span>
+            </button>
+            <div class="panel">
+            <p class="body">
+               You can apply directly to Deakin for one course, provided you've
+               not already submitted any applications through VTAC. But if you're
+               applying for more than one course, you must apply through VTAC.
+               <a data-analytics="cop_find_how_to_apply_direct"
+                  href="//www.deakin.edu.au/courses/how-to-apply"
+                  target="_blank">
+                  <u>Find out how to apply direct</u>
+                  </a>
+               </p>
+            </div>
+
+            <!-- Panel 3 -->
+            <button class="accordion"><span>Not in Year 12?</span></button>
+            <div class="panel">
+               <p class="body">
+                  You can apply directly to Deakin for one course, provided you've
+                  not already submitted any applications through VTAC. But if you're
+                  applying for more than one course, you must apply through VTAC.
+                  <a
+                     data-analytics="cop_find_how_to_apply_direct"
+                     href="//www.deakin.edu.au/courses/how-to-apply"
+                     target="_blank"
+                     >
+                  <u>Find out how to apply direct</u>
+                  </a>
+               </p>
+            </div>
+         </div><!-- /.faqs -->
+      </div><!-- /.faqs-wrapper -->
+      <!-- FAQs end -->
+
+      <!-- bottom nav start -->
+      <div class="row bottom-nav pt-3">
+            <div class="col-xs-6 col-sm-6 col-md-offset-1 col-md-2 col-lg-2 col-lg-offset-2">
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/footer/copyright"
+                     target="_blank"
+                     alt="Copyright"
+                     >Copyright</a
+                     >
+               </p>
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/footer/sitemap"
+                     target="_blank"
+                     alt="Sitemap"
+                     >Sitemap</a
+                     >
+               </p>
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/giving-to-deakin"
+                     target="_blank"
+                     alt="Giving to Deakin"
+                     >Giving to Deakin</a
+                     >
+               </p>
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/footer/disclaimer"
+                     target="_blank"
+                     alt="Disclaimer"
+                     >Disclaimer</a
+                     >
+               </p>
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/about-deakin"
+                     target="_blank"
+                     alt="About us"
+                     >About us</a
+                     >
+               </p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 ">
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/about-deakin/work-at-deakin"
+                     target="_blank"
+                     alt="Jobs at Deakin"
+                     >Jobs at Deakin</a
+                     >
+               </p>
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/footer/privacy"
+                     target="_blank"
+                     alt="Privacy"
+                     >Privacy</a
+                     >
+               </p>
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/contact-us"
+                     target="_blank"
+                     alt="Contact us"
+                     >Contact us</a
+                     >
+               </p>
+               <p>
+                  <a
+                     href="http://www.deakin.edu.au/footer/copyright"
+                     target="_blank"
+                     alt="Emergency Information"
+                     >Emergency Information</a
+                     >
+               </p>
+            </div>
+         </div>
+         <!-- bottom nav end -->
+         <!-- footer start -->
+       <!-- <div class="footer">
+            <div class="row pt-3">
+                <div class="col-xs-12 col-md-offset-1 col-md-5 col-lg-4 col-lg-offset-2">
+                    <div class="footer-social-links__wrapper grid">
+                        <div class="cell cell--5-col cell--offset-1-col-large cell--offset-2-col-xl">
+                            <p class="footer-title">Connect with Deakin</p>
+                            <div class="footer-social-links">
+                                <ul class="footer-social-links__list">
+                                    <li class=" footer-social-links__list-item social-link social-link__facebook">
+                                        <a class="social-link__link footer_social_link_Facebook" title="Facebook" href="//www.facebook.com/DeakinUniversity" target="_blank"><i></i>Facebook</a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__twitter">
+                                        <a class="social-link__link footer_social_link_Twitter" title="Twitter" href="//twitter.com/deakin" target="_blank"><i></i>Twitter</a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__instagram">
+                                        <a class="social-link__link footer_social_link_Instagram" title="Instagram" href="//instagram.com/deakinuniversity/" target="_blank"><i></i>Instagram</a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__linkedin">
+                                        <a class="social-link__link footer_social_link_LinkedIn" title="LinkedIn" href="//www.linkedin.com/company/deakin-university" target="_blank"><i></i>Linkedin</a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__deakin-explore">
+                                        <a class="social-link__link" title="Explore" href="//explore.deakin.edu.au/"><i></i>Explore</a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__deakin-this">
+                                        <a class="social-link__link" title="this." href="//this.deakin.edu.au/" aria-label="Visit Deakin University's blog, this, for a regular dose of technology, innovation, culture and personal development.">
+                                            <i></i>This
+                                        </a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__wechat">
+                                        <a class="social-link__link footer_social_link_wechat" title="WeChat" href="https://www.deakinchina.cn/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" target="_blank"><i></i>WeChat</a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__youtube">
+                                        <a class="social-link__link footer_social_link_YouTube" title="YouTube" href="https://www.youtube.com/user/deakinuniversity" target="_blank"><i></i>YouTube</a>
+                                    </li>
+                                    <li class="footer-social-links__list-item social-link social-link__atar">
+                                        <a class="social-link__link" title="ATAR" href="https://atar-calculator.deakin.edu.au/?_ga=2.258559304.370751562.1558307972-1817926110.1557122023" target="_blank">Atar calculator</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-disclaimer">
+                                <p class="footer-disclaimer__copy">We acknowledge the traditional owners of the lands on which Deakin University stands and we pay our respect. © Copyright Deakin University <script>
+                                    document.write(new Date().getFullYear())
+                                    </script>. Deakin University CRICOS Provider Code: 00113B.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-image__wrapper">
+                    <img class="footer-image cell cell--5-col cell--offset-5-col cell--offset-7-col-large cell--offset-8-col-x-large" alt="" src="https://www.deakin.edu.au/__data/assets/image/0003/1345467/footer_image.png">	
+                </div>
+            </div>
+         </div> -->
+         <!-- footer end -->
+
+            <!-- Register/Signup modal -->
+       <div class="modal fade out" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>                
+               <div class="modal-body">
+                  <div id="signup">
+                     <div class="loader" style="display: none;"></div>
+                   
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #1 - Signup form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                        <form id="register-form">
+                           <div class="form__header">
+                                 <h2>Sign up</h2>
+                                 <p>Sign up to start planning your Deakin Open Day.</p>
+                           </div>
+                              <div class="form-group">
+                                 <!-- <label for="firstname">First Name<span class="asterix">*</span></label> -->
+                                 <input type="text" id="fname" name="fname" class="form-control" placeholder="First name">
+                              </div>
+                              <div class="form-group">
+                                 <!-- <label for="lastname">Last Name<span class="asterix">*</span></label> -->
+                              <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last name">
+                           </div>
+                              <div class="form-group">
+                                 <!-- <label for="email">Email<span class="asterix">*</span></label>  -->
+                                 <input type="email" id="sign-up-email" name="sign-up-email" class="form-control" placeholder="Email">
+                              </div>
+                              <div class="form-group">
+                                 <!-- <label for="reg_password">Create a password<span class="asterix">*</span></label> -->
+                                 <input type="password" id="pass" name="pass" class="form-control" placeholder="Password">
+                              </div>
+                              <div class="form-group">
+                                 <!-- <label for="mobilePhone">Phone<span class="asterix">*</span></label>  -->
+                                 <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile">
+                              </div>
+                              <div class="form-group">
+                                 <!-- <label for="inputIama">I am a...</label> -->
+                                 <!-- <label for="Lead_Type__c">I am a&hellip;<span class="asterix">*</span></label> -->
+                                 <select name="Iama" id="Iama" class="form-control od-select">
+                                    <option value="" selected>I am...</option>
+                                    <option value="School Leaver">School student</option>
+                                    <option value="TAFE Student">A TAFE student</option>
+                                    <option value="University Student">A university student</option>
+                                    <option value="Employed">In the workforce</option>
+                                    <option value="Parent">Parent or guardian</option>
+                                    <option value="Other">Other</option>
+                                 </select>
+                              </div>
+                              <div class="form-group iYL" style="display: none;">
+                                 <!-- <label for="inputYearLevel">Year Level<span class="asterix">*</span></label> -->
+                                 <select name="inputYearLevel" id="inputYearLevel" class="form-control od-select">
+                                    <option value="" selected>Choose year level</option>
+                                    <option value="7">Year 7</option>
+                                    <option value="8">Year 8</option>
+                                    <option value="9">Year 9</option>
+                                    <option value="10">Year 10</option>
+                                    <option value="11">Year 11</option>
+                                    <option value="12">Year 12</option>
+                                 </select>
+                              </div>
+                              <div class="form-group study-level" style="display: none;">
+                                    <!-- <label for="inputStudyLevel">Study Level<span class="asterix">*</span></label> -->
+                                    <!-- <p>
+                                    <input type="radio" id="inputStudyLevel1" name="inputStudyLevel" value="Undergraduate" />
+                                    <label for="inputStudyLevel1">Undergraduate (your first degree)</label>
+                                    </p>
+                                    <p>
+                                    <input type="radio" id="inputStudyLevel2" name="inputStudyLevel" value="Postgraduate" />
+                                    <label for="inputStudyLevel2">Postgraduate</label>
+                                 </p> -->
+                                 <select name="inputStudyLevel" id="inputStudyLevel" class="form-control od-select">
+                                    <option value="" selected>Choose year study level</option>
+                                    <option value="Undergraduate">Undergraduate</option>
+                                    <option value="Postgraduate">Postgraduate</option>
+                                    <option value="Higher Degree Research">Higher Degree Research</option>
+                                 </select>
+                              </div>
+                              <div class="form-group">
+                                 <!-- <label for="Campus__c">Which Open Day campus will you attend?<span class="asterix">*</span></label> -->
+                                 <!--<label for="inputCampus">Select a campus</label>-->
+                                 <select name="campus" id="campus" class="form-control  od-select">
+                                    <option value="" selected>Choose a campus</option>
+                                    <option value="Melbourne Burwood">Melbourne Burwood</option>
+                                    <option value="Geelong Waterfront">Geelong Waterfront</option>
+                                    <option value="Geelong Waurn Ponds">Geelong Waurn Ponds</option>
+                                    <option value="Warrnambool">Warrnambool</option>
+                                 </select>
+                              </div>
+                              <div class="signup_wrapper center">
+                                 <div class="form-group">
+                                    <div class="checkbox-button">
+                                          <input class="form-check-input" type="checkbox" id="Email_Opt_In">
+                                          <label class="form-check-label" for="Email_Opt_In">Stay up to date with Deakin</label>
+                                    </div>
+                                 </div>      
+                                 <div class="aws-error"></div>       
+                                 <button type="submit" name="register" class="button button--primary teal" data-analytics="openday_create_account_submit">Create Account</button>
+                              
+                                 <div class="modal-footer">
+                                    <p>Got an account?
+                                          <a class="login-toggle" data-showform="login-form" href="#">Login now</a>
+                                    </p>
+                                 </div>  
+                              </div>
+                           </form>
+                           
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Account created ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <div id="form-success" style="display: none;">
+                        <span class="check">
+                              <svg class="icon-tick">
+                                 <use href="#icon-tick" xlink:href="#icon-tick"></use>
+                              </svg>
+                        </span>
+                        <h2>Account Created</h2>
+                        <p>You’re ready to start planning your day at <span>[campus]</span></p>
+                     </div>
+                     <!-- Signup form end -->
+
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #2 - Login form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <form id="login-form" style="display: none;">
+                         <div class="form-header">
+                             <h2 class="modal-title" id="myModalLabel">Log in</h2>  
+                         </div>                         
+                         <div class="form-group">
+                             <!-- <label for="log_email">Email</label> -->
+                             <input type="text" id="log_email" class="form-control" name="sign-in-email" placeholder="Email Address">
+                         </div>
+                         <div class="form-group">
+                             <!-- <label for="log_password">Password</label> -->
+                             <input type="password" id="log_password" class="form-control" name="sign-in-pass" placeholder="Password">
+                         </div>
+
+                        <!-- +++++++++++++++++++++++++++++++++++++ 
+                        Login form - Form 2 - messages start -->
+                        <div class="form-group">
+                           <!-- Failure -->
+                           <label class="f2-fail error" role="alert"></label>
+                        </div>
+                        <!--+++++++++++++++++++++++++++++++++++-->
+
+                         <div class="signup_wrapper center">                        
+                             <div class="form-group">
+                                 <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Login</button>
+                             </div>
+                             <p class="forgot-password">
+                                 <a class="login-toggle" data-showform="forgot-pwd-form" href="#"> Forgot Password</a>
+                             </p>
+                             <div class="modal-footer">
+                                 <p>Don't have an account?
+                                     <a class="login-toggle" data-showform="register-form" href="#">Sign up now</a>
+                                 </p>
+                             </div>  
+                             
+                         </div>
+                     </form>
+                     <!-- Login form end -->
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #3 - Forgot password form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <form id="forgot-pwd-form" style="display: none;">
+                       <div class="form-header">
+                           <h2>Forgot password</h2>
+                            <p>Enter your email below to start the password recovery process.</p>                  
+                       </div>                           
+                        <div class="form-group">
+                            <!-- <label for="forgot_email">Email</label>                             -->
+                           <input type="text" id="forgot_email" class="form-control" name="forgot-pwd-email" placeholder="Email Address">
+                        </div>
+
+                        <!-- +++++++++++++++++++++++++++++++++++++ 
+                        Forgot password form start - Form 3 - messages start -->
+                        <div class="form-group">
+                           <!-- Failure -->
+                           <label class="f3-fail error" role="alert"></label>
+                        </div>
+                        <!--+++++++++++++++++++++++++++++++++++-->
+                        
+                        <div class="signup_wrapper center">
+                            <div class="form-group">
+                               <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Submit</button>
+                           </div>
+                           <div class="modal-footer">
+                              <p>Already started your plan?
+                                 <a data-showform="login-form" class="login-toggle" href="#">Login in now </a>
+                                 <br>
+                                 or
+                                 <br>
+                                 <a data-showform="reset-pwd-form" class="login-toggle" href="#">Reset your password</a> if you have received a verification code
+                              </p>
+                           </div>
+                               
+                               
+                            
+                            
+
+                            <!-- <div class="signup_wrapper center">
+                                 <div class="form-group">
+                                    <div class="checkbox-button">
+                                          <input class="form-check-input" type="checkbox" id="Email_Opt_In__c">
+                                          <label class="form-check-label" for="Email_Opt_In__c">Stay up to date with Deakin</label>
+                                    </div>
+                                 </div>      
+                                 <div class="aws-error"></div>       
+                                 <button type="submit" name="register" class="button button--primary teal" data-analytics="openday_create_account_submit">Create Account</button>
+                              
+                                 <div class="modal-footer">
+                                    <p>Got an account?
+                                          <a class="login-toggle" data-showform="login-form" href="#">Login now</a>
+                                    </p>
+                                 </div>  
+                              </div> -->
+
+                        </div>
+                     </form>
+                     <!--Forgot password form end-->
+                     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        ~~~ Form #4 - Reset password form start ~~~
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <form id="reset-pwd-form" style="display: none;">
+                       <div class="form-header">
+                             <h2>Forgot password</h2>
+                            <p>Enter your email below to start the password recovery process.</p>                  
+                       </div>                          
+                        <div class="form-group">
+                            <label for="reset_email">Email</label>
+                           <input type="text" id="reset_email" class="form-control" name="reset-pwd-email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                           <input type="password" id="password" class="form-control" name="reset-pass" placeholder="Enter New Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="verification">Verification Code</label>
+                           <input type="text" di="verification" class="form-control" name="reset-verify-code" placeholder="Enter Verification Code">
+                        </div>
+
+                        <!-- +++++++++++++++++++++++++++++++++++++ 
+                        Reset password form start - Form 4 - messages start -->
+                        <div class="form-group">
+                           <!-- Failure -->
+                           <label class="f4-fail error" role="alert"></label>
+                        </div>
+                        <!--+++++++++++++++++++++++++++++++++++-->
+
+                        <div class="signup_wrapper center">                          
+                            <div>
+                               <button type="submit" name="login" class="button button--primary teal login loginmodal-submit">Reset Password</button>
+                            </div>
+                            <div class="modal-footer">
+                                 <p>Already started your plan?
+                                     <a data-showform="login-form" class="login-toggle" href="#">Login in now </a>
+                                 </p>    
+                           </div>
+                        </div>    
+                     </form>
+                     <!--Reset password form end-->
+                  </div>
+                  <!-- Sign up / Login wrapper end -->
+                  <div class="form-group">
+                        <!--Success-->
+                        <div class="f1-success" role="alert">
+                            <span class="check">
+                                <svg class="icon-tick">
+                                    <use href="#icon-tick" xlink:href="#icon-tick"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="f2-success" role="alert"></div>
+                        <div class="f3-success alert alert-success" role="alert"></div>
+                        <div class="f4-success alert alert-success" role="alert"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Register/Signup modal end -->
+
+      
+      <!-- form-validation.js -->
+      <form class="mktoForm" data-formId="3590" id="mktoForm_3590"></form> <!-- BAF Form -->
+      <form class="mktoForm" data-formId="3610" id="mktoForm_3610"></form> <!-- Registration Form -->
+
+      <!-- <form class="mktoForm" data-formId="3590"></form>
+      <form class="mktoForm" data-formId="3610"></form> -->
+
+
+    
+      <!-- Marketo Bridge -->
+       <script type="text/javascript">
+       (function() {
+         var didInit = false;
+         function initMunchkin() {
+           if(didInit === false) {
+             didInit = true;
+             Munchkin.init("209-INQ-367");
+           }
+         }
+         var s = document.createElement('script');
+         s.type = "text/javascript";
+         s.async = true;
+         s.src = "//munchkin.marketo.net/munchkin.js";
+         s.onreadystatechange = function() {
+           if (this.readyState == "complete" || this.readyState == "loaded") {
+             initMunchkin();
+           }
+         };
+         s.onload = initMunchkin;
+         document.getElementsByTagName('head')[0].appendChild(s);
+       })();
+       </script> 
+
+      <script src="//app-sn01.marketo.com/js/forms2/js/forms2.min.js"></script> 
+      <!-- Marketo Script -->
+
+        <!-- Marketo form initilisation -->
+        <script>
+         /* config area - replace with your instance values */
+   
+         // var mktoFormConfig = {
+         //       podId : "//app-sn01.marketo.com",
+         //       munchkinId : "209-INQ-367",
+         //       formIds : [3590, 3610]
+         // };
+         
+         // /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
+         
+         // function mktoFormChain(config) {
+         
+         //    /* util */
+         //    var arrayFrom = Function.prototype.call.bind(Array.prototype.slice);
+         
+         //    /* const */
+         //    var MKTOFORM_ID_ATTRNAME = "data-formId";
+            
+         //    /* fix inter-form label bug! */
+         //    MktoForms2.whenRendered(function(form) {
+         //       var formEl = form.getFormElem()[0],
+         //          rando = "_" + new Date().getTime() + Math.random();
+         
+         //       arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
+         //          var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
+         //          if (forEl) {
+         //             labelEl.htmlFor = forEl.id = forEl.id + rando;
+         //          }
+         //       });
+         //    });
+         
+         //    /* chain, ensuring only one #mktoForm_nnn exists at a time */
+         //    arrayFrom(config.formIds).forEach(function(formId) {
+         //       var loadForm = MktoForms2.loadForm.bind(MktoForms2,config.podId,config.munchkinId,formId),
+         //          formEls = arrayFrom(document.querySelectorAll("[" + MKTOFORM_ID_ATTRNAME + '="' + formId + '"]'));
+         
+         //       (function loadFormCb(formEls) {
+         //          var formEl = formEls.shift();
+         //          formEl.id = "mktoForm_" + formId;
+         
+         //          loadForm(function(form) {
+         //             formEl.id = "";
+         //             if (formEls.length) {
+         //                loadFormCb(formEls);
+         //             }
+         //          });
+         //       })(formEls);
+         //    });
+         // }
+         
+         // mktoFormChain(mktoFormConfig);
+      </script>
+         <!-- Marketo form initilisation end -->
+        
+  </body>
+</html>
