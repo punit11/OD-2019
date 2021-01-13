@@ -54,7 +54,7 @@
     "aws-sdk": "^2.478.0",
     "core-js": "^3.0.1",
     "jquery": "^3.4.1",
-    "jquery-validation": "^1.19.0",
+    "jquery-validation": "^1.19.3",
     "jquery.scrollbar": "^0.2.11",
     "lg-fullscreen": "^1.1.0",
     "lg-pager": "^1.0.2",
